@@ -5,7 +5,7 @@ share: "true"
 category: Analyse 3  
 ---  
   
-# Application : [EDP > Equation de Laplace ${} nabla {2}u=0$ - Elliptique](../no_category/EDP.md#Equation%20de%20Laplace%20${}%20nabla%20{2}u=0$%20-%20Elliptique) et Poisson  
+# Application : [EDP > Equation de Laplace ${} nabla {2}u=0$ - Elliptique](./EDP.md#Equation%20de%20Laplace%20${}%20nabla%20{2}u=0$%20-%20Elliptique) et Poisson  
 ## Sur un pavé  
 **fonctions univariées** : $u(x,y)=X(x)\cdot Y(y)$  
 équation en 2 dimensions : $u_{xx}+u_{yy}=0  \implies \frac{X''}{X}+\frac{Y''}{Y}=0$   
@@ -39,7 +39,7 @@ $u(r,\theta)=R(r)\Theta(\theta)$ ⇒ $\frac{{r^{2}R''+rR'}}{R}=-\frac{\Theta''}{
 - *Théorème de la valeur moyenne* : valeur au centre d’un cercle compris dans le domaine $\Omega$ est égal à la moyenne sur le cercle  
   
 - *Théorème du maximum-minimum* : La valeur maximale (minimale) de $u$ est toujours atteinte sur la frontière du domaine  
-# Application : [EDP > Equation d'onde $c {2} nabla {2}u-u_{tt}=0$ - hyperbolique](../no_category/EDP.md#Equation%20d'onde%20$c%20{2}%20nabla%20{2}u-u_{tt}=0$%20-%20hyperbolique)  
+# Application : [EDP > Equation d'onde $c {2} nabla {2}u-u_{tt}=0$ - hyperbolique](./EDP.md#Equation%20d'onde%20$c%20{2}%20nabla%20{2}u-u_{tt}=0$%20-%20hyperbolique)  
 ## Sur un pavé (2 dimensions)  
 séparation des variables : $u(x,y,t)=\phi(x,y)T(t)$  
 équation de base : $c^{2}T\nabla^{2}\phi-T''\phi=0$  
@@ -61,7 +61,7 @@ $u(r,\theta,t)=R(r,\theta)T(t)$
 - pour $R$ :$z^{2}R''+zR' +(z^{2} -m^{2})R=0$ [Problème de Bessel](Probl%C3%A8me%20de%20Bessel.md)  
   
 - $T$: trivial  
-# Application : [EDP > Equation de diffusion ${} alpha nabla {2}u-u_{t}=0$ - Parabolique](../no_category/EDP.md#Equation%20de%20diffusion%20${}%20alpha%20nabla%20{2}u-u_{t}=0$%20-%20Parabolique)  
+# Application : [EDP > Equation de diffusion ${} alpha nabla {2}u-u_{t}=0$ - Parabolique](./EDP.md#Equation%20de%20diffusion%20${}%20alpha%20nabla%20{2}u-u_{t}=0$%20-%20Parabolique)  
 solution de régime et transitoire : $u=R+\Theta$  
 sol de régime :  
   
