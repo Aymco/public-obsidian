@@ -28,18 +28,17 @@ theme:
 # Extensions
 markdown_extensions:
   - footnotes
-  # - attr_list
+  - attr_list
   - pymdownx.arithmatex:
       generic: true
-  # - pymdownx.superfences
-  # - pymdownx.details
-  # - pymdownx.magiclink
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.magiclink
   - pymdownx.tasklist:
       custom_checkbox: true
   - def_list
   - pymdownx.betterem
   - pymdownx.critic
-  - pymdownx.details
   - pymdownx.caret
   - pymdownx.keys
   - pymdownx.mark
