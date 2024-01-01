@@ -6,5 +6,5 @@ updated: 2024-01-01
 ---  
   
 hello ;)  
-[physique 3](./Physique_3/physique%203.md)  
+[Physique 3](./Physique_3/Physique%203.md)  
   
