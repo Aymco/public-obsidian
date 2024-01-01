@@ -29,6 +29,7 @@ theme:
 markdown_extensions:
   - footnotes
   - attr_list
+  - tables
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.superfences
@@ -55,7 +56,6 @@ markdown_extensions:
 plugins:
   - search
   - roamlinks
-  - tables
 
 extra_css:
   - stylesheets/extra.css
