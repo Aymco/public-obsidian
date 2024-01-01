@@ -6,7 +6,7 @@ share: "true"
   
 transformer [[../thematiques/EDP|EDP]] en [[../EDO|EDO]]  
 condition initiale : $u(\Gamma(s))=f(s)$ (souvent $\Gamma(s)=(0,s)$)  
-# Premier ordre : [[../thematiques/EDP#EDP premier ordre. $Pu_x+Qu_y=R$|EDP > EDP premier ordre. $Pu_x+Qu_y=R$]]  
+# Premier ord. e : [[../thematiques/EDP#EDP premier ordre. $Pu_x+Qu_y=R$|EDP > EDP premier ordre. $Pu_x+Qu_y=R$]]  
 ## Verification du problème de Cauchy  
 dérivée directionnelle :$\frac{du}{ds}=u_{x} \frac{dx}{ds}+u_{y} \frac{dy}{ds}$  
 ## Trouver les courbes caractéristiques :  
