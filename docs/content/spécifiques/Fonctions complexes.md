@@ -11,7 +11,7 @@ test
   
 - nice  
 - test  
-  
+/^- /  
   
 $f:\mathbb{C}\to \mathbb{C}:z \to f(z)$  
 *Fonction conforme* : préserve les angles orientés $\iff$ $f$ est une bijection holomorphe  
