@@ -5,7 +5,7 @@ created: 2023-10-09
 updated: 2024-01-01  
 ---  
   
-![[equations de Maxwell#Equations de maxwell|equations de Maxwell > Equations de maxwell]]  
+![equations de Maxwell > Equations de maxwell](equations%20de%20Maxwell.md#Equations%20de%20maxwell)  
   
 # Equation d'ondes électromagnétiques  
   
