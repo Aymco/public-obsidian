@@ -2,6 +2,9 @@ site_name: obsidian notes
 
 theme:
     name: 'material'
+    features:
+    - navigation.instant
+    - navigation.instant.progress
     palette:
 
     # Light mode
