@@ -5,7 +5,7 @@ created: 2023-09-22
 updated: 2024-01-01  
 ---  
   
-[[Physique 2|Physique 2]]  
+[Physique 2](Physique%202.md)  
 # Champ électro magnétique  
 ## Champ électrique $E$ :  
 *loi de Coulon* :  $E =q/(4\pi\epsilon r^2)$  ( pour une charge)  
@@ -27,7 +27,7 @@ Loi de *Lenz Faraday* : $\epsilon_{ind}=-\frac{ d\phi_{B} }{ dt }=\int _{C_{f}}\
 $\int _{C_{f}}\vec{F} \, d\vec{l}=\int _{S}rot\vec{F} \, d\vec{s}$  
 $\int _{S_{f}}\vec{F} \, d\vec{s}=\int _{V}divF \, dxdydz$  
   
-==[[equations de Maxwell|equations de Maxwell]]==  
+==[equations de Maxwell](equations%20de%20Maxwell.md)==  
   
 ---  
   
