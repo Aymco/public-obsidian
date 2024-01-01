@@ -1,5 +1,4 @@
 :root {
-  --md-primary-fg-color:        #EE0F0F;
-  --md-primary-fg-color--light: #ECB7B7;
-  --md-primary-fg-color--dark:  #90030C;
+  --text-highlight-bg: rgb(0, 85, 149); 
+  --italic-color: rgb(72, 234, 255);
 }
