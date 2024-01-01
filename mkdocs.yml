@@ -5,7 +5,7 @@ theme:
     font:
         text: Inter  
     features:
-    - navigation.sections
+    - navigation.tabs
     - navigation.instant
     - navigation.instant.progress
     palette:
