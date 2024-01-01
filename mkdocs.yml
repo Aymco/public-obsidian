@@ -2,10 +2,10 @@ site_name: obsidian notes
 
 theme:
     name: 'material'
-    
     font:
-        text: Roboto
+        text: Inter  
     features:
+    - navigation.sections
     - navigation.instant
     - navigation.instant.progress
     palette:
