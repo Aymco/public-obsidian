@@ -8,10 +8,10 @@ updated: 2024-01-01
 test  
 - ceci est un  
 - test  
+  
 - nice  
 - test  
   
-qs  
   
 $f:\mathbb{C}\to \mathbb{C}:z \to f(z)$  
 *Fonction conforme* : préserve les angles orientés $\iff$ $f$ est une bijection holomorphe  
@@ -48,3 +48,4 @@ $|z|=arg(z)=\arctan (\frac{b}{a})+2k\pi$
 **point de branchement** : point autour duquel un tour complet de la fonction en change la valeur → arg(z) : 0  
 **coupure** : couper notre région pour isoler → arg(z) : $[0,2\pi[$  
 - $arg(zw)=arg(z)+arg(w)$  
+  
