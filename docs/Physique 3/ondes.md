@@ -20,7 +20,6 @@ Déplacement d'énergie
 - [Ondes Stationnaires](./Ondes%20Stationnaires.md)  
   
 - [Phénomènes ondulatoires](Ph%C3%A9nom%C3%A8nes%20ondulatoires.md)  
-  
 ## Ondes sources  
 Ondes *Sphériques* : $P_{tot} = 4\pi r2I$ ⇒ $I=\dots\frac{1}{r^{2}}$  
 Ondes *Cylindriques* : $P_{tot} = 2\pi rhI$  
