@@ -5,6 +5,14 @@ created: 2023-12-24
 updated: 2024-01-01  
 ---  
   
+test  
+- ceci est un  
+- test  
+- nice  
+- test  
+  
+qs  
+  
 $f:\mathbb{C}\to \mathbb{C}:z \to f(z)$  
 *Fonction conforme* : préserve les angles orientés $\iff$ $f$ est une bijection holomorphe  
 ## Limite  
@@ -16,6 +24,7 @@ avec $B(a,b)$ une boule et $B_{*}(a,b)=B(a,b)\setminus \{ a \}$
 $f'(z)=\frac{ df }{ dz }z=\lim_{ \Delta \to 0 } \frac{{f(z+\Delta)-f(z)}}{\Delta}$  
 *Condition de Cauchy-Riemann* : $f(x,y)=u(x,y)+iv(x,y)$   
 derivable $\iff \left\{\begin{align} u_{x}&=v_{y}\\u_{y}&=-v_{x} \end{align}\right.$  
+  
 ## Fonction holomorphe  
 $f$ holomorphe : *dérivable* infiniment sur $A$ ($f$ dérivable ⇒ dérivable infiniment)  
 ### Principe des zeros isolés  
