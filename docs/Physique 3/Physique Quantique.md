@@ -8,13 +8,13 @@ updated: 2024-01-02
 ---  
   
   
-# [Dualité onde-corpuscule](./Dualit%C3%A9%20onde-corpuscule.md)  
+# [[Dualité onde-corpuscule|Dualité onde-corpuscule]]  
   
-# [Fonction d'onde de Schrödinger](./Fonction%20d'onde%20de%20Schr%C3%B6dinger.md)  
+# [[Fonction d'onde de Schrödinger|Fonction d'onde de Schrödinger]]  
   
-# [puits et barrières de potentiel](./puits%20et%20barri%C3%A8res%20de%20potentiel.md)  
+# [[puits et barrières de potentiel|puits et barrières de potentiel]]  
   
-# [Oscillateur quantiques](./Oscillateur%20quantiques.md)  
+# [[Oscillateur quantiques|Oscillateur quantiques]]  
   
 # Modèles quantiques aux corps tangibles  
 ## L'Hydrogene  
@@ -63,7 +63,7 @@ approximations :
   
 - règle de Hund : case mm énergie → se placent spin maximal  
 ## Molécules  
-[Liaisons chimiques](Liaisons%20chimiques.md)  
+[[Liaisons chimiques|Liaisons chimiques]]  
 ## Ion $H_{2}^+$  
   
 matière condensée   
@@ -88,6 +88,3 @@ types de matériaux :
 debut dopé $p$, fin dopé $n$ → bande de valence $p$ chevauche la bande de conductivité $n$ → courant a sens unique  
   
 #todo incomplet je crois  
-  
-  
-  
