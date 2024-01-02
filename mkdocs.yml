@@ -61,7 +61,7 @@ markdown_extensions:
 
 plugins:
   - search
-  #- roamlinks
+  - roamlinks
 
 extra_css:
   - stylesheets/extra.css
