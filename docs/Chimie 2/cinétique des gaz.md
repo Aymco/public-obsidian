@@ -9,14 +9,17 @@ tags:
   
 [notations chimie](notations%20chimie.md)  
 # Théorie de Bernoulli - gaz  
+test
 $$
 test
 $$
+
 $$  
 \begin{aligned} 
 aligned
 \end{aligned}  
 $$ 
+
 $$  
 \begin{align} 
 align
