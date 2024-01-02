@@ -7,7 +7,6 @@ created: 2023-12-23
 updated: 2024-01-02  
 ---  
   
-  
 **Fonction d'onde** $\psi$ distribution spatiale de la particule  
 Densité de probabilité : $|\phi|^{2}$  
 voir aussi [[puits et barrières de potentiel|puits et barrières de potentiel]]  
