@@ -5,21 +5,22 @@ created: 2023-10-16
 updated: 2024-01-02  
 ---  
   
+  
 Déplacement d'énergie  
 ## Types d'ondes  
   
-- [[ondes électro-magnétiques|ondes électro-magnétiques]] : lumière  
+- [ondes électro-magnétiques](ondes%20%C3%A9lectro-magn%C3%A9tiques.md) : lumière  
   
-- [[Ondes mécaniques#Ondes mécaniques classiques|Ondes mécaniques > Ondes mécaniques classiques]] : corde  
+- [Ondes mécaniques > Ondes mécaniques classiques](Ondes%20m%C3%A9caniques.md#ondes-mecaniques-classiques) : corde  
   
-- [[Ondes mécaniques#Ondes acoustiques|Ondes mécaniques > Ondes acoustiques]] : [[son|son]]  
+- [Ondes mécaniques > Ondes acoustiques](Ondes%20m%C3%A9caniques.md#ondes-acoustiques) : [son](son.md)  
   
 - onde gravitationnelle  
 ## Voir aussi  
   
-- [[Ondes Stationnaires|Ondes Stationnaires]]  
+- [Ondes Stationnaires](Ondes%20Stationnaires.md)  
   
-- [[Phénomènes ondulatoires|Phénomènes ondulatoires]]  
+- [Phénomènes ondulatoires](Ph%C3%A9nom%C3%A8nes%20ondulatoires.md)  
 ## Ondes sources  
 Ondes *Sphériques* : $P_{tot} = 4\pi r2I$ ⇒ $I=\dots\frac{1}{r^{2}}$  
 Ondes *Cylindriques* : $P_{tot} = 2\pi rhI$  
@@ -31,7 +32,7 @@ $A,B$ fonction de $x$ et $t$
   
 - *équations d'ondes* : $\left\{\begin{align} \frac{ \partial^{2} A }{ \partial t^{2} }=v^{2}\frac{ \partial^{2} A }{ \partial x^{2} }\\\frac{ \partial^{2} B }{ \partial t^{2} }=v^{2}\frac{ \partial^{2} B }{ \partial x^{2} } \end{align}\right.$  
   
-- **vitesse de propagation** de l'onde : $v^{2}=\frac{a}{b}$  (résolution : [[EDP|EDP]])  
+- **vitesse de propagation** de l'onde : $v^{2}=\frac{a}{b}$  (résolution : [EDP](EDP.md))  
   
 - **Energie transportée** $E_{t}= \frac{{aA^{2}}}{2} + \frac{{bB^{2}}}{2}$  
   
