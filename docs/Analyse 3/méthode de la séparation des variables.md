@@ -5,7 +5,6 @@ share: "true"
 category: Analyse 3  
 ---  
   
-  
 # Application : [[EDP#Equation de Laplace ${} nabla {2}u=0$ - Elliptique|EDP > Equation de Laplace ${} nabla {2}u=0$ - Elliptique]] et Poisson  
 ## Sur un pavé  
 **fonctions univariées** : $u(x,y)=X(x)\cdot Y(y)$  

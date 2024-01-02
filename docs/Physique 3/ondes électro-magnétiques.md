@@ -1,15 +1,13 @@
 ---  
-share: true  
-category: Physique 3  
 created: 2023-10-09  
 updated: 2024-01-02  
+share: true  
+category: Physique 3  
 ---  
-  
   
 ![[equations de Maxwell#Equations de maxwell|equations de Maxwell > Equations de maxwell]]  
   
 # Equation d'ondes électromagnétiques  
-  
 ## Cas $\vec{E}\perp \vec{H}$  
 **équation de propagation** (avec lois de Lenz Faraday) :  
 $\frac{ \partial E_{y} }{ \partial x }=-\mu_{0}\frac{ \partial H_{z} }{ \partial t }$  

@@ -5,7 +5,6 @@ created: 2023-09-22
 updated: 2024-01-02  
 ---  
   
-  
 [[Physique 2|Physique 2]]  
 # Champ électro magnétique  
 ## Champ électrique $E$ :  
@@ -31,7 +30,6 @@ $\int _{S_{f}}\vec{F} \, d\vec{s}=\int _{V}divF \, dxdydz$
 ==[[equations de Maxwell|equations de Maxwell]]==  
   
 ---  
-  
 ### Champs magnétiques  
 $B=\mu_0(H+M)$  
   
