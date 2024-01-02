@@ -7,7 +7,6 @@ created: 2023-12-20
 updated: 2024-01-02  
 ---  
   
-  
 # [[Dualité onde-corpuscule|Dualité onde-corpuscule]]  
   
 # [[Fonction d'onde de Schrödinger|Fonction d'onde de Schrödinger]]  
