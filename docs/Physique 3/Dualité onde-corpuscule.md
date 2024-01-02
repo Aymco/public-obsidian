@@ -4,8 +4,9 @@ category: Physique 3
 tags:  
   - matière  
 created: 2023-12-23  
-updated: 2024-01-01  
+updated: 2024-01-02  
 ---  
+  
   
 corps, ondes → 1 catégorie  
   
