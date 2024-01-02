@@ -7,7 +7,6 @@ created: 2023-12-20
 updated: 2024-01-02  
 ---  
   
-  
 # Ondes mécaniques classiques  
 position $y(x,t)$, vitesse $u(x,t)$, Force $F_{y}(x,t)$  
 $\frac{ \partial F_{y} }{ \partial t }=-F\frac{ \partial u }{ \partial x }$      
