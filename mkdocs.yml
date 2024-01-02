@@ -43,8 +43,8 @@ markdown_extensions:
   - footnotes
   - attr_list
   - tables
-  - pymdownx.arithmatex:
-      generic: true
+  #- pymdownx.arithmatex:
+  #    generic: true
   - pymdownx.superfences
   - pymdownx.details
   #- pymdownx.magiclink
