@@ -45,7 +45,7 @@ $$
 soit un cube de longueur $L$ et   
   
   
-$$  
+$${  
 \begin{aligned}  
 p  & = \frac{F_{T}}{s} = \frac{F_{T}}{L^{2}}  = \frac{\rho L F_{T}}{mn} &\text{densité : } \rho=\frac{nm}{V} \\  
  & =  \frac{\rho}{mn}  \sum \underbrace{ \frac{2L}{t} }_{ c_{x} }m_{i}c_{i,x} & c_{x} = \frac{2L}{dt}\\   
@@ -55,7 +55,7 @@ p  & = \frac{F_{T}}{s} = \frac{F_{T}}{L^{2}}  = \frac{\rho L F_{T}}{mn} &\text{d
 \end{aligned}  
   
   
-$$  
+}$$  
 on a donc la pression $p=\frac{1}{3}\rho\overline{c^2}$  
   
 - Température : $\bar{k}=\frac{3}{2}k_{B}T$  
