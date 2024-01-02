@@ -5,7 +5,6 @@ created: 2023-09-25
 updated: 2024-01-02  
 ---  
   
-  
 [[champs électro-magnétiques|champs électro-magnétiques]]  
 [[labo 1 réfraction|labo 1 réfraction]]  
   
