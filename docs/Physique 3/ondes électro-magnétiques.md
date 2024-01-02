@@ -5,7 +5,8 @@ share: true
 category: Physique 3  
 ---  
   
-![[equations de Maxwell#Equations de maxwell|equations de Maxwell > Equations de maxwell]]  
+  
+![equations de Maxwell > Equations de maxwell](equations%20de%20Maxwell.md#equations-de-maxwell)  
   
 # Equation d'ondes électromagnétiques  
 ## Cas $\vec{E}\perp \vec{H}$  
