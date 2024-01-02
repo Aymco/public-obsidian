@@ -24,20 +24,19 @@ on cherche la pression d'un gaz  $p = \frac{F}{s}$
   
   
 $$  
-\begin{aligned}  
+\begin{align}  
 F_{T}&=\sum \frac{1}{t}\int_{0}^{t} F_{i} \, dt &\text{force à un moment t}   
-\end{aligned}  
-$$  
-$$
-\begin{align}
-F_{T}&=\sum \frac{1}{t}\int_{0}^{t} F_{i} \, dt &\text{force à un moment t}
-\end{align}
+\end{align}  
+  
+  
 $$  
 or on sait que  
   
   
-$$
-\int_{0}^{t} F_{i} \, dt = 2m_{iCi,x}   \hspace{50px}\text{car  } F = ma =m \cdot vdt
+$$  
+\int_{0}^{t} F_{i} \, dt = 2m_{iCi,x}   \hspace{50px}\text{car  } F = ma =m \cdot vdt  
+  
+  
 $$  
 Donc  
   
