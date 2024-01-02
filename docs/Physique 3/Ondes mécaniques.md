@@ -15,7 +15,6 @@ $\frac{ \partial F_{y} }{ \partial x }=-\mu \frac{ \partial^{2} y }{ \partial t^
 **masse linéique** : $\mu_{L}[kg/m]$  
 vitesse de propagation : $v=\sqrt{ \frac{F}{\mu} }$  
 **Puissance** : [ondes > Intensité $I= sqrt{ab}B 2$](./ondes.md#Intensité%20$I=%20sqrt{ab}B%202$)  
-  
 # Ondes acoustiques  
 pression acoustique $p(x,t)$, position initiale $u$  
 $\frac{ \partial p_{y} }{ \partial t }=-B\frac{ \partial u }{ \partial x }$  
