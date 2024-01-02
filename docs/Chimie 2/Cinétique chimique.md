@@ -14,5 +14,5 @@ soit la réaction : $aA+bB\to mM+nN$
 volume cst : $r=\frac{1}{m} \frac{d[M]}{dt}$  
   
 $r=k[A]^\alpha\dots[M]^\mu$ avec $k$ la constante de vitesse  
-$\alpha,\boldsymbol{\beta}\dots$ ordre partiels  
+$\alpha,\beta\dots$ ordre partiels  
 $\alpha+\beta+\dots$ ordre global  
