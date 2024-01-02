@@ -21,5 +21,3 @@ voir synthese github (pas schoenauen)
 # [Equilibres Chimiques](Equilibres%20Chimiques.md)  
   
 # [Cinétique chimique](Cin%C3%A9tique%20chimique.md)  
-  
-# PLUS  
