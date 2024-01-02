@@ -7,24 +7,10 @@ tags:
   - matière  
 ---  
   
+  
 [notations chimie](notations%20chimie.md)  
 # Théorie de Bernoulli - gaz  
-test
-$$
-test
-$$
-
-$$  
-\begin{aligned} 
-aligned
-\end{aligned}  
-$$ 
-
-$$  
-\begin{align} 
-align
-\end{align}  
-$$ 
+  
 - molécules : sphère(diamètre d, masse m)  
   
 - $d\ll\lambda\ll L$  
@@ -36,23 +22,37 @@ $$
 - parois n'absorbent aucune énergie  
 ## Pression $p$  
 on cherche la pression d'un gaz  $p = \frac{F}{s}$  
-$$  
+  
+  
+$  
 \begin{aligned}  
 F_{T}&=\sum \frac{1}{t}\int_{0}^{t} F_{i} \, dt &\text{force à un moment t}   
 \end{aligned}  
-$$  
+  
+  
+$  
 or on sait que  
-$$  
+  
+  
+$  
 \int_{0}^{t} F_{i} \, dt = 2m_{iCi,x}   \hspace{50px}\text{car  } F = ma =m \cdot vdt  
-$$  
+  
+  
+$  
 Donc  
-$$  
+  
+  
+$  
 \begin{aligned}  
 F_{T}&=\sum \frac{2}{t}m_{i}c_{i,x} &\text{on remplace}    
 \end{aligned}  
-$$  
+  
+  
+$  
 soit un cube de longueur $L$ et   
-$$  
+  
+  
+$  
 \begin{aligned}  
 p  & = \frac{F_{T}}{s} = \frac{F_{T}}{L^{2}}  = \frac{\rho L F_{T}}{mn} &\text{densité : } \rho=\frac{nm}{V} \\  
  & =  \frac{\rho}{mn}  \sum \underbrace{ \frac{2L}{t} }_{ c_{x} }m_{i}c_{i,x} & c_{x} = \frac{2L}{dt}\\   
@@ -60,7 +60,9 @@ p  & = \frac{F_{T}}{s} = \frac{F_{T}}{L^{2}}  = \frac{\rho L F_{T}}{mn} &\text{d
 & = \rho  \cancel{ \frac{n }{n} }  \overline{c_{x}^{2}}  &\text{avec }\overline{c_{x}^{2}} \text{ la moyenne des vitesses}  \\  
 & = \frac{\rho \overline{c^{2}}}{3}   & \text{car } \overline{c^{2}} = \frac{\overline{c_{x}^{2}}}{3}\\   
 \end{aligned}  
-$$  
+  
+  
+$  
 on a donc la pression $p=\frac{1}{3}\rho\overline{c^2}$  
   
 - Température : $\bar{k}=\frac{3}{2}k_{B}T$  

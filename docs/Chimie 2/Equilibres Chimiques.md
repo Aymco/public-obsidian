@@ -7,6 +7,7 @@ created: 2023-11-20
 updated: 2024-01-02  
 ---  
   
+  
 [Thermodynamique](Thermodynamique.md) → controle la composition  
 Energie libre de Helmotz     : $A=U-TS$  
 Enthalpie/Energie libre de Gibbs  $G = H-TS$  
@@ -14,14 +15,18 @@ $dG = dU + p dV + V dp − T dS − S dT$
 transformation isotherme et isobare :   
 	$dG\leq \delta W+pdV$  
 ## Équations fondamentales d'un système de composition fixée :  
-$$  
+  
+  
+$  
 \begin{align}  
 dH&=TdS+Vdp\\  
 dA&=-SdT-pdV\\  
 dG&=-SdT+Vdp\\  
 dU&=Tds-pdV  
 \end{align}  
-$$  
+  
+  
+$  
 ## Variation de l'enthalpie avec la pression  
 $G_{m}(p,T)=G^o_{m}(T)+\int_{p^o}^{p}  V_{m}(p',T)\, dp'$  
 gaz parfait : $=G^o_{m}(T)+RT\ln\left( \frac{p}{p^o} \right)$  
