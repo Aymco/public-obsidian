@@ -38,7 +38,7 @@ $A,B$ fonction de $x$ et $t$
 - **Intensité** $I=\sqrt{ab}B^2=[W/m^{2}]$  
 	- L’intensité d’une puissance, c’est une grandeur qui va décrire la "répartition" de cette puissance sur une surface  
   
--  *Principe de Huygens* : chaque point atteint par l'onde va se comporter comme une source (sphérique)  
+- *Principe de Huygens* : chaque point atteint par l'onde va se comporter comme une source (sphérique)  
   
   
 - **Ondes longitudinales** : variation *parallèle* au sens de propagation (son)  
@@ -68,11 +68,6 @@ $A,B$ fonction de $x$ et $t$
 	- caractéristique physique d’un système à réduire une excitation qui lui est appliquée.  
   
 - $moy(\sin ^{2}x)=0.5\implies2I_{moy}=I_{max}=\sqrt{ ab }B^{2}_{max}=A_{max}B_{max}$  
-  
-  
-  
-  
-  
   
   
 - onde **plane** : sin(A) → A=c → droite  
