@@ -9,19 +9,17 @@ updated: 2024-01-02
   
 variables thermodynamique **intensives** : depend pas de la qtte de matière   
   
-- pression : $p=[Pa]=[N/m^{2}]$  
+- **pression** : $p=[Pa]=[N/m^{2}]$  
   
-- température : $T=[K]=[C°] + 273,15$  
+- **température** : $T=[K]=[C°] + 273,15$  
   
-- volume molaire $V_{m}=\frac{V}{n}=[m^3/mol]$  
+- **volume molaire** $V_{m}=\frac{V}{n}=[m^3/mol]$  
 équilibre thermodynamique : $F(p,T,V_{m})=0$  
-  
 ## Loi des gaz parfaits  
 $$  
 pV=mR^*T=Nk_{B}T=nRT  
 $$  
-  
-`\begin{proof}`  
+Démo :  
 $$  
 \begin{align}  
 pV &= cst  &\text{loi de Boyle}\\  
@@ -31,4 +29,3 @@ pV &= cst  &\text{loi de Boyle}\\
 pV=&nRT   &\text{}R=N_{A}k_{b}  
 \end{align}  
 $$  
-`\end{proof}`  
