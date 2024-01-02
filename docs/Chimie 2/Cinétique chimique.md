@@ -7,7 +7,6 @@ created: 2023-12-26
 updated: 2024-01-02  
 ---  
   
-  
 décrit la vitesse à laquelle on tend vers l'équilibre  
 soit la réaction : $aA+bB\to mM+nN$  
   
