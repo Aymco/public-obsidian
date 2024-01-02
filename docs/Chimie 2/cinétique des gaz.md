@@ -27,8 +27,11 @@ $$
 \begin{aligned}  
 F_{T}&=\sum \frac{1}{t}\int_{0}^{t} F_{i} \, dt &\text{force à un moment t}   
 \end{aligned}  
-  
-  
+$$  
+$$  
+\begin{aligned}
+F_{T}&=\sum \frac{1}{t}\int_{0}^{t} F_{i} \, dt &\text{force à un moment t}
+\end{aligned}
 $$  
 or on sait que  
   
