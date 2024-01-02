@@ -7,9 +7,10 @@ created: 2023-12-23
 updated: 2024-01-02  
 ---  
   
+  
 **Fonction d'onde** $\psi$ distribution spatiale de la particule  
 Densité de probabilité : $|\phi|^{2}$  
-voir aussi [[puits et barrières de potentiel|puits et barrières de potentiel]]  
+voir aussi [puits et barrières de potentiel](puits%20et%20barri%C3%A8res%20de%20potentiel.md)  
 # Equation de Schrödinger  
 $\left( -\frac{\hbar^{2}\nabla^{2}}{2m}+V  \right)\psi=i\hbar \psi_{t}$ avec $V=V(x,y,t)$  
   
