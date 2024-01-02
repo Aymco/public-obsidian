@@ -5,6 +5,7 @@ created: 2023-10-18
 updated: 2024-01-02  
 ---  
   
+  
 [Opérateur différentiels](Op%C3%A9rateur%20diff%C3%A9rentiels.md)  
 → [EDP](EDP.md) : $L(u)=f$  
 Linéaire si $L$ linéaire et $f$ connu => combili solution est solution  
