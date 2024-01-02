@@ -25,4 +25,4 @@ $\frac{ \partial p_{y} }{ \partial x }=-\rho_{0}\frac{ \partial u }{ \partial t 
 	$\gamma=1,4$  
   
 ## Intensité : décibel $I_{db}=10\log_{10}\left( \frac{I}{I_{0} }\right)$  
-avec $I_{0}=10^{-12} W/m^{2}$  
+avec $I_{0}=10^{-12} W/m^{2}$
