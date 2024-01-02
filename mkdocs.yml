@@ -12,6 +12,8 @@ theme:
         text: Inter
     #language: fr
     features:
+    - content.action.edit
+    - content.action.view
     - navigation.tabs
     #- navigation.instant
     #- navigation.instant.progress
