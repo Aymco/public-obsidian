@@ -11,41 +11,35 @@ updated: 2024-01-02
 ### Recap - transformations  
 |     transformation     | cst |                cst                | $W$              | $Q$                       |  
 |:----------------------:| --- |:---------------------------------:| ---------------- |:------------------------- |  
-|       isotherme        | $T$ |             $pV$             | $=-pdV$          | $=-W$                     |  
+|       isotherme        | $T$ |             $pV$             | $=-\int pdV$          | $=-W$                     |  
 |        isobare         | $p$ | $V/T$ | $=-p\Delta V$    | $=\Delta H=C_{p}\Delta T$ |  
 |        isochore        | $V$ | ${p} /{T}$ | $0$              | $=\Delta U=C_{v}\Delta T$ |  
 | Adiabatique reversible | $S$ |         $pV^\gamma$          | $=C_{v}\Delta T$ | $0$                       |  
   
-## Isotherme  
-$\begin{align}dH=C_{p}dT=0\\dU=C_{v}dT=0\\Q=\int p \, dV =\int -V \, dp \end{align}$  
-## Adiabatique  
-$\gamma:=\frac{C_{p}}{C_{V}}=1+\frac{R^*}{cv}$  
-$\gamma_{gp}=\frac{ddl+2}{ddl}$  
+avec $\gamma:=\frac{C_{p}}{C_{V}}=1+\frac{R^*}{cv}$ ou $\gamma_{gp}=\frac{ddl+2}{ddl}$  
+*Isotherme* :  
   
-# Cycles  
+- $dH=C_{p}dT=0=dU=C_{v}dT$  
+  
+- $d(pV)=0$ ⇒ $Q=\int p \, dV =-\int V \, dp$  
+  
+# Cycles thermodynamiques  
 $\oint du=0$  
-Cycle moteur : $\oint dw>0$  
-cycle récepteur : $\oint dw <0$  
+Cycle *moteur* : $\oint dw>0$  
+cycle *récepteur* : $\oint dw <0$  
 **Rendement** : $\eta=\frac{{Q_{fourni}-Q_{\mathrm{Re}jeté}}}{Q_{fourni}}$  
-### Coefficient de performance  
-$COP_{froid}=|\frac{q_{f}}{w_{m,t}}|$  
-$COP_{chaud}=|\frac{q_{c}}{w_{m,t}}|$  
+**Coefficient de performance** : $COP_{froid/chaud}=|\frac{q_{f/c}}{w_{m,t}}|$  
 ## Cycle de carnot  
 1. Compression isotherme  
 2. Compression adiabatique  
 3. détente isotherme  
 4. détente adiabatique  
-   
 Machine motrice → $\eta=1-\frac{T_{2}}{T_{1}}$  
 Machine frigorifique → $COP=\frac{1}{{\frac{T_{1}}{T_{2}}-1}}$  
 Machine - pompe à chaleur → $COP=\frac{1}{1-\frac{T_{1}}{T_{2}}}$  
 ## Diagramme de cycle  
-### (p,V)  
-isochore , isobare → lignes  
-travail : surface fermé par le cycle $w_{T}=-\oint pdv$  
-### (s,T)  
-adiabatique, isotherme  
-chaleur totale perçue $q_{t}=\oint Tds$  
-### Aires equivalentes  
-$0=q+w$ car cycle  
-les aires sont égales  
+  
+- (p,V) ⇒travail : surface fermé par le cycle $w_{T}=-\oint pdv$  
+  
+- (s,T) ⇒chaleur totale perçue $q_{t}=\oint Tds$  
+*Aires equivalentes* : $0=q+w$ car cycle (les aires sont égales)  
