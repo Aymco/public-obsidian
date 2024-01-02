@@ -7,7 +7,6 @@ created: 2023-11-01
 updated: 2024-01-02  
 ---  
   
-  
 # Transformations  
 ### Recap - transformations  
 |     transformation     | cst |                cst                | $W$              | $Q$                       |  
