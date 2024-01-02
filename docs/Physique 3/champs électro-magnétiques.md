@@ -2,8 +2,9 @@
 share: true  
 category: Physique 3  
 created: 2023-09-22  
-updated: 2024-01-01  
+updated: 2024-01-02  
 ---  
+  
   
 [Physique 2](Physique%202.md)  
 # Champ électro magnétique  
