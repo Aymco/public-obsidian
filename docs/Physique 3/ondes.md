@@ -5,7 +5,6 @@ created: 2023-10-16
 updated: 2024-01-02  
 ---  
   
-  
 Déplacement d'énergie  
 ## Types d'ondes  
   
