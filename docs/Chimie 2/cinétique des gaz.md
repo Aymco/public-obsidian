@@ -49,51 +49,24 @@ p  & = \frac{F_{T}}{s} = \frac{F_{T}}{L^{2}}  = \frac{\rho L F_{T}}{mn} &\text{d
 $$  
 on a donc la pression $p=\frac{1}{3}\rho\overline{c^2}$  
 `\end{proof}`  
-## Température - énergie cinétique  
-$\bar{k}=\frac{3}{2}k_{B}T$  
-## Énergie interne - énergie cinétique  
-$U=\frac{3}{2}nRT$  
-## **libre Parcours moyen** $\lambda$  
-$\lambda$ distance moyenne parcourue par une mol avant d'en rencontrer une autre  
-$$  
-\lambda=\frac{RT}{4\sqrt{ 2 }r^{2}\pi pN_{A}}   
-$$  
-# Preuves expérimentales  
-## Effusion des gaz  
-gaz qui traverse une paroi poreuse : nb mol / secondes  
-$$  
-\frac{dN}{dt}=\frac{pAN_{A}}{\sqrt{ RT_{2}\pi M_{m} }}  
-$$  
-pression dans le temps :   
-$$  
-p(t)=p_{0}e^{ -At/V \sqrt{ \frac{RT}{2\pi M_{m}} }}  
-$$  
-# [gaz parfait](gaz%20parfait.md)  
   
+- Température : $\bar{k}=\frac{3}{2}k_{B}T$  
+  
+- Énergie interne - énergie cinétique : $U=\frac{3}{2}nRT$  
+  
+- **libre Parcours moyen** : $\lambda=\frac{RT}{4\sqrt{ 2 }r^{2}\pi pN_{A}}$  
+	- distance moyenne parcourue par une mol avant d'en rencontrer une autre  
+  
+- **Effusion** :  $\frac{dN}{dt}=\frac{pAN_{A}}{\sqrt{ RT_{2}\pi M_{m} }}$ gaz qui traverse une paroi poreuse ($N$ mol)  
+	- → pression : $p(t)=p_{0}e^{ -At/V \sqrt{ \frac{RT}{2\pi M_{m}} }}$  
+  
+# [gaz parfait](gaz%20parfait.md)  
 ## Capacité calorifique  
-chaleur spécifique (chaleur fournie / changement de température) à Volume constant : $C_{V}=\left( \frac{ \partial Q }{ \partial T } \right)_{V}$                          $C_{p}=\left( \frac{ \partial H }{ \partial T } \right)_{p}$  
+chaleur spécifique (chaleur fournie / changement de température) à Volume constant :   
 $V$ cst : $!W$ → $(dU)_{V}=(\delta Q)_{V}$  
 $C_{V,m}=\frac{3}{2}R$  (en remplaçant avec l'énergie interne)  
-  
-$dU=C_{v} \, dt$  
-$dH=C_{p} \, dt$  
-$c_{p}-c_{V}=R^*$  
-  
-## Joules Thompson  
-coefficient Joules Thompson : $\mu_{T}=\left( \frac{\delta T}{\delta P} \right)_{H}$    
-$\pi_{T}=\left( \frac{\delta U}{\delta V} \right)_{T}$  
-  
-- gaz **quelconques** $\mu_{T}, \pi_{T} \not = 0$  
-  
-- gaz **idéaux**  $\mu_{T} = \pi_{T}=0$  
-	- gaz **parfaits** $c_{p}$ et $c_{V}$ constants pdv $T$  
 # Limites de validité  
-## Capacité calorifique des gaz polyatomiques  
-$\lambda$ degrés de liberté :  
-$C_{V,m}=\frac{(\lambda _{translation}+\lambda_{rotation}+2\lambda_{vibration})R}{2}$  
-translation : toujours 3  
-rotation : 2 à température ambiante   
-vibration : 1 proche de température de dissociation($E_{c-vib}=E_{p-vib}=\frac{R}{2}$)  
+  
 ## Facteur de compression  
 $Z=\frac{pV_{m}}{RT}$  
 $Z=1$ pour les [gaz parfait](gaz%20parfait.md)  
