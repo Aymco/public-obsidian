@@ -5,8 +5,7 @@ created: 2023-10-09
 updated: 2024-01-02  
 ---  
   
-  
-![equations de Maxwell > Equations de maxwell](equations%20de%20Maxwell.md#equations-de-maxwell)  
+![[equations de Maxwell#Equations de maxwell|equations de Maxwell > Equations de maxwell]]  
   
 # Equation d'ondes électromagnétiques  
   
@@ -31,7 +30,3 @@ densité d'énergie Magnétique : $E_{B}=\frac{ B^{2}}{2ma}=[J/m^3]$
 Intensité : $I=\epsilon_{0}E^{2}c=[W /m^{2}]$  
   
 Vitesse de la lumière : $v=\sqrt{ \frac{b}{a} }=\sqrt{ \frac{1}{\mu_{0}\epsilon_{0}} }=2,9975\cdot 10^8$  
-  
-  
-  
-  
