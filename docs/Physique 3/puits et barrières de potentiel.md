@@ -7,7 +7,6 @@ created: 2023-12-23
 updated: 2024-01-02  
 ---  
   
-  
 $V$ change brutalement de valeur  
 infini ou fini  
 voir aussi [Fonction d'onde de Schrödinger](Fonction%20d'onde%20de%20Schr%C3%B6dinger.md)  
@@ -40,8 +39,8 @@ si $F \neq 0$ la particule peut avoir traversé la barrière
 proba rebondisse $R$ , proba traverse $T$ → $T+R=1$  
   
   
-$  
+$$  
 T=\frac{4E(U_{0}-E)}{4E(U_{0}-E)+U_{0}^{2}\sinh ^{2}\left( \frac{L}{\hbar}\sqrt{ 2m(U_{0}-E) } \right)}  
   
   
-$  
+$$  
