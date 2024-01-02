@@ -6,7 +6,6 @@ updated: 2024-01-02
 tags: []  
 ---  
   
-  
 voir synthese github (pas schoenauen)  
 [Formulaire chimie II](Formulaire%20chimie%20II.md)  
 [interro S7 phy chi ll](interro%20S7%20phy%20chi%20ll.md)  

@@ -7,7 +7,6 @@ created: 2023-12-23
 updated: 2024-01-02  
 ---  
   
-  
 corps, ondes → 1 catégorie  
   
 - particule masse $m$, energie $E=hf=\hbar w$, q de mvt $p=\hbar k=\frac{h}{\lambda}$  

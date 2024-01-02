@@ -7,7 +7,6 @@ created: 2023-12-23
 updated: 2024-01-02  
 ---  
   
-  
 voir [Oscillateurs harmoniques](Oscillateurs%20harmoniques.md)  
   
 [Fonction d'onde de Schrödinger > Indépendante du temps](Fonction%20d'onde%20de%20Schr%C3%B6dinger.md#independante-du-temps)  
