@@ -1,6 +1,10 @@
-site_name: obsidian notes
-#site_description: synthèses
-#site_author: Aymco
+site_name: synthèse
+site_description: mes synthèses
+site_author: Aymco
+site_url
+repo_url: https://github.com/Aymco/public-obsidian/
+edit_uri: edit/main/docs/
+base_url: 
 
 theme:
     name: 'material'
