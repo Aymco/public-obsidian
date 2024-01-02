@@ -6,16 +6,15 @@ updated: 2024-01-02
 ---  
   
   
-[champs électro-magnétiques](./champs%20%C3%A9lectro-magn%C3%A9tiques.md)  
-[labo 1 réfraction](labo%201%20r%C3%A9fraction.md)  
+[[champs électro-magnétiques|champs électro-magnétiques]]  
+[[labo 1 réfraction|labo 1 réfraction]]  
   
-# 1 Ere partie : [ondes](./ondes.md)  
-[ondes électro-magnétiques](./ondes%20%C3%A9lectro-magn%C3%A9tiques.md)  
-[Ondes mécaniques](./Ondes%20m%C3%A9caniques.md)  
-[Ondes Stationnaires](./Ondes%20Stationnaires.md)  
+# 1 Ere partie : [[ondes|ondes]]  
+[[ondes électro-magnétiques|ondes électro-magnétiques]]  
+[[Ondes mécaniques|Ondes mécaniques]]  
+[[Ondes Stationnaires|Ondes Stationnaires]]  
   
+## [[Phénomènes ondulatoires|Phénomènes ondulatoires]]  
   
-## [Phénomènes ondulatoires](Ph%C3%A9nom%C3%A8nes%20ondulatoires.md)  
-  
-[Antennes - rayonnements](./Antennes%20-%20rayonnements.md)  
-# 2 Eme partie : [Physique Quantique](./Physique%20Quantique.md)  
+[[Antennes - rayonnements|Antennes - rayonnements]]  
+# 2 Eme partie : [[Physique Quantique|Physique Quantique]]  
