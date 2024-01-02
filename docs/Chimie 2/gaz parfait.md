@@ -7,7 +7,6 @@ created: 2023-10-31
 updated: 2024-01-02  
 ---  
   
-  
 variables thermodynamique **intensives** : depend pas de la qtte de matière   
   
 - **pression** : $p=[Pa]=[N/m^{2}]$  
@@ -19,15 +18,15 @@ variables thermodynamique **intensives** : depend pas de la qtte de matière
 ## Loi des gaz parfaits  
   
   
-$  
+$$  
 pV=mR^*T=Nk_{B}T=nRT  
   
   
-$  
+$$  
 Démo :  
   
   
-$  
+$$  
 \begin{align}  
 pV &= cst  &\text{loi de Boyle}\\  
 \frac{V}{T}&=cst &\text{loi de Charles}\\  
@@ -37,4 +36,4 @@ pV=&nRT   &\text{}R=N_{A}k_{b}
 \end{align}  
   
   
-$  
+$$  
