@@ -36,14 +36,12 @@ $$
 
 Donc  
   
-  
+$$
+\begin{aligned}
+F_{T}&=\sum \frac{2}{t}m_{i}c_{i,x} &\text{on remplace}
+\end{aligned}
 $$  
-\begin{aligned}  
-F_{T}&=\sum \frac{2}{t}m_{i}c_{i,x} &\text{on remplace}    
-\end{aligned}  
-  
-  
-$$  
+
 soit un cube de longueur $L$ et   
   
   
