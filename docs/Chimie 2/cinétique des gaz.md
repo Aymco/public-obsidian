@@ -23,10 +23,10 @@ tags:
 on cherche la pression d'un gaz  $p = \frac{F}{s}$  
   
   
-$$
-\begin{align}
-F_{T}&=\sum \frac{1}{t}\int_{0}^{t} F_{i} \, dt &\text{force à un moment t}
-\end{align}
+$$  
+\begin{aligned}  
+F_{T}&=\sum \frac{1}{t}\int_{0}^{t} F_{i} \, dt &\text{force à un moment t}  
+\end{aligned}  
 $$  
 or on sait que  
 
