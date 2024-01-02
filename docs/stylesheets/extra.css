@@ -1,0 +1,27 @@
+:root {
+  --text-highlight-bg: rgb(0, 85, 149); 
+  --italic-color: rgb(72, 234, 255);
+}
+
+.MJX-TEX {
+  font-size: 120%;
+  color: #f06c1f;
+  //margin-top: -10px !important;
+  //margin-bottom: -10px !important;
+  text-align: center !important;
+
+}
+
+
+strong {
+  /* add highlight to bold text with an background color */
+  background-color: var(--text-highlight-bg);
+
+  padding: 0 5px;
+  padding-block: 0.1em;
+  border-radius: 5px;
+}
+
+em {
+    color: var(--italic-color);
+}
