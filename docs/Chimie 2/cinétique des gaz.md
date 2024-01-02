@@ -9,6 +9,9 @@ tags:
   
 [notations chimie](notations%20chimie.md)  
 # Théorie de Bernoulli - gaz  
+$$
+test
+$$
   
 - molécules : sphère(diamètre d, masse m)  
   
