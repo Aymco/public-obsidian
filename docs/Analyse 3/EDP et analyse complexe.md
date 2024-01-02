@@ -5,7 +5,6 @@ created: 2023-09-20
 updated: 2024-01-02  
 ---  
   
-  
 [EDP](EDP.md)  
   
 - [méthode des caractéristiques](m%C3%A9thode%20des%20caract%C3%A9ristiques.md)  
