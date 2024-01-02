@@ -7,5 +7,5 @@ updated: 2024-01-02
   
   
 hello ;)  
-[Physique 3](./Physique%203/index.md)  
-[EDP et analyse complexe](./Analyse%203/EDP%20et%20analyse%20complexe.md)
+[[Physique 3|Physique 3]]  
+[[EDP et analyse complexe|EDP et analyse complexe]]  

@@ -40,5 +40,3 @@ $dE_{\theta}=-\frac{1}{2}\sqrt{ \frac{\mu_{0}}{\epsilon_{0}} }I_{0}{\frac{dz\sin
 → complexes → intègre $\int_{-h}^{h}  \, dz$  
 → isole imaginaires: $E_{\theta}=-\frac{I_{0}}{2\pi r}\sqrt{ \frac{\mu_{0}}{\epsilon_{0}} }\tan(\theta)\sin(\omega t-kr)\sin(kh\cos\theta)$  
 énergie transportée : $P_{moy}=\frac{1}{4\pi}\sqrt{ \frac{\epsilon_{0}}{\mu_{0}} }I_{0}^{2}\int_{0}^{\pi} \frac{\sin^3\theta}{\cos ^{2}\theta}\sin^2(kh\cos\theta) \, d\theta$  
-  
-  

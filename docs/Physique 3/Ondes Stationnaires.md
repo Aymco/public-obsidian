@@ -14,7 +14,7 @@ updated: 2024-01-02
 - réflection multiples en phase  
   
 # Solution générale : $\phi(x,t)=(A\sin(kx)+B\cos(kx))(C\sin(\omega t)+D\cos(\omega t))$  
-([méthode de la séparation des variables](../Analyse%203/m%C3%A9thode%20de%20la%20s%C3%A9paration%20des%20variables.md))  
+([[méthode de la séparation des variables|méthode de la séparation des variables]])  
 **pulsation de l'onde** :  $\omega=kv=2\pi f$   
 # Mode propre $m$  
 ($m$ ventres d'ondes, $m+1$ noeuds)  
@@ -37,16 +37,14 @@ $\xi=\xi_{A}+\xi_{B}=2A\cos\left( \frac{{\omega_{A}+\omega_{B}}}{2}t- \frac{{\om
   
 # Applications  
   
-- refléter avec des *conducteurs* : $E=0$ ([ondes électro-magnétiques](./ondes%20%C3%A9lectro-magn%C3%A9tiques.md))  
+- refléter avec des *conducteurs* : $E=0$ ([[ondes électro-magnétiques|ondes électro-magnétiques]])  
 	- $E_{y}(x,t)=-2E_{y_{0}}\sin(kx)\cos(\omega t)$  
 	- $B_{z}(x,t)=2B_{z0}\cos(kx)\sin(\omega t)$  
   
-- *corde fixée* aux extrémités ([Ondes mécaniques > Ondes mécaniques classiques](./Ondes%20m%C3%A9caniques.md#ondes-mecaniques-classiques)):  
+- *corde fixée* aux extrémités ([[Ondes mécaniques#Ondes mécaniques classiques|Ondes mécaniques > Ondes mécaniques classiques]]):  
 	- $y(x,t)=2A\sin(kx)\cos(\omega t)$  
-  
--   
 	- **fréquence fondamentale** : $n=1$  
-## [Ondes mécaniques > Ondes acoustiques](./Ondes%20m%C3%A9caniques.md#ondes-acoustiques)  
+## [[Ondes mécaniques#Ondes acoustiques|Ondes mécaniques > Ondes acoustiques]]  
 *Tubes fermés* : molécules au bout sont fixes  
 	→ $u,\xi = 0$ vitesse et déplacement nul  
 *Tubes ouverts* : pression est égale a la pression atmosphérique   
