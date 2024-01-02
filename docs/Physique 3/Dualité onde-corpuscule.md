@@ -7,6 +7,7 @@ created: 2023-12-23
 updated: 2024-01-02  
 ---  
   
+  
 corps, ondes → 1 catégorie  
   
 - particule masse $m$, energie $E=hf=\hbar w$, q de mvt $p=\hbar k=\frac{h}{\lambda}$  
@@ -18,7 +19,7 @@ corps, ondes → 1 catégorie
 - longueur d'onde de de Broglie : $\lambda\approx\frac{h}{mv}$ (onde plane)  
 	- électron : $\lambda=1 nm$  
    
-voir $\psi$  [[Fonction d'onde de Schrödinger|Fonction d'onde de Schrödinger]]   
+voir $\psi$  [Fonction d'onde de Schrödinger](Fonction%20d'onde%20de%20Schr%C3%B6dinger.md)   
   
 onde lumineuse → particule : photon  
 	Energie d'un photon : $E=ha=\frac{h}{\lambda}$  
