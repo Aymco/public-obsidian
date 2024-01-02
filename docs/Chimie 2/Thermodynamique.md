@@ -7,7 +7,6 @@ created: 2023-11-02
 updated: 2024-01-02  
 ---  
   
-  
 # Systèmes  
   
 - Système **ouvert** : échange de masse et de chaleur  
