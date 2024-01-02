@@ -1,12 +1,12 @@
 site_name: obsidian notes
-site_description: synthèses
-site_author: Aymco
+#site_description: synthèses
+#site_author: Aymco
 
 theme:
     name: 'material'
     font:
         text: Inter
-    language: fr
+    #language: fr
     features:
     - navigation.tabs
     - navigation.instant
