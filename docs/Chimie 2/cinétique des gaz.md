@@ -7,7 +7,6 @@ tags:
   - matière  
 ---  
   
-  
 [notations chimie](notations%20chimie.md)  
 # Théorie de Bernoulli - gaz  
   
@@ -24,35 +23,35 @@ tags:
 on cherche la pression d'un gaz  $p = \frac{F}{s}$  
   
   
-$  
+$$  
 \begin{aligned}  
 F_{T}&=\sum \frac{1}{t}\int_{0}^{t} F_{i} \, dt &\text{force à un moment t}   
 \end{aligned}  
   
   
-$  
+$$  
 or on sait que  
   
   
-$  
+$$  
 \int_{0}^{t} F_{i} \, dt = 2m_{iCi,x}   \hspace{50px}\text{car  } F = ma =m \cdot vdt  
   
   
-$  
+$$  
 Donc  
   
   
-$  
+$$  
 \begin{aligned}  
 F_{T}&=\sum \frac{2}{t}m_{i}c_{i,x} &\text{on remplace}    
 \end{aligned}  
   
   
-$  
+$$  
 soit un cube de longueur $L$ et   
   
   
-$  
+$$  
 \begin{aligned}  
 p  & = \frac{F_{T}}{s} = \frac{F_{T}}{L^{2}}  = \frac{\rho L F_{T}}{mn} &\text{densité : } \rho=\frac{nm}{V} \\  
  & =  \frac{\rho}{mn}  \sum \underbrace{ \frac{2L}{t} }_{ c_{x} }m_{i}c_{i,x} & c_{x} = \frac{2L}{dt}\\   
@@ -62,7 +61,7 @@ p  & = \frac{F_{T}}{s} = \frac{F_{T}}{L^{2}}  = \frac{\rho L F_{T}}{mn} &\text{d
 \end{aligned}  
   
   
-$  
+$$  
 on a donc la pression $p=\frac{1}{3}\rho\overline{c^2}$  
   
 - Température : $\bar{k}=\frac{3}{2}k_{B}T$  
