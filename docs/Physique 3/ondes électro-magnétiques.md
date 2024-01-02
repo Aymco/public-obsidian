@@ -2,10 +2,11 @@
 share: true  
 category: Physique 3  
 created: 2023-10-09  
-updated: 2024-01-01  
+updated: 2024-01-02  
 ---  
   
-![equations de Maxwell > Equations de maxwell](equations%20de%20Maxwell.md#Equations%20de%20maxwell)  
+  
+![equations de Maxwell > Equations de maxwell](equations%20de%20Maxwell.md#equations-de-maxwell)  
   
 # Equation d'ondes électromagnétiques  
   
