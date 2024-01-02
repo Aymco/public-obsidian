@@ -12,7 +12,16 @@ tags:
 $$
 test
 $$
-  
+$$  
+\begin{aligned} 
+aligned
+\end{aligned}  
+$$ 
+$$  
+\begin{align} 
+align
+\end{align}  
+$$ 
 - molécules : sphère(diamètre d, masse m)  
   
 - $d\ll\lambda\ll L$  
