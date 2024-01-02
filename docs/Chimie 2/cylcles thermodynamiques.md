@@ -15,6 +15,7 @@ updated: 2024-01-02
 |        isobare         | $p$ | $V/T$ | $=-p\Delta V$    | $=\Delta H=C_{p}\Delta T$ |  
 |        isochore        | $V$ | ${p} /{T}$ | $0$              | $=\Delta U=C_{v}\Delta T$ |  
 | Adiabatique reversible | $S$ |         $pV^\gamma$          | $=C_{v}\Delta T$ | $0$                       |  
+  
 ## Isotherme  
 $\begin{align}dH=C_{p}dT=0\\dU=C_{v}dT=0\\Q=\int p \, dV =\int -V \, dp \end{align}$  
 ## Adiabatique  
@@ -33,12 +34,11 @@ $COP_{chaud}=|\frac{q_{c}}{w_{m,t}}|$
 1. Compression isotherme  
 2. Compression adiabatique  
 3. détente isotherme  
-4. détente adiabatiquMachine motrice $\eta=1-\frac{T_{2}}{T_{1}}$  
-### Machine frigorifique  
-$COP=\frac{1}{{\frac{T_{1}}{T_{2}}-1}}$  
-### Machine - pompe à chaleur  
-$COP=\frac{1}{1-\frac{T_{1}}{T_{2}}}$  
-  
+4. détente adiabatique  
+   
+Machine motrice → $\eta=1-\frac{T_{2}}{T_{1}}$  
+Machine frigorifique → $COP=\frac{1}{{\frac{T_{1}}{T_{2}}-1}}$  
+Machine - pompe à chaleur → $COP=\frac{1}{1-\frac{T_{1}}{T_{2}}}$  
 ## Diagramme de cycle  
 ### (p,V)  
 isochore , isobare → lignes  
