@@ -2,8 +2,9 @@
 share: "true"  
 category: Analyse 3  
 created: 2023-10-18  
-updated: 2024-01-01  
+updated: 2024-01-02  
 ---  
+  
   
 [Opérateur différentiels](Op%C3%A9rateur%20diff%C3%A9rentiels.md)  
 → [EDP](EDP.md) : $L(u)=f$  
@@ -30,7 +31,7 @@ P, Q, R : fonctions de x, y, u
 → [méthode des caractéristiques](m%C3%A9thode%20des%20caract%C3%A9ristiques.md)  
 ### EDP de transport $(cu)_{x}+u_{t}= 0$  
 c, fonction de x  
-→ [méthode des caractéristiques > EDP de transport EDP EDP de transport $(cu)_{x}+u_{t}= 0$](m%C3%A9thode%20des%20caract%C3%A9ristiques.md#EDP%20de%20transport%20EDP%20EDP%20de%20transport%20$(cu)_{x}+u_{t}=%200$)  
+→ [méthode des caractéristiques > EDP de transport EDP EDP de transport $(cu)_{x}+u_{t}= 0$](m%C3%A9thode%20des%20caract%C3%A9ristiques.md#edp-de-transport-edp-edp-de-transport-dollarcuxut-0dollar)  
 ## EDP seconde ordre $Au_{xx}+Bu_{xy}+Cu_{yy}=R$  
 A, B, C, R fonction de x,y,u   
 **Hyperbolique** $B^{2}-4AC>0$ → [méthode des caractéristiques](m%C3%A9thode%20des%20caract%C3%A9ristiques.md)  
