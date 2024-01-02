@@ -2,17 +2,18 @@
 share: true  
 category: Physique 3  
 created: 2023-10-16  
-updated: 2024-01-01  
+updated: 2024-01-02  
 ---  
+  
   
 Déplacement d'énergie  
 ## Types d'ondes  
   
 - [ondes électro-magnétiques](./ondes%20%C3%A9lectro-magn%C3%A9tiques.md) : lumière  
   
-- [Ondes mécaniques > Ondes mécaniques classiques](./Ondes%20m%C3%A9caniques.md#Ondes%20mécaniques%20classiques) : corde  
+- [Ondes mécaniques > Ondes mécaniques classiques](./Ondes%20m%C3%A9caniques.md#ondes-mecaniques-classiques) : corde  
   
-- [Ondes mécaniques > Ondes acoustiques](./Ondes%20m%C3%A9caniques.md#Ondes%20acoustiques) : [son](son.md)  
+- [Ondes mécaniques > Ondes acoustiques](./Ondes%20m%C3%A9caniques.md#ondes-acoustiques) : [son](son.md)  
   
 - onde gravitationnelle  
 ## Voir aussi  
