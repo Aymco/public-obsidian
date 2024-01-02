@@ -4,8 +4,9 @@ category: Physique 3
 tags:  
   - matière  
 created: 2023-12-22  
-updated: 2024-01-01  
+updated: 2024-01-02  
 ---  
+  
   
   
 - environnement restreint  
@@ -40,12 +41,12 @@ $\xi=\xi_{A}+\xi_{B}=2A\cos\left( \frac{{\omega_{A}+\omega_{B}}}{2}t- \frac{{\om
 	- $E_{y}(x,t)=-2E_{y_{0}}\sin(kx)\cos(\omega t)$  
 	- $B_{z}(x,t)=2B_{z0}\cos(kx)\sin(\omega t)$  
   
-- *corde fixée* aux extrémités ([Ondes mécaniques > Ondes mécaniques classiques](./Ondes%20m%C3%A9caniques.md#Ondes%20mécaniques%20classiques)):  
+- *corde fixée* aux extrémités ([Ondes mécaniques > Ondes mécaniques classiques](./Ondes%20m%C3%A9caniques.md#ondes-mecaniques-classiques)):  
 	- $y(x,t)=2A\sin(kx)\cos(\omega t)$  
   
 -   
 	- **fréquence fondamentale** : $n=1$  
-## [Ondes mécaniques > Ondes acoustiques](./Ondes%20m%C3%A9caniques.md#Ondes%20acoustiques)  
+## [Ondes mécaniques > Ondes acoustiques](./Ondes%20m%C3%A9caniques.md#ondes-acoustiques)  
 *Tubes fermés* : molécules au bout sont fixes  
 	→ $u,\xi = 0$ vitesse et déplacement nul  
 *Tubes ouverts* : pression est égale a la pression atmosphérique   

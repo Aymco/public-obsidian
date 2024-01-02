@@ -2,8 +2,9 @@
 share: true  
 category: Physique 3  
 created: 2023-09-25  
-updated: 2024-01-01  
+updated: 2024-01-02  
 ---  
+  
   
 [champs électro-magnétiques](./champs%20%C3%A9lectro-magn%C3%A9tiques.md)  
 [labo 1 réfraction](labo%201%20r%C3%A9fraction.md)  
