@@ -5,6 +5,7 @@ share: "true"
 category: Analyse 3  
 ---  
   
+  
 # Application : [EDP > Equation de Laplace ${} nabla {2}u=0$ - Elliptique](EDP.md#equation-de-laplace-dollar-nabla-2u0dollar-elliptique) et Poisson  
 ## Sur un pavé  
 **fonctions univariées** : $u(x,y)=X(x)\cdot Y(y)$  
@@ -72,9 +73,13 @@ solution transitoire : injecte $u=R+\Theta$ dans EDP
   
 # Plus  
 ### Théorème des fonction indépendantes  
-$$  
+  
+  
+$  
 \begin{align}  
 p(x) + g(y)&=c \\  
 p'(x) =g'(y)&= 0  
 \end{align}  
-$$  
+  
+  
+$  
