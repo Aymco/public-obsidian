@@ -4,7 +4,7 @@ category: Chimie 2
 tags:  
   - matière  
 created: 2023-11-01  
-updated: 2024-01-02  
+updated: 2024-01-03  
 ---  
   
 # Transformations  
@@ -16,7 +16,7 @@ updated: 2024-01-02
 |        isochore        | $V$ | ${p} /{T}$ | $0$              | $=\Delta U=C_{v}\Delta T$ |  
 | Adiabatique reversible | $S$ |         $pV^\gamma$          | $=C_{v}\Delta T$ | $0$                       |  
   
-avec $\gamma:=\frac{C_{p}}{C_{V}}=1+\frac{R^*}{cv}$ ou $\gamma_{gp}=\frac{ddl+2}{ddl}$  
+avec $\gamma:=\frac{C_{p}}{C_{V}}=1+\frac{R^*}{C_{V}}$ ou $\gamma_{gp}=\frac{ddl+2}{ddl}$  
 *Isotherme* :  
   
 - $dH=C_{p}dT=0=dU=C_{v}dT$  
