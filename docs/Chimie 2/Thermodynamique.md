@@ -14,7 +14,7 @@ updated: 2024-01-03
 - Système **fermé** : échange de chaleur  
   
 - Système **isolé** : !échange   
-![Variable, fonction d'état > Variable, fonction d'état](Variable,%20fonction%20d'%C3%A9tat.md#variable-fonction-detat)  
+[Variable, fonction d'état](Variable,%20fonction%20d'%C3%A9tat.md)  
 ## 1er Principe thermodynamique - principe d'équivalence  
 **Energie interne** :  $U=Q+W$ (variable d'état)  
 	**chaleur** $Q$ (du point de vue du système ) équivalent au **travail** $W$   
