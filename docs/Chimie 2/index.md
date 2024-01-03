@@ -2,7 +2,7 @@
 share: true  
 category: Chimie 2  
 created: 2023-09-25  
-updated: 2024-01-02  
+updated: 2024-01-03  
 tags: []  
 ---  
   
