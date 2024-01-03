@@ -8,83 +8,120 @@ updated: 2024-01-03
 ---  
   
 [Thermodynamique](Thermodynamique.md) → controle la composition  
-Energie libre de Helmotz     : $A=U-TS$  
-Enthalpie/Energie libre de Gibbs  $G = H-TS$  
-$dG = dU + p dV + V dp − T dS − S dT$  
-transformation isotherme et isobare :   
-	$dG\leq \delta W+pdV$  
+  
+  
+- Energie libre de *Helmotz*     : $A=U-TS$  
+  
+- Enthalpie/Energie libre de *Gibbs*  $G = H-TS$  
+	- $dG = dU + p dV + V dp − T dS − S dT$   
+	- $p,T$ cst ⇒ $dG_{p,T} = dH − T dS$   
+  
+- seul travail $pdV$ ⇒ $dG_{p,T}< 0$ , équilibre $dG_{p,T}=0$  
+  
+- équilibre *métastable* : nécessite $E_{a}$ → + stable  
 ## Équations fondamentales d'un système de composition fixée :  
   
   
 $$  
-\begin{align}  
+\begin{aligned}  
 dH&=TdS+Vdp\\  
 dA&=-SdT-pdV\\  
 dG&=-SdT+Vdp\\  
 dU&=Tds-pdV  
-\end{align}  
+\end{aligned}  
   
   
 $$  
 ## Variation de l'enthalpie avec la pression  
-$G_{m}(p,T)=G^o_{m}(T)+\int_{p^o}^{p}  V_{m}(p',T)\, dp'$  
-gaz parfait : $=G^o_{m}(T)+RT\ln\left( \frac{p}{p^o} \right)$  
-solide / liquide : $=G^o_{m}(T)+ V_{m} \Delta p$  
-solide/liquide + gaz : considère que le gaz : $\approx RT\ln \frac{p}{p^o}$  
+  
+- $G_{m}(p,T)=G^o_{m}(T)+\int_{p^o}^{p}  V_{m}(p',T)\, dp'$  
+  
+- gaz parfait ⇒ $=G^o_{m}(T)+RT\ln\left( \frac{p}{p^o} \right)$ (solide + liquide + gaz → gaz)  
+  
+- solide / liquide  $=G^o_{m}(T)+ V_{m} \Delta p$  
 # Potentiel chimique  
-composition change :  
-**potentiel chimique** : $\mu_{i}$ (grandeur intensive)  
-$\mu_{i}:=\left( \frac{ \partial G }{ \partial n_{i} } \right)_{T,p,n_{i\neq j}}=\left( \frac{ \partial U }{ \partial n_{i} } \right)_{S,v,n_{i\neq j}}=\left( \frac{ \partial H }{ \partial n_{i} } \right)_{S,p,n_{i\neq j}}=\left( \frac{ \partial A }{ \partial n_{i} } \right)_{T,V,n_{i\neq j}}$  
-équation fondamentale de G : $dG=-SdT+Vdp+\sum \mu_{i}dn_{i}$  
-forme pure : $G^A_{m}:=\mu^A$  
-gaz parfait pur : $\mu^A=G^{A^o}_{m}+RT\ln\left( \frac{p}{p^o} \right)$  
-**fraction molaire** de $A$ : $x_A:=\frac{n_{A}}{\sum n_{i}}$  
-tout $A$ migre vers l'endroit ou son potentiel chimique est le plus faible  
+  
+- **potentiel chimique** : $\mu_{i}$ (grandeur intensive) pour chaque espèce  
+	- $\mu_{i}=\left( \frac{ \partial G }{ \partial n_{i} } \right)_{T,p,n_{i\neq j}}\equiv G_{m,i}$ **énergie libre molaire partielle**  
+	- **potentiel pur** : $\mu^i=\mu^{i^o}+RT\ln\frac{p}{p^o}= G^A_{m}$ **énergie libre molaire**  
+  
+- tout $A$ migre vers l'endroit ou $\mu_{i}$ est le plus faible  
+  
+  
+  
+- système a composantes multiples $dG=-SdT+Vdp+\sum \mu_{i}dn_{i}$  
 # Enthalpie libre standard et affinité chimique  
   
 ## Enthalpie libre standard  
-$Q^o_{r}=\Delta_{r}H^o=\sum_{P}\chi_{P} H^{P^o}-\sum_{R}\chi_{R}H^{R^o}$  
-avec $\chi_{A}$ le coefficient stœchiométrique de $A$  
-enthalpie libre de Gibbs standard de formation avec $G^{A^o}=H^{A^o}-TS^{A^o}$ :   
-$\Delta_{f}G^o=\sum_{P}\chi_{P} G^{P^o}-\sum_{R}\chi_{R}G^{R^o}$  
-enthalpie libre de Gibbs standard de réaction : $\Delta_{r}G^o=\Delta_{r}H^o-T\Delta_{r}S^o$  
-**Avancement d'une réaction** :  $d\xi=\frac{dn_{P}}{\chi_{P}}=-\frac{dn_{R}}{\chi_{R}}=[mol]$  
-## Affinité chimique $\mathcal{A}$  
-$\mathcal{A}=-\left( \frac{ \partial G }{ \partial \xi } \right)_{T,p}=\sum_{R}\chi_{R}\mu_{R}-\sum_{P}\chi_{P}\mu_{P}=-\Delta_{r}\mu$  
-$dG=Vdp+SdT-\mathcal{A}d\xi<0$  
-réaction à l'équilibre : $\mathcal{A}=0$  
+quotien réactionnel : $Q^o_{r}=\Delta_{r}H^o=\sum_{P}\chi_{P} H^{P^o}-\sum_{R}\chi_{R}H^{R^o}$  
+	avec $\chi_{A}$ le coefficient stœchiométrique de $A$  
+Energie libre standard de formation avec $G^{A^o}=H^{A^o}-TS^{A^o}$ :   
+	$\Delta_{f}G^o=\sum_{P}\chi_{P} G^{P^o}-\sum_{R}\chi_{R}G^{R^o}$  
   
-# Équilibre chimie entre [gaz parfait](gaz%20parfait.md)  
-loi de Dalton : $p_{i}=x_{i}p$  
-potentiels chimiques : $\mu_{i}=G^{i^o}_{m}+RT\ln \frac{p_{i}}{p^o}$  
-affinité chimique : $-\mathcal{A}=\Delta_{r}G^o+RT\left( \sum_{P}\chi_{P}\ln \frac{p_{P}}{p^o}- \sum_{R}\chi_{R}\ln \frac{p_{R}}{p^o} \right)$  
-## Quotient réactionnel  
-$Q_{p}=\frac{\prod_{P}\left( \frac{p_{P}}{p^o} \right)^{\chi_{P}}}{\prod_{R}\left( \frac{p_{R}}{p^o} \right)^{\chi_{R}}}$ (indice p : calculé depuis pressions partielles)  
-à l'équilibre : $Q_{p}=K_{p}$ → $\Delta_{r}G^o=-RT\ln(K_{p})$  
+  
+- **Entropie standard de réaction** $\Delta_{r}S^o:=\sum v_{i}S_{m}^{i^o}$  
+  
+- **Enthalpie standard de réaction** $\Delta_{r}H^o:=\sum v_{i}H_{m}^{i^o}$  
+  
+- **énergie libre standard de réaction** : $\Delta_{r}G^o=\Delta_{r}H^o-T\Delta_{r}S^o$  
+  
+- **Avancement d'une réaction** :  $d\xi=\frac{dn_{P}}{\chi_{P}}=-\frac{dn_{R}}{\chi_{R}}=[mol]$  
+  
+- **énergie libre de réaction** : $\Delta_{r}G=\sum v_{i}\mu_{i}$   
+	- $\Delta_{r}G<0$ évolution spontanée → $\Delta_{r}G=0$  
+  
+  
+- **Affinité chimique** : $\mathcal{A}:=-\Delta_{r}\mu=-\left( \frac{ \partial G }{ \partial \xi } \right)_{T,p}=\sum_{R}\chi_{R}\mu_{R}-\sum_{P}\chi_{P}\mu_{P}$  
+	- $dG=Vdp+SdT-\mathcal{A}d\xi<0$  
+	- réaction à l'équilibre : $\mathcal{A}=0$  
+  
+# Équilibre chimique entre [gaz parfait](gaz%20parfait.md)  
+  
+- loi de Dalton : $p_{i}=x_{i}p$  
+  
+- **fraction molaire** : $x_i:=\frac{n_{i}}{n}=\frac{p_{i}}{p}$  
+  
+- potentiels chimiques : $\mu_{i}=G^{i^o}_{m}+RT\ln \frac{p_{i}}{p^o}$  
+  
+- affinité chimique$-\mathcal{A}=\Delta_{r}G^\circ+RT\left( \sum_{P}\chi_{P}\ln \frac{p_{P}}{p^o}- \sum_{R}\chi_{R}\ln \frac{p_{R}}{p^o} \right)$  
+## Quotient réactionnel $Q=\frac{\prod_{P}\left( a_{P} \right)^{\chi_{P}}}{\prod_{R}\left( a_{R} \right)^{\chi_{R}}}$  
+  
+- à l'équilibre ⇒ $\Delta_{r}G^o=-RT\ln(K)$ avec  $Q_{eq}=K$  
 lien entre les constantes d'équilibres :   
 $K_{p}=K_{x}\left( \frac{p}{p^o} \right)^{\Delta\chi}=K_{n}\left( \frac{p}{p^o\sum n_{i}} \right)^{\Delta\chi}$ avec $\Delta\chi=\sum_{P}\chi_{P}-\sum_{R}\chi_{R}$  
-### Évolution avec la température  
-équation de van't Hoff : $\frac{d(\ln K_{p})}{dT}=\frac{\Delta_{r}H^o}{RT^{2}}$  
   
+- *équation de van't Hoff* : $\frac{d(\ln K_{p})}{dT}=\frac{\Delta_{r}H^o}{RT^{2}}$  
+	- ⇒ $\ln K_{p,T_{2}}-\ln K_{p, T_{1}}=\frac{\Delta_{r}H^\circ}{R}\left( \frac{1}{T_{2}}-\frac{1}{T_{1}} \right)$  
 # Équilibre chimique en solution liquide  
-Potentiel chimique : $\mu_{A}=\mu^{A^o}+RT\ln a_{A}$  
-avec $a_{A}$ l'activité de $A$ ( gaz parfait : $a_{A}=\frac{p_{A}}{p^o}$)  
-→ espèce en solution diluée $a_{A}=\frac{m_{A}}{m^o_{A}}$  
-**produit de solubilité** $K_{s}=\frac{[A^+]_{sat}[B^-]_{sat}}{[AB]}\approx[A^+]_{sat}[B^-]_{sat}$  
-**solubilité** $s$ : quantité dissoute $[mol/L]$  
-réaction : $A_{x}B_{y}(s)\to xA^{y+}+yB^{x-}$  
-$K_{S}=[A^{y+}]^x_{sat}[B^{x+}]^y_{sat}=(xs)^x(ys)^y$  → $s=^{x+y}\sqrt{\frac{K_{s}}{x^xy^y}  }$  
-précipitation (devient solide) $\iff Q_{s}>K_{s}$  
-## Effet ions communs  
-début : $[A]=c$  
-$K_{s}=[A^{y+}]^x_{sat}[B^{x+}]^y_{sat}=(xs+c)^x(ys)^y$  
-on considère $c \gg xs$ →$Ks\approx c^xy^ys^y$  
-## Effet du pH  
   
-# Réaction d'oxydo-réduction - rédox  
+- **activité** $a_{i}$ :   
+	- mélange idéal ⇒ $a_{i}=\frac{p_{i}}{p^o}$  
+	- $a_{i}=\gamma_{i}x_{i}$ avec  $\gamma_{i}<1$ ⇒stable   
+	- espèce en solution diluée $a_{A}=\frac{m_{A}}{m^o_{A}}$  
+  
+- Potentiel chimique :  $\mu_{A}=\mu^{A^\circ}+RT\ln a_{i}$  
+  
+- $\Delta_{r}G=\Delta_{r}G^o +RT\ln Q$  
+## Dissolution  
+  
+- **produit de solubilité** $K_{s}=\frac{[A^+]_{sat}[B^-]_{sat}}{[AB]}\approx[A^+]_{sat}[B^-]_{sat}$  
+  
+- **solubilité** $s$ : quantité dissoute $[mol/L]$  
+  
+- $K_{S}=[A^{y+}]^x_{sat}[B^{x+}]^y_{sat}=(xs)^x(ys)^y$  → $s=^{x+y}\sqrt{\frac{K_{s}}{x^xy^y}  }$  
+	- avec réaction : $A_{x}B_{y}(s)\to xA^{y+}+yB^{x-}$  
+  
+- précipitation (devient solide) $\iff Q_{s}>K_{s}$  
+  
+- Effet *ions communs* : début : $[A]=c$ ⇒ $K_{s}=(xs+c)^x(ys)^y$  
+	- on considère $c \gg xs$ ⇒$Ks\approx c^xy^ys^y$  
+  
+- *Effet du pH* : $s=\sqrt{ K_{s}(1+K_{b}[H_{3}O^+])}$   
+# Équilibre électrochimique  
+## Réaction électrochimique : oxydo-réduction - rédox  
 **degré d'oxydation**  :   
   
-- $0$ : élément pu  
+- $0$ : élément pur  
   
 - charge de l'ion monomatomique  
   
@@ -99,12 +136,55 @@ on considère $c \gg xs$ →$Ks\approx c^xy^ys^y$
 - $-1$ hydrogène lia à un métal  
   
 - $-2$ oxygène (sauf les peroxydes →$-1$)  
-oxydation : perte d’électrons, degré augmente  
-réduction : gain d'électrons,  degré diminue  
-oxydant    : accepte des électrons, se réduit  
-réducteur : donne des électrons,  s'oxyde  
+![Pasted image 20240103161952.png](Pasted%20image%2020240103161952.png)  
   
-# Piles électrochimiques  
-oxydation : anode  
-réduction : cathode  
-fourni de l'énergie : dessine anode - cathode  
+- oxydation : $B = B_{(aq)}^+ + e^−$ : anode, perte d’électrons, degré augmente  
+  
+- réduction : $A_{(aq)} + e^− = A^−$ : cathode, gain d'électrons,  degré diminue  
+  
+- oxydant    : accepte des électrons, se réduit  
+  
+- réducteur : donne des électrons,  s'oxyde  
+  
+- $z$ nombre d'électrons échangés  
+Compléter demi réaction :   
+	![Pasted image 20240103162057.png](Pasted%20image%2020240103162057.png)  
+## Cellule électrochimiques (pile)  
+  
+- oxydation : anode, réduction : cathode  
+  
+- circulation electrons dans circuits extérieurs  
+  
+- fourni de l'énergie : dessine anode - cathode  
+réaction acide/base, précipitation : pas applicable  
+  
+  
+  
+- $zFE=-\left( \frac{ \partial G }{ \partial \xi } \right)_{T,p}$  
+	- avec $F=eN_{A}=96\,485\,C /mol$  
+  
+- *potentiel standard* de la cellule: $E^o=-\frac{\Delta_{r}G^o}{zF}$   
+  
+- $E = E^o-\frac{RT}{zF}\ln(Q_{a})$  
+	- équilibre : $E=0$ et $Q_{a}=K_{a}$   
+  
+## Équilibre électrochimique  
+$F$ constante de Faraday, $\phi$ potentiel électrique et $\Delta \phi=\phi_{droite}-\phi_{gauche}$  
+  
+- **équilibre électrochimique** : $\Delta_{r}G_{T,p,\phi}^*:=\sum v_{i}\mu^*_{i}=0$  
+	- $G^*:=G+zF\phi$ et $\mu^*_{i} :=\mu_{i}+z_{i}F\phi_{i}$  
+  
+- équilibre électrochimique : pas de courant :![Pasted image 20240103163649.png](Pasted%20image%2020240103163649.png)  
+  
+- *1ere loi de Nernst* : $\Delta \phi_{eq}=-\frac{\Delta_{r}G}{zF}$  
+  
+- *2ere loi de Nernst* : $\Delta \phi_{eq}=\Delta \phi_{eq}^o +\frac{RT}{zF} \ln\left( \frac{a_{ox}^{v_{ox}}}{a_{r ed}^{v_{re d}}} \right)$  
+	- pour métal M : $E_{eq} = E^o_{eq} + \frac{RT}{zF}\ln a_{M^z}+zF$  
+  
+- Tableau Nernst et échelle rédox :   
+	- $M^{z+}_{aq}+ze^-=M(s)$ (écrit dans le sens de réduction)  
+# Équilibres entre phases  
+  
+- phase : région : grandeurs intensive → f continues  
+  
+- équilibre : 1 phase à la fois  
