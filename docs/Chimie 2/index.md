@@ -11,6 +11,7 @@ voir synthese github (pas schoenauen)
 [interro S7 phy chi ll](interro%20S7%20phy%20chi%20ll.md)  
   
 [LABO](LABO.md)  
+[notations chimie](notations%20chimie.md)  
   
 # Partie 1 : [gaz parfait](gaz%20parfait.md)  
 ## [cinétique des gaz](cin%C3%A9tique%20des%20gaz.md)  
@@ -32,7 +33,7 @@ voir synthese github (pas schoenauen)
   
 - [ ] APE 3  
   
-- [ ] APE 4  
+- [x] APE 4 ✅ 2024-01-03  
   
 - [ ] APE 5  
 ## Proost  
