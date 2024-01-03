@@ -18,7 +18,6 @@ voir synthese github (pas schoenauen)
 # Partie 2 : [Thermodynamique](Thermodynamique.md)  
 ## [cylcles thermodynamiques](cylcles%20thermodynamiques.md)  
   
-  
 # [Equilibres Chimiques](Equilibres%20Chimiques.md)  
   
 # [Cinétique chimique](Cin%C3%A9tique%20chimique.md)  

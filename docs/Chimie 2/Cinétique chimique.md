@@ -27,7 +27,7 @@ soit la réaction : $aA+bB\to mM+nN$
 	- $r=k[A]=-\frac{d[A]}{dt}$ ⇒ EDO exponentielle  
   
 - ordre 2 : réaction bimoléculaire $k=[L /mol\cdot s]$  
-	- $r=k[A]^{2}=-\frac{1}{2} \frac{d[A]}{dt}$ ⇒ EDO inverse  
+	- $r=k[A]^{2}=-\frac{1}{2} \frac{d[A]}{dt}$ ⇒ EDO inverse : $[A]=\frac{[A]_{0}}{1+[A]_{0}kt}$  
   
 - pseudo ordre 0 : réactif >> pdv vitesse  
   
@@ -35,11 +35,9 @@ soit la réaction : $aA+bB\to mM+nN$
   
   
   
-- *Loi d'Arrhérius* $k=Ae^{-E_{a}/RT}$ avec $E_{a}$ l'énergie d'activation  
-  
-- Théorie des collisions (phase gazeuse) :    
-	- réaction a lieu si molécules ont E cinétique suffisante  
-	- Collision élastique sinon  
+- Théorie des *collisions* (phase gazeuse) :    
+	- réaction si $E_{cin}>E_{A}$ (l'énergie d'activation par mol barrière)  
+	- *Loi d'Arrhénius* : $k=Ae^{-E_{a}/RT}$  (Collision élastique sinon)  
   
 - Théorie du *complexe activé* :  
 	- Collision ⇒ déforme molécules ⇒ Energie cinétique → Energie potentielle    
