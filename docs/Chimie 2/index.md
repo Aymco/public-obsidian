@@ -13,11 +13,11 @@ voir synthese github (pas schoenauen)
 [LABO](LABO.md)  
 [notations chimie](notations%20chimie.md)  
   
-# Partie 1 : [gaz parfait](gaz%20parfait.md)  
-## [cinétique des gaz](cin%C3%A9tique%20des%20gaz.md)  
-  
+# [cinétique des gaz](cin%C3%A9tique%20des%20gaz.md)  
+[gaz parfait](gaz%20parfait.md)  
 # Partie 2 : [Thermodynamique](Thermodynamique.md)  
 ## [cylcles thermodynamiques](cylcles%20thermodynamiques.md)  
+  
   
 # [Equilibres Chimiques](Equilibres%20Chimiques.md)  
   

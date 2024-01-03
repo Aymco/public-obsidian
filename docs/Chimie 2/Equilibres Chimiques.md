@@ -4,7 +4,7 @@ category: Chimie 2
 tags:  
   - matière  
 created: 2023-11-20  
-updated: 2024-01-02  
+updated: 2024-01-03  
 ---  
   
 [Thermodynamique](Thermodynamique.md) → controle la composition  
@@ -48,8 +48,7 @@ avec $\chi_{A}$ le coefficient stœchiométrique de $A$
 enthalpie libre de Gibbs standard de formation avec $G^{A^o}=H^{A^o}-TS^{A^o}$ :   
 $\Delta_{f}G^o=\sum_{P}\chi_{P} G^{P^o}-\sum_{R}\chi_{R}G^{R^o}$  
 enthalpie libre de Gibbs standard de réaction : $\Delta_{r}G^o=\Delta_{r}H^o-T\Delta_{r}S^o$  
-## Avancement d'une réaction  
-$d\xi=\frac{dn_{P}}{\chi_{P}}=-\frac{dn_{R}}{\chi_{R}}=[mol]$  
+**Avancement d'une réaction** :  $d\xi=\frac{dn_{P}}{\chi_{P}}=-\frac{dn_{R}}{\chi_{R}}=[mol]$  
 ## Affinité chimique $\mathcal{A}$  
 $\mathcal{A}=-\left( \frac{ \partial G }{ \partial \xi } \right)_{T,p}=\sum_{R}\chi_{R}\mu_{R}-\sum_{P}\chi_{P}\mu_{P}=-\Delta_{r}\mu$  
 $dG=Vdp+SdT-\mathcal{A}d\xi<0$  
