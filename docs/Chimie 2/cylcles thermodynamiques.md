@@ -29,7 +29,7 @@ Cycle *moteur* : $\oint dw>0$
 cycle *récepteur* : $\oint dw <0$  
 **Rendement** : $\eta=\frac{{Q_{fourni}-Q_{\mathrm{Re}jeté}}}{Q_{fourni}}$  
 **Coefficient de performance** : $COP_{froid/chaud}=|\frac{q_{f/c}}{w_{m,t}}|$  
-## Cycle de carnot  
+## Cycle de Carnot  
 1. Compression isotherme  
 2. Compression adiabatique  
 3. détente isotherme  
@@ -49,4 +49,4 @@ Pompe à chaleur → $COP=\frac{1}{1-\frac{T_{1}}{T_{2}}}$
 - (p/V) ⇒travail : surface $w_{T}=-\oint pdv$ (anti-horloger ⇒$W\to Q$)  
   
 - (T/S) ⇒chaleur totale perçue $q_{t}=\oint Tds$  
-*Aires équivalentes* : $0=q+w$ car cycle
+*Aires équivalentes* : $0=q+w$ car cycle  
