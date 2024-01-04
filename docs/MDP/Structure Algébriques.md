@@ -14,6 +14,7 @@ updated: 2024-01-04
 Exemples : $(\mathbb{R}, x)$, (C, t, x) $(S(A), 0)$   → permuter une liste,  $(P(A), )$    : ensemble des parties de A  
   
 - *Sous structure algébrique* $(B,*)$ : $\forall a,b \in B, a*b\in B$  
+test  
 # Monoïde  
 1. Structure algébrique  
 2. *associativité* : $a*(b*c) = (a*b)*c$  
