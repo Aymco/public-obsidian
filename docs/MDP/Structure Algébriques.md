@@ -93,7 +93,7 @@ Protocole de Diffie-Hellman :
 1. clé privée $x,y$  
 2. on envoie $g^x$  
 3. peut calculer $g^{x+y}$   
-attaque : man in the middle  
+attaque man in the middle  
 ### Stockage de données : Solomon-Reed  
 Anneau polynomial : $A[X]$ : $\forall a \in A,  \sum a_{i}X^i=p(X) \in A[X]$  
 $F_{n}$ anneau sous-jacent, $q$ taille alphabet, $k$ nb de mot, $n$ nb de mot enregistrés  
