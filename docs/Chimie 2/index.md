@@ -37,7 +37,7 @@ voir synthese github (pas schoenauen)
 - [ ] APE 5  
 ## Proost  
   
-- [ ] APE 1 Cinétique  
+- [x] APE 1 Cinétique ✅ 2024-01-03  
   
 - [ ] APE 2 Cinétique  
   

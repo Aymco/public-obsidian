@@ -4,7 +4,7 @@ category: Physique 3
 tags:  
   - matière  
 created: 2023-12-22  
-updated: 2024-01-02  
+updated: 2024-01-03  
 ---  
   
   
@@ -12,9 +12,10 @@ updated: 2024-01-02
   
 - réflection multiples en phase  
   
-# Solution générale : $\phi(x,t)=(A\sin(kx)+B\cos(kx))(C\sin(\omega t)+D\cos(\omega t))$  
-([méthode de la séparation des variables](m%C3%A9thode%20de%20la%20s%C3%A9paration%20des%20variables.md))  
-**pulsation de l'onde** :  $\omega=kv=2\pi f$   
+  
+- *Solution générale* : ([méthode de la séparation des variables](m%C3%A9thode%20de%20la%20s%C3%A9paration%20des%20variables.md)) $\phi(x,t)=(A\sin(kx)+B\cos(kx))(C\sin(\omega t)+D\cos(\omega t))$  
+  
+- **pulsation de l'onde** :  $\omega=kv=2\pi f$   
 # Mode propre $m$  
 ($m$ ventres d'ondes, $m+1$ noeuds)  
 *Résonance* : excitation d'un mode propre par une onde externe de meme fréquence  
