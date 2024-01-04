@@ -8,7 +8,7 @@ updated: 2024-01-04
 [Combinatoires - dénombrements](Combinatoires%20-%20d%C3%A9nombrements.md)  
 # Espaces probabilisés  
   
-- définition   
+- définition  
 	1. *Univers* $\Omega$  
 	2. *Tribu* $A \{ \Omega \}$  
 		- $\bar{a}=\frac{\Omega}{A} \in A$  
@@ -63,7 +63,6 @@ updated: 2024-01-04
 	- $\mathbb{E}(X)=\sigma^{2}=\mu$  
   
 - *Loi Normale* $f(x)=\frac{1}{\sigma \sqrt{ 2\pi }}e^{-(x-\mu)^{2}/2\sigma}=N(\mu,\sigma)$ (loi de Gauss)  
-	- $P(X > σ) = 0.32$, $P(X > 2σ) = 0.046$, $P(X > 3σ) = 0.0027$  
 	- *Théorème central limite* : $\forall Z_{n}=\sum_{i=0}^{n}X_{i}$  
 		- $\lim_{ n \to \infty } P(Z_{n}=z)=f(z)$  
 # Probabilités conditionnelles  
