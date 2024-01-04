@@ -50,6 +50,8 @@ Exemple : $(A^A, \circ)$ l'ensemble des fonction de $A\to A$ et $\circ$ l'opéra
 - loi : puissance : $a^n=\underbrace{ a*a*\dots }_{ n }$ ⇒ $<g> =\{ g, g^2, g^3, \dots \}$  
   
 - Structure algébrique  
+## Groupes Quotient  
+todo  
 # Classe latérale (CL) ( coset) de $a$ modulo $H$  
 1. $a\in G,   aH = \{ax|x \in H\}$  
   
