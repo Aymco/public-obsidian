@@ -62,7 +62,8 @@ updated: 2024-01-04
 - *Loi de Poisson* $f(x)=\frac{\mu^x}{x!}e^{-\mu}$ $\approx$ loi Binomiale $n\gg 0,p\ll 0$   
 	- $\mathbb{E}(X)=\sigma^{2}=\mu$  
   
-- *Loi Normale* $f(x)=\frac{1}{\sigma \sqrt{ 2\pi }}e^{-(x-\mu)^{2}/2\sigma}=N(\mu,\sigma)$ [loi normale - loi de Gauss](loi%20normale%20-%20loi%20de%20Gauss.md)  
+- *Loi Normale* $f(x)=\frac{1}{\sigma \sqrt{ 2\pi }}e^{-(x-\mu)^{2}/2\sigma}=N(\mu,\sigma)$ (loi de Gauss)  
+	- $P(X > σ) = 0.32$, $P(X > 2σ) = 0.046$, $P(X > 3σ) = 0.0027$  
 	- *Théorème central limite* : $\forall Z_{n}=\sum_{i=0}^{n}X_{i}$  
 		- $\lim_{ n \to \infty } P(Z_{n}=z)=f(z)$  
 # Probabilités conditionnelles  
