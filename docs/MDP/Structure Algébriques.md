@@ -11,68 +11,62 @@ updated: 2024-01-04
 1. $A$ : un ensemble  
 2. $*$ : un opérateur stable     $A*A\to A$  
 	- *opérateur stable* : produit de 2 termes dans $A$ est dans $A$  
-Exemples : $(\mathbb{R}, x)$, (C, t, x) $(S(A), 0)$   → permuter une liste,  $(P(A), )$    : ensemble des parties de A  
+	- *Table de Cayley* : représentation matricielle de $*$ entre chaque el  
   
-- *Sous structure algébrique* $(B,*)$ : $\forall a,b \in B, a*b\in B$  
-test  
+- *Sous structure algébrique* $(B,*)$  $B \subseteq A$ :  $b_{1}*b_{2}, 1_{A}\in B$  
+  
+- *Inverse* (*unique*) $a$ inverse de $b$ si $a*b=e$  
 # Monoïde  
 1. Structure algébrique  
 2. *associativité* : $a*(b*c) = (a*b)*c$  
-3. *neutre* $\exists e: e \in A; \forall a \in A : e*a=a*e=a$  
-Exemple : $(A^A, \circ)$ l'ensemble des fonction de $A\to A$ et $\circ$ l'opérateur composition  
+3. *neutre* (*unique*) $\exists e: e \in A; \forall a \in A : e*a=a*e=a$  
   
-- Théorème 1 : *neutre unique* $\exists ! e \in A, \forall a \in A : e*a=a*e=a$  
-# Sous monoïde $B$  
   
-- Définition :   
-	1. $\forall a,b \in \mathbb{R}, a*b \in \mathbb{R}$  
-	2. neutre $1_A \in B, e_A \in B$  
+- *Sous monoïde* $B$ : $\forall a,b \in \mathbb{R}, a*b \in \mathbb{R}$ 2. neutre $1_A \in B, e_A \in B$  
   
 - Théorème : *isomorphisme* $(A,*)$ est isomorphe a un sous monoïde de $(A^A, \circ)$  
   
-- définition : *Inverse* : $a$ inverse de $b$ si $a*b=b*a=e$  
-	- Théorème : *inverse unique* : si $\exists a, b \in A, a*b=e$, alors $a$ est unique  
 # Groupe $(G,*)$  
-1. definition : Monoïde, tous ses éléments *possèdent un inverse*  
+1. definition : Monoïde,  tous ses éléments *possèdent un inverse*  
   
 - $a,b,c \in G \Rightarrow  a*c=b*c \Rightarrow a=b$  
   
 - $ab=e \iff a^{-1}=b\iff b^{-1}=a$  
   
-- $G$ **commutatif** / **Abélien** : $a*b=b*a$  
-## Sous groupe $H$  
-1. $\forall x,y \in H, x*y \in H$  
-2. $1_G \in H$  
-3. $\forall x \in H, x^{-1} \in H$  
-## Groupes cycliques  
-1. sous-groupe engendré  
+- $G$ **commutatif** (Abélien) : $a*b=b*a$  
   
-- loi : puissance : $a^n=\underbrace{ a*a*\dots }_{ n }$ ⇒ $<g> =\{ g, g^2, g^3, \dots \}$  
+- **Sous groupe** $H$ : sous structure, $\forall x \in H, x^{-1} \in H$  
+	- $Z_{n}=0,1,\dots, n-1$ addition modulo : isomorphe à $Z/nZ$    
+	- sous groupe fini $H$ : sous ensemble fini, non-vide et stable   
   
-- Structure algébrique  
-## Groupes Quotient  
-todo  
-# Classe latérale (CL) ( coset) de $a$ modulo $H$  
-1. $a\in G,   aH = \{ax|x \in H\}$  
-  
-- $1H, 2H, ..$ : ensembles  (*! groupe* : pas de neutre)  
+- *théorème de Lagrange* $G$ fini, $H$ sous groupe ⇒ $|H|=m$ divise $|G|=n$  
+## Classe latérale (coset)  
+1. de $a\in G$ modulo $H$ : $aH = \{ax|x \in H\}$ ensembles  (*! groupe*)  
   
 - nombre limité de classe latérales : $6H = H$  
   
+- (*Somme* : $x \in bH, x \in aH <=> b^{-1}*a  \in H$ → $1H + 2H = 3H$)  
   
-- *Somme* : $x \in bH, x \in aH <=> b^{-1}*a  \in H$  
-	- $1H + 2H = 3H$  
+- partition de $G$ : ensemble des CL distinctes : $1H+2H+\dots=G$  
   
-- $1H+2H+\dots=G$  
+- Théorème *bijection* $f:H\to aH$  avec $f(x)=ax$: $[a]=aH$→ mm nb d'éléments  
   
-- Théorème *bijection* entre $H$ et $aH$ → mm nb d'éléments  
+- **Groupes Quotient** $G /H$ : classes latérales de G mod H : $[a][b]=[ab]$  
+## Groupes cycliques  
+  
+- soit $G$ fini et $g\in G$, sous groupe $\langle g \rangle =\{ g, g^2, g^3, \dots \}$  
+  
+- $G$ cyclique : $\exists g:\langle g \rangle=G$ (ordre $n$) ($\exists m:g^m=\epsilon$)  
+	- ⇒unique sous groupe $H$ ordre $m$ divisant $n$  
+  
+- *théorème d'Euler-Fermat* : $G$ ordre fini ⇒ $g^n=\epsilon$  
 # Anneaux $(A, +, *)$  
-1. $(A,+)$ est commutatif (neutre : $0_{A}$)  
+1. $(A,+)$ groupe commutatif (neutre : $0_{A}$)  
 2. $(A,**)$ un Monoïde (neutre : $1_{A}$)  
 3. $*$ se distribue sur $+$ à droite et a gauche :  
-	- droite  $x*(y+z)=x*y+x*z$  
-	- gauche $(y+z)*x=y*x+z*x$  
-4. si $*$ est *commutatif* → Anneau commutatif  
+  
+  
+- si $*$ est *commutatif* → Anneau commutatif  
   
 - $0_{A}$ est *absorbant*: $a*0_{A}=0_{A}$  
   
@@ -80,24 +74,25 @@ todo
   
 - *incompatibilité anneau-groupe*:  
 	- si $a*0_{A}=0_{A}$ alors  $a*0_{A}=1_{A}$ est impossible  
-## Corps  
   
-- $(A\setminus \{0_{A}  \})$ est un groupe  
+- *Corps* : Anneau : $(A\setminus \{0_{A}  \})$ est groupe (commutatif comme le groupe)  
+	- $\mathbb{Z}_{n}$ avec nb premier → corps $(Z_{n}, +\,mod, *\,mod)$  
   
-- corps premiers : $(Z_{n}, +\mod, *\mod)$  
 # Applications  
-### Encodage  
-groupe $(Z_{n}, \cdot \mod p)$ avec $p$ un nombre premier car ($a*b\neq 0$)  
   
-→ groupe $<g>$ : facile a calculer $g^x$ mais $\log g^x$ compliqué  
-→ $g^x*g^y=g^{x+y}$  
+- *Logarithme discret* $x=\log_{g}(h)$ avec $g,h\in G$ et $g^x=h$  
+	- dans $\mathbb{Z}_{p}^*$ → complexe  
   
-Protocole de Diffie-Hellman :  
-1. clé privée $x,y$  
-2. on envoie $g^x$  
-3. peut calculer $g^{x+y}$   
-attaque man in the middle  
+- *Protocole de Diffie-Hellman* :  
+	- groupe $(Z_{n}, \cdot \mod p)$ avec $p$ un nombre premier car ($a*b\neq 0$)  
+	1. clé privée $x,y$  
+	2. échange $g^x, g^y$  
+	3. peut calculer $g^{x+y}=(g^x)^y$   
+  
 ### Stockage de données : Solomon-Reed  
-Anneau polynomial : $A[X]$ : $\forall a \in A,  \sum a_{i}X^i=p(X) \in A[X]$  
-$F_{n}$ anneau sous-jacent, $q$ taille alphabet, $k$ nb de mot, $n$ nb de mot enregistrés  
-$code :(F_{q})^k\to(F_{q})^n$  
+  
+- Anneau polynomial : $A[X]$ : $\forall a \in A,  \sum a_{i}X^i=p(X) \in A[X]$  
+  
+- $F_{n}$ anneau sous-jacent, $q$ taille alphabet, $k$ nb de mot, $n$ nb de mot enregistrés  
+  
+- $code :(F_{q})^k\to(F_{q})^n$ (voir devoir)  
