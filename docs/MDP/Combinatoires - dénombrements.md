@@ -29,8 +29,8 @@ $Bij(n\to n) =P_{n}= n!$
   
 ## Arrangement,. Assignations $A^p_{n}$  
 ! répetitoin, ordre  
-$Inj(p\to n)$  
   
+$Inj(p\to n)$  
 ## Liste  
 ordre, repetition  
 $Fct(n\to p)=B^p_{n}=n^p$  

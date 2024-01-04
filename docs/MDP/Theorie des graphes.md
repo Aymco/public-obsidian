@@ -2,7 +2,7 @@
 share: true  
 category: MDP  
 created: 2023-09-20  
-updated: 2024-01-03  
+updated: 2024-01-04  
 ---  
   
 [MDP](MDP.md)  
@@ -39,12 +39,11 @@ $G(N,R)$ :  ($N$ Noeuds, $R$ aretes, $I$ relation Incidence)
 Piste Eulérienne <=> max 2 noeuds de degré impair  
 ## Algorithmes  
   
-[Algo Dijkstra](Algo%20Dijkstra.md)  
+- [Algo Dijkstra](Algo%20Dijkstra.md)  
   
-[Bellman-Ford](Bellman-Ford.md) : fonctionne avec des poids négatifs  
+- [Bellman-Ford](Bellman-Ford.md) : fonctionne avec des poids négatifs  
   
-[Algo Kruskal](Algo%20Kruskal.md)  
-  
+- [Algo Kruskal](Algo%20Kruskal.md)  
 # Structures Algébriques  
 ![Structure algébrique > Définition structure algébrique $(A,*)$](Structure%20alg%C3%A9brique.md#definition-structure-algebrique-dollaradollar)  
   
