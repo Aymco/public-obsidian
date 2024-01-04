@@ -7,39 +7,48 @@ updated: 2024-01-04
   
 [MDP](MDP.md)  
 # Graphes  
-$G(N,R)$ :  ($N$ Noeuds, $R$ aretes, $I$ relation Incidence)  
+$G(N,R)$ :  triple($N$ Noeuds, $R$ aretes, $I$ relation Incidence $N-R$)  
   
-- **ordre** : nombre de $N$  
+- **ordre** $|N|$ : nombre de $N$  
   
-- **degré** d'un noeud : nombre d’arêtes   
+- boucle : arête d'un noeud sur lui même  
   
-- **Parcours** de longueur k (nombre d arêtes ).  (ouvert / fermé)  
+- **degré** de $N$ : nombre d’arêtes   
   
-- **Cycle** : 1er = dernier $N$  
+- **Parcours** suite alternée de $N$ et $R$ : $P:=(i_{0}, \alpha_{1},i_{1} \dots)$  
+	- de longueur $k$ (ouvert / fermé)  
   
-- **Piste** : parcours avec tt elements distincts  
-	- **Eulérienne** : passe par tous les $R$  
-	- **Hamiltonien** : passe par tous $N$  
+- **Cycle** : $N\neq$  sauf $i_{0}=i_{k}$  
+  
+- **Piste** : parcours avec $R\neq$  
+	- **Circuit** : Piste fermée  
+  
+- **Eulérienne** : passe par tous les $R$  
+  
+- **Hamiltonien** : passe par tous $N$  
   
 ## Types de graphes:  
   
-- graphe **simple** : !liaisons doubles, !boucles  
+- graphe **simple** : ! liaisons doubles, ! boucles  
   
-- graphe **connexe** : tous relié  
+- graphe **connexe** : tous $N$ relié  
   
-- **arbre** : connexe + !cycle  
+- **arbre** : connexe,  !cycle, $|R|=|N|-1$, 1 seul chemin pour$N$  
+	- arbre **sous-tangent** : graphe ou on à sélectionné des $R$ qui forment un arbre  
+	- [Algo Kruskal](Algo%20Kruskal.md)  
   
-- arbre **sous-tangent** : graphe ou on à sélectionné des $R$ qui forment un arbre  
+- graphe **orienté** (pondéré)  
   
-- graphe **orienté**  
+- graphe **isomorphe** : $G(N,R),G'(N',R')$ isomorphes : bijection $N\to N'$  
   
-- graphe **isomorphe** : $G_{1} \to G_{2}$  
-### Théorème d'Euler  
-Piste Eulérienne <=> max 2 noeuds de degré impair  
-## Algorithmes  
+- *Théorème d'Euler* : Piste Eulérienne <=> max 2 noeuds de degré impair (connexe)  
+  
   
 - [Algo Dijkstra](Algo%20Dijkstra.md)  
   
 - [Bellman-Ford](Bellman-Ford.md) : fonctionne avec des poids négatifs  
   
-- [Algo Kruskal](Algo%20Kruskal.md)  
+  
+- représentation *matricielle* :   
+	- matrice d'adjacence : $A=(N,S)$ : $|N|\times |N|$  
+	  
