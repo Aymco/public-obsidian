@@ -4,7 +4,7 @@ category: MDP
 tags:  
   - matière  
 created: 2023-12-19  
-updated: 2024-01-03  
+updated: 2024-01-04  
 ---  
   
 # Résumé combinatoires  
@@ -13,6 +13,7 @@ updated: 2024-01-03
 | tout      | $Q^{a,b}_{n}=\frac{n!}{a!b!}$ | $P_{n}=n!$        |  
 | ordre     | $B^p_{n}=n^p$     | $A^p_{n}=\frac{n!}{(n-p)!}$      |  
 | ~~ordre~~ | $D^p_{n}=C^p_{n+p-1}$     | $C^p_{n} = {n \choose p}=\frac{n!}{k!(n-k)!}$      |   
+  
 # Développement  
 ## Combinaisons $C^p_{n}$  
 ~~repetition~~, ~~ordre~~  
