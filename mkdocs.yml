@@ -12,10 +12,13 @@ theme:
         text: Inter
     language: fr
     features:
-    - content.action.edit
-    - navigation.tabs
-    - navigation.indexes 
-    - navigation.instant
+        - content.action.edit
+        - navigation.tabs
+        - navigation.indexes 
+        - navigation.instant
+        - search.suggest
+        - search.highlight
+        - navigation.top
     #- navigation.instant.progress
     palette:
 
