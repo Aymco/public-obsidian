@@ -23,7 +23,7 @@ Exemple : $(A^A, \circ)$ l'ensemble des fonction de $A\to A$ et $\circ$ l'opéra
 - Théorème 1 : *neutre unique* $\exists ! e \in A, \forall a \in A : e*a=a*e=a$  
 # Sous monoïde $B$  
   
-- Définition :  
+- Définition :   
 	1. $\forall a,b \in \mathbb{R}, a*b \in \mathbb{R}$  
 	2. neutre $1_A \in B, e_A \in B$  
   
