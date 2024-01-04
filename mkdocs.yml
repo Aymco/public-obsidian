@@ -13,9 +13,9 @@ theme:
     #language: fr
     features:
     - content.action.edit
-    - content.action.view
     - navigation.tabs
-    #- navigation.instant
+    - navigation.indexes 
+    - navigation.instant
     #- navigation.instant.progress
     palette:
 
