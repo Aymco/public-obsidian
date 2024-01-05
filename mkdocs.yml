@@ -76,6 +76,8 @@ markdown_extensions:
 plugins:
   - search
   - roamlinks # for images
+  - include_dir_to_nav:
+      file_name_as_title: true
 
 extra_javascript:
   - javascripts/mathjax.js
