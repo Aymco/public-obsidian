@@ -47,11 +47,11 @@ em {
     --md-accent-fg-color--transparent: hsla(35, 80%, 100%, 0.1);
     --md-accent-bg-color: hsla(0, 0%, 100%, 1);
   }
-[data-md-color-scheme="slate"]  {
+[data-md-color-scheme="default"]  {
 	
     --italic-color: #247580;
     --text-highlight-bg: #003761; 
-	--latex-color: #803911;
+    --latex-color: #803911;
   }
   
   :root > * {
