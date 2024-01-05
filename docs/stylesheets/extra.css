@@ -50,8 +50,8 @@ em {
 [data-md-color-scheme="default"]  {
 	
     --italic-color: #247580;
-    --text-highlight-bg: #007fe0; 
-    --latex-color: #993d08;
+    --text-highlight-bg: #52a9eb;
+    --latex-color: #991f00;
   }
   
   :root > * {
