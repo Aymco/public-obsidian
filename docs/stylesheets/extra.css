@@ -26,7 +26,7 @@ em {
     color: var(--italic-color);
 }
 
-:root {
+[data-md-color-scheme="ayu"]  {
 
     /* Primary color shades */
     --md-primary-fg-color: #F5A83D;
