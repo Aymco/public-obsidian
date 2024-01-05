@@ -29,7 +29,7 @@ theme:
 
     # Light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: ayu
+      scheme: default
       #primary: amber
       #accent: deep orange
       toggle:
@@ -38,7 +38,7 @@ theme:
 
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+      scheme: ayu
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
