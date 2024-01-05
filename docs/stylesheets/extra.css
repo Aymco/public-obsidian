@@ -26,7 +26,7 @@ em {
 	
     --italic-color: rgb(72, 234, 255);
     --text-highlight-bg: rgb(0, 85, 149); 
-	--latex-color: #f06c1f;
+    --latex-color: #f06c1f;
 	
     /* Primary color shades */
     --md-primary-fg-color: #F5A83D;
@@ -50,8 +50,8 @@ em {
 [data-md-color-scheme="default"]  {
 	
     --italic-color: #247580;
-    --text-highlight-bg: #003761; 
-    --latex-color: #803911;
+    --text-highlight-bg: #007fe0; 
+    --latex-color: #993d08;
   }
   
   :root > * {
