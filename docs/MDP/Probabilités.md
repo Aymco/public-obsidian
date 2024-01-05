@@ -25,7 +25,7 @@ updated: 2024-01-05
   
 - *Produit*  $=(\Omega_{1}\times\Omega_{2}, A_{1}\times A_{2}, P(A_{1})P(A_{2}))$  
   
-- espaces *indépendants* $A\perp\!\!\!\perp B$ ⇒ $P(A\cap B)=P(A)P(B)$  
+- espaces *indépendants* $A\perp\!\!\!\perp B \iff P(A\cap B)=P(A)P(B)$  
 # Variable aléatoire $X$  
   
 - $X:\Omega_{1}\to\Omega_{2}$  et inverse : $\forall A\in\Omega_{2}: X^{-1}(A)\in\Omega_{1}$  
