@@ -16,7 +16,6 @@ updated: 2024-01-05
 - Union : $P(A\cup B)=P(A)+P(B)-P(A\cap B)$  
   
   
-  
 - Probabilités *conditionnelles* : $P(A|B)=\frac{P(A\cap B)}{P(B)}$ A sachant(corrigé par)B  
 	- $A\perp\!\!\!\perp B\iff P(B|A)=P(B)\iff P(A|B)=P(A)$  
   
