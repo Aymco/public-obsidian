@@ -2,7 +2,8 @@
 share: true  
 category: Analyse 3  
 created: 2023-10-22  
-updated: 2024-01-05  
+updated: 2024-01-06  
+title: méthode des caractéristiques  
 ---  
   
 # Méthode des caractéristiques  
