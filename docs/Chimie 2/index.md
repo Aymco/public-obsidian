@@ -2,8 +2,9 @@
 share: true  
 category: Chimie 2  
 created: 2023-09-25  
-updated: 2024-01-03  
+updated: 2024-01-06  
 tags: []  
+title: Chimie 2  
 ---  
   
 voir synthese github (pas schoenauen)  
