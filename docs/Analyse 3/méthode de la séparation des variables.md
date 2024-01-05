@@ -1,11 +1,11 @@
 ---  
 created: 2023-12-03  
-updated: 2024-01-02  
+updated: 2024-01-05  
 share: "true"  
 category: Analyse 3  
 ---  
   
-# Application : [EDP > Equation de Laplace ${} nabla {2}u=0$ - Elliptique](EDP.md#equation-de-laplace-dollar-nabla-2u0dollar-elliptique) et Poisson  
+# Application : [EDP > Equation de Laplace](EDP.md#equation-de-laplace) et Poisson  
 ## Sur un pavé  
 **fonctions univariées** : $u(x,y)=X(x)\cdot Y(y)$  
 équation en 2 dimensions : $u_{xx}+u_{yy}=0  \implies \frac{X''}{X}+\frac{Y''}{Y}=0$   
@@ -35,29 +35,29 @@ $u(r,\theta)=R(r)\Theta(\theta)$ ⇒ $\frac{{r^{2}R''+rR'}}{R}=-\frac{\Theta''}{
 - *Théorème de la valeur moyenne* : valeur au centre d’un cercle compris dans le domaine $\Omega$ est égal à la moyenne sur le cercle  
   
 - *Théorème du maximum-minimum* : La valeur maximale (minimale) de $u$ est toujours atteinte sur la frontière du domaine  
-# Application : [EDP > Equation d'onde $c {2} nabla {2}u-u_{tt}=0$ - hyperbolique](EDP.md#equation-donde-dollarc-2-nabla-2u-utt0dollar-hyperbolique)  
+# Application : [EDP > Equation d'onde](EDP.md#equation-donde)  
 ## Sur un pavé (2 dimensions)  
 séparation des variables : $u(x,y,t)=\phi(x,y)T(t)$  
-équation de base : $c^{2}T\nabla^{2}\phi-T''\phi=0$  
-→ $\frac{\nabla^{2}\phi}{\phi}=\frac{T''}{c^{2}T}=\lambda$  
+équation de base : $c^{2}T\nabla^{2}\phi-T''\phi=0$ → $\frac{\nabla^{2}\phi}{\phi}=\frac{T''}{c^{2}T}=\lambda$  
 eq onde oscillent : $\lambda=-k^{2}$  
   
 - comme $\lambda<0$ : $T(t)=A\cos(kct)+B\sin(kct)$  
 	(fréquence  $f=\frac{kc}{2\pi}$)  
   
 - 2eme equation : $\nabla^{2} \phi+k^{2}\phi=0$ [Problème de Helmholtz](Probl%C3%A8me%20de%20Helmholtz.md)  
-### Recomposer $u$  
-$u_{mn}=\phi_{mn}T_{mn}$  
-$u(x,y,t)=\sum_{}^{m}\sum_{}^{n}u_{mn}$  
   
-### Determiner les coefficients  
+- Recomposer $u$ : $u_{mn}=\phi_{mn}T_{mn}$ → $u(x,y,t)=\sum_{}^{m}\sum_{}^{n}u_{mn}$  
+  
+- Determiner les coefficients  
 ## Sur un anneau  
 $u(r,\theta,t)=R(r,\theta)T(t)$  
   
 - pour $R$ :$z^{2}R''+zR' +(z^{2} -m^{2})R=0$ [Problème de Bessel](Probl%C3%A8me%20de%20Bessel.md)  
   
 - $T$: trivial  
-# Application : [EDP > Equation de diffusion ${} alpha nabla {2}u-u_{t}=0$ - Parabolique](EDP.md#equation-de-diffusion-dollar-alpha-nabla-2u-ut0dollar-parabolique)  
+# Application : équation de diffusion  
+  
+- [EDP > Equation de diffusion](EDP.md#equation-de-diffusion)  
 solution de régime et transitoire : $u=R+\Theta$  
 sol de régime :  
   

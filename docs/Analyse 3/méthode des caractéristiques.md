@@ -7,7 +7,7 @@ updated: 2024-01-05
   
 qtransformer [EDP](EDP.md) en [EDO](EDO.md)  
 condition initiale : $u(\Gamma(s))=f(s)$ (souvent $\Gamma(s)=(0,s)$)  
-# Premier ordre : [EDP > EDP premier ordre. $Pu_x+Qu_y=R$](EDP.md#edp-premier-ordre-dollarpuxquyrdollar)  
+# Premier ordre : [EDP > EDP premier ordre](EDP.md#edp-premier-ordre)  
 ## Verification du problème de Cauchy  
 dérivée directionnelle :$\frac{du}{ds}=u_{x} \frac{dx}{ds}+u_{y} \frac{dy}{ds}$  
 ## Trouver les courbes caractéristiques :  
@@ -20,14 +20,14 @@ $\begin{vmatrix}P &Q\\\frac{dx}{ds} & \frac{dy}{ds}\end{vmatrix}=0$ → $Pdy=Qdx
 **Relations caractéristiques** : (vérifiées le long de chaque caractéristique)  
 $Pdu=Rdx$ et $Qdu=Rdy$  
 pseudo équation :  $\frac{P}{dx}=\frac{Q}{dy}=\frac{R}{du}$  (pour retenir)  
-# EDP de transport : [EDP > EDP de transport $(cu)_{x}+u_{t}= 0$](EDP.md#edp-de-transport-dollarcuxut-0dollar)  
+# EDP de transport : [EDP > EDP de transport](EDP.md#edp-de-transport)  
 **Forme conservative** : $\iff\frac{d}{dt}\int_{a}^b u \,dx =0 \iff [cu]_{a}^b = 0$  
   
 - courbe caractéristique : $cdt=du$  
   
 - $d(cu)=0$ : $cu$ est cst le long des caractéristiques (c indépendant de t)  
 	- → $u(x,y)=\frac{c(s)}{c(x)}f(s)$  
-# Equation onde 1 dimension : [EDP > Equation d'onde $c {2} nabla {2}u-u_{tt}=0$ - hyperbolique](EDP.md#equation-donde-dollarc-2-nabla-2u-utt0dollar-hyperbolique)  
+# Equation onde 1 dimension : [EDP > Equation d'onde](EDP.md#equation-donde)  
 conditions initiales : $u(\Gamma(s))=f(s)$  et  $u_{n}(\Gamma(s))=g(s)$  
 avec $n$ la direction normale de $\Gamma$  
   
