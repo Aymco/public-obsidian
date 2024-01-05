@@ -4,7 +4,8 @@ category: MDP
 tags:  
   - matière  
 created: 2024-01-04  
-updated: 2024-01-04  
+updated: 2024-01-06  
+title: Structure Algébriques  
 ---  
   
 # Structures Algébriques $(A,*)$ ou $(A,T)$  
