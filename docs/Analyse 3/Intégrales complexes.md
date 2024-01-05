@@ -4,7 +4,8 @@ category: Analyse 3
 tags:  
   - matière  
 created: 2023-12-24  
-updated: 2024-01-05  
+updated: 2024-01-06  
+title: Intégrales complexes  
 ---  
   
 $\int _{\gamma}f(z) \, dz=\int_{a}^{b} f(\gamma(t))\gamma'(t) \, dt$  
