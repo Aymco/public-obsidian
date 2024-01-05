@@ -82,3 +82,22 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://unpkg.com/mermaid/dist/mermaid.min.js
+
+
+extra:
+  analytics:
+    provider: google
+    property: G-EWC8Z1Z0D2
+    feedback:
+      title: Cela était utile ?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: c'était utile, merci !
+          data: 1
+          note: >-
+            Merci pour le feedback !
+        - icon: material/emoticon-sad-outline
+          name: Cette page pourrait etre améliorée
+          data: 0
+          note: >- 
+            Merci pour le feedback ! Aide à améliorer cette page en laissant un commentaire sur le github.
