@@ -2,7 +2,7 @@
 share: "true"  
 category: Analyse 3  
 created: 2023-10-18  
-updated: 2024-01-02  
+updated: 2024-01-05  
 ---  
   
 [Opérateur différentiels](Op%C3%A9rateur%20diff%C3%A9rentiels.md)  
@@ -25,22 +25,31 @@ de **Dirichlet** : u               $u(x,0)=f(x)$
 de **Neumann** :  dérivée de u.   $u_y(x,0)=f(x)$  
 de **Robin** :  u et dérivée de u.  $l_{0}u_y(x,0)+u(x,0)=f(x)$  
 # Types d'EDP  
-## EDP premier ordre. $Pu_x+Qu_y=R$  
-P, Q, R : fonctions de x, y, u  
+## EDP premier ordre  
+  
+- $Pu_x+Qu_y=R$ avec $P, Q, R$ : fonctions de $x, y, u$  
 → [méthode des caractéristiques](m%C3%A9thode%20des%20caract%C3%A9ristiques.md)  
-### EDP de transport $(cu)_{x}+u_{t}= 0$  
-c, fonction de x  
-→ [méthode des caractéristiques > EDP de transport EDP EDP de transport $(cu)_{x}+u_{t}= 0$](m%C3%A9thode%20des%20caract%C3%A9ristiques.md#edp-de-transport-edp-edp-de-transport-dollarcuxut-0dollar)  
-## EDP seconde ordre $Au_{xx}+Bu_{xy}+Cu_{yy}=R$  
-A, B, C, R fonction de x,y,u   
+### EDP de transport  
+  
+- $(cu)_{x}+u_{t}= 0$ avec $c$, fonction de $x$  
+→ [méthode des caractéristiques > EDP de transport EDP EDP de transport](m%C3%A9thode%20des%20caract%C3%A9ristiques.md#edp-de-transport-edp-edp-de-transport)  
+## EDP seconde ordre  
+  
+- $Au_{xx}+Bu_{xy}+Cu_{yy}=R$ avec $A, B, C, R$ fonction de $x,y,u$   
 **Hyperbolique** $B^{2}-4AC>0$ → [méthode des caractéristiques](m%C3%A9thode%20des%20caract%C3%A9ristiques.md)  
 **Parabolique** $B^{2}-4AC=0$ → [méthode de la séparation des variables](m%C3%A9thode%20de%20la%20s%C3%A9paration%20des%20variables.md)  
 **Elliptique** $B^{2}-4AC<0$ → [méthode de la séparation des variables](m%C3%A9thode%20de%20la%20s%C3%A9paration%20des%20variables.md)  
-## Equation d'onde $c^{2}\nabla^{2}u-u_{tt}=0$ - hyperbolique  
+## Equation d'onde  
+  
+- $c^{2}\nabla^{2}u-u_{tt}=0$ - hyperbolique  
 → [méthode des caractéristiques](m%C3%A9thode%20des%20caract%C3%A9ristiques.md)  
-## Equation de Laplace ${}\nabla^{2}u=0$ - Elliptique  
+## Equation de Laplace  
+  
+- ${}\nabla^{2}u=0$ - Elliptique  
 → [méthode de la séparation des variables](m%C3%A9thode%20de%20la%20s%C3%A9paration%20des%20variables.md)  
-## Equation de diffusion ${}\alpha \nabla^{2}u-u_{t}=0$ - Parabolique  
+## Equation de diffusion  
+  
+- ${}\alpha \nabla^{2}u-u_{t}=0$ - Parabolique  
 → [méthode de la séparation des variables](m%C3%A9thode%20de%20la%20s%C3%A9paration%20des%20variables.md)  
   
 - *Caractéristiques inutilisables* : dégénérées car parallèles à l’axe des x  
