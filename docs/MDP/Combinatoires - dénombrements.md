@@ -4,7 +4,8 @@ category: MDP
 tags:  
   - matière  
 created: 2023-12-19  
-updated: 2024-01-05  
+updated: 2024-01-06  
+title: Combinatoires - dénombrements  
 ---  
   
 # Résumé combinatoires  
