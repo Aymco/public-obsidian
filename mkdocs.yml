@@ -33,20 +33,14 @@ theme:
       #accent: deep orange
       toggle:
         icon: material/toggle-switch-off-outline
-        name: default
+        name: light theme
 
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: ayu
+      scheme: slate
       toggle:
         icon: material/toggle-switch
         name: ayu theme
-        
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      toggle:
-        icon: material/weather-night
-        name: night theme
 
 # Extensions
 markdown_extensions:
