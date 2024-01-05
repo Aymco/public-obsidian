@@ -34,7 +34,7 @@ theme:
 
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: perso
+      scheme: slate
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
