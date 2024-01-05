@@ -2,7 +2,8 @@
 share: "true"  
 category: Analyse 3  
 created: 2023-10-18  
-updated: 2024-01-05  
+updated: 2024-01-06  
+title: EDP  
 ---  
   
 [Opérateur différentiels](Op%C3%A9rateur%20diff%C3%A9rentiels.md)  

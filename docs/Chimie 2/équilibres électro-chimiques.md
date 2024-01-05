@@ -4,7 +4,8 @@ category: Chimie 2
 tags:  
   - matière  
 created: 2024-01-03  
-updated: 2024-01-03  
+updated: 2024-01-06  
+title: équilibres électro-chimiques  
 ---  
   
 ## Réaction électrochimique : oxydo-réduction - rédox  

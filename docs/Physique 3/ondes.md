@@ -2,7 +2,8 @@
 share: true  
 category: Physique 3  
 created: 2023-10-16  
-updated: 2024-01-02  
+updated: 2024-01-06  
+title: ondes  
 ---  
   
 Déplacement d'énergie  

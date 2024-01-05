@@ -2,7 +2,8 @@
 share: true  
 category: Physique 3  
 created: 2023-09-22  
-updated: 2024-01-02  
+updated: 2024-01-06  
+title: champs électro-magnétiques  
 ---  
   
 [Physique 2](Physique%202.md)  

@@ -2,7 +2,8 @@
 share: true  
 category: MDP  
 created: 2023-12-16  
-updated: 2024-01-05  
+updated: 2024-01-06  
+title: Probabilités  
 ---  
   
 [Combinatoires - dénombrements](Combinatoires%20-%20d%C3%A9nombrements.md)  

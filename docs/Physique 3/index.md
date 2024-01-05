@@ -2,7 +2,8 @@
 share: true  
 category: Physique 3  
 created: 2023-09-25  
-updated: 2024-01-02  
+updated: 2024-01-06  
+title: Physique 3  
 ---  
   
 [champs électro-magnétiques](champs%20%C3%A9lectro-magn%C3%A9tiques.md)  

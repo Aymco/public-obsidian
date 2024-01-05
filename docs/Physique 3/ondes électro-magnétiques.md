@@ -3,6 +3,7 @@ created: 2023-10-09
 updated: 2024-01-02  
 share: true  
 category: Physique 3  
+title: ondes électro-magnétiques  
 ---  
   
 ![equations de Maxwell > Equations de maxwell](equations%20de%20Maxwell.md#equations-de-maxwell)  

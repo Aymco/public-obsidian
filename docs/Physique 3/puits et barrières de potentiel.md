@@ -4,7 +4,8 @@ category: Physique 3
 tags:  
   - matière  
 created: 2023-12-23  
-updated: 2024-01-02  
+updated: 2024-01-06  
+title: puits et barrières de potentiel  
 ---  
   
 $V$ change brutalement de valeur  

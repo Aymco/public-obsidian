@@ -2,7 +2,8 @@
 share: "true"  
 category: Analyse 3  
 created: 2023-09-20  
-updated: 2024-01-02  
+updated: 2024-01-06  
+title: Analyse 3  
 ---  
   
 [EDP](EDP.md)  
