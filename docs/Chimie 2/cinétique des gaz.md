@@ -2,9 +2,10 @@
 share: true  
 category: Chimie 2  
 created: 2023-10-23  
-updated: 2024-01-03  
+updated: 2024-01-06  
 tags:  
   - matière  
+title: cinétique des gaz  
 ---  
   
 [notations chimie](notations%20chimie.md)  
