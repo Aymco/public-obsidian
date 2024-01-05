@@ -4,7 +4,8 @@ category: Analyse 3
 tags:  
   - matière  
 created: 2023-12-24  
-updated: 2024-01-05  
+updated: 2024-01-06  
+title: Séries complexes  
 ---  
   
 voir [Séries](S%C3%A9ries.md)  
