@@ -5,6 +5,7 @@ share: "true"
 category: Analyse 3  
 ---  
   
+# Méthode de la séparation des variables  
 # Application : [EDP > Equation de Laplace](EDP.md#equation-de-laplace) et Poisson  
 ## Sur un pavé  
 **fonctions univariées** : $u(x,y)=X(x)\cdot Y(y)$  
