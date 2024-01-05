@@ -24,8 +24,6 @@ updated: 2024-01-05
 - Inférences statistiques : $p$ proba de réussite, $b$ réussites, $n$ épreuves  
 	- *succession de Laplace* (*Bayèsienne*) $p\approx \frac{b+1}{n+1}$   
 	- raisonnement *Fréquentiste* : $p\approx \frac{b}{n}$  
-  
--   
 # Espaces probabilisés  
   
 - définition  
