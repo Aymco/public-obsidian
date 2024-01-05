@@ -28,10 +28,10 @@ em {
 
 [data-md-color-scheme="slate"]  {
 
-    /* Primary color shades */
+    /* Primary color shades 
     --md-primary-fg-color: #F5A83D;
     --md-primary-fg-color--light: #FFAA33;
-    --md-primary-fg-color--dark: #F5A83D;
+    --md-primary-fg-color--dark: #F5A83D;*/
     --md-primary-bg-color: #1F2430;
     --md-primary-bg-color--light: #F8F9FA;
     --md-text-link-color: #FFAA33;
