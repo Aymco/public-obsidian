@@ -2,7 +2,8 @@
 share: true  
 category: MDP  
 created: 2023-09-21  
-updated: 2024-01-04  
+updated: 2024-01-06  
+title: MDP  
 ---  
   
 # Math discrètes et probabilités  
