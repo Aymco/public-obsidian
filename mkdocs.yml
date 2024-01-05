@@ -38,8 +38,6 @@ theme:
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: ayu
-      primary: custom
-      accent: custom
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
