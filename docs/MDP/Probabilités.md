@@ -2,22 +2,26 @@
 share: true  
 category: MDP  
 created: 2023-12-16  
-updated: 2024-01-04  
+updated: 2024-01-05  
 ---  
   
 [Combinatoires - dénombrements](Combinatoires%20-%20d%C3%A9nombrements.md)  
-# Espaces probabilisés  
   
-- définition  
-	1. *Univers* $\Omega$  
-	2. *Tribu* $A \{ \Omega \}$  
-		- $\bar{a}=\frac{\Omega}{A} \in A$  
-	1. *Probabilité* $P(a)$  
   
 - *Axiomes de Kolmogorov*   
 	1. $P(A)\in[0,1]$  
 	2. $P(\Omega)=1$  
 	3. $P(A\cup B)=P(A)+P(B)$ (disjoints)  
+  
+- exclusion : $P(A\cup B)=P(A)+P(B)-P(A\cap B)$  
+  
+# Espaces probabilisés  
+  
+- définition  
+	1. *Univers* $\Omega$  
+	2. *Tribu* $\mathcal{A} \{ \Omega \}$ : tous les sous ensembles de $\Omega$  
+		- $\bar{a}=\frac{\Omega}{A} \in \mathcal{A}$  
+	1. *Probabilité* $P:\mathcal{A}\to[0,1]$  
   
 - *Produit*  $=(\Omega_{1}\times\Omega_{2}, A_{1}\times A_{2}, P(A_{1})P(A_{2}))$  
   
