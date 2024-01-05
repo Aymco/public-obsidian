@@ -4,7 +4,8 @@ category: Physique 3
 tags:  
   - matière  
 created: 2023-12-20  
-updated: 2024-01-02  
+updated: 2024-01-06  
+title: Ondes mécaniques  
 ---  
   
 # Ondes mécaniques classiques  
