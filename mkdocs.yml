@@ -16,9 +16,10 @@ theme:
         - navigation.tabs
         - navigation.indexes 
         - navigation.instant
+        #- navigation.top
         - search.suggest
         - search.highlight
-        - navigation.top
+        - toc.integrate 
     #- navigation.instant.progress
     palette:
 
