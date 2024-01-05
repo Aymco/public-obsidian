@@ -9,21 +9,17 @@ category: Analyse 3
 ## Sur un pavé  
 **fonctions univariées** : $u(x,y)=X(x)\cdot Y(y)$  
 équation en 2 dimensions : $u_{xx}+u_{yy}=0  \implies \frac{X''}{X}+\frac{Y''}{Y}=0$   
-### Trouver X et Y  
-on applique le théorème : $\frac{X''}{X}=-\frac{Y''}{Y}=\lambda$ voir : [problème aux valeures propres](probl%C3%A8me%20aux%20valeures%20propres.md)  
+  
+- ⇒ $\frac{X''}{X}=-\frac{Y''}{Y}=\lambda$ voir : [problème aux valeures propres](probl%C3%A8me%20aux%20valeures%20propres.md)  
   
 - solution : $u(x, y) = \sum_{1}^{\infty} X(x)Y (y)$  
-### Contraindre aux condition non-homogènes  
   
-- On multiplie l’égalité par $\sin(kmx)$ (ou autre fonction orthogonale sur $[0,L]$)  
+- *condition non-homogènes* : multiplie par $\sin(kmx)$ (f orthogonale sur $[0,L]$)  
+	- On intègre pour trouver les $E_{n}$   
+	- $u=\sum u_{i}$ : chaque solution $u_{i}$ prends 1 condition non-homogène  
   
-- On intègre pour trouver les $E_{n}$   
-  
-- $u=\sum u_{i}$ : chaque solution $u_{i}$ prends 1 condition non-homogène  
-### Lien avec fonction holomorphe  
-$\exists f(x,y)=u(x,y)+iv(x,y)$ holomorphe : $\mathbb{R}(f)=u$  
-  
-- $\nabla u,\nabla v$ orthogonaux  
+- Lien avec *fonction holomorphe*: $\exists f(x,y)=u(x,y)+iv(x,y)$ holomorphe :  
+	- $\mathbb{R}(f)=u$ et $\nabla u,\nabla v$ orthogonaux  
   
 - *lignes de champ* : $\frac{ d\xi(t) }{ dt }=\nabla u$  → $v(\xi (t))=cst$  
 ## Dans un secteur  
