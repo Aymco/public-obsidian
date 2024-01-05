@@ -43,7 +43,7 @@ theme:
         name: ayu theme
         
     - media: "(prefers-color-scheme: dark)"
-      scheme: sltae
+      scheme: slate
       toggle:
         icon: material/weather-night
         name: night theme
