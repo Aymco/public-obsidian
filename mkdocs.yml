@@ -38,6 +38,7 @@ theme:
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: amber
       accent: deep orange
       toggle:
         icon: material/toggle-switch
