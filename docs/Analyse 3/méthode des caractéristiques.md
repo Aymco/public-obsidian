@@ -5,7 +5,8 @@ created: 2023-10-22
 updated: 2024-01-05  
 ---  
   
-qtransformer [EDP](EDP.md) en [EDO](EDO.md)  
+# Méthode des caractéristiques  
+transformer [EDP](EDP.md) en [EDO](EDO.md)  
 condition initiale : $u(\Gamma(s))=f(s)$ (souvent $\Gamma(s)=(0,s)$)  
 # Premier ordre : [EDP > EDP premier ordre](EDP.md#edp-premier-ordre)  
 ## Verification du problème de Cauchy  
