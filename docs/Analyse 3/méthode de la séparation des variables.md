@@ -1,8 +1,9 @@
 ---  
 created: 2023-12-03  
-updated: 2024-01-05  
+updated: 2024-01-06  
 share: "true"  
 category: Analyse 3  
+title: méthode de la séparation des variables  
 ---  
   
 # Méthode de la séparation des variables  
