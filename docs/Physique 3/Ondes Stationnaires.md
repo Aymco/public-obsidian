@@ -4,7 +4,8 @@ category: Physique 3
 tags:  
   - matière  
 created: 2023-12-22  
-updated: 2024-01-03  
+updated: 2024-01-06  
+title: Ondes Stationnaires  
 ---  
   
   
