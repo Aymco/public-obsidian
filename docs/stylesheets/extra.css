@@ -29,12 +29,12 @@ em {
 :root {
 
     /* Primary color shades */
-    --md-primary-fg-color: #FFAA33;
-    --md-primary-fg-color--light: #861f4194;
-    --md-primary-fg-color--dark: #FFAA33;
+    --md-primary-fg-color: #F5A83D;
+    --md-primary-fg-color--light: #FFAA33;
+    --md-primary-fg-color--dark: #F5A83D;
     --md-primary-bg-color: #1F2430;
     --md-primary-bg-color--light: #F8F9FA;
-    --md-text-link-color: hsla(231, 48%, 48%, 1);
+    --md-text-link-color: #FFAA33;
 
     /* Accent color shades
     --md-accent-fg-color: rgb(98, 18, 189);
