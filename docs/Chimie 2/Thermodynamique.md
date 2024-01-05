@@ -4,7 +4,8 @@ category: Chimie 2
 tags:  
   - matière  
 created: 2023-11-02  
-updated: 2024-01-03  
+updated: 2024-01-06  
+title: Thermodynamique  
 ---  
   
 # Systèmes  
