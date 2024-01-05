@@ -19,7 +19,7 @@ theme:
         - content.action.edit
         - navigation.tabs
         - navigation.indexes 
-        - navigation.instant
+        #- navigation.instant
         #- navigation.top
         - search.suggest
         - search.highlight
