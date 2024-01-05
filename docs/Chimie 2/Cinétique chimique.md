@@ -4,7 +4,8 @@ category: Chimie 2
 tags:  
   - matière  
 created: 2023-12-26  
-updated: 2024-01-03  
+updated: 2024-01-06  
+title: Cinétique chimique  
 ---  
   
 décrit la vitesse à laquelle on tend vers l'équilibre  
