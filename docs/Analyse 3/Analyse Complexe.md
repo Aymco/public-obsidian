@@ -8,10 +8,17 @@ updated: 2024-01-06
 title: Analyse Complexe  
 ---  
   
-[Nombres complexes](Nombres%20complexes.md)  
-[Fonctions complexes](Fonctions%20complexes.md)  
-[Séries complexes](S%C3%A9ries%20complexes.md)  
-[Intégrales complexes](Int%C3%A9grales%20complexes.md)  
   
-$\sum_{n\geq 0}^{}w^n=\frac{1}{1-w}$  
-# Séries et intégrales  
+- rappel : [Nombres complexes](Nombres%20complexes.md)  
+  
+- [Fonctions complexes](Fonctions%20complexes.md)  
+  
+- [Séries complexes](S%C3%A9ries%20complexes.md)  
+  
+- [Intégrales complexes](Int%C3%A9grales%20complexes.md)  
+  
+### Notations  
+  
+- *Boule* $B(a,b)$, sans le centre ⇒ $B^{*}(a,b)=B(a,b)\setminus \{ a \}$  
+  
+- *Anneau* : $A(c,r,s)=B(c,r)\setminus B[c,s]$  
