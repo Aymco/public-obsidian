@@ -18,7 +18,11 @@ title: Intégrales complexes
 	- ⇒ $\int _{\gamma}f(z) \, dz=\lim_{ n \to \infty }\int _{\gamma}f_{n}(z) \, dz$  
   
 - *Lemme de Goursat* : $f:\mathcal{A}\to \mathbb{C}$  dérivable et  $T\in A$ ⇒ $\int _{\partial T}f(z) \, dz=0$  
-# Théorème des résidus  
+  
+  
+- $f$ *primitivable* : $F'=f$ :  
+	- $\int _{\Gamma}f(z) \, dz=F(\gamma(b))-F(\gamma(a))$  
+## Théorème des résidus  
   
 - formule : $\oint_{\gamma}fdz=2\pi i\sum_{c}^{}ind(\gamma,c)res(f,c)$  
   
@@ -36,31 +40,16 @@ title: Intégrales complexes
 	- **poles** d'ordre $n$ : $a_{-n}\neq 0; \forall k>n, a_{-k}=0$  
 	- Singularité **apparente** : $\forall k>0,a_{-k}=0$  
 	- Singularité **essentielle** : le reste (+complexe) ($e^{1/z}$)  
-# Homotopie  
   
-## Chemins homotopes  
-**homotopie** : transformation continue : $\Gamma(t,s):[0,1]^{2}\to A$  
-$\gamma_{1},\gamma_{2}:[0,1]\to A$ **homotopes** ssi existe une homotopie:   
+## Homotopie  
   
-- $\Gamma(t,0)=\gamma_{1}(t)$ et $\Gamma(t,1)=\gamma_{2}(t)$ avec $\forall t\in [0,1]$  
+- **homotopie** : transformation continue : $\Gamma(t,s):[0,1]^{2}\to A$  
   
-- chemin fermé : $\forall s \in[0,1],\Gamma(0,s)=\Gamma(1,s)$  
+- **homotopes** $\gamma_{1},\gamma_{2}:[0,1]\to A$  ssi homotopie:   
+	- $\Gamma(t,0)=\gamma_{1}(t)$ et $\Gamma(t,1)=\gamma_{2}(t)$ avec $\forall t\in [0,1]$  
+	- ($\forall s \in[0,1],\Gamma(0,s)=\Gamma(1,s)$ ou  $\Gamma_{s}(0,s)=\Gamma_{s}(1,s)=0$)  
   
-- chemin ouvert : $\Gamma_{s}(0,s)=\Gamma_{s}(1,s)=0$  
-*Théorème de l'invariance* : soit $f$ holomorphe : $\int_{\gamma_{1}}^{} f(z) \, dz=\int_{\gamma_{2}}^{} f(z) \, dz$  
-# Primitives  
-$f$ primitivable : $F'=f$ :  
-  
-- $\int _{\Gamma}f(z) \, dz=F(\gamma(b))-F(\gamma(a))$  
-ı  
-Ensemble **étoilé** en $z_{0}$ : $\forall z\in D$ chemin droit $c:z_{0}\to z$, $c\in D$  
-$\mathcal{A}\in \mathbb{C}$ ouvert, étoilé, $f:\mathcal{A}\to \mathbb{C}$ dérivable : $F(z):=\int_{z_{0}}^{z} f(x) \, dw$  
-	⇒$F'(z)=f(z)$  
-Ensemble **simplement connexe** : connexe et sans trou  
-$\mathcal{A}\in \mathbb{C}$ ouvert, simplement connexe, $f:\mathcal{A}\to \mathbb{C}$ dérivable  
-	⇒$F'(z)=f(z)$  
-Ensemble **connexe** : E != réunion 2 ensembles fermés disjoints  
-Ensemble **connexe par arcs** : tous les points sont reliés de façon continue  
+- ⇒ *Théorème de l'invariance* : soit $f$ holomorphe: $\int_{\gamma_{1}}^{} f(z) \, dz=\int_{\gamma_{2}}^{} f(z) \, dz$  
   
 ## Creer une série candidate  
 ## Valider la série candidate  
