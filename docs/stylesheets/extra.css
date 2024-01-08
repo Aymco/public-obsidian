@@ -50,8 +50,9 @@ em {
 [data-md-color-scheme="default"]  {
 	
     --italic-color: #247580;
-    --text-highlight-bg: #8fceff;
+    --text-highlight-bg: #00bad6;
     --latex-color: #f20051;
+    --md-text-link-color: #FFAA33;
     
 	em {
     	font-weight: bold;
