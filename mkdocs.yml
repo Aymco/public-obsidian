@@ -17,6 +17,7 @@ theme:
         text: Inter
     icon:
       logo: material/lightbulb-on
+    favicon: images/favicon.png
     language: fr
     features:
         - content.action.edit
