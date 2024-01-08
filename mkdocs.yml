@@ -34,8 +34,8 @@ theme:
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: amber
-      accent: cyan
+      primary: cyan
+      accent: amber
       toggle:
         icon: material/toggle-switch-off-outline
         name: light theme
