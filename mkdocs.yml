@@ -1,7 +1,7 @@
 site_name: synthèse
 site_description: mes synthèses
 site_author: Aymco
-site_url: https://aymco.github.io
+site_url: https://aymco.github.io/public-obsidian
 repo_name: aymco/public-obsidian
 repo_url: https://github.com/Aymco/public-obsidian/
 edit_uri: edit/main/docs/
@@ -78,6 +78,7 @@ plugins:
   - roamlinks # for images
   - include_dir_to_nav:
       file_name_as_title: true
+  - social
 
 extra_javascript:
   - javascripts/mathjax.js
@@ -87,6 +88,9 @@ extra_javascript:
 
 
 extra:
+  social:
+    - icon: fontawesome/brands/discord 
+      link: https://discordapp.com/channels/@me/404293091571531776/
   analytics:
     provider: google
     property: G-EWC8Z1Z0D2
