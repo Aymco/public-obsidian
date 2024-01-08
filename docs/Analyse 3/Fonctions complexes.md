@@ -4,7 +4,7 @@ category: Analyse 3
 tags:  
   - matière  
 created: 2023-12-24  
-updated: 2024-01-06  
+updated: 2024-01-08  
 title: Fonctions complexes  
 ---  
   
@@ -47,6 +47,11 @@ retourne un ensemble $f:\mathbb{C}\to A\subset \mathbb{C}$
   
 - **branche** $\bar{f}$  
   
-- **point de branchement** : point autour duquel un tour complet de la fonction en change la valeur → arg(z) : 0  
+- **point de branchement** : (point singulier)( → arg(z) : 0)  
+	- image de f d'un tour de est une courbe non fermée   
   
 - **coupure** : couper notre région pour isoler → arg(z) : $[0,2\pi[$  
+  
+  
+  
+- fonction **entière** : définie partout  

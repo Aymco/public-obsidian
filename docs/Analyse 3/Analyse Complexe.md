@@ -21,7 +21,7 @@ title: Analyse Complexe
   
 - *Boule* $B(a,b)$, sans le centre ⇒ $B^{*}(a,b)=B(a,b)\setminus \{ a \}$  
   
-- *Anneau* : $A(c,r,s)=B(c,r)\setminus B[c,s]$  
+- *Anneau* : $A(c,r,s)=B(c,r)\setminus B(c,s)$  
 ## Ensembles  
   
 - Ensemble **étoilé** en $z_{0}$ : $\forall z\in D$ chemin droit $c:z_{0}\to z$, $c\in D$  
@@ -34,4 +34,5 @@ title: Analyse Complexe
   
 - Ensemble **connexe** : E != réunion 2 ensembles fermés disjoints  
   
-- Ensemble **connexe par arcs** : tous les points sont reliés de façon continue
+- Ensemble **connexe par arcs** : tous les points sont reliés de façon continue  
+
