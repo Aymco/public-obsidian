@@ -12,7 +12,7 @@
 strong {
   /* add highlight to bold text with an background color */
   background-color: var(--text-highlight-bg);
-
+	
   padding: 0 5px;
   padding-block: 0.1em;
   border-radius: 5px;
@@ -57,6 +57,10 @@ em {
 	em {
     	font-weight: bold;
 	}
+
+	strong {
+	  color: var(--md-primary-bg-color);
+	}
 	
   }
   
@@ -91,5 +95,3 @@ Copyright (c) 2020-2023 Stephan Ango (@kepano)
 		--img-grid-gap: 0.25rem;
 	}
 }
-
-
