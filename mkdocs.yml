@@ -1,4 +1,5 @@
-  site_name: Synthèses aymco
+
+site_name: Synthèses aymco
 site_description: Toutes mes synthèse publiées et accessibles ici.
 site_author: Aymco
 site_url: https://aymco.github.io/public-obsidian
@@ -79,6 +80,7 @@ plugins:
   - include_dir_to_nav:
       file_name_as_title: true
   - social
+      cards_layout: default/variant
 
 extra_javascript:
   - javascripts/mathjax.js
