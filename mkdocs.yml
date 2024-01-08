@@ -91,6 +91,7 @@ extra:
   social:
     - icon: fontawesome/brands/discord 
       link: https://discordapp.com/channels/@me/404293091571531776/
+      name: contact me on discord(aymco)
   analytics:
     provider: google
     property: G-EWC8Z1Z0D2
