@@ -80,7 +80,7 @@ plugins:
   - roamlinks # for images
   - include_dir_to_nav:
       file_name_as_title: true
-  - social
+  - social:
       cards_layout: default/variant
 
 extra_javascript:
