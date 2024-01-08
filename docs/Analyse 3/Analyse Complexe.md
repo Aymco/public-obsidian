@@ -34,4 +34,4 @@ title: Analyse Complexe
   
 - Ensemble **connexe** : E != réunion 2 ensembles fermés disjoints  
   
-- Ensemble **connexe par arcs** : tous les points sont reliés de façon continue
+- Ensemble **connexe par arcs** : tous les points sont reliés de façon continue  
