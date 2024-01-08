@@ -4,7 +4,7 @@ category: Analyse 3
 tags:  
   - matière  
 created: 2023-12-24  
-updated: 2024-01-06  
+updated: 2024-01-07  
 title: Intégrales complexes  
 ---  
   
@@ -51,6 +51,10 @@ title: Intégrales complexes
   
 - ⇒ *Théorème de l'invariance* : soit $f$ holomorphe: $\int_{\gamma_{1}}^{} f(z) \, dz=\int_{\gamma_{2}}^{} f(z) \, dz$  
   
-## Creer une série candidate  
-## Valider la série candidate  
-## Théorème intégral de Cauchy  
+# Pas fait ?  
+  
+- Creer une série candidate  
+  
+- Valider la série candidate  
+  
+- Théorème intégral de Cauchy  
