@@ -18,4 +18,4 @@ Bienvenue, ce site contient mes synthèse du Q3:
   
 Ces synthèses sont a la base réalisées pour un usage personnel, certain éléments ne transfèrent donc pas correctement vers le site.  
   
-Merci de me prévenir si il y des erreurs.
+Merci de me prévenir si il y des erreurs.  
