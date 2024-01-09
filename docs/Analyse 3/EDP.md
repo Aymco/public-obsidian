@@ -2,7 +2,7 @@
 share: "true"  
 category: Analyse 3  
 created: 2023-10-18  
-updated: 2024-01-06  
+updated: 2024-01-09  
 title: EDP  
 ---  
   
@@ -47,7 +47,15 @@ de **Robin** :  u et dérivée de u.  $l_{0}u_y(x,0)+u(x,0)=f(x)$
 ## Equation de Laplace  
   
 - ${}\nabla^{2}u=0$ - Elliptique  
+  
+- =partie $Im$ ou $Re$ d'une fonction holomorphe   
 → [méthode de la séparation des variables](m%C3%A9thode%20de%20la%20s%C3%A9paration%20des%20variables.md)  
+  
+- *Théorème de la valeur moyenne* : valeur au centre d’un cercle compris dans le domaine $\Omega$ est égal à la moyenne sur le cercle  
+  
+- *Théorème du maximum-minimum* : La valeur maximale (minimale) de $u$ est toujours atteinte sur la frontière du domaine  
+  
+- *théorème de la divergence* : $\int _{V}\nabla\cdot f \, dV=\int _{\partial V}f \cdot\, dS$  
 ## Equation de diffusion  
   
 - ${}\alpha \nabla^{2}u-u_{t}=0$ - Parabolique  

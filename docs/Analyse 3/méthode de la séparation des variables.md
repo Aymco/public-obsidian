@@ -1,6 +1,6 @@
 ---  
 created: 2023-12-03  
-updated: 2024-01-06  
+updated: 2024-01-09  
 share: "true"  
 category: Analyse 3  
 title: méthode de la séparation des variables  
@@ -28,15 +28,10 @@ title: méthode de la séparation des variables
 pour un cercle : $u_{rr}+\frac{u_{r}}{r}+\frac{u_{\theta\theta}}{r^{2}}=0$  
 $u(r,\theta)=R(r)\Theta(\theta)$ ⇒ $\frac{{r^{2}R''+rR'}}{R}=-\frac{\Theta''}{\Theta}=\lambda$  
   
-- $\Theta$ de période $2\pi$   
-  
-- $R_{n}(r)=C_{n}r^{k_{n}}+D_{n}r^{-k_{n}}$ ([équation d'Euler](%C3%A9quation%20d'Euler.md) d'ordre 2)  
+- $\lambda=k^{2} \implies R_{n}(r)=C_{n}r^{k_{n}}+D_{n}r^{-k_{n}}$ ([équation d'Euler](%C3%A9quation%20d'Euler.md) d'ordre 2)  
 	- $R(0)$ est fini ⇒ $D_{n}=0$  
 	- $k=0$ ⇒ $R_{n}(r)=C_{n}\ln(r)+D_{n}$  
   
-- *Théorème de la valeur moyenne* : valeur au centre d’un cercle compris dans le domaine $\Omega$ est égal à la moyenne sur le cercle  
-  
-- *Théorème du maximum-minimum* : La valeur maximale (minimale) de $u$ est toujours atteinte sur la frontière du domaine  
 # Application : [EDP > Equation d'onde](EDP.md#equation-donde)  
 ## Sur un pavé (2 dimensions)  
 séparation des variables : $u(x,y,t)=\phi(x,y)T(t)$  
@@ -59,14 +54,9 @@ $u(r,\theta,t)=R(r,\theta)T(t)$
 - $T$: trivial  
 # Application : équation de diffusion  
   
-- [EDP > Equation de diffusion](EDP.md#equation-de-diffusion)  
-solution de régime et transitoire : $u=R+\Theta$  
-sol de régime :  
-  
-- on pose : $\frac{ \partial U }{ \partial t }=0$  
-  
-- résoudre EDP  
-solution transitoire : injecte $u=R+\Theta$ dans EDP  
+- [EDP > Equation de diffusion](EDP.md#equation-de-diffusion) : solution de régime et transitoire : $u=R+\Theta$  
+	→ sol de *régime* : (mode $0$) avec : $\frac{ \partial U }{ \partial t }=0$  
+	solution *transitoire* : injecte $u=R+\Theta$ dans EDP  
   
 # Plus  
 ### Théorème des fonction indépendantes  
