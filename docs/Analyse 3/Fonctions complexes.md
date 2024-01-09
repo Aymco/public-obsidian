@@ -42,8 +42,9 @@ $f:\mathbb{C}\to \mathbb{C}:z \to f(z)$
 # Fonctions multiformes  
 retourne un ensemble $f:\mathbb{C}\to A\subset \mathbb{C}$  
   
-- Exemple : $|z|=arg(z)=\arctan (\frac{b}{a})+2k\pi$ (, logarithme, racine carrée)  
+- Exemple : $|z|=arg(z)=\arctan (\frac{b}{a})+2k\pi$ (, , racine carrée)  
 	- $arg(zw)=arg(z)+arg(w)$  
+	- logarithme : $\log(z)=\log(|z|)+i\cdot arg(z)$  
   
 - **branche** $\bar{f}$  
   
