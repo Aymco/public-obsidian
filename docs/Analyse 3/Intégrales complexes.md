@@ -4,7 +4,7 @@ category: Analyse 3
 tags:  
   - matière  
 created: 2023-12-24  
-updated: 2024-01-07  
+updated: 2024-01-08  
 title: Intégrales complexes  
 ---  
   
@@ -33,7 +33,7 @@ title: Intégrales complexes
 	- $c$ est un pole d'ordre 1 : $a_{-1}=\lim_{ z \to c }(z-c)f(z)$  
 		- $f=\frac{g}{h}$ alors $a_{-1}=\frac{g}{h'}$  
 	- $c$ est un pole d'ordre $n$ : $a_{-1}=\lim_{ z \to c } \frac{((z-c)^nf(z))^{(n-1)}}{(n-1)!}$ :  
-		- $f=\frac{h}{(z-c)^n}$ et $h(z-c)\neq 0$  
+		- $f=\frac{h}{(z-c)^n}$ et $h(z-c)\neq 0$ ⇒$Res(f,c)=h'(c)$  
 	- $c$ est une singularité essentielle : ? → série de Laurent explicite ou intégrale  
   
 - **Singularités** : point $c$ isolé ou $f$ n'est pas définie   
@@ -58,4 +58,3 @@ title: Intégrales complexes
 - Valider la série candidate  
   
 - Théorème intégral de Cauchy  
-
