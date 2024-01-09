@@ -2,7 +2,7 @@
 share: true  
 category: Analyse 3  
 created: 2023-10-22  
-updated: 2024-01-06  
+updated: 2024-01-09  
 title: méthode des caractéristiques  
 ---  
   
@@ -28,27 +28,25 @@ pseudo équation :  $\frac{P}{dx}=\frac{Q}{dy}=\frac{R}{du}$  (pour retenir)
 - courbe caractéristique : $cdt=du$  
   
 - $d(cu)=0$ : $cu$ est cst le long des caractéristiques (c indépendant de t)  
-	- → $u(x,y)=\frac{c(s)}{c(x)}f(s)$  
+	- ⇒ $u(x,y)=\frac{c(s)}{c(x)}f(s)$  
 # Equation onde 1 dimension : [EDP > Equation d'onde](EDP.md#equation-donde)  
-conditions initiales : $u(\Gamma(s))=f(s)$  et  $u_{n}(\Gamma(s))=g(s)$  
-avec $n$ la direction normale de $\Gamma$  
   
-- caractéristiques : $\pm cdt=dx$  
-## Triangularisation : trouver $u(x,y)$  
-le long des caractéristiques, on a : $c^{2}du_{x}dt-du_{t}dx=0$  
-on remplace $\phi=u_{x}$ et $\psi = \frac{u_{t}}{c}$ → $\left\{\begin{align} d(\phi - \psi) = 0 \\ d(\phi + \psi) = 0 \end{align}\right.$  
-## Factoriser l'équation  
-→ quadrillage horizontal et vertical   $\begin{align} \xi=x-ct \\ \eta=x+ct  \end{align}$  
-→ on factorise   
-$\frac{ \partial u }{ \partial \xi }=\frac{ \partial u }{ \partial x }-\frac{1}{c}\frac{ \partial u }{ \partial t }$  
-au final $\frac{ \partial^{2} u }{ \partial \xi x \partial \eta } = 0$ → donc $u=f_{1}(\xi) + f_{2}(\eta)$  
+- On a $u=c\frac{ \partial \phi }{ \partial x }$ et $v=\frac{ \partial \psi }{ \partial t }$  
   
-calculer $u_{s}$ via la CI : $u_{s}=u_{t}=-cf_{1}'(s) + cf_{2}'(s)$  
+- caractéristiques : $\pm cdt=dx$ ⇒ : $c^{2}du_{x}dt-du_{t}dx=0$  
   
+- $c$ constant ⇒ $s=x\pm ct$  
+  
+- *Invariants de RIemann* : $u\pm v$ cst sur caracteristiques  
+  
+- *Factorisation* : $\left( c \frac{ \partial  }{ \partial x }-\frac{ \partial  }{ \partial t } \right)\left( c \frac{ \partial  }{ \partial x }+\frac{ \partial  }{ \partial t } \right)\phi=0$  
+  
+- ch de variable : $\begin{align} \xi=x-ct \\ \eta=x+ct  \end{align}$ ⇒ $\frac{ \partial^{2} \phi }{ \partial \xi \partial \eta }=0$  
+⇒ $\phi=f_{1}(\xi) + f_{2}(\eta)$  
 > [!check]- solution finale : $u=f(x+ct) - f(x-ct)$   
   
+calculer $u_{s}$ via la CI : $u_{s}=u_{t}=-cf_{1}'(s) + cf_{2}'(s)$  
 [Problème de Helmholtz](Probl%C3%A8me%20de%20Helmholtz.md)  
-  
 # Méthode générale  
 2 direction tel que : $\begin{vmatrix}A & B & C \\dx & dy & 0 \\0 & dx & dy\end{vmatrix}=0$  
   
