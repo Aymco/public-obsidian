@@ -53,9 +53,10 @@ soit la réaction : $\chi_{A}A+\chi_{ b}B\to \chi_{m}M+\chi_{n}N$
   
 - *Catalyseur* : fournit nouveau chemin réactionnel avec $E_{a}'<E_{a}$⇒ + mol passent  
   
-- Réaction radicales en chaine :   
-	- Initialisation : formation des radicaux (=intermédiaires réactionnels)  
-	- propagation : action des radicaux sur réactifs (conservation des radicaux)  
-	- Terminaison : destruction des radicaux  
+- *Réaction en chaine* : $O_{3}=O_{2}+O^*$ (lent;rev)→$O_{3}+O^*=2O_{2}$ (rapide;irré)  
   
-- Quasi-stationnarité des radicaux: v apparition = v disparition  
+- Réaction *radicale en chaîne*:  
+	- *Initialisation* : formation des radicaux (=intermédiaires réactionnels)  
+	- *propagation* : action des radicaux (conservation des radicaux)  
+	- *Terminaison* : destruction des radicaux  
+	- *Quasi-stationnarité* radicaux : v apparition = v disparition  
