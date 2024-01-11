@@ -4,11 +4,28 @@ category: Chimie 2
 tags:  
   - matière  
 created: 2023-11-20  
-updated: 2024-01-06  
+updated: 2024-01-11  
 title: Equilibres Chimiques  
 ---  
   
-[Thermodynamique](Thermodynamique.md) → controle la composition  
+[Thermodynamique](Thermodynamique.md) → équilibre  
+conditions opératoires  
+  
+  
+- **potentiel chimique** : $\mu_{i}$ (grandeur intensive) pour chaque espèce  
+	- $\mu_{i}=\left( \frac{ \partial G }{ \partial n_{i} } \right)_{T,p,n_{i\neq j}}\equiv G_{m,i}$ **énergie libre molaire partielle**  
+	- **potentiel pur** : $\mu^i=\mu^{i^o}+RT\ln\frac{p}{p^o}= G^A_{m}$ **énergie libre molaire**  
+  
+- tout $A$ migre vers l'endroit ou $\mu_{i}$ est le plus faible  
+  
+  
+- **activité** $a_{i}$ :   
+	- gaz parfait : $a_{i}=\frac{p_{i}}{p^o}$, liquide-solide : $a=1$  
+	- $a_{i}=\gamma_{i}x_{i}$ avec  $\gamma_{i}<1$ ⇒stable   
+	- espèce en solution diluée $a_{A}=\frac{m_{A}}{m^o_{A}}$  
+  
+  
+  
   
   
 - Energie libre de *Helmotz*     : $A=U-TS$  
@@ -40,13 +57,6 @@ $$
 - gaz parfait ⇒ $=G^o_{m}(T)+RT\ln\left( \frac{p}{p^o} \right)$ (solide + liquide + gaz → gaz)  
   
 - solide / liquide  $=G^o_{m}(T)+ V_{m} \Delta p$  
-# Potentiel chimique  
-  
-- **potentiel chimique** : $\mu_{i}$ (grandeur intensive) pour chaque espèce  
-	- $\mu_{i}=\left( \frac{ \partial G }{ \partial n_{i} } \right)_{T,p,n_{i\neq j}}\equiv G_{m,i}$ **énergie libre molaire partielle**  
-	- **potentiel pur** : $\mu^i=\mu^{i^o}+RT\ln\frac{p}{p^o}= G^A_{m}$ **énergie libre molaire**  
-  
-- tout $A$ migre vers l'endroit ou $\mu_{i}$ est le plus faible  
   
   
   
@@ -95,10 +105,6 @@ $K_{p}=K_{x}\left( \frac{p}{p^o} \right)^{\Delta\chi}=K_{n}\left( \frac{p}{p^o\s
 	- ⇒ $\ln K_{p,T_{2}}-\ln K_{p, T_{1}}=\frac{\Delta_{r}H^\circ}{R}\left( \frac{1}{T_{2}}-\frac{1}{T_{1}} \right)$  
 # Équilibre chimique en solution liquide  
   
-- **activité** $a_{i}$ :   
-	- mélange idéal ⇒ $a_{i}=\frac{p_{i}}{p^o}$  
-	- $a_{i}=\gamma_{i}x_{i}$ avec  $\gamma_{i}<1$ ⇒stable   
-	- espèce en solution diluée $a_{A}=\frac{m_{A}}{m^o_{A}}$  
   
 - Potentiel chimique :  $\mu_{A}=\mu^{A^\circ}+RT\ln a_{i}$  
   
