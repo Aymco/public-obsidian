@@ -2,7 +2,7 @@
 share: true  
 category: Chimie 2  
 created: 2023-09-25  
-updated: 2024-01-08  
+updated: 2024-01-11  
 tags: []  
 title: Chimie 2  
 ---  
@@ -32,7 +32,6 @@ voir synthese github (pas schoenauen)
 - [équilibres électro-chimiques](%C3%A9quilibres%20%C3%A9lectro-chimiques.md)  
   
 - [équilibres entre phases](%C3%A9quilibres%20entre%20phases.md)  
-  
 # APE  
 ## Thermo Jeanmart  
   
