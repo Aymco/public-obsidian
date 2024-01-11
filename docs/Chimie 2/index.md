@@ -25,13 +25,14 @@ voir synthese github (pas schoenauen)
   
 # Partie 2 : Equilibres  
   
-- [Cinétique chimique](Cin%C3%A9tique%20chimique.md)  
-  
 - [Equilibres Chimiques](Equilibres%20Chimiques.md)  
+  
+- [équilibres entre phases](%C3%A9quilibres%20entre%20phases.md)  
+  
+- [Cinétique chimique](Cin%C3%A9tique%20chimique.md)  
   
 - [équilibres électro-chimiques](%C3%A9quilibres%20%C3%A9lectro-chimiques.md)  
   
-- [équilibres entre phases](%C3%A9quilibres%20entre%20phases.md)  
 # APE  
 ## Thermo Jeanmart  
   
