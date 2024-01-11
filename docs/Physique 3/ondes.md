@@ -2,7 +2,7 @@
 share: true  
 category: Physique 3  
 created: 2023-10-16  
-updated: 2024-01-06  
+updated: 2024-01-10  
 title: ondes  
 ---  
   
@@ -21,7 +21,7 @@ Déplacement d'énergie
 - [Ondes Stationnaires](Ondes%20Stationnaires.md)  
   
 - [Phénomènes ondulatoires](Ph%C3%A9nom%C3%A8nes%20ondulatoires.md)  
-## Ondes sources  
+## Sources d'Ondes  
 Ondes *Sphériques* : $P_{tot} = 4\pi r2I$ ⇒ $I=\dots\frac{1}{r^{2}}$  
 Ondes *Cylindriques* : $P_{tot} = 2\pi rhI$  
 Ondes *planes* : $P=cst$  
