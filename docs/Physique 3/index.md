@@ -27,5 +27,3 @@ title: Physique 3
 - [Fonction d'onde de Schrödinger](Fonction%20d'onde%20de%20Schr%C3%B6dinger.md)  
   
 - [puits et barrières de potentiel](puits%20et%20barri%C3%A8res%20de%20potentiel.md)  
-  
-  
