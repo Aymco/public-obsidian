@@ -4,7 +4,7 @@ category: Physique 3
 tags:  
   - matière  
 created: 2023-12-20  
-updated: 2024-01-10  
+updated: 2024-01-12  
 title: Ondes mécaniques  
 ---  
   
@@ -27,4 +27,4 @@ $\frac{ \partial p_{y} }{ \partial x }=-\rho_{0}\frac{ \partial u }{ \partial t 
 - **Vitesse de propagation** : $v=\sqrt{ \frac{B}{\rho_{0}} }=\sqrt{ \frac{\gamma RT}{M_{m}} }=20.1\sqrt{ T }$   ([gaz parfait](gaz%20parfait.md) $\gamma=1,4$)  
 	- $v=344m/s$ avec $298K, 1atm$  
   
-- *Intensité* (décibel) : $I_{db}=10\log_{10}\left( \frac{I}{I_{0} }\right)$ avec $I_{0}=10^{-12} W/m^{2}$  
+- *Intensité* ([décibel](d%C3%A9cibel.md)) : $I_{db}=10\log_{10}\left( \frac{I}{I_{0} }\right)$ avec $I_{0}=10^{-12} W/m^{2}$  
