@@ -4,38 +4,32 @@ category: Physique 3
 tags:  
   - matière  
 created: 2023-12-22  
-updated: 2024-01-06  
+updated: 2024-01-12  
 title: Ondes Stationnaires  
 ---  
   
   
-- environnement restreint  
-  
 - réflection multiples en phase  
   
+- *noeuds ne bougent pas* : fixe noeuds/ventres aux extremités  
   
-- *Solution générale* : ([méthode de la séparation des variables](m%C3%A9thode%20de%20la%20s%C3%A9paration%20des%20variables.md)) $\phi(x,t)=(A\sin(kx)+B\cos(kx))(C\sin(\omega t)+D\cos(\omega t))$  
+- *Solution générale* : ([méthode de la séparation des variables](m%C3%A9thode%20de%20la%20s%C3%A9paration%20des%20variables.md))   
+	- $\xi(x,t)=\sum A_{m}\sin(k_{m}x)\cos(\omega_{m}t)$ (+decalage)  
   
 - **pulsation de l'onde** :  $\omega=kv=2\pi f$   
+  
+- **Battement** (beat) : 2 ondes de fréquences différentes (mais proche)  
+	- $\xi=\xi_{A}+\xi_{B}=2A\cos\left( \frac{{\omega_{A}+\omega_{B}}}{2}(t-r) \right)\cos( \frac{{\omega_{A}-\omega_{B}}}{2}(t-r))$  
+	- → onde de *fréquence moyenne* dont l'amplitude varie selon :  
+	- *fréquence de l'enveloppe* : $\frac{|f_{1}-f_{2}|}{2}$ → $|f_{1}-f_{2}|$ (on entends pareil + et -)  
 # Mode propre $m$  
 ($m$ ventres d'ondes, $m+1$ noeuds)  
-*Résonance* : excitation d'un mode propre par une onde externe de meme fréquence  
-Conditions identiques  
-Conditions différentes  
-**fréquence propre** $f_{m}$  
-**longueur d'onde propre** $\lambda_{m}$  
-$k=\frac{n\pi}{L}$  
-$f=\frac{nv}{2L}$  
   
-## Superposition des modes propres  
-$\phi(x,t)=\sum_{m=1}^{\infty}\phi_{m}(x,t)$  
+- *Résonance* : excitation d'un mode propre par une onde externe de meme fréquence  
   
-- + dimensions → sous-modes par dimension $m_{x},m_{y}$  
-# Battement (beat)  
-2 ondes de fréquences différentes  
-$\xi=\xi_{A}+\xi_{B}=2A\cos\left( \frac{{\omega_{A}+\omega_{B}}}{2}t- \frac{{\omega_{A}+\omega_{B}}}{2}r \right)\cos( \frac{{\omega_{A}-\omega_{B}}}{2}t- \frac{{\omega_{A}-\omega_{B}}}{2}r)$  
-	→ onde perçue de *fréquence moyenne* dont l'amplitude varie selon une sinusoïdale  
+- **fréquence propre** $f_{m}=\frac{mv}{2L}$, **longueur d'onde propre** $\lambda_{m}$; $k_{m}=\frac{m\pi}{L}$  
   
+- sous-modes par dimension $m_{x},m_{y}$  
 # Applications  
   
 - refléter avec des *conducteurs* : $E=0$ ([ondes électro-magnétiques](ondes%20%C3%A9lectro-magn%C3%A9tiques.md))  
@@ -45,7 +39,7 @@ $\xi=\xi_{A}+\xi_{B}=2A\cos\left( \frac{{\omega_{A}+\omega_{B}}}{2}t- \frac{{\om
 - *corde fixée* aux extrémités ([Ondes mécaniques > Ondes mécaniques classiques](Ondes%20m%C3%A9caniques.md#ondes-mecaniques-classiques)):  
 	- $y(x,t)=2A\sin(kx)\cos(\omega t)$  
 	- **fréquence fondamentale** : $n=1$  
-## [Ondes mécaniques > Ondes acoustiques](Ondes%20m%C3%A9caniques.md#ondes-acoustiques)  
-*Tubes fermés* : molécules au bout sont fixes  
-	→ $u,\xi = 0$ vitesse et déplacement nul  
-*Tubes ouverts* : pression est égale a la pression atmosphérique   
+  
+- [Ondes mécaniques > Ondes acoustiques](Ondes%20m%C3%A9caniques.md#ondes-acoustiques)  
+	- *Tubes fermés* : molécules au bout sont fixes→ $u,\xi = 0$ vitesse et déplacement nul  
+	- *Tubes ouverts* : pression est égale a la pression atmosphérique   

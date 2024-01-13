@@ -37,3 +37,5 @@ $B=E_{y} \quad \qquad b=\frac{1}{\mu_{0}}$
 	- onde sinusoidale ⇒ $I_{\text{moyenne}}=\frac{\epsilon cE^{2}_{max}}{2}$  
   
 - *Vecteur de Poynting* $\vec{S}=\vec{E}\times \vec{H}$ : direction propagation, norme : $I$  
+  
+- [Antennes - rayonnements](Antennes%20-%20rayonnements.md)  
