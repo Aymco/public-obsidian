@@ -43,10 +43,10 @@ $A,B$ fonction de $x$ et $t$
 	- ⇒ $v_{\text{propagation}}, v_{\text{oscillation}}$  
   
 - **Onde transversale** : variation *perpendiculaire* au sens de propagation  
-	- $\vec{A}$ direction du champ, $\vec{k}$ direction de propagation $E (r, t) = \vec{A}sin(\vec{k} · \vec{r} − ωt)$  
-	- Polarisation **linéaire** : seulement 1 axe (ex: haut-bas)  
+	- $\vec{k}$ dir propa $E (\vec{r}, t) = A_{x}sin(\vec{k} · \vec{r} − ωt)+A_{y}sin(\vec{k} · \vec{r} − ωt+\phi)$  
+	- *Polarisation* **linéaire** : seulement 1 axe (ex: haut-bas)  
 	- Polarisation **circulaire** : $A_{x}=A_{y}$ et déphasage $\phi=\frac{\pi}{2}$  
-	- Polarisation **elliptique** : sinon  
+	- Polarisation **elliptique** : tt  
   
 # Cas 1D  
   
