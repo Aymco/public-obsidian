@@ -4,7 +4,7 @@ category: Physique 3
 tags:  
   - matière  
 created: 2023-12-20  
-updated: 2024-01-06  
+updated: 2024-01-13  
 title: Physique Quantique  
 ---  
   
@@ -14,7 +14,8 @@ title: Physique Quantique
   
 # [puits et barrières de potentiel](puits%20et%20barri%C3%A8res%20de%20potentiel.md)  
   
-# [Oscillateur quantiques](Oscillateur%20quantiques.md)  
+  
+  
   
 # Modèles quantiques aux corps tangibles  
 ## L'Hydrogene  
