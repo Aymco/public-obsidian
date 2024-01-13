@@ -4,25 +4,21 @@ category: Physique 3
 tags:  
   - matière  
 created: 2023-12-23  
-updated: 2024-01-06  
+updated: 2024-01-13  
 title: Dualité onde-corpuscule  
 ---  
   
 corps, ondes → 1 catégorie  
   
-- particule masse $m$, energie $E=hf=\hbar w$, q de mvt $p=\hbar k=\frac{h}{\lambda}$  
-  
-- *Einstein* ⇒ $\omega=2\pi f=\frac{E}{\hbar}$  
-  
-- *Broglie* ⇒ $k=\frac{2\pi}{\lambda}=\frac{p}{\hbar}$  
-  
-- longueur d'onde de de Broglie : $\lambda\approx\frac{h}{mv}$ (onde plane)  
+- particule ($m,v$) → onde(Broglie) $\lambda=\frac{h}{mv}$ et energie $E=hf=\hbar w$  
+	- q de mvt $p=\hbar k=\frac{h}{\lambda}$  
+	- ($\omega=2\pi f=\frac{E}{\hbar}$,  $k=\frac{2\pi}{\lambda}=\frac{p}{\hbar}$)  
 	- électron : $\lambda=1 nm$  
-   
+  
 voir $\psi$  [Fonction d'onde de Schrödinger](Fonction%20d'onde%20de%20Schr%C3%B6dinger.md)   
   
-onde lumineuse → particule : photon  
-	Energie d'un photon : $E=ha=\frac{h}{\lambda}$  
+onde lumineuse → particule : photon(indivisible)  
+	Energie d'un photon : $E=hf=\frac{hc}{\lambda}$  
   
 - loi de *Bragg* : $2d\sin\theta=n\lambda$ (diffraction sur un cristal)  
   
@@ -39,15 +35,12 @@ VRAI : modèle corpusculaire de la lumière : $E=\frac{h}{\lambda}$
 → $\Delta\lambda=\frac{h}{mc}(1-\cos \phi)$ avec $\lambda_{2}>\lambda_{1}$  
 ## Rayonnement du corps noir  
   
-- corps idéal absorbant toute énergie EM reçue  
+- objet idéal absorbant toute énergie EM reçue  
   
-- lumière émise ne dépend que de $T$  
+- lumière émise ne dépend que de $T$ ($E\propto\sigma T^4$ loi Stefan-Boltzmann)  
   
-- énergie totale : $\int$ spectre pour tt $\lambda$  
-  
-- pic de lumière pour $\lambda=\lambda_{m}$  
-  
-- chute d'énergie pour $\lambda$ faible  
+- pic de lumière pour $\lambda=\lambda_{m}$ ($\lambda$ faible→-E  ⇒ probleme)  
 ## Diffraction des électrons  
-électron sur un duo de fentes → interference typique des ondes  
-→ comportement ondulatoire  
+  
+- électrons sur un duo de fentes → *interference* typique des ondes  
+⇒ comportement ondulatoire  
