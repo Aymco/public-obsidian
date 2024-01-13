@@ -2,7 +2,7 @@
 share: true  
 category: Physique 3  
 created: 2023-09-25  
-updated: 2024-01-12  
+updated: 2024-01-13  
 title: Physique 3  
 ---  
   
@@ -28,4 +28,4 @@ title: Physique 3
   
 - [puits et barrières de potentiel](puits%20et%20barri%C3%A8res%20de%20potentiel.md)  
   
-- [Oscillateur quantiques](Oscillateur%20quantiques.md)  
+  
