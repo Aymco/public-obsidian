@@ -8,6 +8,12 @@ updated: 2024-01-13
 title: Physique Quantique  
 ---  
   
+  
+- [Fonction d'onde de Schrödinger](Fonction%20d'onde%20de%20Schr%C3%B6dinger.md)  
+  
+- [puits et barrières de potentiel](puits%20et%20barri%C3%A8res%20de%20potentiel.md)  
+  
+- [Structure Atome et Molécules](Structure%20Atome%20et%20Mol%C3%A9cules.md)  
 # Dualité onde-corpuscule  
 corps, ondes → 1 catégorie  
   
@@ -44,10 +50,3 @@ VRAI : modèle corpusculaire de la lumière : $E=\frac{h}{\lambda}$
   
 - électrons sur un duo de fentes → *interference* typique des ondes  
 ⇒ comportement ondulatoire  
-  
-  
-- [Fonction d'onde de Schrödinger](Fonction%20d'onde%20de%20Schr%C3%B6dinger.md)  
-  
-# [puits et barrières de potentiel](puits%20et%20barri%C3%A8res%20de%20potentiel.md)  
-  
-# [Structure Atome et Molécules](Structure%20Atome%20et%20Mol%C3%A9cules.md)  
