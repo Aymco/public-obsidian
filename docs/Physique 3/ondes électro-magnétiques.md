@@ -9,6 +9,8 @@ title: ondes électro-magnétiques
 ![equations de Maxwell > Equations de maxwell](equations%20de%20Maxwell.md#equations-de-maxwell)  
   
 # Equation d'ondes électromagnétiques  
+  
+- milieu linéaire, homogène, non-magnétique et isotrope,  $\mu,\epsilon, \rho$ cst  
 ## Cas $\vec{E}\perp \vec{H}$  
 ondes transverses $\vec{E},\vec{B}$ avec $\vec{E}\perp \vec{B}$,   
 **équation de propagation** (avec lois de Lenz Faraday) :  
