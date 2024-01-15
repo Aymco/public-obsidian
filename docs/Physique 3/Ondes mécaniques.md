@@ -4,11 +4,19 @@ category: Physique 3
 tags:  
   - matière  
 created: 2023-12-20  
-updated: 2024-01-12  
+updated: 2024-01-14  
 title: Ondes mécaniques  
 ---  
   
 # Ondes mécaniques classiques  
+  
+- corde parfaitement *souple* et *élastique*  
+  
+- pesanteur négligable  
+  
+- $F_{x}$ cst : tension longitudinale  
+  
+- déplacements longitudinaux négligables  
 position $y(x,t)$, vitesse $u(x,t)$, Force $F_{y}(x,t)$  
 $\frac{ \partial F_{y} }{ \partial t }=-F\frac{ \partial u }{ \partial x }$      
 $\frac{ \partial F_{y} }{ \partial x }=-\mu \frac{ \partial^{2} y }{ \partial t^{2} }$  
@@ -20,6 +28,10 @@ $\frac{ \partial F_{y} }{ \partial x }=-\mu \frac{ \partial^{2} y }{ \partial t^
   
 - **Puissance** : intensité d'une onde  
 # Ondes acoustiques  
+  
+- prop thermodynamiques parfaites  
+  
+- déplacement longitudinaux $L=\sqrt{ DT }\ll\lambda$ avec D coeff de diffusion  
 pression acoustique $p(x,t)$, position initiale $u$ :  
 $\frac{ \partial p_{y} }{ \partial t }=-B\frac{ \partial u }{ \partial x }$  
 $\frac{ \partial p_{y} }{ \partial x }=-\rho_{0}\frac{ \partial u }{ \partial t }$  
