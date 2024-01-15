@@ -4,7 +4,7 @@ category: Physique 3
 tags:  
   - matière  
 created: 2023-12-22  
-updated: 2024-01-12  
+updated: 2024-01-14  
 title: Ondes Stationnaires  
 ---  
   
@@ -27,7 +27,9 @@ title: Ondes Stationnaires
   
 - *Résonance* : excitation d'un mode propre par une onde externe de meme fréquence  
   
-- **fréquence propre** $f_{m}=\frac{mv}{2L}$, **longueur d'onde propre** $\lambda_{m}$; $k_{m}=\frac{m\pi}{L}$  
+- **fréquence propre** $f_{m}=\frac{mv}{2L}$, **longueur d'onde propre** $\lambda_{m}$;   
+  
+- CL double $k_{m}=\frac{m\pi}{L}$ ; CL mixe $k_{m}=\frac{(2m-1)\pi}{2L}$  
   
 - sous-modes par dimension $m_{x},m_{y}$  
 # Applications  
@@ -37,9 +39,10 @@ title: Ondes Stationnaires
 	- $B_{z}(x,t)=2B_{z0}\cos(kx)\sin(\omega t)$  
   
 - *corde fixée* aux extrémités ([Ondes mécaniques > Ondes mécaniques classiques](Ondes%20m%C3%A9caniques.md#ondes-mecaniques-classiques)):  
+	- $y=0$ (extrémitée libre : $F_{y}=0$)  
 	- $y(x,t)=2A\sin(kx)\cos(\omega t)$  
 	- **fréquence fondamentale** : $n=1$  
   
 - [Ondes mécaniques > Ondes acoustiques](Ondes%20m%C3%A9caniques.md#ondes-acoustiques)  
 	- *Tubes fermés* : molécules au bout sont fixes→ $u,\xi = 0$ vitesse et déplacement nul  
-	- *Tubes ouverts* : pression est égale a la pression atmosphérique   
+	- *Tubes ouverts* : $p=0$ pression est égale a la pression atmosphérique   

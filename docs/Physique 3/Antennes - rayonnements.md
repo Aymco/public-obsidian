@@ -4,7 +4,7 @@ category: Physique 3
 tags:  
   - matière  
 created: 2023-12-23  
-updated: 2024-01-13  
+updated: 2024-01-15  
 title: Antennes - rayonnements  
 ---  
   
@@ -12,6 +12,9 @@ title: Antennes - rayonnements
 - électromagnétique, sonores   
   
 - rayonnement électromagnétique : source : charge accélérée  
+	- hypp: $A\propto \frac{1}{r}$ et acélération de la charge($a_{\perp}\perp \vec{r}$⇒ rayonnement)  
+	- hypp: $d\gg$ : champ éléctrique *total* ⇒*rayonné  
+	- hypp: approximation de Fraunhofer : p observation éloigné $r'=r$ et $\theta'=\theta$  
   
 - polarisation *circulaire* : 2 linéaires $\perp$ et déphasés  
 ## Charge accélérée :  
@@ -22,6 +25,8 @@ title: Antennes - rayonnements
   
 - _énergie transportée_ : $P_{moy}=\frac{\mu_{0}^{2}}{12\pi}\sqrt{ \frac{\epsilon_{0}}{\mu_{0}} }\omega^4p_{0}^{2}$  
 ## Dipôle oscillant  
+  
+- hyppothèse : le courant : sinusoidale d'intensitée cst  
 (de charge $q$ dont la position de + est : $z_{p}(t)=z_{0}\sin(\omega t) \hat{z}$, $\vec{r}$ particule → $P$ )  
   
 - rayonnement EM isotrope, propa sphérique, $i=\frac{1}{4\pi r^{2}}$  
