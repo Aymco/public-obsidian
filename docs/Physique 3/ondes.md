@@ -2,7 +2,7 @@
 share: true  
 category: Physique 3  
 created: 2023-10-16  
-updated: 2024-01-12  
+updated: 2024-01-15  
 title: ondes  
 ---  
   
@@ -36,8 +36,7 @@ $A,B$ fonction de $x$ et $t$
 - **Intensité** $I=\sqrt{ab}B^2=[W/m^{2}]$  
 	- L’intensité d’une puissance, c’est une grandeur qui va décrire la "répartition" de cette puissance sur une surface  
   
-- *Principe de Huygens* : chaque point atteint par l'onde va se comporter comme une source (sphérique)  
-  
+- *Principe de Huygens* : chaque point $\approx$ source (sphérique) (bien si observation loin)  
   
 - **Ondes longitudinales** : variation *parallèle* au sens de propagation (son)  
 	- ⇒ $v_{\text{propagation}}, v_{\text{oscillation}}$  
