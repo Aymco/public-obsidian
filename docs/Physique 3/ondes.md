@@ -2,7 +2,7 @@
 share: true  
 category: Physique 3  
 created: 2023-10-16  
-updated: 2024-01-15  
+updated: 2024-01-16  
 title: ondes  
 ---  
   
@@ -50,9 +50,8 @@ $A,B$ fonction de $x$ et $t$
 # Cas 1D  
   
 - $\frac{ \partial^{3} C(x\pm vt) }{ \partial t^{2} }=v^{2}\frac{ \partial^{2} C(x\pm vt) }{ \partial x^{2} }$  
-⇒ $u(x,t)=f(x-vt)$ ou $=f(kx-\omega t)$  
+⇒ $u(x,t)=f(kx-\omega t)$  
 ⇒$Z=\frac{A}{B}=\sqrt{ ab }$  
-  
   
   
 - Ondes *Sphériques* :$f(kr\pm\omega t)$ avec $r=\sqrt{ x^{2}+y^{2}+z^{2} }$  
@@ -88,4 +87,6 @@ $A,B$ fonction de $x$ et $t$
   
 - onde **transverse** : plan de variation perpendiculaire au plan de propa  
   
-- onde **stationnaire** : depend pas de $x$ et $t$  
+- onde **progressive**  
+  
+- onde **stationnaire** : pas de proagation  
