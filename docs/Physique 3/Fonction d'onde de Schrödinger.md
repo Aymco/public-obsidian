@@ -4,7 +4,7 @@ category: Physique 3
 tags:  
   - matière  
 created: 2023-12-23  
-updated: 2024-01-13  
+updated: 2024-01-16  
 title: Fonction d'onde de Schrödinger  
 ---  
   
@@ -36,13 +36,13 @@ voir aussi [puits et barrières de potentiel](puits%20et%20barri%C3%A8res%20de%2
   
 - $\psi=C(k)e^{i(kx-\bar{n}k^{2}t/2m)}$ avec $C(k)$ le pic   
   
-- pour un certain $k$ on a $\Delta p=0$ et $\Delta x=\infty$  
-  
 - Energie $E=\hbar w_{0}$, impulsion $p=\hbar k_{0}$  
   
 - Solution particule libre *localisée* (paquet d'ondes):  
 	- $\psi=\int_{-\infty}^{\infty} C(k)e^{i(kx-\bar{n}k^{2}t/2m)} \, dk$  
 *incertitude d'Heisenberg* : $\Delta x\Delta p\geq \frac{\hbar}{2}$et $\Delta E\Delta t\geq \frac{\hbar}{2}$  
+  
+- pour un certain $k$ on a $\Delta p=0$ et $\Delta x=\infty$  
   
 # Oscillateur quantique  
 $k$ constante de raideur (voir [Oscillateurs harmoniques](Oscillateurs%20harmoniques.md))  
