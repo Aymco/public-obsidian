@@ -4,14 +4,14 @@ category: Physique 3
 tags:  
   - matière  
 created: 2023-12-22  
-updated: 2024-01-14  
+updated: 2024-01-16  
 title: Ondes Stationnaires  
 ---  
   
   
 - réflection multiples en phase  
   
-- *noeuds ne bougent pas* : fixe noeuds/ventres aux extremités  
+- *pas de propagation* : fixe noeuds/ventres aux extremités  
   
 - *Solution générale* : ([méthode de la séparation des variables](m%C3%A9thode%20de%20la%20s%C3%A9paration%20des%20variables.md))   
 	- $\xi(x,t)=\sum A_{m}\sin(k_{m}x)\cos(\omega_{m}t)$ (+decalage)  
@@ -28,6 +28,7 @@ title: Ondes Stationnaires
 - *Résonance* : excitation d'un mode propre par une onde externe de meme fréquence  
   
 - **fréquence propre** $f_{m}=\frac{mv}{2L}$, **longueur d'onde propre** $\lambda_{m}$;   
+	- **… fondamentale** : $m=1$  
   
 - CL double $k_{m}=\frac{m\pi}{L}$ ; CL mixe $k_{m}=\frac{(2m-1)\pi}{2L}$  
   
@@ -41,7 +42,6 @@ title: Ondes Stationnaires
 - *corde fixée* aux extrémités ([Ondes mécaniques > Ondes mécaniques classiques](Ondes%20m%C3%A9caniques.md#ondes-mecaniques-classiques)):  
 	- $y=0$ (extrémitée libre : $F_{y}=0$)  
 	- $y(x,t)=2A\sin(kx)\cos(\omega t)$  
-	- **fréquence fondamentale** : $n=1$  
   
 - [Ondes mécaniques > Ondes acoustiques](Ondes%20m%C3%A9caniques.md#ondes-acoustiques)  
 	- *Tubes fermés* : molécules au bout sont fixes→ $u,\xi = 0$ vitesse et déplacement nul  
