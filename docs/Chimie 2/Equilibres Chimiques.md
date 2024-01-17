@@ -86,9 +86,7 @@ Energie libre standard de formation avec $G^{A^o}=H^{A^o}-TS^{A^o}$ :
 	- $dG=Vdp+SdT-\mathcal{A}d\xi<0$  
 	- réaction à l'équilibre : $\mathcal{A}=0$  
   
-# Équilibre chimique entre Gaz Parfait  
-  
-- loi de Dalton : $p_{i}=x_{i}p$  
+# Équilibre chimique entre [Gaz Parfait](Gaz%20Parfait.md)  
   
 - **fraction molaire** : $x_i:=\frac{n_{i}}{n}=\frac{p_{i}}{p}$  
   
