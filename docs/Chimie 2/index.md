@@ -2,7 +2,7 @@
 share: true  
 category: Chimie 2  
 created: 2023-09-25  
-updated: 2024-01-11  
+updated: 2024-01-17  
 tags: []  
 title: Chimie 2  
 ---  
@@ -14,14 +14,13 @@ voir synthese github (pas schoenauen)
 - [notations chimie](notations%20chimie.md)  
   
 [interro S7 phy chi ll](interro%20S7%20phy%20chi%20ll.md) ,  [LABO](LABO.md)  
+  
 # Partie 1 : thermo  
   
-- [cinétique des gaz](cin%C3%A9tique%20des%20gaz.md)  
-	- [gaz parfait](gaz%20parfait.md)  
+- [théorie cinétique des gaz](th%C3%A9orie%20cin%C3%A9tique%20des%20gaz.md)  
   
 - [Thermodynamique](Thermodynamique.md)  
-  
-- [cylcles thermodynamiques](cylcles%20thermodynamiques.md)  
+	- [cylcles thermodynamiques](cylcles%20thermodynamiques.md)  
   
 # Partie 2 : Equilibres  
   
@@ -56,3 +55,17 @@ voir synthese github (pas schoenauen)
 - [ ] APE 4 équilibre électro-chimique  
   
 - [ ] APE 5 équilibre entre phases  
+# A connaitre  
+  
+- la formule de Bernoulli  
+  
+- vitesse quadratique moyenne  
+  
+- vitesse la plus probable  
+  
+- vitesse moyenne   
+  
+- libre parcours moyen   
+  
+- L'effusion (plus rare)  retiens une des formules et les autres tu les retrouves  
+Par contre les grosses formules immondes avec les exponentielles je suis jamais tombé sur des exos qui les utilisent.  

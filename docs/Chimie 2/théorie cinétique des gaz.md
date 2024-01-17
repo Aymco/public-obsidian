@@ -1,15 +1,13 @@
 ---  
 share: true  
 category: Chimie 2  
-created: 2023-10-23  
-updated: 2024-01-06  
 tags:  
   - matière  
-title: cinétique des gaz  
+created: 2023-10-31  
+updated: 2024-01-17  
+title: théorie cinétique des gaz  
 ---  
   
-[notations chimie](notations%20chimie.md)  
-théorie cinétique des gaz  
 # Théorie de Bernoulli - gaz  
   
 - molécules : sphère (diamètre $d$, masse $m$)  
@@ -28,9 +26,9 @@ théorie cinétique des gaz
   
 - **pression** $p=\frac{1}{3}\rho\overline{c^2}$ (choc des molécules sur les parois $\frac{\sum F}{A}$)  
   
-- **Température** : $\bar{k}=\frac{3}{2}k_{B}T$  
+- **Température** : $\bar{k}=\frac{3}{2}k_{B}T$ (GP)  
   
-- **Énergie interne** - énergie cinétique : $U=\frac{3}{2}nRT$  
+- **Énergie interne** - énergie cinétique : $U=\frac{3}{2}nRT$ (GP)  
   
 - **libre Parcours moyen** : $\lambda=\frac{RT}{4\sqrt{ 2 }r^{2}\pi pN_{A}}=\frac{\bar{c}}{z}$ ($z$:choc/sec)  
 	- distance moyenne parcourue par une mol avant d'en rencontrer une autre  
@@ -50,8 +48,14 @@ théorie cinétique des gaz
   
 - **Facteur de compression** : $Z=\frac{pV_{m}}{RT}$ ([gaz parfait](gaz%20parfait.md) ⇒$Z=1$)  
 ![Pasted image 20231101185536.png](Pasted%20image%2020231101185536.png)  
-**température de Boyle** : température ou le gaz agit comme un gaz parfait $p\ll$   
-équation de Van der Waals : $(p+AV^{-2}_{m})(V_{m}-b)=RT$  
+  
+- **température de Boyle** : température ou le gaz agit comme un gaz parfait $p\ll$   
+  
+- *équation de Van der Waals* : $(p+AV^{-2}_{m})(V_{m}-b)=RT$  
+  
+  
+  
+  
   
 # Démo : Pression $p$  
 on cherche la pression d'un gaz  $p = \frac{F}{s}$  

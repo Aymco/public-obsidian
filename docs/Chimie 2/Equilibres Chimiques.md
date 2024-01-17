@@ -4,7 +4,7 @@ category: Chimie 2
 tags:  
   - matière  
 created: 2023-11-20  
-updated: 2024-01-11  
+updated: 2024-01-17  
 title: Equilibres Chimiques  
 ---  
   
@@ -86,7 +86,7 @@ Energie libre standard de formation avec $G^{A^o}=H^{A^o}-TS^{A^o}$ :
 	- $dG=Vdp+SdT-\mathcal{A}d\xi<0$  
 	- réaction à l'équilibre : $\mathcal{A}=0$  
   
-# Équilibre chimique entre [gaz parfait](gaz%20parfait.md)  
+# Équilibre chimique entre Gaz Parfait  
   
 - loi de Dalton : $p_{i}=x_{i}p$  
   
