@@ -4,10 +4,12 @@ category: Chimie 2
 tags:  
   - matière  
 created: 2023-11-02  
-updated: 2024-01-06  
+updated: 2024-01-17  
 title: Thermodynamique  
 ---  
   
+  
+- [Gaz Parfait](Gaz%20Parfait.md)  
 # Systèmes  
   
 - Système **ouvert** : échange de masse et de chaleur  
