@@ -59,8 +59,10 @@ système a composantes multiples
   
   
 # Separation  
-Energie libre standard de formation $\Delta_{f}G^o=\sum_{P}\chi_{P} G^{P^o}-\sum_{R}\chi_{R}G^{R^o}$  
+de *formation* $\Delta_{f}G^o=\sum_{P}\chi_{P} G^{P^o}-\sum_{R}\chi_{R}G^{R^o}$  
 	avec $G^{A^o}=H^{A^o}-TS^{A^o}$   
+	$\Delta_{f}H^\circ_{298K}=0=\Delta_{f}G^\circ_{298K}$  
+*De réaction*  : $\Delta_{r}^\circ?=\sum \chi_{i}\Delta_{f}?_{m}^\circ=\sum \chi_{i}?_{m}^{i^\circ}$  
   
   
 - **Avancement d'une réaction** :  $d\xi=\frac{dn_{P}}{\chi_{P}}=-\frac{dn_{R}}{\chi_{R}}=[mol]$  
@@ -77,8 +79,6 @@ Energie libre standard de formation $\Delta_{f}G^o=\sum_{P}\chi_{P} G^{P^o}-\sum
 - **Entropie standard de réaction** $\Delta_{r}S^\circ:=\sum \chi_{i}S_{m}^{i^\circ}$   
   
 - **Enthalpie standard de réaction** $\Delta_{r}H^\circ:=\sum \chi_{i}H_{m}^{i^\circ}$   
-	- $\Delta_{r}H^\circ=\sum\chi_{i}\Delta_{f}H^{i^\circ}_{m}$   
-	- Enthalpie standart de *formation* ($\Delta_{f}H^\circ_{298K}=0=\Delta_{f}G^\circ_{298K}$)  
   
 - **Quotient réactionnel** $\mathcal{Q}=\frac{\prod_{P}\left( a_{P} \right)^{\chi_{P}}}{\prod_{R}\left( a_{R} \right)^{\chi_{R}}}$  
 	- $\mathcal{Q}^\circ_{r}=\Delta_{r}H^\circ=\sum_{P}\chi_{P} H^{P^o}-\sum_{R}\chi_{R}H^{R^o}$  
