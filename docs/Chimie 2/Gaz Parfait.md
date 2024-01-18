@@ -5,9 +5,11 @@ tags:
   - matière  
 title: Gaz Parfait  
 created: 2024-01-17  
-updated: 2024-01-17  
+updated: 2024-01-18  
 ---  
   
+  
+- *Gaz idéal* avec capacité calorifique constantes  
   
 - faible pression (mol pas inffluences entre elles), loin du point de liquéfactoin  
   
@@ -19,4 +21,4 @@ updated: 2024-01-17
 	- ⇒ $\frac{pV}{T}=A_{0}m$ (car on observe $\frac{pV}{T}\propto m$)  
 	- *hypothèse avogadro* : $\frac{pV}{T}=Nk_{b}=nR$ avec $R=N_{A}k_{b}$  
   
-- *loi de Dalton* : $p_{i}=x_{i}p$  
+- *loi de Dalton* : $p_{i}=x_{i}p$ (fraction molaire : $x_{i}=\frac{p_{i}}{p}$)  
