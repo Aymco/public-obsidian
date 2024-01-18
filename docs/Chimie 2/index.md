@@ -2,7 +2,7 @@
 share: true  
 category: Chimie 2  
 created: 2023-09-25  
-updated: 2024-01-17  
+updated: 2024-01-18  
 tags: []  
 title: Chimie 2  
 ---  
@@ -48,7 +48,7 @@ voir synthese github (pas schoenauen)
   
 - [x] APE 1 Cinétique ✅ 2024-01-03  
   
-- [ ] APE 2 Cinétique  
+- [x] APE 2 Cinétique ✅ 2024-01-18  
   
 - [ ] APE 3 équilibre chimiques  
   
@@ -59,11 +59,7 @@ voir synthese github (pas schoenauen)
   
 - la formule de Bernoulli  
   
-- vitesse quadratique moyenne  
-  
-- vitesse la plus probable  
-  
-- vitesse moyenne   
+- vitesse quadratique moyenne,  la plus probable, moyenne   
   
 - libre parcours moyen   
   

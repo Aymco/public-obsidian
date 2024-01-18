@@ -4,11 +4,12 @@ category: Chimie 2
 tags:  
   - matière  
 created: 2023-12-26  
-updated: 2024-01-11  
+updated: 2024-01-17  
 title: Cinétique chimique  
 ---  
   
 décrit la *vitesse* de réaction (tend vers équilibre(→thermo))  
+approx : réversibles lentes/irréversibles et rapides, mais 4 possibles  
   
 soit la réaction : $\chi_{A}A+\chi_{ b}B\to \chi_{m}M+\chi_{n}N$  
   
@@ -23,25 +24,27 @@ soit la réaction : $\chi_{A}A+\chi_{ b}B\to \chi_{m}M+\chi_{n}N$
   
 - $r=k[A]^\alpha[B]^\beta\dots[M]^\mu[N]^\eta$ avec   
   
-- constante de vitesse $k$   
+- *constante de vitesse* $k$   
   
 - *ordre partiels* : $\alpha,\beta, \mu,\eta$ (svt : produit $0$, réactif $\alpha>0$; $<0$⇒ inhibition)  
   
 - *ordre global* : $\alpha+\beta+\dots$   
   
-- ordre 1 : réaction monomoléculaire $A=P$ : $k=[1/s]$  
+- *réaction élémentaire*(1 étape) ⇒ ordre partiel réactifs : $\alpha=\chi_{A}$  
+  
+- *ordre 1* : réaction monomoléculaire $A=P$ : $k=[1/s]$  
 	- $r=k[A]=-\frac{d[A]}{dt}$ ⇒ EDO exponentielle  
   
-- ordre 2 : réaction bimoléculaire $2A=P$ ⇒ $k=[L /mol\cdot s]$  
+- *ordre 2* : réaction bimoléculaire $2A=P$ ⇒ $k=[L /mol\cdot s]$  
 	- $r=k[A]^{2}=-\frac{1}{2} \frac{d[A]}{dt}$ ⇒ EDO inverse : $[A]=\frac{[A]_{0}}{1+2[A]_{0}kt}$  
   
-- pseudo ordre 0 : $A=P\implies r=k\implies[A]=[A]_{0}-kt$   
+- pseudo *ordre 0* : $A=P\implies r=k\implies[A]=[A]_{0}-kt$   
 	- (réactif >> pdv vitesse :$[A]\gg[B]\implies[A] = [A]_{0}$)  
 ## Influence de la température sur la vitesse  
   
 - *Loi d'Arrhénius* : $k=Ae^{-E_{a}/RT}$  (Collision élastique sinon)  
   
-- $E_{a}$ l'énergie d'activation par mol barrière  
+- $E_{a}$ **l'énergie d'activation** par mol barrière ($E_{a\to}-E_{\to a}=\Delta_{r} H^\circ$)  
   
 - Théorie des *collisions* (phase gazeuse) :    
 	- réaction si $E_{cin}>E_{a}$ ⇒$e^{-E_{a}/RT}$ mol * $A$(facteur de frequence !tt reaction)  
@@ -53,10 +56,12 @@ soit la réaction : $\chi_{A}A+\chi_{ b}B\to \chi_{m}M+\chi_{n}N$
   
 - *Catalyseur* : fournit nouveau chemin réactionnel avec $E_{a}'<E_{a}$⇒ + mol passent  
   
+- Cinétique enzimatique (Michaelis-Menten) : $r=\frac{r_{max}[S]_{total}}{K_{ES}^{-1}[S]}$  
+  
 - *Réaction en chaine* : $O_{3}=O_{2}+O^*$ (lent;rev)→$O_{3}+O^*=2O_{2}$ (rapide;irré)  
   
 - Réaction *radicale en chaîne*:  
-	- *Initialisation* : formation des radicaux (=intermédiaires réactionnels)  
+	- *Initiation* : formation des radicaux (=intermédiaires réactionnels)  
 	- *propagation* : action des radicaux (conservation des radicaux)  
 	- *Terminaison* : destruction des radicaux  
-	- *Quasi-stationnarité* radicaux : v apparition = v disparition  
+	- Hyppothèse de *Quasi-stationnarité* des radicaux(HQSR):v apparition = v disp  
