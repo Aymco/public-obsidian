@@ -4,19 +4,19 @@ category: Chimie 2
 tags:  
   - matière  
 created: 2023-11-01  
-updated: 2024-01-17  
+updated: 2024-01-18  
 title: cylcles thermodynamiques  
 ---  
   
 # Transformations  
   
 ### Recap - transformations  
-|     transformation     | cst |                cst                | $W$              | $Q$                       |  
-|:----------------------:| --- |:---------------------------------:| ---------------- |:------------------------- |  
-|       isotherme        | $T$ |             $pV$             | $=-\int pdV$          | $=-W$                     |  
-|        isobare         | $p$ | $V/T$ | $=-p\Delta V$    | $=\Delta H=C_{p}\Delta T$ |  
-|        isochore        | $V$ | ${p} /{T}$ | $0$              | $=\Delta U=C_{v}\Delta T$ |  
-| Adiabatique reversible | $S$ |         $pV^\gamma$          | $=C_{v}\Delta T$ | $0$                       |  
+| transformation | cst | cst | $W$ | $Q$ |  
+| :--: | ---- | :--: | ---- | :--- |  
+| isotherme | $T$ | $pV$ | $=-\int pdV$ | $=-W$ |  
+| isobare | $p$ | $V/T$ | $=-p\Delta V$ | $=\Delta H=C_{p}\Delta T$ |  
+| isochore | $V$ | ${p} /{T}$ | $0$ | $=\Delta U=C_{v}\Delta T$ |  
+| Adiabatique reversible | $S$ | $pV^\gamma$ | $=C_{v}\Delta T$ | $0$ |  
   
 avec $\gamma:=\frac{C_{p}}{C_{V}}=1+\frac{R^*}{C_{V}}$ et (GP : $\gamma_{gp}=\frac{ddl+2}{ddl}$)  
 *Isotherme* :  
