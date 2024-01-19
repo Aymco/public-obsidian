@@ -4,10 +4,9 @@ category: Chimie 2
 tags:  
   - matière  
 created: 2024-01-03  
-updated: 2024-01-06  
+updated: 2024-01-18  
 title: équilibres entre phases  
 ---  
-  
   
   
 - température de transformation  $T_{tr}$ : $\Delta_{tr}S_{m}=\frac{\Delta_{tr}H_{m}}{T_{tr}}$  
@@ -22,9 +21,11 @@ title: équilibres entre phases
 - mélange idéal isobare : $\Delta_{mél}S=-nR\sum x_{i}\ln x_{i}$  
   
 - solution régulière : $\Delta_{sol,reg}H_{m}=x_{B}(1-x_{B})\cdot\omega$  
-	- $\omega=N_{av}z\left( E_{AB}-\frac{E_{AA}+E_{AA}}{2} \right)$  
+	- pente : $\omega=N_{av}z\left( E_{AB}-\frac{E_{AA}+E_{AA}}{2} \right)$  
 	- $\ln\gamma_{i}=\frac{(1-x_{i})^{2}}{RT}\omega$  
   
 - *loi de Raoult* $p_{i}=x_{i}p^i_{vap}$  
   
 - *loi de Henry* : $p_{i}=\gamma_{i}x_{i} \cdot p^i_{vap}\propto x_{i}$  
+  
+![Pasted image 20240118174054.png](Pasted%20image%2020240118174054.png)  
