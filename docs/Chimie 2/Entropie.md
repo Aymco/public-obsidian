@@ -4,7 +4,7 @@ category: Chimie 2
 tags:  
   - matière  
 created: 2023-12-26  
-updated: 2024-01-17  
+updated: 2024-01-18  
 title: Entropie  
 ---  
   
@@ -23,8 +23,6 @@ entropie interne(irréversible) et externe : $dS=dS_{i}+dS_{e}$
 - gaz parfait : $dS=mR^* \frac{dV}{V}$ → $\Delta S=mR^*\ln\left( \frac{V_{1}}{V_{2}} \right)$  
   
 - $p$ cst ⇒ $dS=\left( \frac{\delta Q_{rev}}{T} \right)_{p}=\left( \frac{dH}{T} \right)_{p}=\frac{C_{p}dT}{T}$  
-  
-- Changement d'état : $\Delta_{tr}S=\frac{Q_{r ev}}{T_{tr}}=\frac{\Delta_{tr}H}{T_{tr}}$  
 # Plus  
   
   

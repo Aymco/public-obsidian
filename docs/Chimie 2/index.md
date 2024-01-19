@@ -50,11 +50,11 @@ voir synthese github (pas schoenauen)
   
 - [x] APE 2 Cinétique ✅ 2024-01-18  
   
-- [ ] APE 3 équilibre chimiques  
+- [x] APE 3 équilibre chimiques ✅ 2024-01-18  
   
 - [ ] APE 4 équilibre électro-chimique  
   
-- [ ] APE 5 équilibre entre phases  
+- [x] APE 5 équilibre entre phases ✅ 2024-01-18  
 # A connaitre  
   
 - la formule de Bernoulli  
