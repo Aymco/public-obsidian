@@ -4,7 +4,7 @@ category: MDP
 tags:  
   - matière  
 created: 2024-01-04  
-updated: 2024-01-06  
+updated: 2024-01-20  
 title: Structure Algébriques  
 ---  
   
@@ -13,6 +13,7 @@ title: Structure Algébriques
 2. $*$ : un opérateur stable     $A*A\to A$  
 	- *opérateur stable* : produit de 2 termes dans $A$ est dans $A$  
 	- *Table de Cayley* : représentation matricielle de $*$ entre chaque el  
+  
   
 - *Sous structure algébrique* $(B,*)$  $B \subseteq A$ :  $b_{1}*b_{2}, 1_{A}\in B$  
   
@@ -30,6 +31,7 @@ title: Structure Algébriques
 # Groupe $(G,*)$  
 1. definition : Monoïde,  tous ses éléments *possèdent un inverse*  
   
+  
 - $a,b,c \in G \Rightarrow  a*c=b*c \Rightarrow a=b$  
   
 - $ab=e \iff a^{-1}=b\iff b^{-1}=a$  
@@ -44,26 +46,26 @@ title: Structure Algébriques
 ## Classe latérale (coset)  
 1. de $a\in G$ modulo $H$ : $aH = \{ax|x \in H\}$ ensembles  (*! groupe*)  
   
+  
 - nombre limité de classe latérales : $6H = H$  
   
 - (*Somme* : $x \in bH, x \in aH <=> b^{-1}*a  \in H$ → $1H + 2H = 3H$)  
   
-- partition de $G$ : ensemble des CL distinctes : $1H+2H+\dots=G$  
+- *partition* de $G$ : ensemble des CL distinctes : $1H+2H+\dots=G$  
   
 - Théorème *bijection* $f:H\to aH$  avec $f(x)=ax$: $[a]=aH$→ mm nb d'éléments  
   
 - **Groupes Quotient** $G /H$ : classes latérales de G mod H : $[a][b]=[ab]$  
 ## Groupes cycliques  
   
-- soit $G$ fini et $g\in G$, sous groupe $\langle g \rangle =\{ g, g^2, g^3, \dots \}$  
+- $G$ cyclique $G=\langle g \rangle$ fini, sous groupe $\langle g \rangle =\{ g, g^2, g^3, \dots \}$  
   
-- $G$ cyclique : $\exists g:\langle g \rangle=G$ (ordre $n$) ($\exists m:g^m=\epsilon$)  
-	- ⇒unique sous groupe $H$ ordre $m$ divisant $n$  
+- : $\exists g:\langle g \rangle=G$ (ordre $n$) ($\exists m:g^m=\epsilon$)  
   
 - *théorème d'Euler-Fermat* : $G$ ordre fini ⇒ $g^n=\epsilon$  
 # Anneaux $(A, +, *)$  
 1. $(A,+)$ groupe commutatif (neutre : $0_{A}$)  
-2. $(A,**)$ un Monoïde (neutre : $1_{A}$)  
+2. $(A,*)$ un Monoïde (neutre : $1_{A}$)  
 3. $*$ se distribue sur $+$ à droite et a gauche :  
   
   
