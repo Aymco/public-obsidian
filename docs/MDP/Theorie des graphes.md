@@ -2,7 +2,7 @@
 share: true  
 category: MDP  
 created: 2023-09-20  
-updated: 2024-01-06  
+updated: 2024-01-20  
 title: Theorie des graphes  
 ---  
   
@@ -19,14 +19,15 @@ $G(N,R)$ :  triple($N$ Noeuds, $R$ aretes, $I$ relation Incidence $N-R$)
 - **Parcours** suite alternée de $N$ et $R$ : $P:=(i_{0}, \alpha_{1},i_{1} \dots)$  
 	- de longueur $k$ (ouvert / fermé)  
   
-- **Cycle** : $N\neq$  sauf $i_{0}=i_{k}$  
-  
 - **Piste** : parcours avec $R\neq$  
 	- **Circuit** : Piste fermée  
   
 - **Eulérienne** : passe par tous les $R$  
+	- *Théorème d'Euler* Piste Eulérienne = max 2 noeuds de degré impair (connexe)  
   
 - **Hamiltonien** : passe par tous $N$  
+  
+- **Cycle** : $N\neq$  sauf $i_{0}=i_{k}$  
   
 ## Types de graphes:  
   
@@ -42,7 +43,6 @@ $G(N,R)$ :  triple($N$ Noeuds, $R$ aretes, $I$ relation Incidence $N-R$)
   
 - graphe **isomorphe** : $G(N,R),G'(N',R')$ isomorphes : bijection $N\to N'$  
   
-- *Théorème d'Euler* : Piste Eulérienne <=> max 2 noeuds de degré impair (connexe)  
   
   
 - [Algo Dijkstra](Algo%20Dijkstra.md)  
