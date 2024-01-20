@@ -2,7 +2,7 @@
 share: true  
 category: MDP  
 created: 2023-12-16  
-updated: 2024-01-06  
+updated: 2024-01-20  
 title: Probabilités  
 ---  
   
@@ -14,13 +14,11 @@ title: Probabilités
 	2. $P(\Omega)=1$  
 	3. $P(A\cup B)=P(A)+P(B)$ (disjoints)  
   
-- Union : $P(A\cup B)=P(A)+P(B)-P(A\cap B)$  
-  
+- proba d'*Union* : $P(A\cup B)=P(A)+P(B)-P(A\cap B)$  
   
 - Probabilités *conditionnelles* : $P(A|B)=\frac{P(A\cap B)}{P(B)}$ A sachant(corrigé par)B  
 	- $A\perp\!\!\!\perp B\iff P(B|A)=P(B)\iff P(A|B)=P(A)$  
-  
-- *théorème de Bayès* : $P(A|B)=\frac{P(A)}{P(B)}P(B|A)$  
+	- *théorème de Bayès* : $P(A|B)=\frac{P(A)}{P(B)}P(B|A)$  
   
 - Inférences statistiques : $p$ proba de réussite, $b$ réussites, $n$ épreuves  
 	- *succession de Laplace* (*Bayèsienne*) $p\approx \frac{b+1}{n+1}$   
@@ -29,8 +27,8 @@ title: Probabilités
   
 - définition  
 	1. *Univers* $\Omega$  
-	2. *Tribu* $\mathcal{A} \{ \Omega \}$ : tous les sous ensembles de $\Omega$  
-		- $\bar{a}=\frac{\Omega}{A} \in \mathcal{A}$  
+	2. *Tribu* ($\sigma$-algèbre) $\mathcal{A} \{ \Omega \}$ : tous les sous ensembles de $\Omega$  
+		- $\bar{a}=\frac{\Omega}{A} \in \mathcal{A}$ , $a_{1}\cup a_{2}\in\mathcal{A}$ fermé para rapport a l'union et compllément  
 	1. *Probabilité* $P:\mathcal{A}\to[0,1]$  
   
 - *Produit*  $=(\Omega_{1}\times\Omega_{2}, A_{1}\times A_{2}, P(A_{1})P(A_{2}))$ (évenements indé)  
@@ -61,7 +59,8 @@ title: Probabilités
   
 - **Variance** - **écart type** $\sigma$ : $Var(X)=\sigma^{2}(X)=\mathbb{E}(X^{2})-\mathbb{E}(X)^{2}$  
 	- **Covariance** : $Cov(X,Y)=\mathbb{E}(XY)-\mathbb{E}(X)\mathbb{E}(Y)$  
-	- ⇒ $Var(aX+bY)=a^{2}Var(X)+2abCov(X,Y)+b^{2}Var(Y)$  
+		- variables indépendates : $Cov(X,Y)=0$  
+	- ⇒$Var(aX+bY)=a^{2}Var(X)+2abCov(X,Y)+b^{2}Var(Y)$  
 	- Variance *Conditionnelle* $Var(X|Y=y)=\int (x-\mathbb{E}(Y|X=x))^{2}f(y|x) \, dx$  
 	- avec $X|Y$ ⇒  $Var(X)=\mathbb{E}(Var(X|Y))+Var(\mathbb{E}(X|Y))$  
   
@@ -104,6 +103,7 @@ title: Probabilités
   
 - *Loi Normale* $f(x)=\frac{1}{\sigma \sqrt{ 2\pi }}e^{-(x-\mu)^{2}/2\sigma^{2}}=N(\mu,\sigma^{2})$ (loi de Gauss)  
 	- *Théorème central limite* : $\forall Z_{n}=\frac{\sum_{i=1}^{n}X_{i}}{n}$ , espérance $\mu$, variance $\frac{\sigma^{2}}{n}$  
+		- $n\to \infty$  
 		- $\lim_{ n \to \infty }Z_{n}\sim N(\mu , \sigma^{2}/n)$  
 		- variable centrée réduite $Z_{n}'=\frac{Z_{n}-\mu}{\sigma /\sqrt{ n }}$ → $Z_{n}'\sim N(0 , 1)$  
 		- $P\left( |\frac{\sum X_{i}}{n}-\mu|\geq\epsilon \right)\to 0$  
