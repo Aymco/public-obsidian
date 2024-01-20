@@ -4,17 +4,17 @@ category: MDP
 tags:  
   - matière  
 created: 2023-12-19  
-updated: 2024-01-06  
+updated: 2024-01-20  
 title: Combinatoires - dénombrements  
 ---  
   
 # Résumé combinatoires  
-| x         | Repetition    | ~~répetition~~ |  
-| --------- | ------------- | -------------- |  
-| tout      | $Q^{a,b}_{n}=\frac{n!}{a!b!}$ | $Bij(n\to n)=n!$        |  
-| ordre     | fonction : $n^k$     | $Inj(k\to n)=A^k_{n}=\frac{n!}{(n-k)!}$      |  
-| ~~ordre~~ | $B^*(n,k):=B(n+k-1, k)$     | $B(n,k)=\frac{n!}{k!(n-k)!}$      |   
-  
+| x | Repetition | ~~répetition~~ |  
+| ---- | ---- | ---- |  
+| tout | $Q^{a,b}_{n}=\frac{n!}{a!b!}$ | $Bij(n\to n)=n!$ |  
+| ordre | fonction : $n^k$ | $Inj(k\to n)=A^k_{n}=\frac{n!}{(n-k)!}$ |  
+| ~~ordre~~ | $B^*(n,k):=B(n+k-1, k)$ | $B(n,k)=\frac{n!}{k!(n-k)!}$ |  
+|  |  |  |  
 # Dénombrement  
   
 - Ensembles *équipotents* $A \approx B$ si bijection de $A$ vers $B$ (mm nb éléments)  
@@ -68,6 +68,9 @@ title: Combinatoires - dénombrements
 - Suite des naturels $f(x)=\frac{x}{(1-x)^{2}}=x+2x^2+3x^3+..$  
   
 - Suite des nombre binomiaux $\sum B(n,,a)x^n=(A+x)^a$  
+  
+  
+- *Fonction génératrice des Moments* : $=\sum \frac{\mathbb{E}(X^n)}{n!}$  
 ### Astuces  
   
 - $\sum_{i=0}^{\infty}x^i=\frac{1}{1-x}$ et $\lim_{ x \to 1 }$  
@@ -75,6 +78,9 @@ title: Combinatoires - dénombrements
 - $\sum_{i=0}^{\infty}(i+1)x^i=\frac{1}{(1-x)^{2}}$  
   
 - $\sum_{i=0}^{\infty}(i+1-a)x^i=\frac{x^a}{(1-x)^{2}}$  
+  
+- $e^x=\lim_{ n \to \infty }(1+\frac{x}{n})^n$  
+  
   
   
 - Équations de récurrences $\alpha v_{n+2}+\beta v_{n+1}+\gamma v_{n}=\dots$  
