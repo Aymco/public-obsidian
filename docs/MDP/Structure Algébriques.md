@@ -4,7 +4,7 @@ category: MDP
 tags:  
   - matière  
 created: 2024-01-04  
-updated: 2024-01-20  
+updated: 2024-01-24  
 title: Structure Algébriques  
 ---  
   
@@ -12,10 +12,11 @@ title: Structure Algébriques
 1. $A$ : un ensemble  
 2. $*$ : un opérateur stable     $A*A\to A$  
 	- *opérateur stable* : produit de 2 termes dans $A$ est dans $A$  
-	- *Table de Cayley* : représentation matricielle de $*$ entre chaque el  
+	- (*Table de Cayley* : représentation matricielle de $*$ entre chaque el)  
   
   
-- *Sous structure algébrique* $(B,*)$  $B \subseteq A$ :  $b_{1}*b_{2}, 1_{A}\in B$  
+- *Sous structure algébrique* $(B,*)$  stable, non vide(sous-ensemble)  
+	- : $B \subseteq A$ :  $b_{1}*b_{2}, 1_{A}\in B$   
   
 - *Inverse* (*unique*) $a$ inverse de $b$ si $a*b=e$  
 # Monoïde  
@@ -24,12 +25,9 @@ title: Structure Algébriques
 3. *neutre* (*unique*) $\exists e: e \in A; \forall a \in A : e*a=a*e=a$  
   
   
-- *Sous monoïde* $B$ : $\forall a,b \in \mathbb{R}, a*b \in \mathbb{R}$ 2. neutre $1_A \in B, e_A \in B$  
-  
-- Théorème : *isomorphisme* $(A,*)$ est isomorphe a un sous monoïde de $(A^A, \circ)$  
-  
+- *Sous monoïde* $B$ : monoide(stable) et neutre $e_A \in B$  
 # Groupe $(G,*)$  
-1. definition : Monoïde,  tous ses éléments *possèdent un inverse*  
+1. definition : Monoïde, éléments *possèdent un inverse*  
   
   
 - $a,b,c \in G \Rightarrow  a*c=b*c \Rightarrow a=b$  
@@ -38,9 +36,8 @@ title: Structure Algébriques
   
 - $G$ **commutatif** (Abélien) : $a*b=b*a$  
   
-- **Sous groupe** $H$ : sous structure, $\forall x \in H, x^{-1} \in H$  
+- **Sous groupe**(fini) $H$: groupe(inverse)(fini, non-vide), sous structure  
 	- $Z_{n}=0,1,\dots, n-1$ addition modulo : isomorphe à $Z/nZ$    
-	- sous groupe fini $H$ : sous ensemble fini, non-vide et stable   
   
 - *théorème de Lagrange* $G$ fini, $H$ sous groupe ⇒ $|H|=m$ divise $|G|=n$  
 ## Classe latérale (coset)  
@@ -55,14 +52,16 @@ title: Structure Algébriques
   
 - Théorème *bijection* $f:H\to aH$  avec $f(x)=ax$: $[a]=aH$→ mm nb d'éléments  
   
-- **Groupes Quotient** $G /H$ : classes latérales de G mod H : $[a][b]=[ab]$  
+- **Groupes Quotient** $G /H:=\{ [a] \,|\,a\in G \}=\{ aH\,|\,a\in G \}$ : classes latérales de G mod H : $[a][b]=[ab]$  
 ## Groupes cycliques  
   
-- $G$ cyclique $G=\langle g \rangle$ fini, sous groupe $\langle g \rangle =\{ g, g^2, g^3, \dots \}$  
+- $G$ cyclique $\exists g:\langle g \rangle=G$  fini, sous groupe $\langle g \rangle =\{ g, g^2, g^3, \dots \}$  
   
-- : $\exists g:\langle g \rangle=G$ (ordre $n$) ($\exists m:g^m=\epsilon$)  
+- : (ordre $n$) ($\exists m:g^m=\epsilon$)  
   
-- *théorème d'Euler-Fermat* : $G$ ordre fini ⇒ $g^n=\epsilon$  
+- *théorème d'Euler-Fermat* : $a^{\varphi(n)}\equiv 1\mod n$ (avec $\varphi$ indicatrice d'Euler)  
+	- *petit* : $a^{p-1}=1 \mod p$ (premier)  
+	- $G$ ordre fini ⇒ $g^n=\epsilon$  
 # Anneaux $(A, +, *)$  
 1. $(A,+)$ groupe commutatif (neutre : $0_{A}$)  
 2. $(A,*)$ un Monoïde (neutre : $1_{A}$)  
