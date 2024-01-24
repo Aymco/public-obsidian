@@ -2,7 +2,7 @@
 share: true  
 category: MDP  
 created: 2023-12-16  
-updated: 2024-01-20  
+updated: 2024-01-24  
 title: Probabilités  
 ---  
   
@@ -56,6 +56,7 @@ title: Probabilités
 - **Espérance** : $\mathbb{E}(X)=\int xf(x) \, dx=\sum sP(s)$ avec $s$ valeurs de $X$  
 	- linéaire : $\mathbb{E}(aX+bY)=a\mathbb{E}(X)+b\mathbb{E}(Y)$  
 	- **Moment d'ordre** $n$ : $m_{n}=\mathbb{E}(X^n)$  
+	- *Fonction génératrice des moments* $=E(e^{tX})$  
   
 - **Variance** - **écart type** $\sigma$ : $Var(X)=\sigma^{2}(X)=\mathbb{E}(X^{2})-\mathbb{E}(X)^{2}$  
 	- **Covariance** : $Cov(X,Y)=\mathbb{E}(XY)-\mathbb{E}(X)\mathbb{E}(Y)$  
@@ -94,12 +95,12 @@ title: Probabilités
 	- $p\ll 1$  ⇒ $\approx$ loi de poisson : $\mu=np$   
 	- $npq\gg 1$  ⇒ $\approx$ loi normale : $\mu=np$  et $\sigma^{2}=npq$ (e$\mathcal{O}\left( \frac{1}{\sqrt{ n }} \right)$)  
   
-- *Loi de Poisson* $P(N=k)=f(k)=\frac{\mu^k}{k!}e^{-\mu}$ avec $n\gg 1,p\ll 1$   
-	- $\approx$ loi exponentielle : $p=\lambda\Delta t$, intervalles $n=\frac{T}{\Delta t}$ : $\mu=\lambda T$  
-	- $\mathbb{E}(X)=\sigma^{2}=\mu$  
-  
 - *Loi exponentielle* $f(x)=\lambda e^{-\lambda x}$ et $F(x)=1-e^{\lambda x}$ avec $\lambda$ taux proba/temps  
 	- $\mathbb{E}(X)=\frac{1}{\lambda}$ et $\sigma^{2}=\frac{1}{\lambda^{2}}$  
+	- $\approx$ loi de poisson : $\lambda=\left[ \frac{p}{t} \right]$, intervalles $n=\frac{T}{\Delta t}$ : $\mu=\lambda T$  
+  
+- *Loi de Poisson* $P(N=k)=f(k)=\frac{\mu^k}{k!}e^{-\mu}$ avec $n\gg 1,p\ll 1$   
+	- $\mathbb{E}(X)=\sigma^{2}=\mu$  
   
 - *Loi Normale* $f(x)=\frac{1}{\sigma \sqrt{ 2\pi }}e^{-(x-\mu)^{2}/2\sigma^{2}}=N(\mu,\sigma^{2})$ (loi de Gauss)  
 	- *Théorème central limite* : $\forall Z_{n}=\frac{\sum_{i=1}^{n}X_{i}}{n}$ , espérance $\mu$, variance $\frac{\sigma^{2}}{n}$  
