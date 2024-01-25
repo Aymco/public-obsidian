@@ -37,7 +37,6 @@ title: Structure Algébriques
 - $G$ **commutatif** (Abélien) : $a*b=b*a$  
   
 - **Sous groupe**(fini) $H$: groupe(inverse)(fini, non-vide), sous structure  
-	- $Z_{n}=0,1,\dots, n-1$ addition modulo : isomorphe à $Z/nZ$    
   
 - *théorème de Lagrange* $G$ fini, $H$ sous groupe ⇒ $|H|=m$ divise $|G|=n$  
 ## Classe latérale (coset)  
@@ -50,9 +49,10 @@ title: Structure Algébriques
   
 - *partition* de $G$ : ensemble des CL distinctes : $1H+2H+\dots=G$  
   
-- Théorème *bijection* $f:H\to aH$  avec $f(x)=ax$: $[a]=aH$→ mm nb d'éléments  
+- Théorème *bijection* $\exists f:H\to aH$  : $[a]=aH$ ⇒ mm nb d'éléments  
   
-- **Groupes Quotient** $G /H:=\{ [a] \,|\,a\in G \}=\{ aH\,|\,a\in G \}$ : classes latérales de G mod H : $[a][b]=[ab]$  
+- **Groupes Quotient** $G /H:=\{ aH\,|\,a\in G \}$ : classes latérales de G mod H   
+	- sous groupe $Z_{n}=0,1,\dots, n-1$ addition modulo : isomorphe à $Z/nZ$    
 ## Groupes cycliques  
   
 - $G$ cyclique $\exists g:\langle g \rangle=G$  fini, sous groupe $\langle g \rangle =\{ g, g^2, g^3, \dots \}$  

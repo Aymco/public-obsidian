@@ -2,7 +2,7 @@
 share: true  
 category: MDP  
 created: 2023-12-16  
-updated: 2024-01-24  
+updated: 2024-01-25  
 title: Probabilités  
 ---  
   
@@ -74,7 +74,7 @@ title: Probabilités
 - **Vecteur** de var alé $(X,Y)$ : $F(X,Y)=P(X\geq x, Y\geq y)$  
 	- $X\perp\!\!\!\perp Y\implies P({\tiny X{=}x,Y{=}y})=P({\tiny X{=}x})P ({\tiny Y{=}y} )$ ou $f(x,y)=\int f \, dx\cdot\int f \, dy$  
   
-- $x$ est **quantile** de $p$ : $x:P(X<x)\leq p\leq P(X)$ ou $F(x)=p$  
+- $x$ est **quantile** de $p$ : $x:P(X<x)= p$ ou $F(x)=p$  
   
 - **Médiane**  : quantile de $0.5$  
 	- $x \in I$ si $X$pas continu  

@@ -4,7 +4,7 @@ category: MDP
 tags:  
   - matière  
 created: 2023-12-19  
-updated: 2024-01-20  
+updated: 2024-01-25  
 title: Combinatoires - dénombrements  
 ---  
   
@@ -67,13 +67,13 @@ title: Combinatoires - dénombrements
   
 - Suite des naturels $f(x)=\frac{x}{(1-x)^{2}}=x+2x^2+3x^3+..$  
   
-- Suite des nombre binomiaux $\sum B(n,,a)x^n=(A+x)^a$  
+- Suite des nombre binomiaux $\sum B(n,a)x^n=(A+x)^a$  
   
   
-- *Fonction génératrice des Moments* : $=\sum \frac{\mathbb{E}(X^n)}{n!}$  
+- *Fonction génératrice des Moments* : $=E(e^{tX})=\sum \frac{\mathbb{E}(X^n)}{n!}$  
 ### Astuces  
   
-- $\sum_{i=0}^{\infty}x^i=\frac{1}{1-x}$ et $\lim_{ x \to 1 }$  
+- $\sum_{i=0}^{\infty}x^i=\frac{1}{1-x}$ et $\lim_{ x \to 1 }$ (somme de série géométrique)  
   
 - $\sum_{i=0}^{\infty}(i+1)x^i=\frac{1}{(1-x)^{2}}$  
   
@@ -84,6 +84,9 @@ title: Combinatoires - dénombrements
   
   
 - Équations de récurrences $\alpha v_{n+2}+\beta v_{n+1}+\gamma v_{n}=\dots$  
+  
+  
+  
   
   
 - Fonctions de *hachage* $H:\{ 0,1 \}^*\to \{ 0,1 \}^n$ taille $?\to n$  
