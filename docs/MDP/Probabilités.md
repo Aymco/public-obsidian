@@ -2,11 +2,10 @@
 share: true  
 category: MDP  
 created: 2023-12-16  
-updated: 2024-05-21  
+updated: 2024-05-22  
 title: Probabilités  
 ---  
 [Combinatoires - dénombrements](Combinatoires%20-%20d%C3%A9nombrements.md)  
-  
   
 - *Axiomes de Kolmogorov*   
 	1. $P(A)\in[0,1]$  
@@ -37,6 +36,7 @@ title: Probabilités
 - épreuve de Bernouilli : $\Omega=\{ E,S \}$ échecs, succès  
 	- $\mathcal{A}(\Omega)=\{ \emptyset, \{ E \}, \{ S \}, \Omega \}$, $p$ succès  
 	- $\times n$ → Schéma de B : $\Omega=\{ E,S \}^n$, $\mathcal{A}(\Omega)$ : proba $p^kq^{n-k}$  
+  
 # Variable aléatoire $X$  
   
 - $X:\Omega_{1}\to\Omega_{2}$  et inverse : $\forall A\in\Omega_{2}: X^{-1}(A)\in\Omega_{1}$  
