@@ -25,7 +25,7 @@ title: Probabilités
 - définition  
 	1. *Univers* $\Omega$  
 	2. *Tribu* ($\sigma$-algèbre) $\mathcal{A} \{ \Omega \}$ : sous ensembles de $\Omega$  
-		- $\bar{a}=\frac{\Omega}{A} \in \mathcal{A}$ , $a_{1}\cup a_{2}\in\mathcal{A}$ fermé para rapport a l'union et compllément  
+		- $\bar{a}=\frac{\Omega}{A} \in \mathcal{A}$ , $a_{1}\cup a_{2}\in\mathcal{A}$ fermé par rapport a l'union et complément  
 	3. *Probabilité* $P:\mathcal{A}\to[0,1]$  
   
 - *Produit*  $=(\Omega_{1}\times\Omega_{2}, A_{1}\times A_{2}, P(A_{1})P(A_{2}))$ (évenements indé)  
