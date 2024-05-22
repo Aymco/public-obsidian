@@ -21,12 +21,8 @@ em {
     color: var(--italic-color);
 }
 
-a {
+a:not(:has(> *)) {
     text-decoration: underline;
-}
-
-a > * {
-    text-decoration: none;
 }
 
 [data-md-color-scheme="slate"]  {
