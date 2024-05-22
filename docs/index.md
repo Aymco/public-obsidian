@@ -39,12 +39,11 @@ Merci de me prévenir si il y des erreurs.
   
 - $Inline Maths{}$  
   
-$$  
+  
+- $$  
 Math Block  
 $$  
-$$  
-MathBlock 2 lines  
-$$  
+  
   
   
 - [index](index.md) Link  
