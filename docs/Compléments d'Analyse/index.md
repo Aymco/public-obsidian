@@ -9,18 +9,34 @@ updated: 2024-05-22
 ---  
 ⅕ - ⅖ pondération des devoirs  
 # [Ensembles et topologies](Ensembles%20et%20topologies.md)  
-# Distance  
+# Distances  
   
-- Distance :$X\times X\to R^+{}$  
-	- $d(u,v)=d(v,u){}$  
-	- $d(u,v)=0\iff u=v{}$   
-	- $d(u,v)\leq d(u,w)+d(w,v){}$  
+- **Distance** :$X\times X\to R^+{}$ 3 conditions :  
+	1. $d(u,v)=d(v,u){}$  
+	2. $d(u,v)\leq d(u,w)+d(w,v){}$  
+	3. $d(u,v)=0\iff u=v{}$   
+	- Distance *euclidienne* : $d_{e}(x,y)=\sqrt{ \sum_{i=0}^{n-1} (x_{i}-y_{i})^{2}}{}$  
+	- distance de *manhattan* : $d_{m}(x,y)=\sum_{0}^{n-1}|x_{i}-y_{i}|{}$  
   
-- Distance euclidienne : $d_{e}(x,y)=\sqrt{ \sum_{i=0}^{n-1} (x_{i}-y_{i})^{2}}{}$  
+- **Espace métrique** :$(X,d){}$ : Ensemble, distance (que 2 cond : *pseudo-métrique*)  
+	- Espace *Complet* : tt suites de cauchy convergent  
+	- Espace *séparable* : $\exists{}$ sous espace dénombrable  
+	- sous-espace *dense* : $\forall y\in Y, \exists x \in X\subset Y:d(x,y)<\epsilon{}$ ($\mathbb{Q} {}$ dense $\mathbb{R}{}$)  
   
-- distance de manhattan : $d_{m}(x,y)=\sum_{0}^{n-1}|x_{i}-y_{i}|{}$  
+- suite $a_{n}{}$ converge : $\exists N: \forall n>N:d(a_{n}, a)<\epsilon \quad(\forall\epsilon>0){}$ ⇒  
   
+- suite de *Cauchy* : $\exists N:\forall m,n>N,d(a_{n},a_{m})<\epsilon{}$                     ⇒  
   
+- *bornée* : $sup (x_{n})\leq \infty{}$   
+  
+- suite *sommable* <. > $\sum_{}^{\infty}x_{i}{}$ converge  
+(voir [Analyse 1](Analyse%201.md))  
+# Normes  
+  
+- **Norme** : $||\cdot||:X\to \mathbb{R}^+{}$  
+	1. *définir positive* : $\lvert \lvert x \rvert \rvert=0\iff x=0{}$  
+	2. *absolument homogene* : $\lvert \lvert \alpha x \rvert \rvert\leq \lvert \alpha \rvert\cdot \lvert \lvert x \rvert \rvert{}$  
+	3. *inégalité triangulaire* : $||x+y||\leq||x||+||y||{}$  ~~.$\forall x,y{}$~~  
 # Analyse fonctionnelle  
 → espaces de fonction / *dimensions infinies*  
 fonctionnelle :  fonction sur les fonctions  
@@ -36,24 +52,3 @@ probabilités
 - **Tribus** (voir MDP) : $\sum\in \mathbf{B}(X){}$; $\emptyset , X \in  \sum{}$ 2. $A\in \sum \implies \bar{A}\in \sum{}$  
   
 - tribu *Borélienne* (la plus petite) :$\mathcal{B}(X){}$   
-# APE  
-## APE 1  
-Distance définition :   
-  
-- $dist(u,v)=0\iff u=v{}$   
-  
-- $dist(u,v)=dist(v,u){}$  
-  
-- $dist(u,v)\leq dist(u,w)+dist(w,v){}$  
-  
-**Espace métrique** $(X,d){}$ : Ensemble $X{}$, distance $d{}$  
-  
-- *complet* : toute suite de Cauchy converge  
-  
-- → suite $x_n$  
-	- *convergente* : … $d(x_{n},x)\leq\epsilon{}$ ⇒  
-	- *de Cauchy* : … $d(x_{n},x_{m})\leq\epsilon{}$ ⇒  
-	- *bornée* : $sup (x_{n})\leq \infty{}$  
-  
-- suite *sommable* <=> $\sum_{}^{\infty}x_{i}{}$ converge  
-Convergence voir [Analyse 1](Analyse%201.md)  
