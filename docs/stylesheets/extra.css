@@ -20,8 +20,13 @@ strong {
 em {
     color: var(--italic-color);
 }
+
 a {
     text-decoration: underline;
+}
+
+a > * {
+    text-decoration: none;
 }
 
 [data-md-color-scheme="slate"]  {
