@@ -4,10 +4,9 @@ category: MDP
 tags:  
   - matière  
 created: 2023-12-19  
-updated: 2024-01-25  
+updated: 2024-02-07  
 title: Combinatoires - dénombrements  
 ---  
-  
 # Résumé combinatoires  
 | x | Repetition | ~~répetition~~ |  
 | ---- | ---- | ---- |  
@@ -16,12 +15,7 @@ title: Combinatoires - dénombrements
 | ~~ordre~~ | $B^*(n,k):=B(n+k-1, k)$ | $B(n,k)=\frac{n!}{k!(n-k)!}$ |  
 |  |  |  |  
 # Dénombrement  
-  
-- Ensembles *équipotents* $A \approx B$ si bijection de $A$ vers $B$ (mm nb éléments)  
-	- $N\approx Z$ : $n\to \left\{\begin{align} \frac{{n+1}}{2}\quad\quad \frac{-n}{2} \end{align}\right.$  
-  
-- $A$ est *fini* : $A \approx \{ 1,2,..,n \}$, *infini dénombrable* $A\approx \mathbb{N}$  
-	- $n$ *cardinal* de $A$ : $n=|A|=\#A \in N$  
+→ [Ensembles et topologies](Ensembles%20et%20topologies.md)  
   
 - Argument diagonal de Cantor : Prouver que $[0,1[\not\approx \mathbb{N}$  
 	- $f(i)=a_{i}=0, a_{i0}a_{i1}a_{i_{2}}, \dots$ binaire  
