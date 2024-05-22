@@ -2,10 +2,14 @@
 .MJX-TEX {
   font-size: 120%;
   color: var(--latex-color);
-  //margin-top: -10px !important;
-  //margin-bottom: -10px !important;
   text-align: center !important;
+}
 
+.MathJax_Display, .MathJax {
+  font-size: 120%;
+  color: var(--latex-color);
+  text-align: center !important;
+  margin: 0 0 0 0 !important;
 }
 
 
