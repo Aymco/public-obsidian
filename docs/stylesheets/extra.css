@@ -12,6 +12,13 @@
   margin: 0 0 0 0 !important;
 }
 
+.right-align, .cm-strikethrough:not(.cm-formatting),
+.cm-strikethrough ~ .MJX-TEX , 
+.cm-strikethrough ~ .math
+{
+  text-decoration: none;
+  float: right;
+}
 
 strong {
   /* add highlight to bold text with an background color */
