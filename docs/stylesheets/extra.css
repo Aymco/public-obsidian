@@ -52,6 +52,11 @@ em {
     --text-highlight-bg: #00afd6;
     --latex-color: #bf0000;
     --md-text-link-color: #FFAA33;
+
+	
+	
+    --md-primary-fg-color: #005ca2;
+    --md-primary-bg-color: #fbfbe9;
     
 	em {
     	font-weight: bold;
