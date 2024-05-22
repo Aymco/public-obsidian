@@ -46,7 +46,7 @@ Distance définition :
   
 - $dist(u,v)\leq dist(u,w)+dist(w,v){}$  
   
-==Espace métrique== $(X,d){}$ : Ensemble $X{}$, distance $d{}$  
+**Espace métrique** $(X,d){}$ : Ensemble $X{}$, distance $d{}$  
   
 - *complet* : toute suite de Cauchy converge  
   
