@@ -37,13 +37,10 @@ Merci de me prévenir si il y des erreurs.
   
 - *Italique* : mots importants  
   
-- $Inline Maths{}$  
-  
+- $Inline Maths{}$ ~~. $right{}$~~  
   
 - $$  
 Math Block  
 $$  
-  
-  
   
 - [index](index.md) Link  
