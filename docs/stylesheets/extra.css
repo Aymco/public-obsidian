@@ -20,6 +20,9 @@ strong {
 em {
     color: var(--italic-color);
 }
+a {
+    text-decoration: underline;
+}
 
 [data-md-color-scheme="slate"]  {
 	
