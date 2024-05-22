@@ -28,22 +28,23 @@ Merci de me prévenir si il y des erreurs.
   
   
   
-# Notations  
+# Notations : Titre 1  
+## Titre 2  
+### Titre 3  
+#### Titre 4  
   
-- **Gras**  
+- **Gras** : definitions  
   
-- *Italique*  
+- *Italique* : mots importants  
   
 - $Inline Maths{}$  
   
--   
-  
+$$  
+Math Block  
+$$  
+$$  
+MathBlock 2 lines  
 $$  
   
-- Math Block  
   
--   
-  
-$$  
-  $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 - [index](index.md) Link  
