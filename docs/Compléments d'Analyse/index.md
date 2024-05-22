@@ -19,24 +19,24 @@ updated: 2024-05-22
 	- distance de *manhattan* : $d_{m}(x,y)=\sum_{0}^{n-1}|x_{i}-y_{i}|{}$  
   
 - **Espace métrique** :$(X,d){}$ : Ensemble, distance (que 2 cond : *pseudo-métrique*)  
-	- Espace *Complet* : tt suites de cauchy convergent  
+	- Espace *Complet* : tt suite de cauchy converge  
 	- Espace *séparable* : $\exists{}$ sous espace dénombrable  
 	- sous-espace *dense* : $\forall y\in Y, \exists x \in X\subset Y:d(x,y)<\epsilon{}$ ($\mathbb{Q} {}$ dense $\mathbb{R}{}$)  
+![Suites](Suites.md)  
   
-- suite $a_{n}{}$ converge : $\exists N: \forall n>N:d(a_{n}, a)<\epsilon \quad(\forall\epsilon>0){}$ ⇒  
   
-- suite de *Cauchy* : $\exists N:\forall m,n>N,d(a_{n},a_{m})<\epsilon{}$                     ⇒  
   
-- *bornée* : $sup (x_{n})\leq \infty{}$   
   
-- suite *sommable* <. > $\sum_{}^{\infty}x_{i}{}$ converge  
-(voir [Analyse 1](Analyse%201.md))  
 # Normes  
   
-- **Norme** : $||\cdot||:X\to \mathbb{R}^+{}$  
+- **Norme** : $||\cdot||:X\to \mathbb{R}^+{}$  ex: $| | u| |_{p}=\sqrt{ \sum u_{i}^p }{}$  ; $| | u| |_{\infty}=max(u_{i}){}$  
 	1. *définir positive* : $\lvert \lvert x \rvert \rvert=0\iff x=0{}$  
 	2. *absolument homogene* : $\lvert \lvert \alpha x \rvert \rvert\leq \lvert \alpha \rvert\cdot \lvert \lvert x \rvert \rvert{}$  
 	3. *inégalité triangulaire* : $||x+y||\leq||x||+||y||{}$  ~~.$\forall x,y{}$~~  
+  
+- **Espace Normé** : $(X, | | \cdot| |){}$  
+  
+- **Espace de Banach** : Normé + Complet ($d(u,v)=| |u-v| |{}$)  
 # Analyse fonctionnelle  
 → espaces de fonction / *dimensions infinies*  
 fonctionnelle :  fonction sur les fonctions  
