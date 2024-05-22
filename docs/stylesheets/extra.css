@@ -25,6 +25,24 @@ a:not(:has(> *)) {
     text-decoration: underline;
 }
 
+
+li {
+	margin-bottom: 0 !important;
+}
+ul {
+	margin: 0 0 0 0.625em !important;
+}
+
+p {
+	margin-bottom: 0 !important;
+	margin-top: 0 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 0 0 !important;
+}
+
+
 [data-md-color-scheme="slate"]  {
 	
     --italic-color: rgb(72, 234, 255);
