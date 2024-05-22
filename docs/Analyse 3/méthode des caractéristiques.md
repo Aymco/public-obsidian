@@ -2,14 +2,13 @@
 share: true  
 category: Analyse 3  
 created: 2023-10-22  
-updated: 2024-01-09  
+updated: 2024-02-12  
 title: méthode des caractéristiques  
 ---  
-  
 # Méthode des caractéristiques  
 transformer [EDP](EDP.md) en [EDO](EDO.md)  
 condition initiale : $u(\Gamma(s))=f(s)$ (souvent $\Gamma(s)=(0,s)$)  
-# Premier ordre : [EDP > EDP premier ordre](EDP.md#edp-premier-ordre)  
+# Premier ordre : [EDP > EDP premier ordre](EDP.md#EDP%20premier%20ordre)  
 ## Verification du problème de Cauchy  
 dérivée directionnelle :$\frac{du}{ds}=u_{x} \frac{dx}{ds}+u_{y} \frac{dy}{ds}$  
 ## Trouver les courbes caractéristiques :  
@@ -22,14 +21,14 @@ $\begin{vmatrix}P &Q\\\frac{dx}{ds} & \frac{dy}{ds}\end{vmatrix}=0$ → $Pdy=Qdx
 **Relations caractéristiques** : (vérifiées le long de chaque caractéristique)  
 $Pdu=Rdx$ et $Qdu=Rdy$  
 pseudo équation :  $\frac{P}{dx}=\frac{Q}{dy}=\frac{R}{du}$  (pour retenir)  
-# EDP de transport : [EDP > EDP de transport](EDP.md#edp-de-transport)  
+# EDP de transport : [EDP > EDP de transport](EDP.md#EDP%20de%20transport)  
 **Forme conservative** : $\iff\frac{d}{dt}\int_{a}^b u \,dx =0 \iff [cu]_{a}^b = 0$  
   
 - courbe caractéristique : $cdt=du$  
   
 - $d(cu)=0$ : $cu$ est cst le long des caractéristiques (c indépendant de t)  
 	- ⇒ $u(x,y)=\frac{c(s)}{c(x)}f(s)$  
-# Equation onde 1 dimension : [EDP > Equation d'onde](EDP.md#equation-donde)  
+# Equation onde 1 dimension : [EDP > Equation d'onde](EDP.md#Equation%20d'onde)  
   
 - On a $u=c\frac{ \partial \phi }{ \partial x }$ et $v=\frac{ \partial \psi }{ \partial t }$  
   

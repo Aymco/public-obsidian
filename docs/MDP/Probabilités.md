@@ -2,10 +2,9 @@
 share: true  
 category: MDP  
 created: 2023-12-16  
-updated: 2024-01-25  
+updated: 2024-05-21  
 title: Probabilités  
 ---  
-  
 [Combinatoires - dénombrements](Combinatoires%20-%20d%C3%A9nombrements.md)  
   
   
@@ -19,17 +18,16 @@ title: Probabilités
 - Probabilités *conditionnelles* : $P(A|B)=\frac{P(A\cap B)}{P(B)}$ A sachant(corrigé par)B  
 	- $A\perp\!\!\!\perp B\iff P(B|A)=P(B)\iff P(A|B)=P(A)$  
 	- *théorème de Bayès* : $P(A|B)=\frac{P(A)}{P(B)}P(B|A)$  
-  
-- Inférences statistiques : $p$ proba de réussite, $b$ réussites, $n$ épreuves  
+	- Inférences statistiques : $p$ proba de réussite, $b$ réussites, $n$ épreuves  
 	- *succession de Laplace* (*Bayèsienne*) $p\approx \frac{b+1}{n+1}$   
 	- raisonnement *Fréquentiste* : $p\approx \frac{b}{n}$  
 # Espaces probabilisés  
   
 - définition  
 	1. *Univers* $\Omega$  
-	2. *Tribu* ($\sigma$-algèbre) $\mathcal{A} \{ \Omega \}$ : tous les sous ensembles de $\Omega$  
+	2. *Tribu* ($\sigma$-algèbre) $\mathcal{A} \{ \Omega \}$ : sous ensembles de $\Omega$  
 		- $\bar{a}=\frac{\Omega}{A} \in \mathcal{A}$ , $a_{1}\cup a_{2}\in\mathcal{A}$ fermé para rapport a l'union et compllément  
-	1. *Probabilité* $P:\mathcal{A}\to[0,1]$  
+	3. *Probabilité* $P:\mathcal{A}\to[0,1]$  
   
 - *Produit*  $=(\Omega_{1}\times\Omega_{2}, A_{1}\times A_{2}, P(A_{1})P(A_{2}))$ (évenements indé)  
   

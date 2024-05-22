@@ -2,11 +2,10 @@
 share: true  
 category: Chimie 2  
 created: 2023-09-25  
-updated: 2024-01-18  
+updated: 2024-05-21  
 tags: []  
 title: Chimie 2  
 ---  
-  
 voir synthese github (pas schoenauen)  
   
 - [Formulaire chimie II](Formulaire%20chimie%20II.md)  
@@ -43,7 +42,7 @@ voir synthese github (pas schoenauen)
   
 - [x] APE 4 ✅ 2024-01-03 cycles thermodynamiqes + entropie enthalpie  
   
-- [ ] APE 5  
+- [x] APE 5  
 ## Proost  
   
 - [x] APE 1 Cinétique ✅ 2024-01-03  
@@ -52,7 +51,7 @@ voir synthese github (pas schoenauen)
   
 - [x] APE 3 équilibre chimiques ✅ 2024-01-18  
   
-- [ ] APE 4 équilibre électro-chimique  
+- [x] APE 4 équilibre électro-chimique  
   
 - [x] APE 5 équilibre entre phases ✅ 2024-01-18  
 # A connaitre  
