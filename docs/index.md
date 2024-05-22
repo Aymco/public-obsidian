@@ -17,8 +17,33 @@ Bienvenue, ce site contient mes synthèse :
 - [Chimie et chimie physique 2](Chimie%202)  
   
 # Q4  
-…  
+  
+- [Compléments d'analyse](Compl%C3%A9ments%20d'analyse.md)  
   
 Ces synthèses sont a la base réalisées pour un usage personnel, certain éléments ne transfèrent donc pas correctement vers le site.  
   
 Merci de me prévenir si il y des erreurs.  
+  
+  
+  
+  
+  
+# Notations  
+  
+- **Gras**  
+  
+- *Italique*  
+  
+- $Inline Maths{}$  
+  
+-   
+  
+$$  
+  
+- Math Block  
+  
+-   
+  
+$$  
+  
+- [index](index.md) Link  

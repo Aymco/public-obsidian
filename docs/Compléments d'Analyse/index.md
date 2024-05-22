@@ -7,7 +7,7 @@ title: Compléments d'analyse
 created: 2024-02-07  
 updated: 2024-05-22  
 ---  
-⅕ - ⅖ pondération des devoirs (20+11+0+(18)  
+⅕ - ⅖ pondération des devoirs  
 # [Ensembles et topologies](Ensembles%20et%20topologies.md)  
 # Distance  
   
