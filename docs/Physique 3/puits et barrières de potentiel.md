@@ -4,10 +4,9 @@ category: Physique 3
 tags:  
   - matière  
 created: 2023-12-23  
-updated: 2024-01-13  
+updated: 2024-05-22  
 title: puits et barrières de potentiel  
 ---  
-  
 $V$ change brutalement de valeur  
 voir aussi [Fonction d'onde de Schrödinger](Fonction%20d'onde%20de%20Schr%C3%B6dinger.md)  
 # Puits Infinis  
@@ -39,12 +38,8 @@ barrière : $[0,L]$ avec $U(x)=\left\{\begin{align} U_{0} \;&\text{si}\;x \in B\
   
 - *Effet tunnel*  $E<U_{0}$ : la particule peut traverser la barrière (si $F \neq 0$)  
 	- proba rebondisse $R$  - traverse $T$ → $T+R=1$ :   
-  
-  
 $$  
 T=\frac{4E(U_{0}-E)}{4E(U_{0}-E)+U_{0}^{2}\sinh ^{2}\left( \frac{L}{\hbar}\sqrt{ 2m(U_{0}-E) } \right)}  
-  
-  
 $$  
   
 - ⇒ microscope a effet tunnel   
