@@ -12,7 +12,6 @@
 strong {
   /* add highlight to bold text with an background color */
   background-color: var(--text-highlight-bg);
-  color: #fff;
   padding: 0 5px;
   padding-block: 0.1em;
   border-radius: 5px;
@@ -49,9 +48,9 @@ em {
   }
 [data-md-color-scheme="default"]  {
 	
-    --italic-color: #247580;
-    --text-highlight-bg: #00bdd6;
-    --latex-color: #f20051;
+    --italic-color: #0095a9;
+    --text-highlight-bg: #00afd6;
+    --latex-color: #bf0000;
     --md-text-link-color: #FFAA33;
     
 	em {
