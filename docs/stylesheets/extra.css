@@ -81,15 +81,6 @@ a {
   }
 
 
-/*
-
-Minimal Publish / MIT License
-Copyright (c) 2020-2023 Stephan Ango (@kepano)
-
-*/
-/* Adjust the following variables or find more at the link below */
-/* https://docs.obsidian.md/Reference/CSS+variables/CSS+variables */
-
 /* Mobile */
 @media (max-width:400pt) {
 	body {
