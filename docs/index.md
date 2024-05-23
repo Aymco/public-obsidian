@@ -19,19 +19,20 @@ up
   
 - $maths{}$  
   
-- liens [[index|index]]  
+- liens [Home](index.md#)  
 # Q3  
   
 - [Physique 3](./Physique%25203/index.md#)  
   
-- [Analyse 3](./Analyse%25203/index.md#)    
+- [Analyse 3](./Analyse%25203/index.md#)  
   
 - [Math discrète et probabilités](../MDP.md#)  
   
 - [Chimie et chimie physique 2](./Chimie%25202/index.md#)  
 # Q4  
   
-- [[./Compléments d'Analyse/index|Compléments d'Analyse]]  
+- [Compléments d'Analyse](Compl%C3%A9ments%20d%27Analyse)  
+  
   
   
   
