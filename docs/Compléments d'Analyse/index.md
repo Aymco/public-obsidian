@@ -7,7 +7,6 @@ title: Compléments d'Analyse
 created: 2024-02-07  
 updated: 2024-05-23  
 ---  
-⅕ - ⅖ pondération des devoirs  
 # [Ensembles et topologies](Ensembles%20et%20topologies.md)  
 # Distances  
   
@@ -117,3 +116,7 @@ updated: 2024-05-23
 	- *théoreme de Radon-Nikodym* : $\mu{}$ dénombrable finie et $v{}$ abs continue pdv $\mu{}$ ⇒ $\exists f=\frac{dv}{d\mu} {}$  
   
 - ch de variable$f_{*}\mu(A):=\mu (f^{-1}(A)){}$ avec $f:X\to Y{}$ et $\mu:X{}$  
+  
+  
+  
+⅕ - ⅖ pondération des devoirs  
