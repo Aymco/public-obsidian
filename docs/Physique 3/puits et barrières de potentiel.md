@@ -8,7 +8,7 @@ updated: 2024-05-22
 title: puits et barrières de potentiel  
 ---  
 $V$ change brutalement de valeur  
-voir aussi [Fonction d'onde de Schrödinger](Fonction%20d'onde%20de%20Schr%C3%B6dinger.md)  
+voir aussi [[./Fonction d'onde de Schrödinger|Fonction d'onde de Schrödinger]]  
 # Puits Infinis  
 puit : $[0,L]$ avec $U(x)=\left\{\begin{align} 0 \;&\text{si}\;x \in P\\\infty \;& \end{align}\right.$  
   
