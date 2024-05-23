@@ -3,7 +3,7 @@ share: "true"
 category: docs  
 created: 2023-12-31  
 updated: 2024-05-23  
-title: index  
+title: home  
 ---  
 Bienvenue, ce site contient des synthese de cours d'ingénieur civil.  
   
