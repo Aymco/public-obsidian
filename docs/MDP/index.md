@@ -25,5 +25,8 @@ nb
 &ensp;  
 en
 &emsp;
+ <br />
+  <br />
+   <br />
 em
 $E(X^n)=\int x^nf(x) \, dx$  
