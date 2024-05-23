@@ -21,7 +21,7 @@ updated: 2024-05-23
   
 - **Espace métrique** :$(X,d){}$ : Ensemble, distance (que 2 cond : *pseudo-métrique*)  
 	- Espace *Complet* : tt suite de cauchy converge  
-	- Espace *séparable* : $\exists{}$ sous espace dénombrable  
+	- Espace *séparable* : $\exists{}$ sous espace dénombrable et dense  
 	- sous-espace *dense* : $\forall y\in Y, \exists x \in X\subset Y:d(x,y)<\epsilon{}$ ($\mathbb{Q} {}$ dense $\mathbb{R}{}$)  
   
 - ****[Suites](Suites.md)**  
@@ -117,12 +117,3 @@ updated: 2024-05-23
 	- *théoreme de Radon-Nikodym* : $\mu{}$ dénombrable finie et $v{}$ abs continue pdv $\mu{}$ ⇒ $\exists f=\frac{dv}{d\mu} {}$  
   
 - ch de variable$f_{*}\mu(A):=\mu (f^{-1}(A)){}$ avec $f:X\to Y{}$ et $\mu:X{}$  
-# Analyse fonctionnel. e  
-→ espaces de fonction / *dimensions infinies*  
-fonctionnelle :  fonction sur les fonctions  
-  
-# Theorie de la mesure  
-probabilités  
-## Bases d'espaces vectoriels  
-  
-- (*Base de Hamel*) : tout veteur = combili finie  
