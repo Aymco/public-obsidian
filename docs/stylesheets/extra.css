@@ -81,9 +81,9 @@ h2 {margin: 0.6em 0 0 0 !important;}
   }
 [data-md-color-scheme="default"]  {
 	
-    --italic-color: #0095a9;
-    --text-highlight-bg: #00afd6;
-    --latex-color: #bf0000;
+    --italic-color: rgb(0 86 252);
+    --text-highlight-bg: #0079d44a;
+    --latex-color: #9b0000;
     --md-text-link-color: #FFAA33;
 
 	
@@ -92,7 +92,8 @@ h2 {margin: 0.6em 0 0 0 !important;}
     --md-primary-bg-color: #fbfbe9;
     
 	em {
-    	font-weight: bold;
+	//font-weight: 600;
+		font-style: normal;
 	}
   }
   
