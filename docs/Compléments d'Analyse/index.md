@@ -74,7 +74,7 @@ updated: 2024-05-23
 		- *noyeau de Dirichlet* $D_{n}(x)=\sum_{k=-n}^{n}e^{ikx}=\frac{\sin\left( x\left( n+\frac{1}{2} \right) \right)}{\sin\left( \frac{x}{2} \right)}{}$ ($\int_{-\pi}^{\pi} D_{n}(x) \, dx=2\pi{}$)  
 	- *Sommes moyennées* → $\lim_{ n \to \infty }\tilde S _{n}[f]=f{}{}$ : $\tilde{S}_{n}[f]=\frac{1}{n}\sum_{k=0}^{n-1}S_{n}[f]=\frac{1}{2\pi}\int_{-\pi}^{\pi} F_{n}(x-y)f(y) \, dy{}$   
 		- *noyeau de Féjer* $F_{n}(x)=\sum_{k=-n}^{n}D_{n}(x)=\frac{1}{n}\left( \frac{\sin\left( \frac{nx}{2} \right)}{\sin\left( \frac{x}{2} \right)} \right)^2{}$  
-  
+<br/>  
 # Mesures  
   
 - **Tribus** : $\sum\in \mathbf{B}(X){}$;1. $\emptyset , X \in  \sum{}$ 2. $A,\bar{A}\in \sum{}$ 3. $\bigcup_{\alpha}, \bigcap _{\alpha}\in \sum{}$  
@@ -116,7 +116,7 @@ updated: 2024-05-23
 	- *théoreme de Radon-Nikodym* : $\mu{}$ dénombrable finie et $v{}$ abs continue pdv $\mu{}$ ⇒ $\exists f=\frac{dv}{d\mu} {}$  
   
 - ch de variable$f_{*}\mu(A):=\mu (f^{-1}(A)){}$ avec $f:X\to Y{}$ et $\mu:X{}$  
-  
-  
-  
+<br/>  
+<br/>  
 ⅕ - ⅖ pondération des devoirs  
+<br/>
