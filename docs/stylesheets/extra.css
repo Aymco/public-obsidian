@@ -30,7 +30,7 @@ em {
     color: var(--italic-color);
 }
 
-a:not(:has(> *)) {
+a:not(:has(> *)):not(.md-tabs__link) {
     text-decoration: underline;
 }
 
