@@ -3,13 +3,13 @@ share: "true"
 category: docs  
 created: 2023-12-31  
 updated: 2024-05-23  
-title: home  
+title: Home  
 ---  
 Bienvenue, ce site contient des synthese de cours d'ingénieur civil.  
   
 Ces synthèses sont a la base réalisées pour un usage personnel, certain éléments pourraient donc ne pas s'afficher correctement.  
   
-Merci de me prévenir si il y des erreurs.  
+N'hésitez pas a modifier les synthèses via le bouton en haut a droite.  
 ## Notations  
   
 - **Définition**  
