@@ -8,9 +8,7 @@ title: Home
 Bienvenue, ce site contient des synthese de cours d'ingénieur civil.  
 Ces synthèses sont a la base réalisées pour un usage personnel, certain éléments pourraient donc ne pas s'afficher correctement.  
 N'hésitez pas a modifier les synthèses via le bouton en haut a droite.  
-    
-    
-    
+@nbsp;  
 up  
 ## Notations  
   
@@ -33,8 +31,8 @@ up
 - [Math discrète et probabilités](MDP)  
   
 - [Chimie et chimie physique 2](Chimie%202)  
-<br/>  
-<br/>  
+@nbsp;  
+@nbsp;  
 # Titre 1 : TESTS  
 $$  
 Math Block  
@@ -42,4 +40,4 @@ $$
 ## Titre 2  
 ### Titre 3  
 #### Titre 4  
-<br/>
+@nbsp;
