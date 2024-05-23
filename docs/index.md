@@ -34,10 +34,6 @@ up
 - [Compléments d'Analyse](Compl%C3%A9ments%20d%27Analyse)  
   
   
-  
-  
-  
-  
 # Titre 1 : TESTS  
 $$  
 Math Block  
