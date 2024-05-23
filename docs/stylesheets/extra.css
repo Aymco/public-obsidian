@@ -32,7 +32,6 @@ em {
 
 a:not(:has(> *)) {
     text-decoration: underline;
-	color: var(--md-accent-fg-color) !important;
 }
 
 
@@ -72,7 +71,7 @@ h2 {margin: 0.6em 0 0 0 !important;}
 
     color: #CCCAC2;
     --md-accent-fg-color: #F5A83D;
-	--link-color: var(--md-accent-fg-color);
+	--md-typeset-a-color: #eb8900;
 
     /* Accent color shades
     --md-primary-fg-color--light: #FFAA33;
