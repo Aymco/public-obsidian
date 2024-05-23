@@ -15,7 +15,7 @@ theme:
     name: 'material'
     custom_dir: overrides
     font:
-        text: Inter
+        text: Lato
     icon:
       logo: material/lightbulb-on
     favicon: images/favicon.png
