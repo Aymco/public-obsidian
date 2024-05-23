@@ -17,7 +17,10 @@ title: MDP
   
 [Devoir 4 démos](Devoir%204%20d%C3%A9mos.md)  
   
-  
 &nbsp;
-
+nb
+&ensp;
+en
+&emsp;
+em
 $E(X^n)=\int x^nf(x) \, dx$  
