@@ -10,7 +10,8 @@ Bienvenue, ce site contient des synthese de cours d'ingénieur civil.
 Ces synthèses sont a la base réalisées pour un usage personnel, certain éléments pourraient donc ne pas s'afficher correctement.  
   
 N'hésitez pas a modifier les synthèses via le bouton en haut a droite.  
-up  
+  
+  
 ## Notations  
   
 - **Définition**  
@@ -20,8 +21,6 @@ up
 - $maths{}$  
   
 - liens [Home]()  
-  
-- up  
 # Q4  
   
 - [Compléments d'Analyse](Compl%C3%A9ments%20d%27Analyse)  
