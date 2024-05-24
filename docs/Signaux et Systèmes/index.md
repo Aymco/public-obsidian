@@ -161,6 +161,7 @@ generalisation DFT
 # Autres  
 $\text{sinc}(u)=\frac{\sin(\pi u)}{\pi u} {}$  
 &nbsp;  
-  
+&nbsp;  
+&nbsp;  
 &nbsp;  
 test  
