@@ -29,8 +29,6 @@ $jw=j2\pi f{}$ et $\Omega=\omega T_{s}{}$
 $T_{s}=\frac{2\pi}{T}{}$ période de discrétisation  
 propiétés  
   
-- *linéaire*  
-  
 - $x\in  \mathbb{R}{}$ → $X \in \mathbb{R}{}$ pair, $\mathfrak{I}{}$ impaire  
   
 - $x{}$ pair / impair → $X{}\in$ $\mathbb{R}{}$ et pair / $\mathfrak{I}{}$et impair  
@@ -38,7 +36,6 @@ propiétés
 - $x,y{}$ non périodiques : $\mathcal{F}\{ x*y \}=XY{}$  et  $\mathcal{F}\{ xy \}=\frac{X*Y}{2\pi}{}$  
   
 - $x,y{}$ périodiques : $\mathcal{F}\{ x*y \}=T_{fondamentale}XY{}$  et $\mathcal{F}\{ xy \}=X*Y{}$  
-&nbsp;  
   
 - *Relation de Parseval* : $\int_{-\infty}^{\infty} |x(t)|^2 \, dt{}=\frac{1}{2\pi}\int_{-\infty}^{\infty} |X(j\omega)|^2 \, dt$  
 ## Transformé de Fourier continue - **FT**  
@@ -85,7 +82,7 @@ $x[n]{}$ de période $N{}$
 - DTFS : $x[0:N-1]\to X[0:N-1]{}$ : $X[k]=\sum x[n]e^{-jk\Omega_{0}n} {}$  puis $/N{}$  
   
 - *zéro padding* : ajouter $N-L{}$ zéro → augmenter la précision ($N{}$ puissance de 2)  
-# Transformée de Laplace $\mathcal{L}\{  \}{}$  
+# Transformée de Laplace $\mathcal{L}\{ \}{}$  
   
 - généralisation de FT : $s=\sigma+j\omega{}$  
   
@@ -96,16 +93,6 @@ $x[n]{}$ de période $N{}$
 - existe TL pour des signaux sans FT  
   
 - a une région de convergence *ROC*: $\int_{-\infty}^{\infty} |x(t)|e^{-\sigma t} \, <\infty{}$  
-  
-- propriétés #TODO  
-	- *linéarité*  
-	- *décalage temporel* mm ROC  
-	- *décalage fréquentiel* : ROC = ROC +$\mathcal{R}\{ s_{0} \}{}$  
-	- *changement d'échelle en temporel* : ROC = a ROC  
-	- *convolution* : $ROC\cap ROC_{2}\in ROC{}$  
-	- *différentiation en temporel* :   
-	- _différentiation en fréquence_ :   
-	- *intégration en temporel* :   
   
 - **Unitlatérale** : $X_{u}(s)=\int_{0^-}^{\infty} x(\tau e^{-s\tau}) \, d\tau{}$  
 	- #TODO  
@@ -124,20 +111,19 @@ generalisation DFT
 - **Unilatérale** : $X_{u}(z)=\sum_{0}^{\infty}x[n]s^{-n}{}$  
 &nbsp;  
 # Propriétés  
-| propiétés                                                    | $\mathcal{F}\{  \}{}$            | $\mathcal{L}{}$     | $\mathcal{Z}_{u}\{  \}{}$       |  
-| ------------------------------------------------------------ | -------------------------------- | ------------------- | ------------------------------- |  
-| *linéarité*                                                  |                                  |                     |                                 |  
-| *décalage temporel* $x(t-t_{0}){}$                           | $e^{-j\omega t_{0}}X(j\omega){}$ | $e^{-st_{0}}X(s){}$ | $z^{-n_{0}}X(z)$                |  
-| *décalage temporel*$\mathcal{F}^{-1}\{ X(j(\omega-v)) \}={}$ | $e^{jvt}x(t){}$                  | $e^{s_{0}t}x(t){}$  | $z_{0}^nx[n]{}$                 |  
-| *ch echelle en temporel* $x(at){}$                           |                                  |                     | $X\left( \frac{1}{z} \right){}$ |  
-| *convolution* $x*y{}$                                        |                                  |                     |                                 |  
-| *différ en temporel* $\frac{ dx(t) }{ dt }{}$                | $j\omega X(j\omega){}$           | $sX(s){}$           |                                 |  
-| *diff en fréquentiel* $\frac{ dX(j\omega) }{ d\omega }{}$    | $jtx(t){}$                       | $-tx(t){}$          |                                 |  
-| *intégration en temporel*                                    |                                  | $\frac{X(s)}{s}{}$  |                                 |  
-  
-- diff :   
-  
-- *décalage* :   
+| propiétés continue        | eq                                      | $\mathcal{F}\{  \}{}$                 | $\mathcal{L}{}$                                     | $\mathcal{L}{}$ ROC                          | $\mathcal{Z}\{  \}{}$ |  
+| ------------------------- | --------------------------------------- | ------------------------------------- | --------------------------------------------------- | -------------------------------------------- | --------------------- |  
+| *linéarité*               | $ax+by{}$                               | $aX()+bY(){}$                         | $aX(s)+bY(s){}$                                     | $R_{1}\cap R_{2}\subseteq R{}$               |                       |  
+| *décalage temporel*       | $x(t-t_{0}){}$                          | $e^{-j\omega t_{0}}X(j\omega){}$      | $e^{-st_{0}}X(s){}$                                 | $R{}$                                        | $z^{-n_{0}}X(z)$      |  
+| *décalage temporel*       | $^{-1}\{ X(j(\omega-v)) \}{}$           | $e^{jvt}x(t){}$                       | $e^{s_{0}t}x(t){}$                                  | $R=R_{1}+\mathfrak{R}(s_{0}){}$              |                       |  
+| *ch echelle en temporel*  | $x(at){}$                               | $\frac{1}{\mid a\mid}X(j\omega /a){}$ | $\frac{1}{\mid a\mid}X\left( \frac{s}{a} \right){}$ | $R=aR_{1}{}$                                 |                       |  
+| *convolution*             | $x*y{}$                                 | $XY{}$($\cdot T{}$si périod )         | $XY{}$                                              | $R_{1}\cap R_{2}\subseteq R{}$               | $XY{}$                |  
+|                           | $xy{}$                                  | $X*Y{}$($/2\pi{}$!périod)             |                                                     |                                              |                       |  
+| *diff en temporel*        | $\frac{ dx(t) }{ dt }{}$                | $j\omega X(j\omega){}$                | $sX(s){}$                                           | $R_{1}\subseteq R{}$                         |                       |  
+| *diff en fréquentiel*     | $\frac{ dX(j\omega) }{ d\omega }{}$     | $jtx(t){}$                            | $-tx(t){}$                                          | $R{}$                                        |                       |  
+| *intégration en temporel* | $\int_{-\infty}^{t} x(\tau) \, d\tau{}$ |                                       | $\frac{X(s)}{s}{}$                                  | $R=R_{1}\cap \{  \mathfrak{R\{ s \}>0} \}{}$ |                       |  
+&nbsp;  
+&nbsp;  
 &nbsp;  
 # Systemes $\mathcal{H}\{ x \}{}$  
   
