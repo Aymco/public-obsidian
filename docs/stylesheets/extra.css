@@ -1,6 +1,6 @@
 
 .MJX-TEX {
-  font-size: 120%;
+ font-size: min(34px, 120%);
   color: var(--latex-color);
   text-align: center !important;
 }
