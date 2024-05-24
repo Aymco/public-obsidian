@@ -158,10 +158,45 @@ generalisation DFT
 | $\frac{j\omega}{\omega_{i}}+1$                                       | $\left\{\begin{aligned} 0 :\omega\ll\omega_{0}\\ 20\log \sqrt{ 2 } \approx 3 : \omega=\omega_{0}\\20\log\left( \frac{\omega}{\omega_{0}} \right):\omega\gg\omega_{0} \end{aligned}\right.{}$ | $\left\{\begin{aligned} 0 &:\omega\ll\omega_{0}\\ \frac{\pi}{4} &: \omega=\omega_{0}\\ \frac{\pi}{2}&:\omega\gg\omega_{0} \end{aligned}\right.{}$ |  
 | $\frac{j\omega}{\omega_{i}}^{2}+2\xi \frac{j\omega}{\omega_{i}}+1{}$ | $\left\{\begin{aligned} 0 :\omega\ll\omega_{0}\\ 20\log  (2\xi ) \approx 3 : \omega=\omega_{0}\\40\log\left( \frac{\omega}{\omega_{0}} \right):\omega\gg\omega_{0} \end{aligned}\right.{}$   | $\left\{\begin{aligned} 0 &:\omega\ll\omega_{0}\\ \frac{\pi}{2} &: \omega=\omega_{0}\\ \pi&:\omega\gg\omega_{0} \end{aligned}\right.{}$           |    
     
+  
+- **Schéma-bloc** :entrée $x{}$, sortie $y{}$, états internes $q_{i}{}$  
+	- $\forall i:I_{i}=0{}$  
+	- etat : $q'(t)=Aq(t)+Bx(t){}$ et $y(t)=Cq(t)+Dx(t){}$  
+	- fct de transfert : $H(s)=\frac{Y(s)}{X(s)}=C(sI-A)^{-1}B+D{}$  
+		- $C(sI-A)^{-1}=\frac{Ccof(zI-A)B}{\det(zI-A)}{}$  
+  
+- ch de var interne : $Tq=\tilde{q}=TAT^{-1}\tilde{q}+TBx{}$ et $y=CT^{-1}\tilde{q}+Dx{}$  
+&nbsp;  
+# Commandabilité  
+  
+- $q(0)=q_{0}{}$ *commandable* : $\exists T:q(T)=0{}$   
+	- $\forall q_{i}{}$ →completement commandable , ker de (engendré par les colonnes)  
+		- *matrice de commandabilité* : $\mathcal{C}(A,B)=(B \dots A^{n-1}B){}$   
+  
+- $\bar{q}{}$ *accessible* : $q(0)=0, \exists T:q(T)=\bar{q}{}$  
+  
+- *non-observable* :$\forall T>0:x(t)=0\quad\forall t\in [0,T]$ ⇒ $y(t)=0 \quad\forall t\in [0,T] {}$  
+	- S *complètement observable* (aucun état non-observable) : ker de  
+		- $\mathcal{O}(A,C)=(C \dots CA^{n-1}){}$  
+# Stabilité  
+  
+- *BIBO Stable*(bounded input b. output) :   
+	- $|x[n]|\leq M_{x}<\infty \;\;\forall n{}$ ⇒ $|y[n]|\leq M_{y}<\infty \;\;\forall n{}$  
+	- $\iff LTI:\sum_{-\infty}^{\infty}|h[k]|<\infty{}$  
+	- #TODO  
+  
+- *Stabilité interne* : $(\bar{q},\bar{x}){}$ point *équilibre* : $A\bar{q}+B\bar{x}=0{}$  
+	- *stable* : + bruit ⇒ reste dans une marge  
+	- *attractif* : +bruit ⇒ tasser a 0  
+		- *asymptotiquement stable* : stable + attractif ($\forall i:\mathfrak{R}\{ \lambda _{i} \}<0,|\lambda_{i}|<1{}$)  
+	- *systeme stable* : tt equilibre stables  
+	- $\forall i:\mathfrak{R}\{ \lambda _{i} \}>0,|\lambda_{i}|>1{}$ ⇒ instable  
+	-  $\forall i:\mathfrak{R}\{ \lambda _{i} \}\leq0,|\lambda_{i}|\leq1{}$ :  
+		- $\forall i : |\lambda_{i}|=1\implies m_{g}(\lambda_{i})=m_{a}(\lambda_{i}){}$ ⇒ marginalement stable  
+		- $\exists i : |\lambda_{i}|=1\implies m_{g}(\lambda_{i})=m_{a}(\lambda_{i}){}$ ⇒ instable  
+		- #TODO   
+	-   
+  
+-   
 # Autres  
 $\text{sinc}(u)=\frac{\sin(\pi u)}{\pi u} {}$  
-&nbsp;  
-&nbsp;  
-&nbsp;  
-&nbsp;  
-test  
