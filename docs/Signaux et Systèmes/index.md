@@ -162,5 +162,4 @@ $\text{sinc}(u)=\frac{\sin(\pi u)}{\pi u} {}$
   
 &nbsp;  
   
-&nbsp;  
 test  
