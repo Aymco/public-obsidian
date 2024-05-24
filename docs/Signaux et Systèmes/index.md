@@ -108,7 +108,9 @@ generalisation DFT
 - propiétés :  
 	- #TODO  
   
-- **Unilatérale** : $X_{u}(z)=\sum_{0}^{\infty}x[n]s^{-n}{}$&nbsp;# Propriétés  
+- **Unilatérale** : $X_{u}(z)=\sum_{0}^{\infty}x[n]s^{-n}{}$  
+&nbsp;  
+# Propriétés  
 |    propiétés continue     |              eq (continu)               |            $\mathcal{F}{}$            |                   $\mathcal{L}{}$                   |              $\mathcal{L}{}$ ROC               |  
 | :-----------------------: | :-------------------------------------: | :-----------------------------------: | :-------------------------------------------------: | :--------------------------------------------: |  
 |        *linéarité*        |                $ax+by{}$                |             $aX()+bY(){}$             |                   $aX(s)+bY(s){}$                   |         $R_{1}\cap R_{2}\subseteq R{}$         |  
@@ -154,5 +156,5 @@ generalisation DFT
 | $\frac{j\omega}{\omega_{i}}{}$                                       | $20\log\left( \frac{\omega}{\omega_{0}} \right){}$                                                                                                                                           | $\frac{\pi}{2}{}$                                                                                                                                 |  
 | $\frac{j\omega}{\omega_{i}}+1$                                       | $\left\{\begin{aligned} 0 :\omega\ll\omega_{0}\\ 20\log \sqrt{ 2 } \approx 3 : \omega=\omega_{0}\\20\log\left( \frac{\omega}{\omega_{0}} \right):\omega\gg\omega_{0} \end{aligned}\right.{}$ | $\left\{\begin{aligned} 0 &:\omega\ll\omega_{0}\\ \frac{\pi}{4} &: \omega=\omega_{0}\\ \frac{\pi}{2}&:\omega\gg\omega_{0} \end{aligned}\right.{}$ |  
 | $\frac{j\omega}{\omega_{i}}^{2}+2\xi \frac{j\omega}{\omega_{i}}+1{}$ | $\left\{\begin{aligned} 0 :\omega\ll\omega_{0}\\ 20\log  (2\xi ) \approx 3 : \omega=\omega_{0}\\40\log\left( \frac{\omega}{\omega_{0}} \right):\omega\gg\omega_{0} \end{aligned}\right.{}$   | $\left\{\begin{aligned} 0 &:\omega\ll\omega_{0}\\ \frac{\pi}{2} &: \omega=\omega_{0}\\ \pi&:\omega\gg\omega_{0} \end{aligned}\right.{}$           |  
-&nbsp;# Autres  
+# Autres  
 $\text{sinc}(u)=\frac{\sin(\pi u)}{\pi u} {}$  
