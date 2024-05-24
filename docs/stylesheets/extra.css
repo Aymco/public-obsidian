@@ -121,5 +121,6 @@ h1, h2 {margin: 0.5em 0 0 0 !important;}
 	body {
 		--cards-min-width:var(--cards-mobile-width);
 		--img-grid-gap: 0.25rem;
+	    	overflow-x: hidden;
 	}
 }
