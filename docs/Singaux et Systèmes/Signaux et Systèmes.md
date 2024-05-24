@@ -96,7 +96,7 @@ $x[n]{}$ de période $N{}$
   
 - **Unitlatérale** : $X_{u}(s)=\int_{0^-}^{\infty} x(\tau e^{-s\tau}) \, d\tau{}$  
 	- #TODO  
-## Transformée en $z{}$  
+# Transformée en $\mathcal{Z}{}$  
 generalisation DFT  
   
 - $X(z)=\sum_{-\infty}^{\infty}x[k]z^{-k}{}$  
@@ -111,50 +111,51 @@ generalisation DFT
 - **Unilatérale** : $X_{u}(z)=\sum_{0}^{\infty}x[n]s^{-n}{}$  
 &nbsp;  
 # Propriétés  
-| propiétés continue        | eq                                      | $\mathcal{F}\{  \}{}$                 | $\mathcal{L}{}$                                     | $\mathcal{L}{}$ ROC                          | $\mathcal{Z}\{  \}{}$ |  
-| ------------------------- | --------------------------------------- | ------------------------------------- | --------------------------------------------------- | -------------------------------------------- | --------------------- |  
-| *linéarité*               | $ax+by{}$                               | $aX()+bY(){}$                         | $aX(s)+bY(s){}$                                     | $R_{1}\cap R_{2}\subseteq R{}$               |                       |  
-| *décalage temporel*       | $x(t-t_{0}){}$                          | $e^{-j\omega t_{0}}X(j\omega){}$      | $e^{-st_{0}}X(s){}$                                 | $R{}$                                        | $z^{-n_{0}}X(z)$      |  
-| *décalage temporel*       | $^{-1}\{ X(j(\omega-v)) \}{}$           | $e^{jvt}x(t){}$                       | $e^{s_{0}t}x(t){}$                                  | $R=R_{1}+\mathfrak{R}(s_{0}){}$              |                       |  
-| *ch echelle en temporel*  | $x(at){}$                               | $\frac{1}{\mid a\mid}X(j\omega /a){}$ | $\frac{1}{\mid a\mid}X\left( \frac{s}{a} \right){}$ | $R=aR_{1}{}$                                 |                       |  
-| *convolution*             | $x*y{}$                                 | $XY{}$($\cdot T{}$si périod )         | $XY{}$                                              | $R_{1}\cap R_{2}\subseteq R{}$               | $XY{}$                |  
-|                           | $xy{}$                                  | $X*Y{}$($/2\pi{}$!périod)             |                                                     |                                              |                       |  
-| *diff en temporel*        | $\frac{ dx(t) }{ dt }{}$                | $j\omega X(j\omega){}$                | $sX(s){}$                                           | $R_{1}\subseteq R{}$                         |                       |  
-| *diff en fréquentiel*     | $\frac{ dX(j\omega) }{ d\omega }{}$     | $jtx(t){}$                            | $-tx(t){}$                                          | $R{}$                                        |                       |  
-| *intégration en temporel* | $\int_{-\infty}^{t} x(\tau) \, d\tau{}$ |                                       | $\frac{X(s)}{s}{}$                                  | $R=R_{1}\cap \{  \mathfrak{R\{ s \}>0} \}{}$ |                       |  
+|    propiétés continue     |              eq (continu)               |            $\mathcal{F}{}$            |                   $\mathcal{L}{}$                   |              $\mathcal{L}{}$ ROC               |  
+| :-----------------------: | :-------------------------------------: | :-----------------------------------: | :-------------------------------------------------: | :--------------------------------------------: |  
+|        *linéarité*        |                $ax+by{}$                |             $aX()+bY(){}$             |                   $aX(s)+bY(s){}$                   |         $R_{1}\cap R_{2}\subseteq R{}$         |  
+|    *décalage temporel*    |             $x(t-t_{0}){}$              |   $e^{-j\omega t_{0}}X(j\omega){}$    |                 $e^{-st_{0}}X(s){}$                 |                     $R{}$                      |  
+|    *décalage temporel*    |           $X(j(\omega-v)) {}$           |            $e^{jvt}x(t){}$            |                 $e^{s_{0}t}x(t){}$                  |        $R=R_{1}+\mathfrak{R}(s_{0}){}$         |  
+| *ch echelle en temporel*  |                $x(at){}$                | $\frac{1}{\mid a\mid}X(j\omega /a){}$ | $\frac{1}{\mid a\mid}X\left( \frac{s}{a} \right){}$ |                  $R=aR_{1}{}$                  |  
+|       *convolution*       |                 $x*y{}$                 |     $XY{}$($\cdot T{}$si périod )     |                       $XY{}$                        |         $R_{1}\cap R_{2}\subseteq R{}$         |  
+|                           |                 $xy{}$                  |       $X*Y{}$($/2\pi{}$!périod)       |                                                     |                                                |  
+|    *diff en temporel*     |        $\frac{ dx(t) }{ dt }{}$         |        $j\omega X(j\omega){}$         |                      $sX(s){}$                      |              $R_{1}\subseteq R{}$              |  
+|   *diff en fréquentiel*   |   $\frac{ dX(j\omega) }{ d\omega }{}$   |              $jtx(t){}$               |                     $-tx(t){}$                      |                     $R{}$                      |  
+| *intégration en temporel* | $\int_{-\infty}^{t} x(\tau) \, d\tau{}$ |                                       |                 $\frac{X(s)}{s}{}$                  | $R=$$R_{1}\cap \{  \mathfrak{R\{ s \}>0} \}{}$ |  
 &nbsp;  
-&nbsp;  
-&nbsp;  
-# Systemes $\mathcal{H}\{ x \}{}$  
+# Systemes $\mathcal{H}\{ x(t) \}=y(t){}$  
   
-- fonction de signaux  
-&nbsp;  
-  
-- Systeme *Linéaire a temps invariant* :  **LTI** (LIT)   
-	- *invariance temporelle* : mm réponse retardé si signal retardé  
-	- linéaire : $\mathcal{H}(ax+by)=a\mathcal{H}(x)+b\mathcal{H}(y){}$  
+- Systeme **LTI**(LIT): *Linéaire a temps invariant* :    
+	- *invariance temporelle* : sortie ne varie pas si entrée retardé  
+	- *linéaire* : $\mathcal{H}(ax+by)=a\mathcal{H}(x)+b\mathcal{H}(y){}$   
   
 - *sans mémoire* : $y(t)=cx(t)\implies h[n]=c\delta[n]{}$  
   
 - *causal* : depend pas des valeurs futures : $h[n]=0\quad\forall n<0{}$   
-	- non-causal ⇒ avec mémoire  
   
 - *inversible* : $\exists h^{-1}:h^{-1}*h=\delta{}$  
   
-- *reponse impulsinnelle* : $h(t)=H\{ \delta(t) \}{}$  → $y[k]=x[k]*h[k]{}$  
+- **reponse impulsinnelle** : $h(t)=H\{ \delta(t) \}{}$  → $y[k]=x[k]*h[k]{}$  
   
-- *réponse indicielle* : $s(t):=h(t)*u(t){}$ → $h(t)=\frac{ds(t)}{dt}{}$ ($S(s)=H(z)U(z){}$)  
+- **réponse indicielle** : $s(t):=h(t)*u(t){}$ → $h(t)=\frac{ds(t)}{dt}{}$ ($S(z)=H(z)U(z){}$)  
   
 - **Convolution** : $x*y=\sum_{k}^{\infty} x[n]y[k-n]{}$  
   
-- *interconnection* parralele → $h_{1}(t)+h_{2}(t){}$  
-  
-- *interconnection* série → $h_{1}(t)*h_{2}(t){}$ (ordre peut etre changé)  
+- *interconnection* :$H_{1}\{ H_{2}\{  \} \}:h_{1}(t)+h_{2}(t){}$et $H_{1}\{  \}+H_{2}\{  \}:h_{1}(t)*h_{2}(t){}$  
 # Fonction de transfert  
-&nbsp;  
-# Convolution  
   
-- *neutre* : $\delta{}$  
+- fonction de tansfert : $H(z)=\sum_{-\infty}^{\infty}h[k]z^{-n}{}$  
+	- image de $x[n]\to X(z)\to Y(z)=X(z)H(z)\to y(n){}$  
+  
+- diagramme de bode : graphe $\omega\to 20\log(|H(j\omega)|){}$  
+	- CONSTRUCTION :  $H=K \frac{\left( \frac{j\omega}{\omega_{0}} \right)\left( \frac{j\omega}{\omega_{1}} +1\right)\left( \frac{j\omega}{\omega_{2}}^{2}+2\xi \frac{j\omega}{\omega_{2}}+1\right)}{\left( \frac{j\omega}{\omega_{3}} \right)\left( \frac{j\omega}{\omega_{4}} +1\right)\left( \frac{j\omega}{\omega_{5}}^{2}+2\xi \frac{j\omega}{\omega_{5}}+1\right)}{}$  
+&nbsp;  
+| terme                                                                | amplitude                                                                                                                                                                                    | Phase                                                                                                                                             |  
+| -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |  
+| $K{}$                                                                | $20\log_{10}(K){}$                                                                                                                                                                           | $0: K>0; \pm \pi:K<0{}$                                                                                                                           |  
+| $\frac{j\omega}{\omega_{i}}{}$                                       | $20\log\left( \frac{\omega}{\omega_{0}} \right){}$                                                                                                                                           | $\frac{\pi}{2}{}$                                                                                                                                 |  
+| $\frac{j\omega}{\omega_{i}}+1$                                       | $\left\{\begin{aligned} 0 :\omega\ll\omega_{0}\\ 20\log \sqrt{ 2 } \approx 3 : \omega=\omega_{0}\\20\log\left( \frac{\omega}{\omega_{0}} \right):\omega\gg\omega_{0} \end{aligned}\right.{}$ | $\left\{\begin{aligned} 0 &:\omega\ll\omega_{0}\\ \frac{\pi}{4} &: \omega=\omega_{0}\\ \frac{\pi}{2}&:\omega\gg\omega_{0} \end{aligned}\right.{}$ |  
+| $\frac{j\omega}{\omega_{i}}^{2}+2\xi \frac{j\omega}{\omega_{i}}+1{}$ | $\left\{\begin{aligned} 0 :\omega\ll\omega_{0}\\ 20\log  (2\xi ) \approx 3 : \omega=\omega_{0}\\40\log\left( \frac{\omega}{\omega_{0}} \right):\omega\gg\omega_{0} \end{aligned}\right.{}$   | $\left\{\begin{aligned} 0 &:\omega\ll\omega_{0}\\ \frac{\pi}{2} &: \omega=\omega_{0}\\ \pi&:\omega\gg\omega_{0} \end{aligned}\right.{}$           |  
 &nbsp;  
 &nbsp;  
 # Autres  
