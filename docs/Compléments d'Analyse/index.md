@@ -20,8 +20,10 @@ updated: 2024-05-23
   
 - **Espace métrique** :$(X,d){}$ : Ensemble, distance (que 2 cond : *pseudo-métrique*)  
 	- Espace *Complet* : tt suite de cauchy converge  
-	- Espace *séparable* : $\exists{}$ sous espace dénombrable et dense  
+	- Espace *séparable* : $\exists A\subseteq X{}$  dénombrable et dense  
 	- sous-espace *dense* : $\forall y\in Y, \exists x \in X\subset Y:d(x,y)<\epsilon{}$ ($\mathbb{Q} {}$ dense $\mathbb{R}{}$)  
+  
+- *théorème des valeures extremes* : $(X,d){}$ compact, $f:X\to \mathbb{R}{}$ cont ⇒min,max  
   
 - ****[Suites](Suites.md)**  
 # Normes  
@@ -31,13 +33,15 @@ updated: 2024-05-23
 	2. *absolument homogene* : $\lvert \lvert \alpha x \rvert \rvert\leq \lvert \alpha \rvert\cdot \lvert \lvert x \rvert \rvert{}$   
 	3. *inégalité triangulaire* : $||x+y||\leq||x||+||y||{}$  ~~.$\forall x,y{}$~~  
   
-- **Espace Normé** : $(X, | | \cdot| |){}$  
+- $l^n{}$ : ensemble des suite : norme $| | \cdot| |_{n}{}$ est finie  
+  
+- **Espace Normé** : $(X, | | \cdot| |){}$   
   
 - **Espace de Banach** $\mathfrak{B}$ : Normé + Complet ($d(u,v)=| |u-v| |{}$)  
   
 - **Opérateurs** : $A:X\to Y :A(x)=y{}$  
 	- *linéaire* : $A\left( \sum\lambda_{i}x_{i} \right)=\sum\lambda _{i}A(x_{i}){}$  
-	- *borné* : $| |A| |<\infty \iff{}$ lipschitzien , A continu en 0,   
+	- *borné* : $| |A| |<\infty \iff A(B(1)) {}$ bornée, lipschitzien , A continu en 0,   
   
 - $||u||=d(0,u){}=\sqrt{ \langle u,u \rangle }{}$  
 # Produit scalaire  
@@ -54,14 +58,14 @@ updated: 2024-05-23
 - identité du parallélogramme : $||u+v||^2+||u-v||^2=2||u||^2+2||v||^2{}$  
 	- si vrai ⇒ $\langle u,v \rangle=\frac{1}{4}(||u+v||^2-||u,v||^2){}$  
   
-- **Espace préhilbertiens** : $(X, \langle \cdot,\cdot \rangle){}$  
+- Espace **préhilbertiens** : $(X, \langle \cdot,\cdot \rangle){}$  
   
-- **Espace de Hilbert** $\mathfrak{H}{}$ : + Complet      (⇒ $\mathfrak{B}{}$)   
+- Espace de **Hilbert** $\mathfrak{H}{}$ : + Complet      (⇒ $\mathfrak{B}{}$)   
 	- $\langle u,v \rangle=0\implies u\perp v{}$ *orthogonaux*  
 	- $\exists \alpha:\alpha u=v\implies u\mid\mid v{}$ *parallèles*  
   
 - Ensembles *orthonormés* : $\langle u_{i}, u_{j} \rangle=\left\{\begin{aligned} 0:i\neq j \\1: i=j \end{aligned}\right.{}$  
-	- ⇒ base orthonormée : $\forall f:f=\sum c_{j}u_{j}{}$ ($c_{j}= \langle f,u_{j} \rangle{}$)  
+	- ⇒ base orthonormée : $\forall f:f=\sum c_{j}u_{j}{}$~~.$c_{j}= \langle f,u_{j} \rangle{}$~~  
 	- …  
   
 - $f=f_{\mid\mid}+f_{\perp}{}$ ⇒ $|| f||^2=|| f_{\mid\mid}||^2+|| f_{\perp }||^2{}$  
@@ -74,17 +78,19 @@ updated: 2024-05-23
 		- *noyeau de Dirichlet* $D_{n}(x)=\sum_{k=-n}^{n}e^{ikx}=\frac{\sin\left( x\left( n+\frac{1}{2} \right) \right)}{\sin\left( \frac{x}{2} \right)}{}$ ($\int_{-\pi}^{\pi} D_{n}(x) \, dx=2\pi{}$)  
 	- *Sommes moyennées* → $\lim_{ n \to \infty }\tilde S _{n}[f]=f{}{}$ : $\tilde{S}_{n}[f]=\frac{1}{n}\sum_{k=0}^{n-1}S_{n}[f]=\frac{1}{2\pi}\int_{-\pi}^{\pi} F_{n}(x-y)f(y) \, dy{}$   
 		- *noyeau de Féjer* $F_{n}(x)=\sum_{k=-n}^{n}D_{n}(x)=\frac{1}{n}\left( \frac{\sin\left( \frac{nx}{2} \right)}{\sin\left( \frac{x}{2} \right)} \right)^2{}$  
-&nbsp;  
 # Mesures  
   
 - **Tribus** : $\sum\in \mathbf{B}(X){}$;1. $\emptyset , X \in  \sum{}$ 2. $A,\bar{A}\in \sum{}$ 3. $\bigcup_{\alpha}, \bigcap _{\alpha}\in \sum{}$  
   
-- tribu *Borélienne* (la plus petite) :$\mathcal{B}(X){}$   
+- tribu *Borélienne* (la plus petite) :$\mathcal{B}(X)=\{ A_{\text{ensembles boréliens}} \}{}$    
   
 - **mesure**   
 	1. $\mu(A):\sum\to R^+{}$  
 	2. $\mu(\emptyset )=0{}$  
 	3. $\mu(\bigcup A_{j})\leq \sum\mu(A_{_{j}}){}$ (égal si $A_{j}{}$ disjoints)  
+  
+- mesure de *Lebesgue* : la plus petite mesure qui coincide avec le volume  
+	- mesure de *Borel-Lebesgue* : + tribu Borélienne  
   
 - fonction *Borel-mesurable* : $f:X\to Y{}$  si $\forall A\in \mathcal{B}(Y),f^{-1}(A)\in \mathcal{B}(X){}$  
 	- $\forall A\subseteq Y{}$ ouvert $f^{-1}(A)\in \mathcal{B}(X){}$ ⇒ mesurable  
