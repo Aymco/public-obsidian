@@ -4,7 +4,7 @@ category: Compléments d'Analyse
 tags:  
   - matière  
 created: 2024-01-05  
-updated: 2024-05-22  
+updated: 2024-05-23  
 title: Ensembles et topologies  
 ---  
 ## Ensembles  
@@ -28,6 +28,14 @@ title: Ensembles et topologies
 	- $\iff |A|=|\mathbb{N}|{}$  (exemples :  $\mathbb{N}, \mathbb{Z}, \mathbb{Q}{}$, paires et n-upplets)  
 	- $\subseteq, \cup, \cap, \bigcup_{\infty \text{ enumérable}} {}$ d'E énumérables ⇒ *enumérable*  
 		- $\bigcup_{\infty \text{ non-énumérable}}$ d'E énumérables ⇒ ! énumérable  
+  
+- Ensemble *Séparé* : 2 points distinct → voisinage distinct ~~(!= séparable)~~  
+  
+- Ensemble *Compact* : séparé et tout recouvrement ouvert de $U{}$ a un nombre fini de sous recouvrements.  
+	- $Im A{}$ continue, $B\subseteq A{}$ fermé, $\bigcup_{finie}{}$ d'un compact ⇒ compact  
+	- *théorème de Heine-Borel* : $\mathbb{R}^{n<\infty}:{}$ compact <=> fermé + borné  
+	- *séquentiellement compact* : toute suite → au moins une sous suite convergente  
+&nbsp;  
 ### Types d'ensembles  
   
 - ensemble de *fonctions* : $A^B{}:=\{ f:B\to A \}$ et $n^X=\{ 0,n-1 \}^X{}$  
@@ -41,7 +49,7 @@ title: Ensembles et topologies
 - $\mathbb{N,Z,Q,R,C}{}$  ($R_{0}=R\setminus \{ 0 \}{}$) ($N = \{ 1,2,\dots \}{}$ ; $N_{0}=N\cup \{ 0 \}$)  
   
 - *intervalle* $I=[a,b]=\{ x\in R,a\leq x\leq b \}{}$  
-  
+&nbsp;  
 ### Collections : Ensemble d'Ensembles  
   
 - **Collection** : ensemble d'ensemble  
@@ -61,7 +69,7 @@ title: Ensembles et topologies
 - **disjonction**, **Intersection** :  $A\cup B=\{ x\in X:x \in A \text{ et } x \in B \}{}$  
   
 - **Exclusion** :  $A\cup B=\{ x\in X:x \in A \text{ et } x \not\in B \}{}$  
-  
+&nbsp;  
   
 - **Complémentaire** : $A^*=X \setminus A{}$  
   
@@ -74,10 +82,10 @@ title: Ensembles et topologies
 - **extérieur** : $ext(A)=(\bar{A})^*=\underline{(A^*)}{}$  
   
 - **Composition**: $|A\times B|=|A||B|$  
-  
-  
-  
-  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
 ## Définitions d'ensembles  
   
 - Ensemble **étoilé** en $z_{0}$ : $\forall z\in D$ chemin droit $c:z_{0}\to z$, $c\in D$  
@@ -91,3 +99,4 @@ title: Ensembles et topologies
 - Ensemble **connexe** : E != réunion 2 ensembles fermés disjoints  
   
 - Ensemble **connexe par arcs** : tous les points sont reliés de façon continue  
+&nbsp;
