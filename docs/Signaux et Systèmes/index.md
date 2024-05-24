@@ -121,7 +121,7 @@ generalisation DFT
 |                           |                 $xy{}$                  |       $X*Y{}$($/2\pi{}$!périod)       |                                                     |                                                |  
 |    *diff en temporel*     |        $\frac{ dx(t) }{ dt }{}$         |        $j\omega X(j\omega){}$         |                      $sX(s){}$                      |              $R_{1}\subseteq R{}$              |  
 |   *diff en fréquentiel*   |   $\frac{ dX(j\omega) }{ d\omega }{}$   |              $jtx(t){}$               |                     $-tx(t){}$                      |                     $R{}$                      |  
-| *intégration en temporel* | $\int_{-\infty}^{t} x(\tau) \, d\tau{}$ |                                       |                 $\frac{X(s)}{s}{}$                  | $R=$$R_{1}\cap \{  \mathfrak{R\{ s \}>0} \}{}$ \|\n\n  
+| *intégration en temporel* | $\int_{-\infty}^{t} x(\tau) \, d\tau{}$ |                                       |                 $\frac{X(s)}{s}{}$                  | $R=$$R_{1}\cap \{  \mathfrak{R\{ s \}>0} \}{}$ \|  \n  \n  
 # Systemes $\mathcal{H}\{ x(t) \}=y(t){}$  
   
 - Systeme **LTI**(LIT): *Linéaire a temps invariant* :    
@@ -154,5 +154,13 @@ generalisation DFT
 | $K{}$                                                                | $20\log_{10}(K){}$                                                                                                                                                                           | $0: K>0; \pm \pi:K<0{}$                                                                                                                           |  
 | $\frac{j\omega}{\omega_{i}}{}$                                       | $20\log\left( \frac{\omega}{\omega_{0}} \right){}$                                                                                                                                           | $\frac{\pi}{2}{}$                                                                                                                                 |  
 | $\frac{j\omega}{\omega_{i}}+1$                                       | $\left\{\begin{aligned} 0 :\omega\ll\omega_{0}\\ 20\log \sqrt{ 2 } \approx 3 : \omega=\omega_{0}\\20\log\left( \frac{\omega}{\omega_{0}} \right):\omega\gg\omega_{0} \end{aligned}\right.{}$ | $\left\{\begin{aligned} 0 &:\omega\ll\omega_{0}\\ \frac{\pi}{4} &: \omega=\omega_{0}\\ \frac{\pi}{2}&:\omega\gg\omega_{0} \end{aligned}\right.{}$ |  
-| $\frac{j\omega}{\omega_{i}}^{2}+2\xi \frac{j\omega}{\omega_{i}}+1{}$ | $\left\{\begin{aligned} 0 :\omega\ll\omega_{0}\\ 20\log  (2\xi ) \approx 3 : \omega=\omega_{0}\\40\log\left( \frac{\omega}{\omega_{0}} \right):\omega\gg\omega_{0} \end{aligned}\right.{}$   | $\left\{\begin{aligned} 0 &:\omega\ll\omega_{0}\\ \frac{\pi}{2} &: \omega=\omega_{0}\\ \pi&:\omega\gg\omega_{0} \end{aligned}\right.{}$           \|\n\n# Autres  
+| $\frac{j\omega}{\omega_{i}}^{2}+2\xi \frac{j\omega}{\omega_{i}}+1{}$ | $\left\{\begin{aligned} 0 :\omega\ll\omega_{0}\\ 20\log  (2\xi ) \approx 3 : \omega=\omega_{0}\\40\log\left( \frac{\omega}{\omega_{0}} \right):\omega\gg\omega_{0} \end{aligned}\right.{}$   | $\left\{\begin{aligned} 0 &:\omega\ll\omega_{0}\\ \frac{\pi}{2} &: \omega=\omega_{0}\\ \pi&:\omega\gg\omega_{0} \end{aligned}\right.{}$           \|  \n  \n# Autres  
 $\text{sinc}(u)=\frac{\sin(\pi u)}{\pi u} {}$  
+&nbsp;  
+  
+&nbsp;  
+  
+&nbsp;  
+  
+&nbsp;  
+test  
