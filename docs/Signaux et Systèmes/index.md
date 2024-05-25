@@ -5,7 +5,7 @@ tags:
   - regrouping  
 title: Signaux et systèmes  
 created: 2024-02-12  
-updated: 2024-05-24  
+updated: 2024-05-25  
 ---  
 # Signaux  
   
@@ -191,12 +191,7 @@ generalisation DFT
 		- *asymptotiquement stable* : stable + attractif ($\forall i:\mathfrak{R}\{ \lambda _{i} \}<0,|\lambda_{i}|<1{}$)  
 	- *systeme stable* : tt equilibre stables  
 	- $\forall i:\mathfrak{R}\{ \lambda _{i} \}>0,|\lambda_{i}|>1{}$ ⇒ instable  
-	-  $\forall i:\mathfrak{R}\{ \lambda _{i} \}\leq0,|\lambda_{i}|\leq1{}$ :  
+	- $\forall i:\mathfrak{R}\{ \lambda _{i} \}\leq0,|\lambda_{i}|\leq1{}$ :  
 		- $\forall i : |\lambda_{i}|=1\implies m_{g}(\lambda_{i})=m_{a}(\lambda_{i}){}$ ⇒ marginalement stable  
 		- $\exists i : |\lambda_{i}|=1\implies m_{g}(\lambda_{i})=m_{a}(\lambda_{i}){}$ ⇒ instable  
-		- #TODO   
-	-   
-  
--   
-# Autres  
-$\text{sinc}(u)=\frac{\sin(\pi u)}{\pi u} {}$  
+		- #TODO  
