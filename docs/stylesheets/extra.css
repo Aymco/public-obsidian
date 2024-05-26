@@ -48,10 +48,26 @@ p {
 }
 
 
+h1, h2, h3, h4, h5, h6 {
+  font-variant: small-caps;
+  font-weight: bold !important;
+  margin: 0.4em 0 0 0 !important;
+}
 
-h3, h4, h5, h6 {margin: 0.4em 0 0 0 !important;}
+h1 {
+  color: #2579FF !important;
+}
+h2 {
+  color: #2594FF;
+}
+h3 {
+  color: #4BB6FF;
+}
+h4, h5, h6 {
+  color: #4BE2FF;
+}
+
 h1, h2 {margin: 0.5em 0 0 0 !important;}
-
 
 [data-md-color-scheme="slate"]  {
     --italic-color: rgb(72, 234, 255);
