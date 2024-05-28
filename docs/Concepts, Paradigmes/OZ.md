@@ -9,6 +9,29 @@ updated: 2024-05-28
 [Oz (langage) — Wikipédia](https://fr.wikipedia.org/wiki/Oz_(langage))  
 # Variables  
 
+
+```  
+test 1    
+```  
+  
+  
+```  
+test 2    
+```
+  
+```oz  
+test oz    
+```
+  
+
+  
+``` oz  
+test oz    
+```
+  
+
+
+
 ``` oz title:"variables"  
 local X, Y in  
 	X = 6   
