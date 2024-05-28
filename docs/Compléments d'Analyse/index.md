@@ -5,7 +5,7 @@ tags:
   - regrouping  
 title: Compléments d'Analyse  
 created: 2024-02-07  
-updated: 2024-05-23  
+updated: 2024-05-27  
 ---  
 # [Ensembles et topologies](Ensembles%20et%20topologies.md)  
 # Distances  
@@ -125,4 +125,6 @@ updated: 2024-05-23
 &nbsp;  
 &nbsp;  
 ⅕ - ⅖ pondération des devoirs  
-&nbsp;
+&nbsp;  
+$teqdqdqsdfqùmlsjdfùqmlsjdfmlqkjsdmflkjqsdmflkjq\int eqsdfqsdfilqsdfqnqsdfqsdftldkjqflksdnflqnsvlknqsdlknfqsd \, dxf\subset fqsdfljqsdmlfkjqsmldkjfqmlksjdfst{}$  
+qsdfqsdfl$j{}$  
