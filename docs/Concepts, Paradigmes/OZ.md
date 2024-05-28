@@ -8,14 +8,14 @@ updated: 2024-05-28
 ---  
 [Oz (langage) — Wikipédia](https://fr.wikipedia.org/wiki/Oz_(langage))  
 # Variables  
-``` oz title:variables  
+``` oz title:"variables"  
 local X, Y in  
 	X = 6   
 end  
 declare X = 2 + 8  
 ```  
 &nbsp;  
-``` oz title:Cellules  
+``` oz title:"Cellules"  
 C = {NewCell}  
 C := 1  
 C := C + 1  
