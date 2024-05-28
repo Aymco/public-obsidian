@@ -25,7 +25,7 @@ updated: 2024-05-28
   
 - process_flag(trap_exit, true), spawn_link(Function) crash : receive exit msg  
 # Code  
-```erlang title:"data Types"  
+```erlang title="data Types"  
 Integers: 1112223344455666777888999000 %of unlimited size  
 Floats: 1234.5678, 6.0221415e23  
 Strings: "This is a string." (ASCII) %enclosed in double quotes  
@@ -35,14 +35,14 @@ Tuples: {abc, 123, "pigs in a tree"}
 Binaries: <<0, 255, 128, 128>>, <<"hello">> %n bits is a multiple of 8.  
 ```  
 &nbsp;  
-```erlang title:"Operations"  
+```erlang title="Operations"  
 arithmetic : +X-X; X*Y; X/Y; X div Y; X rem Y;  
 comparison : X<Y; X=<Y; X=:=Y; X=/=Y; X>=Y; X>Y; (num : X == Y X /= Y)  
 boolean    : not and or andalso orelse  
 bitwise    : bnot band bor bxor bsl bsr  
 ```  
 &nbsp;  
-```erlang title:"if, case"  
+```erlang title="if, case"  
 case a of  
 	paternN (when GuardN) -> expressionN  
 end  
@@ -51,7 +51,7 @@ if
 end  
 ```  
 &nbsp;  
-```erlang title:Guards  
+```erlang title=Guards  
 abs(Number)   
 hd(List)   
 node(X)   
@@ -66,7 +66,7 @@ self()
 tl(List)  
 ```  
 &nbsp;  
-```erlang title:lists  
+```erlang title=lists  
 [Expression || Generator, GuardOrGenerator, ..., GuardOrGenerator]  
 N = [1, 2, 3, 4, 5].   
 L = [10 * X + Y || X <- N, Y <- N, X < Y].  
@@ -78,7 +78,7 @@ lists:all(fun(X) -> X rem 2 =:= 0 end, List). % or any
 [F || {F, C} <- List, C =:= yellow].  
 ```  
 &nbsp;  
-```erlang title:"function"  
+```erlang title="function"  
 name(Patterns1) -> Expression_sequence1; ...  
 name(PatternsN) -> Expression_sequenceN.  
 fun( Patterns1) -> Body1; ...  
@@ -125,7 +125,7 @@ whereis(AnAtom) -> Pid | undefined
 registered() -> [AnAtom :: atom()] % all registered processes  
 ```  
 &nbsp;  
-```erlang title:linking  
+```erlang title=linking  
 link(Pid) (unlink(Pid))  
 spawn_link(Fun)  
 exit(Reason) % terminate and send exit message to linked processes  
