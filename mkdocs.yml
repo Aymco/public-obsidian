@@ -21,6 +21,7 @@ theme:
     favicon: images/favicon.png
     language: fr
     features:
+        - content.code.copy  
         - content.action.edit
         - navigation.tabs
         - navigation.indexes 
