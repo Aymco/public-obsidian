@@ -40,9 +40,22 @@ for(s,i,transform) =
 	end  
 ```  
   
-- *accumulateur* : *tail-recursive*   
+- *accumulateur* : *tail-recursive* (moins de stack)  
 ```oz title:  
 accFac(n,acc) =   
 	if(n>1) then fac(n-1, a*1)  
 	else 1 end  
+Fac(n) = accFac(n,1)  
 ```  
+  
+- *Invariant Programming* : $n!\cdot a=x{}\to n!=1,a=x$   
+  
+- *programmation d'ordre supérieur* :*ordre* d'une fonction :   
+	- ordre 1 : input,output !fonction  
+	- ordre N+1: input,output fonctions ordre N  
+	- *genericity* : ex: Map  
+	- *instantiation* : retourne une fonction  
+	- *compose* f°g  
+	- *FoldL* : `{oz}fun{FoldL List Fun Acc}` applique `{oz}{Fun Head Acc}` sur tt List  
+	- *encapsulation* : `{oz}fun{Zero} 0 end`  
+	- *delayed execution* : `{oz}proc{} if {Cond} then {exe} end end`  
