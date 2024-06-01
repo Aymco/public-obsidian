@@ -6,7 +6,7 @@
 }
 
 .MathJax_Display, .MathJax {
-  font-size: 120%;
+  font-size: 106% !important;
   color: var(--latex-color);
   text-align: center !important;
   margin: 0 0 0 0 !important;
