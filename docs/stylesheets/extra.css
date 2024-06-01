@@ -73,7 +73,7 @@ h1, h2 {margin: 0.5em 0 0 0 !important;}
     --italic-color: rgb(72, 234, 255);
     --text-highlight-bg: rgb(0, 85, 149); 
 	--text-highlight-fg: white;
-    --latex-color: #f06c1f;
+    --latex-color: #ffae67;
 	
     /* Primary color shades */
     --md-primary-fg-color: rgb(179, 104, 0);
