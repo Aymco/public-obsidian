@@ -59,3 +59,38 @@ Fac(n) = accFac(n,1)
 	- *FoldL* : `{oz}fun{FoldL List Fun Acc}` applique `{oz}{Fun Head Acc}` sur tt List  
 	- *encapsulation* : `{oz}fun{Zero} 0 end`  
 	- *delayed execution* : `{oz}proc{} if {Cond} then {exe} end end`  
+## Language noyeau  
+&nbsp;  
+# Programmation orientée objet  
+JAVA  
+# Programmation en flot de données déterministe  
+  
+- ajout de la concurrence  
+  
+- dataflow execution :   
+	- attend → X libre ⇒ executer  
+  
+- producteur consommateur  
+  
+- client-serveur : *non-déterminisme* : décision faite hos portée du programme  
+	- ⇒flot de donnée déterministe X cassé  
+  
+- AVEC des ports   
+	- …  
+  
+- …  
+&nbsp;  
+  
+- Programmation concurrentielle :  
+	- *flot de données déterministe* : limitation non déterministes  
+	- *flot de données déterministe avec de ports* : meilleur compromis  
+	- *message passing* (multi agent actor) : Complet mais complique (Erlang)  
+&nbsp;  
+# Programmation multi agents  
+  
+- *Sieve of eratosthenes* : retourne nb premiers :   
+	- chaque agent retire les multiples d'un nombre  
+  
+- *Digital logic simulation* :   
+# Message-passing concurrency (multi agent)  
+#TODO   

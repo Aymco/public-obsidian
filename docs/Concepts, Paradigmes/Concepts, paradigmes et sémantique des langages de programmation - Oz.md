@@ -15,3 +15,6 @@ updated: 2024-05-28
 - [Erlang](Erlang.md)  
 # [Concepts de Programmation](Concepts%20de%20Programmation.md)  
 # [Paradigmes de programmation](Paradigmes%20de%20programmation.md)  
+&nbsp;  
+&nbsp;  
+Resultat = exam(Q2 + Q3)/10 + max(Exam Q1, Interro)/5 + Projet/5   
