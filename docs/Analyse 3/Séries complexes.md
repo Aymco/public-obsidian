@@ -4,11 +4,10 @@ category: Analyse 3
 tags:  
   - matière  
 created: 2023-12-24  
-updated: 2024-01-09  
+updated: 2024-05-31  
 title: Séries complexes  
 ---  
-  
-voir [Séries](S%C3%A9ries.md)  
+voir [Suites et Séries](Suites%20et%20S%C3%A9ries.md)  
 # Série potentielle  
   
 - définition : $\sum_{n=0}^{\infty}a_{n}(z-b)^n$  
@@ -21,7 +20,7 @@ voir [Séries](S%C3%A9ries.md)
   
 - *Rayon de convergence* : $R=\left( \lim_{ n \to \infty } | \frac{a_{n+1}}{a_{n}}| \right)^{-1}$  
 	- fonction de racine plus compliquée :$R=\left( \lim_{ n \to \infty } (sup_{m\geq n}| a_{m}|^{1/m} \right)^{-1}$ ($R=0$ fonctionne toujours mais ! intérêt )  
-  
+&nbsp;  
 # Séries de Laurent  
 approximation globale : $f(z)=\sum_{n=0}^{\infty}a_{n}(z-b)^n+\sum_{n=1}^{\infty}a_{-n}(z-b)^{-n}$  
   
