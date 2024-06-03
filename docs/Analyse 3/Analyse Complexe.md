@@ -15,7 +15,7 @@ title: Analyse Complexe
 - [Séries complexes](S%C3%A9ries%20complexes.md)  
   
 - [Intégrales complexes](Int%C3%A9grales%20complexes.md)  
-→ [Ensembles et topologies > Définitions d'ensembles](Ensembles%20et%20topologies.md#Définitions%20d'ensembles)  
+→ [Ensembles > Définitions d'ensembles](Ensembles.md#Définitions%20d'ensembles)  
 ### Notations  
   
 - *Boule* $B(a,b)$, sans le centre ⇒ $B^{*}(a,b)=B(a,b)\setminus \{ a \}$  

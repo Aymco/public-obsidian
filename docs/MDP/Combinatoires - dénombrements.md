@@ -13,9 +13,10 @@ title: Combinatoires - dénombrements
 | tout | $Q^{a,b}_{n}=\frac{n!}{a!b!}$ | $Bij(n\to n)=n!$ |  
 | ordre | fonction : $n^k$ | $Inj(k\to n)=A^k_{n}=\frac{n!}{(n-k)!}$ |  
 | ~~ordre~~ | $B^*(n,k):=B(n+k-1, k)$ | $B(n,k)=\frac{n!}{k!(n-k)!}$ |  
-|  |  |  |  
+|  |  |  |    
+    
 # Dénombrement  
-→ [Ensembles et topologies](Ensembles%20et%20topologies.md)  
+→ [Ensembles](Ensembles.md)  
   
 - Argument diagonal de Cantor : Prouver que $[0,1[\not\approx \mathbb{N}$  
 	- $f(i)=a_{i}=0, a_{i0}a_{i1}a_{i_{2}}, \dots$ binaire  
@@ -23,8 +24,8 @@ title: Combinatoires - dénombrements
 	- $\not\exists i:f(i)=b$ ⇒ ! bijective  
   
 - $|A|:=\sum_{a\in A} f(a)$ poids proba  
-  
-  
+&nbsp;  
+&nbsp;  
   
 - **Binomiale** $B(n,k)$ ($\not O \not R$) $B(n,k)=C^k_{n}={n \choose k }=\frac{n!}{k!(n-k)!}=C^k_{n-1} +C^{k-1}_{n-1}=B(n,n-k)$  
   
@@ -32,7 +33,7 @@ title: Combinatoires - dénombrements
   
 - **Selection** : ($\not OR$) :  $k$-sélection d'un $n$-ensemble  
 	- $B^*(n,k):=B(n+k-1, k)$  
-  
+&nbsp;  
 ## Fonctions  
   
 - relation $R:A\to B$ est un ensemble $R\subset A\times B$  
@@ -49,7 +50,7 @@ title: Combinatoires - dénombrements
 - Répartition $n$ el en $k$ sous ensembles disjoint et !vides $S(n,k):=\frac{1}{k!}Sur(n\to k)$  
 	- Stirling : $S(n,k)=S(n-1, k-1)+kS(n-1,k)$  
 	- Bell : $\sum_{r=0}^{k}S(n,k)=b_{n}$  
-  
+&nbsp;  
 ## Dénombrer avec des génératrices  
   
 - suite généree : $f_{n}$ (suite de réels)  
@@ -62,7 +63,7 @@ title: Combinatoires - dénombrements
 - Suite des naturels $f(x)=\frac{x}{(1-x)^{2}}=x+2x^2+3x^3+..$  
   
 - Suite des nombre binomiaux $\sum B(n,a)x^n=(A+x)^a$  
-  
+&nbsp;  
   
 - *Fonction génératrice des Moments* : $=E(e^{tX})=\sum \frac{\mathbb{E}(X^n)}{n!}$  
 ### Astuces  
@@ -74,14 +75,14 @@ title: Combinatoires - dénombrements
 - $\sum_{i=0}^{\infty}(i+1-a)x^i=\frac{x^a}{(1-x)^{2}}$  
   
 - $e^x=\lim_{ n \to \infty }(1+\frac{x}{n})^n$  
-  
-  
+&nbsp;  
+&nbsp;  
   
 - Équations de récurrences $\alpha v_{n+2}+\beta v_{n+1}+\gamma v_{n}=\dots$  
-  
-  
-  
-  
+&nbsp;  
+&nbsp;  
+&nbsp;  
+&nbsp;  
   
 - Fonctions de *hachage* $H:\{ 0,1 \}^*\to \{ 0,1 \}^n$ taille $?\to n$  
 	- collision si 2 entrées donnent la même valeure  

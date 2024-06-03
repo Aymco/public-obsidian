@@ -5,12 +5,16 @@ tags:
   - regrouping  
 title: Compléments d'Analyse  
 created: 2024-02-07  
-updated: 2024-06-01  
+updated: 2024-06-02  
 ---  
 → [CA - questions de restitution](CA%20-%20questions%20de%20restitution.md)  
-# [Ensembles et topologies](Ensembles%20et%20topologies.md)  
-# [Espaces, distance, norme, produit scalaire](Espaces,%20distance,%20norme,%20produit%20scalaire.md)  
 &nbsp;  
+  
+- [Ensembles](Ensembles.md)    ( [Suites et Séries](Suites%20et%20S%C3%A9ries.md))  
+  
+- [distance, norme, produit scalaire](distance,%20norme,%20produit%20scalaire.md)  
+  
+- [Espaces](Espaces.md)  
 # Série de fourier  
   
 - **Série de Fourier** $f:[-\pi,\pi]\to \mathbb{C}{}$ ⇒ $f(x)=\sum_{k\in \mathbb{Z}}^{}\hat{f}_{k}e^{ikx}{}$  
@@ -20,7 +24,7 @@ updated: 2024-06-01
 	- $\{ e^{ikx} \}{}$ : base orthonormée  
 	- *Sommes partielles* \[-n,n\] $S_{n}[f](x):=\sum_{k=-n}^{n}\hat{f}_{k}e^{ikx}$$=\frac{1}{2\pi}\int_{-\pi}^{\pi} D_{n}(x-y)f(y) \, dy{}$  
 		- *noyeau de Dirichlet* $D_{n}(x)=\sum_{k=-n}^{n}e^{ikx}=\frac{\sin\left( x\left( n+\frac{1}{2} \right) \right)}{\sin\left( \frac{x}{2} \right)}{}$   
-			- ($\int_{-\pi}^{\pi} D_{n}(x) \, dx=2\pi{}$) et $D_{n}(x) = D_{n}(x+2\pi){}$   
+			- ($\int_{-\pi}^{\pi} D_{n}(x) \, dx=2\pi{}$) et $D_{n}(x) = D_{n}(x+2\pi){}$  
 		- ⇒ $S_{n}[f](x)=\frac{1}{2\pi}\int_{-\pi}^{\pi} D_{n}(x-y)f(y) \, dy{}$  
 	- *Sommes moyennées* $\tilde{S}_{n}[f]:=\frac{1}{n}\sum_{k=0}^{n-1}S_{n}[f]=\frac{1}{2\pi}\int_{-\pi}^{\pi} F_{n}(x-y)f(y) \, dy{}$   
 		- *noyeau de Féjer* $F_{n}(x)=\frac{1}{n}\sum_{k=-n}^{n}D_{n}(x)=\frac{1}{n}\left( \frac{\sin\left( \frac{nx}{2} \right)}{\sin\left( \frac{x}{2} \right)} \right)^2{}$  
@@ -54,14 +58,11 @@ updated: 2024-06-01
 	- $f{}$ continue ⇒ mesurables  
   
 - mesure de *Dirac* : $\mu_{x}(A) := \begin{cases}1 \ \text{ si } x \in A \\ 0 \ \text{ sinon}\end{cases}{}$  ($\mu : \mathfrak{P}(X) \to [0,+\infty]{}$)  
-&nbsp;  
   
 - $E{}$ ensemble *négligeable* :  $\exists A:\mu (A)=0, X\subseteq E{}$  
 	- *Cantor-Smith-Volterra* non dénombrable mais → négligeable  
   
 - suite croissante : $A_{n}\subseteq A_{n+1}{}$  et $B_{n}=A_{n+1}\setminus A_{n}{}$ ⇒$\lim_{ n \to \infty }\mu (\cup_{0}^n B_{k})=\lim_{ n \to \infty }\mu(A_{n}){}$  
-&nbsp;  
-&nbsp;  
 # Intégrales  
   
 - $f{}$ *intégrable* sur $X{}$: $\int _{X}f \, d\mu<\infty{}$  
@@ -90,8 +91,8 @@ updated: 2024-06-01
 	1. $\int _{A}s \, d\mu=\int _{X}\chi_{A} \, d\mu{}$  
 	2. $\int _{A}s \, d\mu\leq \int _{B}s \, d\mu{}$ avec $A\subseteq B{}$  
 	3. $\int _{A}s \, d\mu\leq \int _{A}t \, d\mu{}$ avec $s(x)\leq t(x){}$  
-	4. $\int _{\cup A_{n}}s \, d\mu=\sum\int _{A_{n}}s \, d\mu{}$  E disjoints  
-	5. $\int _{\cup A_{n}}s \, d\mu\leq\sum\int _{A_{n}}s \, d\mu{}$  E quelquonques  
+	4. $\int _{\cup A_{n}}s \, d\mu=\sum\int _{A_{n}}s \, d\mu{}$  E *disjoints* : *stabilité par union dénombrable*  
+	5. $\int _{\cup A_{n}}s \, d\mu\leq\sum\int _{A_{n}}s \, d\mu{}$  E *quelquonques*  
 	6. $\int _{A}\sum a_{i}s_{i} \, d\mu=\sum a_{i}\int _{A}s_{i} \, d\mu{}$  
   
 - **Intégrales positives** : $\int _{A}f \, d\mu=sup\left\{  \int _{A}s \, d\mu, s\leq f  \right\}{}$ (s simple → f)  
@@ -99,9 +100,6 @@ updated: 2024-06-01
 - **Intégrales** : $f=f^+{}-f^-$ ⇒ $\int f \, d\mu=\int f^+ \, d\mu-\int f^- \, d\mu{}$  
   
 - **Intégrales Complexes** : $\int _{A}f \, d\mu{}=\int _{A} \mathfrak{R}(f)\, d\mu+i\int _{A} \mathfrak{I}(f)\, d\mu+$  
-&nbsp;  
-&nbsp;  
-&nbsp;  
 # Bonus  
 ## Fonctions  
   
