@@ -7,8 +7,8 @@ title: calculabilité
 created: 2024-02-12  
 updated: 2024-06-04  
 ---  
-classifier problème :  calculable, non calculable (en pratique)  
-complémentaire : $\bar{A}=X\setminus A{}$  
+  
+- complémentaire : $\bar{A}=X\setminus A{}$  
   
 - **language** : ensemble de mots constitués par $\Sigma$ (tous mots : $\Sigma^*{}$)  
 	- *non-trivial* : opérations de base peuvent etre effectuées  
@@ -18,7 +18,6 @@ complémentaire : $\bar{A}=X\setminus A{}$
 - *codage* : $c:T\to \mathbb{N}{}$ bijection d'un nouveau type et les naturels  
   
 - **relation** $R{}$ : $aRb,\langle a,b \rangle\in R,R(a,b){}$ ensemble de paires $\langle a,b \rangle{}$  
-&nbsp;  
 # Logique propositionnelle  
   
 - **proposition** $A{}$  
@@ -31,7 +30,8 @@ complémentaire : $\bar{A}=X\setminus A{}$
 - **FNC** : clause et clause et ..  
   
 - **intérprétation** : valeurs → propositions  
-	- **modèle**: *interpretation* →VRAI : ($\exists{}$ *modèle* → *satisfaisable* (modèle $\in {}$ **SAT** : E)  
+  
+- **modèle**: *interpretation* →VRAI : ($\exists{}$ *modèle* ⇔ form *satisfaisable* ⇔form$\in {}$**SAT**)  
   
 - **tautologie** : formule tjrs → VRAI   
 	- *conséquence logique* : $p\implies q{}$ *tautologie* ⇔ $p\models q{}$ (affirmation)  
@@ -41,10 +41,10 @@ complémentaire : $\bar{A}=X\setminus A{}$
 - (model checking)  
 # Problemes informatique  
   
-- fonction a trouver $\varphi(x){}$ ; avec programme $P{}$; $\varphi(x)=\perp{}$ *indéfinie*  
+- **programme** $P{}$ avec sa fonction $\varphi(x){}$  
   
-- *fonction* : $\varphi:\mathbb{N}\to \mathbb{N}$  
-	- $\varphi{}$ **totale** : $\forall x:\varphi(x)\neq \perp{}$ sinon *partielle*  
+- *fonction* : $\varphi:\mathbb{N}\to \mathbb{N}$       ($\varphi(x)=\perp{}$ *indéfinie*)  
+	- $\varphi{}$ **totale** : $\forall x:\varphi(x)\neq \perp{}$ sinon *. artielle*  
 	- $\varphi_{m}{}$ **extension** de $\varphi_{n}{}$ : $\forall x:\varphi_{n}(x) \neq \perp{}, \varphi_{m}(x)=\varphi_n(x)$  
 	- *fonction* **universelle** : $\theta(n,x)=\varphi_{n}(x)$  
 	- *fonction* **caractéristique** : $\chi_{A}{}$ determine si $x \in A {}$  
@@ -91,11 +91,10 @@ complémentaire : $\bar{A}=X\setminus A{}$
   
 - **automate fini** FA : (sous-catégorie des MT → plus simple)  
 	- $\Sigma{}$ E fini symboles, $s_{0}\in S{}$ E fini d'états et état initial, $A\subset S{}$ état acceptants, $\delta:S\times \Sigma\to S{}$ f de transition  
-	- pas de mémoire, ensemble pas reconnus ex : $a^nb^n{}$  
+	- !mémoire, ensembles pas reconnus ex : $a^nb^n{}$  
 	- sortie : son état  
 	- automates non déterministe ND (NDFA):  
 		- → rendre déterministe  
-&nbsp;  
   
 - **automate a Pile - PDA** :  
 	- ajoute de memoire : $\Gamma{}$ E fini symboles de pile, $\Delta:S\times\Sigma \times\Gamma\to S\times\Gamma^*{}$  
@@ -118,7 +117,7 @@ complémentaire : $\bar{A}=X\setminus A{}$
 	1. **SD** (Solvabilité des Définitions) : f D-calculable ⇒ calculable  
 	2. **CD** (Complétude des Définitions) : f calculable ⇒ D-caclulable  
 	3. **SA** (Solvabilité Algorithmique) : interpréteur de D : calculable  
-	4. **CA** (Complétude Algorithmique) : traduire P(SA) → D  
+	4. **CA** (Complétude Algorithmique) : $\forall p \in {}$mod(SA)⇒ $\exists P \in D:\varphi_{P}=\varphi_{p}{}$  
 	5. **U** (Description Universelle)  : interpréteur de D : D-calculable  
 	6. **S** (S-m-n affaiblie) : $\exists{}$P : capable de fixer un argument de P'  
 ![Pasted image 20240601182520.png](Pasted%20image%2020240601182520.png)  
