@@ -9,62 +9,70 @@ updated: 2024-06-03
 ---  
 classifier problème :  calculable, non calculable (en pratique)  
 complémentaire : $\bar{A}=X\setminus A{}$  
+  
+- **language** : ensemble de mots constitués par $\Sigma$ (tous mots : $\Sigma^*{}$)  
+	- *non-trivial* : opérations de base peuvent etre effectuées  
+	- **mot** : "abc", "01010", $\epsilon{}$ (vide)  
+	- **alphabet** $\Sigma{}$ : ensemble de symboles  
+  
+- *codage* : $c:T\to \mathbb{N}{}$ bijection d'un nouveau type et les naturels  
+  
+- **relation** $R{}$ : $aRb,\langle a,b \rangle\in R,R(a,b){}$ ensemble de paires $\langle a,b \rangle{}$  
+&nbsp;  
 # Logique propositionnelle  
   
-- *proposition* $A{}$  
-	- *négation* $!A{}$  
+- **proposition** $A{}$  
+	- *négation* $!A,\neg A{}$  
 	- *conjonction*(et) $A \wedge B{}$  
 	- *disjonction*(ou) $A\vee B{}$  
 	- *implication* $A\implies B{}$  
 	- *équivalence* $A\iff B{}$  
   
-- *FNC* : clause et clause et ..  
+- **FNC** : clause et clause et ..  
   
-- *intérprétation* : valeurs → propositions  
-	- *modèle*: interpretation →VRAI : ($\exists{}$ modèle → *satisfaisable* (modèle $\in {}$ SAT : E)  
+- **intérprétation** : valeurs → propositions  
+	- **modèle**: interpretation →VRAI : ($\exists{}$ modèle → *satisfaisable* (modèle $\in {}$ **SAT** : E)  
   
-- *tautologie* : formule tjrs → VRAI   
-	- *conséquence logique* : $p\implies q{}$ tautologie ⇒ $p\models q{}$  
+- **tautologie** : formule tjrs → VRAI   
+	- *conséquence logique* : $p\implies q{}$ tautologie ⇔ $p\models q{}$ (affirmation)  
   
-- résolution :$A\vee B\text{ et }B!\vee C\implies A\vee C{}$  
-	- (model checking)  
+- résolution : $A\vee B\text{ et }B!\vee C\implies A\vee C{}$  
+  
+- (model checking)  
 # Problemes informatique  
   
 - fonction a trouver $\varphi(x){}$ ; avec programme $P{}$; $\varphi(x)=\perp{}$ *indéfinie*  
   
 - *fonction* : $\varphi:\mathbb{N}\to \mathbb{N}$  
-	- $\varphi{}$ *totale* : $\forall x:\varphi(x)\neq \perp{}$ sinon *partielle*  
-	- $\varphi_{m}{}$ *extension* de $\varphi_{n}{}$ : $\forall x:\varphi_{n}(x) \neq \perp{}, \varphi_{m}(x)=\varphi_n(x)$  
-	- *fonction universelle* : $\theta(n,x)=\varphi_{n}(x)$  
-	- *fonction caracteristique* : $X_{A}{}$ determine si $x \in A {}$  
+	- $\varphi{}$ **totale** : $\forall x:\varphi(x)\neq \perp{}$ sinon *partielle*  
+	- $\varphi_{m}{}$ **extension** de $\varphi_{n}{}$ : $\forall x:\varphi_{n}(x) \neq \perp{}, \varphi_{m}(x)=\varphi_n(x)$  
+	- *fonction* **universelle** : $\theta(n,x)=\varphi_{n}(x)$  
+	- *fonction* **caractéristique** : $\chi_{A}{}$ determine si $x \in A {}$  
 	- $\exists f{}$ partielle calculable : $\not \exists g{}$ : extension de f totale calculable  
+## Réduction  
   
-- *réduction*  
-	- $\chi_{A}{}$ fonction caractéristique (définit si $x\in  A{}$ )   
-	- réduction *algorithmique* : $X\leq_{a}Y{}$ : $\exists \chi_{Y}\implies \exists\chi_{X}{}$  (calculabilité)  
-		- ⇒ $Y{}$ recursif ⇒ $X{}$ recursif  
-		- ⇒$X$ non -recursif ⇒ $Y{}$ non-recursif  
-		- $X\leq_{a}\bar{X}{}$   
-	- réduction *fonctionnelle*: $X\leq_{f}Y{}\iff\exists{}f$ totale calculable:  $x\in X \iff f(x)\in Y{}$   
-		- complexité : $\mathcal{O}_{A}=\mathcal{O}_{f}+\mathcal{O}_{B}{}$   
-	- réduction *polynomiale* : $X\leq_{p}Y{}$ : fonctionnelle $O(p){}$  
-	- $X\leq_{p}Y\implies X\leq_{f}Y\implies X\leq_{a}Y{}$  
-	- $A_{\text{récursif}}\leq_{a,f} B{}$  
-	- , $A\leq_{a,f}B{}\iff \bar{A}\leq_{a,f}\bar{B}$  
-## Definitions  
+- réduction **algorithmique** : $X\leq_{a}Y{}$ : $\exists \chi_{Y}\implies \exists\chi_{X}{}$  (calculabilité)  
+	- ⇒ $Y{}$ recursif ⇒ $X{}$ recursif  
+	- ⇒$X$ non -recursif ⇒ $Y{}$ non-recursif  
+	- $X\leq_{a}\bar{X}{}$   
   
-- *language* : ensemble de mots constitués par $\sum$ (tous mots : $\sum^*{}$)  
-	- *mot* : "abc", "01010", $\epsilon{}$ (vide)  
-	- *alphabet* $\sum{}$ : ensemble de symboles  
+- réduction **fonctionnelle**: $X\leq_{f}Y{}\iff\exists{}f$ totale calculable:  $x\in X \iff f(x)\in Y{}$   
+	- complexité : $\mathcal{O}_{A}=\mathcal{O}_{f}+\mathcal{O}_{B}{}$   
   
-- *relation* $R{}$ : $aRb,\langle a,b \rangle\in R,R(a,b){}$ ensemble de paires $\langle a,b \rangle{}$  
+- réduction **polynomiale** : $X\leq_{p}Y{}$ : fonctionnelle $O(p){}$  
+  
+- $X\leq_{p}Y\implies X\leq_{f}Y\implies X\leq_{a}Y{}$  
+  
+- $A_{\text{récursif}}\leq_{a,f} B{}$  
+  
+- , $A\leq_{a,f}B{}\iff \bar{A}\leq_{a,f}\bar{B}$  
 # Modèles de Calculabilité  
   
-- *Machine de Turing* : complet  
+- **Machine de Turing** : complet  
 	- *Ruban* suite de case; *tete* écrit / lit la case; *controle* : dirige  
 	- $B{}$ : case vide  
-	- *puissance* : nb de f : peut calculer; *efficacité* : vitesse de résolution  
-	- these de Church-Turing :   
+	- **puissance** : nb de f : peut calculer; **efficacité** : vitesse de résolution  
+	- *these de Church-Turing* :   
 		1. ?? : il n'existe pas de modèle plus puissant  
 		2. ?? : f calculable ⇒ T-calculable  
 		3. VRAI : tt def de calculabilité équivalentes  
@@ -81,29 +89,25 @@ complémentaire : $\bar{A}=X\setminus A{}$
     
   
   
-- *T-calculable* : $\exists MT: \forall x → f(x){}$  
-  
-- *T-récursif* , *T-récursivement énumérable* : $\exists MT{}$ ⇒ calculable, récursif, récur. énum  
-  
-- *automate fini* FA : (sous-catégorie des MT → plus simple)  
-	- $\sum{}$ E fini symboles, $s_{0}\in S{}$ E fini d'états et état initial, $A\subset S{}$ état acceptants, $\delta:S\times \sum\to S{}$ f de transition  
+- **automate fini** FA : (sous-catégorie des MT → plus simple)  
+	- $\Sigma{}$ E fini symboles, $s_{0}\in S{}$ E fini d'états et état initial, $A\subset S{}$ état acceptants, $\delta:S\times \Sigma\to S{}$ f de transition  
 	- pas de mémoire, ensemble pas reconnus ex : $a^nb^n{}$  
 	- sortie : son état  
 	- automates non déterministe ND (NDFA):  
 		- → rendre déterministe  
+&nbsp;  
   
-- *language de programmation* :   
-	- svt complets (=T-complets)  
+- **automate a Pile - PDA** :  
+	- ajoute de memoire : $\Gamma{}$ E fini symboles de pile, $\Delta:S\times\Sigma \times\Gamma\to S\times\Gamma^*{}$  
+	- $Z{}$ :pile vide; $A,B / C{}$ :symb ly , somment de la pile / remplacer le somet   
+	- $\exists{}$ E recursif  !reconus PDA  
+  
+- *language de programmation* (svt complets)  
 	- ND : =puissance, ++rapide  
   
 - *modèle quantique*  
   
 - *modèle humain*  
-  
-- *automate a Pile* PDA :  
-	- ajoute de memoire : $\Gamma{}$ E fini symboles de pile, $\Delta:S\times\sum \times\Gamma\to S\times\Gamma^*{}$  
-	- $Z{}$ :pile vide; $A,B / C{}$ :symb ly , somment de la pile / remplacer le somet   
-	- $\exists{}$ E recursif  !reconus PDA  
   
 - *Fonction récursives*  
   
@@ -111,126 +115,117 @@ complémentaire : $\bar{A}=X\setminus A{}$
 &nbsp;  
   
 - propriétés modèle complet :  
-	1. *SD* (Solvabilité des Définitions) : f D-calculable ⇒ calculable  
-	2. *CD* (Complétude des Définitions) : f calculable ⇒ D-caclulable  
-	3. *SA* (Solvabilité Algorithmique) : interpréteur de D : calculable  
-	4. *CA* (Complétude Algorithmique) : traduire P(SA) → D  
-	5. *U* (Description Universelle)  : interpréteur de D : D-calculable  
-	6. *S* (S-m-n affaiblie) : $\exists{}$P : capable de fixer un argument de P'  
+	1. **SD** (Solvabilité des Définitions) : f D-calculable ⇒ calculable  
+	2. **CD** (Complétude des Définitions) : f calculable ⇒ D-caclulable  
+	3. **SA** (Solvabilité Algorithmique) : interpréteur de D : calculable  
+	4. **CA** (Complétude Algorithmique) : traduire P(SA) → D  
+	5. **U** (Description Universelle)  : interpréteur de D : D-calculable  
+	6. **S** (S-m-n affaiblie) : $\exists{}$P : capable de fixer un argument de P'  
 ![Pasted image 20240601182520.png](Pasted%20image%2020240601182520.png)  
 # Calculabilité  
   
-- *problemes* : fonctions : $\{ \varphi:\mathbb{N}\to \mathbb{N} \}{}$ (non-dénombrable)  
-	- solutions : dénombrable  
-	- ⇒ $\exists \varphi{}$ !calculable  
+- **problemes** : fonctions : $\{ \varphi:\mathbb{N}\to \mathbb{N} \}{}$ (non-dénombrable)  
+	- solutions : dénombrable (⇒ $\exists \varphi{}$ !calculable)  
   
-- $\varphi_{m}{}$ *calculable* : $\exists n:P_{n}(x)=\varphi_{m}(x){} \quad \forall x$  
-&nbsp;  
+- **algorithme** : ensemble fini d'instruction + calculateur  
+	- $\varphi_{m}{}{}$ **calculable** : $\exists P_{n}=\varphi_{m}{}{}$ algo fourni un résultat  
   
-- *ND-programme* : choose(n)  
-  
-- *ND-récursif* : $\exists{}$ ND-programme : $\{ x \not\in A : 0  ;x\in A:1\cup\dots\}{}$  
-  
-- *ND-récursivement énumérale* : $\exists{}$ ND-programme : $\{ x \not\in A : \neq 1 \cup \perp  ;x\in A:1\cup\dots\}{}$ ⇔recur enum  
-&nbsp;  
-exemple :   
-  
-- $halt(n,x)=\left\{\begin{aligned} 1 &:P_{n}(x)\text{ se termine}\\0 \end{aligned}\right.{}$ → f totale, non-calculable  
-  
-- $HALT=\{ (n,x):P_{n}(x) \text{ se termine} \}{}$ E: prog se terminent  
-  
-- $K=\{ n:p_{n}(n)\text{ se termine} \}{}$   
-&nbsp;  
-&nbsp;  
-  
-- *algorithme* : ensemble fini d'instruction + calculateur  
-	- $f{}$ *calculable* : algo fourni un résultat  
-  
-- *interpréteur* : $I(n,x)=P_{n}(x){}$ (T-complet ⇒ calculable)  
+- **interpréteur** : $I(n,x)=P_{n}(x){}$ (T-complet ⇒ calculable)  
   
 - [Ensembles](Ensembles.md)  
-	- ensemble *récusif* : $\exists{}\varphi$ caractéristique calculable  
-		- $\iff{}$ ND-récursif (via $\varphi{}$ ND)  
+	- ensemble (**ND-**)**récusif** : $\exists{}\varphi$ caractéristique calculable (Non deterministe)  
 		- $X_{A}{}$ calculable totale $\iff$recur et corecu enumérable$\iff \bar{A}{}$ recur  
 		- $A{}$ fini $\implies A{}$ recursif ⇒ $A{}$ énumérable  
-	- ensemble *récursivement énumérable* : $\varphi(x)=\perp\implies x \in A{}$  
+	- ensemble (**ND-**)**récursivement énumérable** : $\varphi(x)=\perp\implies x \in A{}$  
 		- $\iff A=domf{} : f$ totale ou partielle calculable  
 		- $\iff A=\mathrm{Im}f:f{}$ total calculable  
-		- $\iff \bar{A}{}$  *corérucsivement énumérable*  
+		- $\iff \bar{A}{}$  **corérucsivement énumérable**  
 &nbsp;  
-  
-- language **BLOOP** (Bounded loop) : Java, !boucles  
-	- ! while, for (var i modifiée) !goto ! f récursives ⇒ totale calculable  
 ## Théorème de calculabilité  
   
-- *Hoare-Allison*  
-	- language que des fonction totales: !$I{}$ ⇒ *restrictif* (pas toutes calculables)  
-		- interpreteur language != et E f totales non programmables  
-	- interpreteur et halt peuvent pas etre dans un meme language  
-	- language tt fonction : permettre fonctions non totales  
-	- E f totales est pas récusif  
+- **Diagonalisation de Cantor** : tableau infini ($s_{i},s_{i,j}{}$)  
+	1. $diag'_{i,i}=diag_{i,j}?0:1{}$ ⇒ $diag'_{i}\neq A_{i} :\forall i{}$  CQFD  
+	 - collection de $E_{\infty,\text{énumérable}}{}$ ⇒ !enumérable $\mathbb{R}, \mathcal{P}(\mathbb{N}), f:\mathbb{N}\to \{ 0,1 \}{}$  
   
-- $S_{mn}{}$(*paramétrisation*) : $\exists{}S_{n}^m$ calculable: $\varphi_{k}(.x_{m+n})=\varphi_{S_{n}^m(... x_{m})}(x_{m+1} ... x_{m+n}){}$  
-	- transformateur de programme : rentre les argumentss dans un prog  
+- th. de **Hoare-Allison** : language $D{}$ (*non-trivial*): $f{}$ totale(⇒ calculable) (ex: **BLOOP** : Java, !boucles)(CA,SA)   
+	- $diag(n)=inter(n,n){}$→$d'(n)=diag(n)+1{}$calculable⇒paradoxe(car$\in \mathbb{N}{}$)⇒ interpreteur ! calculable $\not \in D{}$   
+		- ⇒ *restrictif*   
+		- ⇒ $\exists f$ totale $\not\in D{}$  
+	- interpreteur + halt $\not\in D{}$ (non-trivial)  
+	- $\forall f{}$ total est calculable dans D ⇒ $\exists f{}$ !totale calculable dans D  
   
-- th. du *point fixe* :$\exists k:\varphi_{k}=\varphi_{f(k)}{}$ avec $P_{k}{}:f$ transformateur  
-	- ? : s transfo total calculable : $\exists P_{1},P_{2}:f(P_{1})=P_{2}{};P_{1},P_{2}$ calculent la meme f  
+- $S_{mn}{}$(**paramétrisation**) : $\exists{}S_{n}^m$*calculable*: $\varphi_{k}(.x_{m+n})=\varphi_{S_{n}^m(... x_{m})}(x_{m+1} ... x_{m+n}){}$  
+	- *transformateur de programme* : rentre les arguments→prog (*totale calculable*)  
   
-- théorème de *RICE* : $A\subset \mathbb{N} ,A\neq \emptyset {}$ recursif ⇒$\exists i\in A, \exists j \not\in A: \varphi_{i}=\varphi_{j}{}$  
-	- corollaire : $\forall i\in A, \forall j\not\in {A}:\varphi_{i}\neq\varphi_{j}{}\implies A\in \{ \emptyset , \mathbb{N} \}{}$ ou $A{}$ non recursif  
-	- propriété décidable + vérifiée ⇒ $\exists{}$ 2 prog avec et sans propriété : mm f  
-	- propriété vérifiée ds certain prog ⇒ non-décidable  
-	- $\exists P{}$ determine proprité f ⇒ toute ou aucune f a la propriété  
-	- (seulement pour fonctions calculées) (prop liée a la fonction (!programme)  
-## Diagonalisation de Cantor  
-ensemble d'ensembles infini enumérable ⇒ !enumérable $\mathbb{R}, \mathcal{P}(\mathbb{N}), f:\mathbb{N}\to \{ 0,1 \}{}$  
-1. tableau(nombre d'ensembles, elements de l'ensemble)  
-2. $diag'_{i,i}=diag_{i,j}?0:1{}$  
-	1. ⇒ $diag'_{i}\neq A_{i} :\forall i{}$  CQFD  
-&nbsp;  
+- th. du **point fixe** :$\exists k:\varphi_{k}=\varphi_{f(k)}{}$ avec $P_{k}{}:f$ transformateur *total calculable*  
+	1. $h(u,v)=\left\{\begin{aligned} \varphi_{\varphi_{u}(u)}(v) \\ \perp:\varphi_{u}(u)=\perp \end{aligned}\right.{}=\varphi_{S(u)}(v)$ *calculable* ($S_{mn}{}$: totale calculable)  
+	3. $g(u)=f(S(u)){}$ *total calculable* ⇒ $\exists r:\varphi _{r} (u) = g(u) = f(S(u)){}$   
+	5. ⇒ $h(r, v) = \varphi _{S(r)}(v){}$ et 6. $h(r,v) = \varphi_{\varphi_{r}(r)}(v){} = \varphi _{f(S(r))}(v){}$  
+	7. ⇒$\varphi_{S(r)}(v) = \varphi_{f(S(r))}(v){}$ CQFD  
   
-- pb correspondance de *Post* : U,V listes de mots : trouver liste mots identiques   
-	- ⇒ non calculable  
-  
-- *codage* : $c:T\to \mathbb{N}{}$ bijection d'un nouveau type et les naturels  
-  
-- nombres calculables …  
-&nbsp;  
-# Complexité d'un programme  
- ![Complexité d'un programme](Complexit%C3%A9%20d'un%20programme.md)  
+- th. de **RICE** : $A\subset \mathbb{N} ,A\neq \emptyset {}$ *recursif* ⇒$\exists i\in A, \exists j \not\in A: \varphi_{i}=\varphi_{j}{}$  
+	- corollaire : $\forall i\in A, \forall j\not\in {A}:\varphi_{i}\neq\varphi_{j}{}\implies A\in \{ \emptyset , \mathbb{N} \}{}$ ou $A{}$ *non recursif*  
+		1. Démo : $\chi_{A}{}$ : ($\varphi_{k}=\perp{}$, $k\in \bar{A}{}$ ) : $\varphi_{int}\neq \varphi_{ext}{}$  
+		2. $halt(n,x):P_{j}(z)=P_{n}(x), P_{m}(z){}$ : $j\in A?\;1,0{}$   
+		3. ⇒ $\in A{}$ !calculable ⇒ *non récursif*  
+	- propriété *décidable* + *vérifiée* ⇒ $\exists{}$ 2 prog avec et sans propriété : mm f  
+	- $\exists P:{}$propriété *vérifiée* ⇒ prop *non-décidable*  
+	- $E{}=\{  f: proprité \}$ *récursif* ⇒ $E\subset \{ X,\emptyset  \}{}$   
+	- (propriétés liée → fonctions calculées)  
+ ![Complexité d'un programme > Complexité d'un programme](Complexit%C3%A9%20d'un%20programme.md#Complexité%20d'un%20programme)  
 # Complexité d'un problème  
   
-- *EXPTIME* = $\mathcal{O}(2^p){}$ avec p un polynome $=\bigcup_{k\in \mathbb{N} }DTIME(2^{n^k}){}$  
+- **EXPTIME** = $\mathcal{O}(2^p){}$ avec p un polynome $=\bigcup_{k\in \mathbb{N} }DTIME(2^{n^k}){}$  
   
-- *PSPACE* $\mathcal{O}(p){}$ $=\bigcup_{k\in \mathbb{N}}DSPACE(n^k){}$  
+- **PSPACE** $\mathcal{O}(p){}$ $=\bigcup_{k\in \mathbb{N}}DSPACE(n^k){}$  
   
-- *NP* pro. lemes polynomiaux non-Déterministes  
+- **NP** pro. lemes polynomiaux non-Déterministes  
 	- ⇒ E\\X *coNP*   
   
-- *P* classe polynomiale : exists algo polynomial (calculable en pratique)  
+- **P** classe polynomiale : exists algo polynomial (calculable en pratique)  
   
-- *PQB*, *BQP* : classe polynomiale quantique bornée : $\exists{}$ algo Q : raison de ⅔  
+- **PQB**, **BQP** : classe polynomiale quantique bornée : $\exists{}$ algo Q : raison de ⅔  
 &nbsp;  
   
 - these : $P \subset NP{}$ ($\iff P=NP{}$)  
   
-- $p{}$ probleme *difficile* : $\forall P \in C{}$ *réductible* a $p{}$   
+- Démo : $SAT\in P\implies P=NP{}$  
   
-- *complet* : difficile + $p\in C{}$  
+- $p{}$ pb **difficile** : $\forall P \in C{}$ *réductible* a $p{}$   
   
-- th. de *Cook* : SAT → NP-complet …  
-	1. $SAT\in NP{}$  
-	2. NP-difficile via $\ll_{p}{}$  
+- $p{}$ (T-)**complet** : difficile + $p\in C{}$  
+  
+- th. de *Cook* : $SAT\in NP-COMPLET{}$  
+	1. $SAT\in NP{}$ : algo fixe les variables logiques : $\mathcal{O}(n\log n){}$  
+	2. *NP-difficile* $\forall B\in NP : B\leq_{p}SAT{}$ : $B{}$ → transforme en porposition  
   
 - $DTIME(f(n)){}$ : $n\to{}$machine de turing en temps $\mathcal{O}(f(n)){}$  
   
 - $DSPACE(f(n)){}$ : $n\to{}$machine de turing en espace $\mathcal{O}(f(n)){}$  
 $DTIME\subseteq NTIME\subseteq DSPACE\subseteq NSPACE{}$  
   
-- NTIME(f), NSPACE(f) machine non déterministe  
+- NTIME(f), NSPACE(f) machine *non déterministe*  
 &nbsp;  
-&nbsp;  
-&nbsp;  
-Exemple de problemes  
+## Exemple de problemes  
   
 - pb du voyageur(plus court chemin a travers certains points) : NP-complet  
+  
+- pb correspondance de *Post* : U,V listes de mots : trouver liste mots identiques   
+	- ⇒ non calculable  
+&nbsp;  
+### Ensembles  
+&nbsp;  
+  
+- $halt(n,x)=\left\{\begin{aligned} 1 &:P_{n}(x)\text{ se termine}\\0 \end{aligned}\right.{}$ → *totale*, *non-calculable* :  
+	1. $diag(n)=\{ halt(n,n)=0\;?\;\;1,\perp \}{}=P_{d}$   
+	2. $diag(d){}$ termine ⇒ =0 ⇒ !termine ⇒ =1 ⇒ paradoxe ⇒ halt !calculable  
+  
+- $HALT=\{ (n,x):P_{n}(x) \text{ se termine} \}{}$  
+  
+- $K=\{ n:p_{n}(n)\text{ se termine} \}{}$   
+&nbsp;  
+&nbsp;  
+## A voir  
+T-…. ??  
+&nbsp;  
+demos  
