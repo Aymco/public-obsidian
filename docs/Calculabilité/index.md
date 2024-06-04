@@ -15,6 +15,8 @@ updated: 2024-06-04
 	- **mot** : "abc", "01010", $\epsilon{}$ (vide)  
 	- **alphabet** $\Sigma{}$ : ensemble de symboles  
   
+- **algorithme** : ensemble fini d'instruction + calculateur  
+  
 - *codage* : $c:T\to \mathbb{N}{}$ bijection d'un nouveau type et les naturels  
   
 - **relation** $R{}$ : $aRb,\langle a,b \rangle\in R,R(a,b){}$ ensemble de paires $\langle a,b \rangle{}$  
@@ -39,16 +41,33 @@ updated: 2024-06-04
 - résolution : $A\vee B\text{ et }B!\vee C\implies A\vee C{}$  
   
 - (model checking)  
-# Problemes informatique  
+# Calculabilité  
   
 - **programme** $P{}$ avec sa fonction $\varphi(x){}$  
+  
+- **problemes** : fonctions : $\{ \varphi:\mathbb{N}\to \mathbb{N} \}{}$ (*non-dénombrable*)  
+	- solutions : *programme* : *dénombrable* (⇒ $\exists \varphi{}$ !calculable)  
+  
+- **interpréteur** : $I(n,x)=P_{n}(x){}$  
   
 - *fonction* : $\varphi:\mathbb{N}\to \mathbb{N}$       ($\varphi(x)=\perp{}$ *indéfinie*)  
 	- $\varphi{}$ **totale** : $\forall x:\varphi(x)\neq \perp{}$ sinon *. artielle*  
 	- $\varphi_{m}{}$ **extension** de $\varphi_{n}{}$ : $\forall x:\varphi_{n}(x) \neq \perp{}, \varphi_{m}(x)=\varphi_n(x)$  
+	- $\varphi_{m}{}{}$ **calculable** : $\exists P_{n}=\varphi_{m}{}{}$ algo fourni un résultat  
 	- *fonction* **universelle** : $\theta(n,x)=\varphi_{n}(x)$  
 	- *fonction* **caractéristique** : $\chi_{A}{}$ determine si $x \in A {}$  
 	- $\exists f{}$ partielle calculable : $\not \exists g{}$ : extension de f totale calculable  
+  
+- [Ensembles](Ensembles.md) :  
+  
+- ensemble (**ND-**)**récusif** : $\exists{}\varphi$ caractéristique totale calculable (⇔Non deterministe)  
+	- $\iff \bar{A}{}$ recur ⇒ recur et corecu enumérabl  
+	- $A{}$ fini $\implies A{}$ recursif ⇒ $A{}$ énumérable  
+  
+- ensemble (**ND-**)**récursivement énumérable** : $\varphi(x)=\perp\implies x \in A{}$  
+	- $\iff A=domf{} : f$ totale ou partielle calculable  
+	- $\iff A=\mathrm{Im}f:f{}$ total calculable  
+	- $\iff \bar{A}{}$  **corérucsivement énumérable**  
 ## Réduction  
   
 - réduction **algorithmique** : $X\leq_{a}Y{}$ : $\exists \chi_{Y}\implies \exists\chi_{X}{}$  (calculabilité)  
@@ -56,10 +75,10 @@ updated: 2024-06-04
 	- ⇒$X$ non -recursif ⇒ $Y{}$ non-recursif  
 	- $X\leq_{a}\bar{X}{}$   
   
-- réduction **fonctionnelle**: $X\leq_{f}Y{}\iff\exists{}f$ totale calculable:  $x\in X \iff f(x)\in Y{}$   
+- réduction **fonctionnelle**: $X\leq_{f}Y{}\iff\exists{}f$ *totale calculable* :  $x\in X \iff f(x)\in Y{}$   
 	- complexité : $\mathcal{O}_{A}=\mathcal{O}_{f}+\mathcal{O}_{B}{}$   
   
-- réduction **polynomiale** : $X\leq_{p}Y{}$ : fonctionnelle $O(p){}$  
+- réduction **polynomiale** : $X\leq_{p}Y{}$ : *fonctionnelle* $\mathcal{O}(p){}$  
   
 - $X\leq_{p}Y\implies X\leq_{f}Y\implies X\leq_{a}Y{}$  
   
@@ -69,12 +88,12 @@ updated: 2024-06-04
 # Modèles de Calculabilité  
   
 - **Machine de Turing** : complet  
-	- *Ruban* suite de case; *tete* écrit / lit la case; *controle* : dirige  
-	- $B{}$ : case vide  
+	- *Ruban* suite de case; *tete* écrit / lit la case  
+	- $B{}$ : case vide, $D,G{}$ droite, gauche  
 	- **puissance** : nb de f : peut calculer; **efficacité** : vitesse de résolution  
 	- *these de Church-Turing* :   
 		1. ?? : il n'existe pas de modèle plus puissant  
-		2. ?? : f calculable ⇒ T-calculable  
+		2. ?? : f calculable ⇒ T-calculable (CD)  
 		3. VRAI : tt def de calculabilité équivalentes  
 	- *Oracle* : 3 états : $oracle_{ask,ues,no}{}$ : demande si $x\in  A{}$ : oui, non  
   
@@ -90,14 +109,14 @@ updated: 2024-06-04
   
   
 - **automate fini** FA : (sous-catégorie des MT → plus simple)  
-	- $\Sigma{}$ E fini symboles, $s_{0}\in S{}$ E fini d'états et état initial, $A\subset S{}$ état acceptants, $\delta:S\times \Sigma\to S{}$ f de transition  
+	- $\Sigma{}$ E fini *symboles*, $s_{0}\in S{}$ E fini d'*états* et état initial, $A\subset S{}$ état acceptants, $\delta:S\times \Sigma\to S{}$ f de *transition*  
 	- !mémoire, ensembles pas reconnus ex : $a^nb^n{}$  
 	- sortie : son état  
 	- automates non déterministe ND (NDFA):  
 		- → rendre déterministe  
   
 - **automate a Pile - PDA** :  
-	- ajoute de memoire : $\Gamma{}$ E fini symboles de pile, $\Delta:S\times\Sigma \times\Gamma\to S\times\Gamma^*{}$  
+	- +*memoire* : $\Gamma{}$ E fini symboles de pile, $\Delta:S\times\Sigma \times\Gamma\to S\times\Gamma^*{}$  
 	- $Z{}$ :pile vide; $A,B / C{}$ :symb ly , somment de la pile / remplacer le somet   
 	- $\exists{}$ E recursif  !reconus PDA  
   
@@ -120,25 +139,7 @@ updated: 2024-06-04
 	5. **U** (Description Universelle)  : interpréteur de D : D-calculable  
 	6. **S** (S-m-n affaiblie) : $\exists{}$P : capable de fixer un argument de P'  
 ![Pasted image 20240601182520.png](Pasted%20image%2020240601182520.png)  
-# Calculabilité  
-  
-- **problemes** : fonctions : $\{ \varphi:\mathbb{N}\to \mathbb{N} \}{}$ (non-dénombrable)  
-	- solutions : dénombrable (⇒ $\exists \varphi{}$ !calculable)  
-  
-- **algorithme** : ensemble fini d'instruction + calculateur  
-	- $\varphi_{m}{}{}$ **calculable** : $\exists P_{n}=\varphi_{m}{}{}$ algo fourni un résultat  
-  
-- **interpréteur** : $I(n,x)=P_{n}(x){}$ (T-complet ⇒ calculable)  
-  
-- [Ensembles](Ensembles.md)  
-	- ensemble (**ND-**)**récusif** : $\exists{}\varphi$ caractéristique calculable (Non deterministe)  
-		- $X_{A}{}$ calculable totale $\iff$recur et corecu enumérable$\iff \bar{A}{}$ recur  
-		- $A{}$ fini $\implies A{}$ recursif ⇒ $A{}$ énumérable  
-	- ensemble (**ND-**)**récursivement énumérable** : $\varphi(x)=\perp\implies x \in A{}$  
-		- $\iff A=domf{} : f$ totale ou partielle calculable  
-		- $\iff A=\mathrm{Im}f:f{}$ total calculable  
-		- $\iff \bar{A}{}$  **corérucsivement énumérable**  
-## Théorème de calculabilité  
+# Théorème de calculabilité  
   
 - **Diagonalisation de Cantor** : tableau infini ($s_{i},s_{i,j}{}$)  
 	1. $diag'_{i,i}=diag_{i,j}?0:1{}$ ⇒ $diag'_{i}\neq A_{i} :\forall i{}$  CQFD  
@@ -172,34 +173,28 @@ updated: 2024-06-04
  ![Complexité d'un programme > Complexité d'un programme](Complexit%C3%A9%20d'un%20programme.md#Complexité%20d'un%20programme)  
 # Complexité d'un problème  
   
-- **N**TIME, **N**… m. *non déterministe* (**D**… déterministe)  
+- ..**TIME**$(f(n)){}$ : pb : classe *temporelle* $\mathcal{O}(f(n)){}$  
   
-- ..**TIME**$(f(n)){}$ : $n\to{}$machine de turing en *temps* $\mathcal{O}(f(n)){}$  
+- ..**SPACE**$(f(n)){}$ : pb: classe *spatiale* $\mathcal{O}(f(n)){}$   
   
-- ..**SPACE**$(f(n)){}$ : $n\to{}$machine de turing en *espace* $\mathcal{O}(f(n)){}$   
-	- ⇒ $DTIME\subseteq NTIME\subseteq DSPACE\subseteq NSPACE\subseteq DTIME(2^{f(n)}){}$  
+- **N**.. (**N**TIME)  *non déterministe* (**D**… déterministe)  
   
-- **P**.. classe polynomiale : exists algo polynomial (calculable en pratique)  
+- **P**.. $=\bigcup_{k\in \mathbb{N}}D..(n^k){}$ classe polynomiale (calculable en pratique)  
   
-- **NP**.. non-Déterministes polynomiaux ⇒ E\\X **coNP**   
+- **EXP**.. $=\bigcup_{k\in \mathbb{N} }D..(2^{n^k}){}$ classe exponentielle  
   
-- **EXPTIME** = $\mathcal{O}(2^p){}$ avec p un polynome $=\bigcup_{k\in \mathbb{N} }DTIME(2^{n^k}){}$  
-  
-- **PSPACE** $\mathcal{O}(p){}$ $=\bigcup_{k\in \mathbb{N}}DSPACE(n^k){}$  
-  
-- **PQB**, **BQP** : classe polynomiale quantique bornée : $\exists{}$ algo Q : raison de ⅔  
+- (**PQB**: classe polynomiale quantique bornée : $\exists{}$ algo Q : raison de ⅔)  
+ ⇒ $DTIME\subseteq NTIME\subseteq DSPACE\subseteq NSPACE\subseteq DTIME(2^{f(n)}){}$  
 &nbsp;  
   
 - $p{}$ pb **difficile** : $\forall P \in C{}$ *réductible* a $p{}$   
   
 - $p{}$ (T-)**complet** : difficile + $p\in C{}$  
   
-- these??  : $P = NP{}$ ($\iff P\subset NP{}$)    
-  
-- th. de **Cook** : $SAT\in {}$*NP-COMPLET*  ⇒($SAT\in P\implies P=NP{}$)  
+- th. de **Cook** : $SAT\in {}$*NP-COMPLET*  ⇒($SAT\in P\implies P=NP{}$ (these??))  
 	1. $SAT\in {}$*NP* : algo fixe les variables logiques : $\mathcal{O}(n\log n){}$  
 	2. *NP-difficile* $\forall B\in NP : B\leq_{p}SAT{}$ : $B{}$ → transforme en porposition  
-&nbsp;  
+![Pasted image 20240604164941.png](Pasted%20image%2020240604164941.png)  
 ## Exemple de problemes  
   
 - pb du voyageur(plus court chemin a travers certains points) : NP-complet  
@@ -215,5 +210,3 @@ updated: 2024-06-04
 - $HALT=\{ (n,x):P_{n}(x) \text{ se termine} \}{}$  
   
 - $K=\{ n:p_{n}(n)\text{ se termine} \}{}$   
-## A voir  
-&nbsp;  
