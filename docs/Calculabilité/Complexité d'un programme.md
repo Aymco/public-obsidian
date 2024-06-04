@@ -6,6 +6,7 @@ tags:
 created: 2024-06-02  
 updated: 2024-06-03  
 ---  
+# Complexité d'un programme  
   
 - complexité spatiale , temporelle  
   
@@ -21,5 +22,5 @@ updated: 2024-06-03
 - *intrinsequement* complexe : $X\not \in \mathcal{O}(n^a)$  
   
 - Space complexity : recursive $\mathcal{O}(n)$ , iterative $\mathcal{O}(1)$  
-## Prog - CP  
+# Prog - CP  
 ![Pasted image 20230926200023.png](Pasted%20image%2020230926200023.png)  
