@@ -111,13 +111,12 @@ updated: 2024-06-04
 - *Fonction récursives*  
   
 - *lambda calcul*  
-&nbsp;  
   
-- propriétés modèle complet :  
-	1. **SD** (Solvabilité des Définitions) : f D-calculable ⇒ calculable  
-	2. **CD** (Complétude des Définitions) : f calculable ⇒ D-caclulable  
-	3. **SA** (Solvabilité Algorithmique) : interpréteur de D : calculable  
-	4. **CA** (Complétude Algorithmique) : $\forall p \in {}$mod(SA)⇒ $\exists P \in D:\varphi_{P}=\varphi_{p}{}$  
+- propriétés **modèle complet** :  
+	1. **SA** (Solvabilité Algorithmique) : interpréteur de D : calculable  
+	2. ⇒ **SD** (Solvabilité des Définitions) : f D-calculable ⇒ calculable  
+	3. **CA** (Complétude Algorithmique) : $\forall p \in {}$mod(SA)⇒ $\exists P \in D:\varphi_{P}=\varphi_{p}{}$  
+	4. ⇒ **CD** (Complétude des Définitions) : f calculable ⇒ D-caclulable  
 	5. **U** (Description Universelle)  : interpréteur de D : D-calculable  
 	6. **S** (S-m-n affaiblie) : $\exists{}$P : capable de fixer un argument de P'  
 ![Pasted image 20240601182520.png](Pasted%20image%2020240601182520.png)  
@@ -139,7 +138,6 @@ updated: 2024-06-04
 		- $\iff A=domf{} : f$ totale ou partielle calculable  
 		- $\iff A=\mathrm{Im}f:f{}$ total calculable  
 		- $\iff \bar{A}{}$  **corérucsivement énumérable**  
-&nbsp;  
 ## Théorème de calculabilité  
   
 - **Diagonalisation de Cantor** : tableau infini ($s_{i},s_{i,j}{}$)  
@@ -174,36 +172,33 @@ updated: 2024-06-04
  ![Complexité d'un programme > Complexité d'un programme](Complexit%C3%A9%20d'un%20programme.md#Complexité%20d'un%20programme)  
 # Complexité d'un problème  
   
+- **N**TIME, **N**… m. *non déterministe* (**D**… déterministe)  
+  
+- ..**TIME**$(f(n)){}$ : $n\to{}$machine de turing en *temps* $\mathcal{O}(f(n)){}$  
+  
+- ..**SPACE**$(f(n)){}$ : $n\to{}$machine de turing en *espace* $\mathcal{O}(f(n)){}$   
+	- ⇒ $DTIME\subseteq NTIME\subseteq DSPACE\subseteq NSPACE\subseteq DTIME(2^{f(n)}){}$  
+  
+- **P**.. classe polynomiale : exists algo polynomial (calculable en pratique)  
+  
+- **NP**.. non-Déterministes polynomiaux ⇒ E\\X **coNP**   
+  
 - **EXPTIME** = $\mathcal{O}(2^p){}$ avec p un polynome $=\bigcup_{k\in \mathbb{N} }DTIME(2^{n^k}){}$  
   
 - **PSPACE** $\mathcal{O}(p){}$ $=\bigcup_{k\in \mathbb{N}}DSPACE(n^k){}$  
   
-- **NP** pro. lemes polynomiaux non-Déterministes  
-	- ⇒ E\\X *coNP*   
-  
-- **P** classe polynomiale : exists algo polynomial (calculable en pratique)  
-  
 - **PQB**, **BQP** : classe polynomiale quantique bornée : $\exists{}$ algo Q : raison de ⅔  
 &nbsp;  
-  
-- these : $P \subset NP{}$ ($\iff P=NP{}$)  
-  
-- Démo : $SAT\in P\implies P=NP{}$  
   
 - $p{}$ pb **difficile** : $\forall P \in C{}$ *réductible* a $p{}$   
   
 - $p{}$ (T-)**complet** : difficile + $p\in C{}$  
   
-- th. de *Cook* : $SAT\in NP-COMPLET{}$  
-	1. $SAT\in NP{}$ : algo fixe les variables logiques : $\mathcal{O}(n\log n){}$  
+- these??  : $P = NP{}$ ($\iff P\subset NP{}$)    
+  
+- th. de **Cook** : $SAT\in {}$*NP-COMPLET*  ⇒($SAT\in P\implies P=NP{}$)  
+	1. $SAT\in {}$*NP* : algo fixe les variables logiques : $\mathcal{O}(n\log n){}$  
 	2. *NP-difficile* $\forall B\in NP : B\leq_{p}SAT{}$ : $B{}$ → transforme en porposition  
-  
-- $DTIME(f(n)){}$ : $n\to{}$machine de turing en temps $\mathcal{O}(f(n)){}$  
-  
-- $DSPACE(f(n)){}$ : $n\to{}$machine de turing en espace $\mathcal{O}(f(n)){}$  
-$DTIME\subseteq NTIME\subseteq DSPACE\subseteq NSPACE{}$  
-  
-- NTIME(f), NSPACE(f) machine *non déterministe*  
 &nbsp;  
 ## Exemple de problemes  
   
@@ -211,9 +206,7 @@ $DTIME\subseteq NTIME\subseteq DSPACE\subseteq NSPACE{}$
   
 - pb correspondance de *Post* : U,V listes de mots : trouver liste mots identiques   
 	- ⇒ non calculable  
-&nbsp;  
 ### Ensembles  
-&nbsp;  
   
 - $halt(n,x)=\left\{\begin{aligned} 1 &:P_{n}(x)\text{ se termine}\\0 \end{aligned}\right.{}$ → *totale*, *non-calculable* :  
 	1. $diag(n)=\{ halt(n,n)=0\;?\;\;1,\perp \}{}=P_{d}$   
@@ -222,8 +215,5 @@ $DTIME\subseteq NTIME\subseteq DSPACE\subseteq NSPACE{}$
 - $HALT=\{ (n,x):P_{n}(x) \text{ se termine} \}{}$  
   
 - $K=\{ n:p_{n}(n)\text{ se termine} \}{}$   
-&nbsp;  
-&nbsp;  
 ## A voir  
 &nbsp;  
-demos  
