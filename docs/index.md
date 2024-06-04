@@ -17,26 +17,24 @@ N'hésitez pas a modifier les synthèses via le bouton en haut a droite.
 - $maths{}$  
   
 - liens [Home]()  
-&nbsp;  
-![Q4](Q4.md)  
-&nbsp;  
 # Q4  
   
-- [Compléments d'Analyse](Compl%C3%A9ments%20d%27Analyse)  
+- [Compléments d'Analyse](https://aymco.github.io/public-obsidian/Compl%C3%A9ments%20d%27Analyse/)  
+  
+- [Programmation symbolique](https://aymco.github.io/public-obsidian/Concepts%2C%20Paradigmes/Concepts%20de%20Programmation/)  
+  
+- [calculabilité](https://aymco.github.io/public-obsidian/Calculabilit%C3%A9/)  
+  
+- [Signaux et systèmes](https://aymco.github.io/public-obsidian/Signaux%20et%20Syst%C3%A8mes/)  
 # Q3  
-![Q3](Q3.md)  
-&nbsp;  
   
-- [Physique 3](Physique%203)  
+- [Analyse 3](https://aymco.github.io/public-obsidian/Analyse%203/)  
   
-- [Analyse 3](Analyse%203)  
+- [Physique 3](https://aymco.github.io/public-obsidian/Physique%203/)  
   
-- [Math discrète et probabilités](MDP)  
+- [MDP](https://aymco.github.io/public-obsidian/MDP/)  
   
-- [Chimie et chimie physique 2](Chimie%202)  
-&nbsp;  
-  
-- [Compléments d'Analyse - Synthèses ingénieur civil](https://aymco.github.io/public-obsidian/Compl%C3%A9ments%20d%27Analyse/)  
+- [Chimie 2](https://aymco.github.io/public-obsidian/Chimie%202/)  
 &nbsp;  
 # Titre 1 : TESTS  
 $$  
