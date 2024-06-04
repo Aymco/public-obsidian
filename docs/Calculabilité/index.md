@@ -5,7 +5,7 @@ tags:
   - regrouping  
 title: calculabilité  
 created: 2024-02-12  
-updated: 2024-06-03  
+updated: 2024-06-04  
 ---  
 classifier problème :  calculable, non calculable (en pratique)  
 complémentaire : $\bar{A}=X\setminus A{}$  
@@ -31,10 +31,10 @@ complémentaire : $\bar{A}=X\setminus A{}$
 - **FNC** : clause et clause et ..  
   
 - **intérprétation** : valeurs → propositions  
-	- **modèle**: interpretation →VRAI : ($\exists{}$ modèle → *satisfaisable* (modèle $\in {}$ **SAT** : E)  
+	- **modèle**: *interpretation* →VRAI : ($\exists{}$ *modèle* → *satisfaisable* (modèle $\in {}$ **SAT** : E)  
   
 - **tautologie** : formule tjrs → VRAI   
-	- *conséquence logique* : $p\implies q{}$ tautologie ⇔ $p\models q{}$ (affirmation)  
+	- *conséquence logique* : $p\implies q{}$ *tautologie* ⇔ $p\models q{}$ (affirmation)  
   
 - résolution : $A\vee B\text{ et }B!\vee C\implies A\vee C{}$  
   
@@ -226,6 +226,5 @@ $DTIME\subseteq NTIME\subseteq DSPACE\subseteq NSPACE{}$
 &nbsp;  
 &nbsp;  
 ## A voir  
-T-…. ??  
 &nbsp;  
 demos  
