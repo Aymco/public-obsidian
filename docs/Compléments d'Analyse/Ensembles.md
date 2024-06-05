@@ -4,13 +4,13 @@ category: Compléments d'Analyse
 tags:  
   - matière  
 created: 2024-01-05  
-updated: 2024-06-01  
+updated: 2024-06-05  
 title: Ensembles et topologies  
 ---  
   
 - **Boule** ouverte $B_{r}(x)=\{ y\in X:d(x,y)<r \}{}$  
   
-- $P(\mathbb{N})=Z^N{}$ ensemble des sous ensembles de $\mathbb{N}{}$ (non dénombrable)  
+- $\mathbf{B}(X)=P(X)=Z^X{}$ ensemble des sous ensembles de $X{}$  
   
 - $\mathbb{N,Z,Q,R,C}{}$  ($R_{0}=R\setminus \{ 0 \}{}$) ($N = \{ 1,2,\dots \}{}$ ; $N_{0}=N\cup \{ 0 \}$)  
   
@@ -18,11 +18,10 @@ title: Ensembles et topologies
   
 - $\mathbb{R}^n{}$ vecteurs de taille n  
   
-- $\mathbb{R}^\mathbb{N}{}=\{ f:\mathbb{N}\to \mathbb{R} \}$ (suites)  
-  
 - ensemble de *fonctions* : $A^B{}:=\{ f:B\to A \}$ et $n^X=\{ 0,n-1 \}^X{}$  
+	- $\mathbb{R}^\mathbb{N}{}=\{ f:\mathbb{N}\to \mathbb{R} \}$ (suites)  
   
-- Espace $C(I)=\{ f:I\to \mathbb{R}: f \text{ continue} \}{}$  
+- $C(I)=\{ f:I\to \mathbb{R}: f \text{ continue} \}{}$ (Espace)  
   
 - *Espaces de Lebesgue* : $L^p(a,b)=\left\{  f: \int_{a}^{b}  \lvert f(x)  \rvert_{p}\, dx<\infty  \right\}{}$  
 	- Espace :  $l^{p}(\mathbb{N})=\left\{ l_{i}^p\in \mathbb{R}^\mathbb{N}:| | l_{i}^p| |_{p}<\infty  \right\}{}$   
@@ -31,7 +30,7 @@ title: Ensembles et topologies
 - $n$ **cardinal** de $A$ : $n=|A|=\#A \in N$ : taille d'un ensemble  
 	- $|\emptyset |<|\{ 0,1 \}|<|\mathbb{N}|<|2^\mathbb{N}|=|\mathbb{R}|<|2^{2^\mathbb{R}}|{}$  
   
-- Ensembles **équipotents** $A \approx B \iff |A|=|B|$ si bijection de $A$ vers $B$   
+- Ensembles **équipotents** $A \approx B \iff |A|=|B|$ si *bijection* de $A$ vers $B$   
 	- $N\approx Z$ : $n\to \left\{\begin{align} \frac{{n+1}}{2}\quad\quad \frac{-n}{2} \end{align}\right.$  
   
 - $A$ est *fini* : $A \approx \{ 1,2,..,n \}$ ($A\approx \mathbb{N}$ → *infini*  )  
