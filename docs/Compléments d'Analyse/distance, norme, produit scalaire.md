@@ -4,7 +4,7 @@ category: Compléments d'Analyse
 tags:  
   - matière  
 created: 2024-05-31  
-updated: 2024-06-01  
+updated: 2024-06-05  
 ---  
 # Distances  
   
@@ -13,18 +13,22 @@ updated: 2024-06-01
 	2. *inégalité triangulaire* : $d(u,v)\leq d(u,w)+d(w,v){}$  
 		- $\iff{}$*inégalité triangulaire inverse* :$|d(u,w)-d(w,v)| \leq d(u,v){}$  
 	3. $d(u,v)=0\iff u=v{}$   
-	- Distance *euclidienne* : $d_{e}(x,y)=\sqrt{ \sum_{i=0}^{n-1} (x_{i}-y_{i})^{2}}{}$  
-	- distance de *manhattan* : $d_{m}(x,y)=\sum_{0}^{n-1}|x_{i}-y_{i}|{}$  
+  
+- Distance *euclidienne* : $d_{e}(x,y)=\sqrt{ \sum_{i=0}^{n-1} (x_{i}-y_{i})^{2}}{}$  
+  
+- distance de *manhattan* : $d_{m}(x,y)=\sum_{0}^{n-1}|x_{i}-y_{i}|{}$  
 # Norme  
   
 - **Norme** : $||\cdot||:X\to \mathbb{R}^+{}$  (continue, convexe, k-Lipschitzienne)  
 	1. *séparation* : $\lvert \lvert x \rvert \rvert=0 \implies x=0{}$   
 	2. *absolue homogénéité* : $\lvert \lvert \alpha x \rvert \rvert = \lvert \alpha \rvert\cdot \lvert \lvert x \rvert \rvert{}$ ~~.$\forall \alpha \in \mathbb{R},\forall x\in X{}$ ~~  
 	3. *inégalité triangulaire* : $||x+y||\leq||x||+||y||{}$  ~~.$\forall x,y{}$~~  
-	- n. euclidienne $| | u| |_{p}=\sqrt[p]{ \sum |u_{i}|^p }{}$  → sur f : $\lvert \lvert f \rvert \rvert_{p}=\sqrt[p]{  \int_{X} \lvert f \rvert^p \, d\mu} {}$  
-	- n. du maximum  $| | f| |_{\infty}=max_{x\in I}(f(x)){}$ ~~.$f\in C(I){}$ ~~  
   
-- norme induite : $||u||=d(0,u){}=\sqrt{ \langle u,u \rangle }{}$  
+- norme *induite* : $||u||=d(0,u){}=\sqrt{ \langle u,u \rangle }{}$  
+  
+- n. euclidienne $| | u| |_{p}=\sqrt[p]{ \sum |u_{i}|^p }{}$  → sur f : $\lvert \lvert f \rvert \rvert_{p}=\sqrt[p]{  \int_{X} \lvert f \rvert^p \, d\mu} {}$  
+  
+- n. du maximum  $| | f| |_{\infty}=max_{x\in I}(f(x)){}$ ~~.$f\in C(I){}$ ~~  
 # Produit scalaire  
   
 - **Produit scalaire** : $\langle u,v \rangle:X\times X\to \mathbb{R}^+{}$  
@@ -36,7 +40,7 @@ updated: 2024-06-01
 	1. *sesquilinéaire* : 1er : *antilinéaire*(linéaire pdv conjugé) ; 2eme *linéaire* : $\langle \alpha f,\beta g \rangle=\alpha^*\langle f,\beta g \rangle = \alpha^*\beta\langle f,g \rangle{}$  
 	2. *symétrie conjugée* : $\langle f,g \rangle= \langle g,f \rangle^*{}$  
   
-- identité du *parallélogramme* : $||u+v||^2+||u-v||^2=2||u||^2+2||v||^2{}$  
+- identité du **parallélogramme** : $||u+v||^2+||u-v||^2=2||u||^2+2||v||^2{}$  
 	- ⇒$\langle u,v \rangle=\frac{||u+v||^2-||u-v||^2}{4} =\frac{||u+v||^2-||u||^2-||v||^2}{2}{}$  
 	- (th. *Fréchet-Von Neumann-Jordan* )  
   
