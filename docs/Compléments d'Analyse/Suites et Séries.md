@@ -4,19 +4,19 @@ category: Compléments d'Analyse
 tags:  
   - matière  
 created: 2023-12-30  
-updated: 2024-05-31  
+updated: 2024-06-04  
 title: Suites  
 ---  
   
 - $(a_{n})_{n\in \mathbb{N}}{}$ (tjrs infini); (SS: sous suite) (espace métrique → )  
   
-- suite $a_{n}{}$ converge : $\exists N_{\epsilon}: \forall n>N_{\epsilon}:d(a_{n}, a)<\epsilon \quad(\forall\epsilon>0){}$   
+- suite $a_{n}{}$ **converge** : $\exists N_{\epsilon}: \forall n>N_{\epsilon}:d(a_{n}, a)<\epsilon \quad(\forall\epsilon>0){}$   
   
-- suite de *Cauchy* : $\exists N_{\epsilon}:\forall m,n>N_{\epsilon},d(a_{n},a_{m})<\epsilon{}$     
+- suite **de Cauchy** : $\exists N_{\epsilon}:\forall m,n>N_{\epsilon},d(a_{n},a_{m})<\epsilon{}$     
   
-- suite *sommable* : $(\sum_{0}^{n}x_{k})_{n\in \mathbb{N}}{}$ converge  
+- suite **sommable** : $(\sum_{0}^{n}x_{k})_{n\in \mathbb{N}}{}$ converge  
   
-- suite *bornée*   
+- suite **bornée**   
   
 - suite *convergente* ⇒ *de Cauchy* ⇒ *bornée*  
   
@@ -24,10 +24,10 @@ title: Suites
   
 - $\exists{}$ SS convergente ⇒ sd Cauchy → converge  
   
-- *th. de l'étau* : $a_n\leq b_{n}\leq c_{n}$ et $\lim_{ n \to \infty }a_{n}=\lim_{ n \to \infty }c_{n}=a$  
+- th. de **l'étau** : $a_n\leq b_{n}\leq c_{n}$ et $\lim_{ n \to \infty }a_{n}=\lim_{ n \to \infty }c_{n}=a$  
 	⇒ $\lim_{ n \to \infty }b_{n}=a$  
   
-- th. de *Bolzano–Weierstrass* : suite bornée $R^n{}$ → sous suite convergente  
+- th. de **Bolzano–Weierstrass** : suite bornée $R^n{}$ → sous suite convergente  
   
 - lim existe $\lim_{ n \to \infty }x_{n}=x^*{}$ ⇒ converge  
   
