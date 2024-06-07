@@ -5,7 +5,7 @@ tags:
   - regrouping  
 title: Compléments d'Analyse  
 created: 2024-02-07  
-updated: 2024-06-05  
+updated: 2024-06-06  
 ---  
 → [CA - questions de restitution](CA%20-%20questions%20de%20restitution.md)  
 &nbsp;  
@@ -102,14 +102,7 @@ Exemples :
   
 - **Intégrales Complexes** : $\int _{A}f \, d\mu{}=\int _{A} \mathfrak{R}(f)\, d\mu+i\int _{A} \mathfrak{I}(f)\, d\mu+$ ($\mathfrak{R,I}{}$ intégrables)  
 # Bonus  
-## Fonctions  
-  
-- *Image réciproque* $f^{-1}(B)=\{ x\in X:f(x)\in B \}{}$  
-  
-- $f{}$ *k-Lipschitzienne* : $d(f(x),f(y))\leq kd(x,y){}$    
-  
-- $f{}$ *contractante* : $k\in ]0,1[{}$-Lipschitzienne  
-&nbsp;  
+[Fonctions](Fonctions.md)   
   
 - th. de *Weierstrass* : $\forall f:\exists f_{n}\to f{}$ (⇒ $I{}$ compact ⇒polynomes dense dans $C(I){}$)  
 &nbsp;  
