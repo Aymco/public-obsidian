@@ -5,7 +5,7 @@ tags:
   - regrouping  
 title: Signaux et systèmes  
 created: 2024-02-12  
-updated: 2024-05-27  
+updated: 2024-06-06  
 ---  
 # Signaux  
   
@@ -195,5 +195,3 @@ generalisation DFT
 		- $\forall i : |\lambda_{i}|=1\implies m_{g}(\lambda_{i})=m_{a}(\lambda_{i}){}$ ⇒ marginalement stable  
 		- $\exists i : |\lambda_{i}|=1\implies m_{g}(\lambda_{i})=m_{a}(\lambda_{i}){}$ ⇒ instable  
 		- #TODO  
-&nbsp;  
-this is a test 12121MLKmflqkjsdmflkjqmsldfkj mqlksjdf lkjqsm lfjkqlskj jq mlkfjjfjdjq$ljsdfmlkj azkljf mlkjqsdmflkj qmlkfj m{}$  
