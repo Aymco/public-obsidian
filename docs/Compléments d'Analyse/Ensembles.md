@@ -42,8 +42,6 @@ title: Ensembles et topologies
 	- $\subseteq, \cup, \cap, \bigcup_{\infty \text{ enumérable}} {}$ d'E énumérables ⇒ *enumérable*  
 		- $\bigcup_{\infty \text{ non-énumérable}}$ d'E énumérables ⇒ ! *énumérable*  
   
-- ensemble **total** : span(ss espace vect engendré) est dense dans $X{}$  
-  
 - Ensemble **étoilé** en $z_{0}$ : $\forall z\in D$ chemin droit $c:z_{0}\to z$, $c\in D$  
 	$\mathcal{A}\in \mathbb{C}$ ouvert, étoilé, $f:\mathcal{A}\to \mathbb{C}$ dérivable : $F(z):=\int_{z_{0}}^{z} f(x) \, dw$  
 		⇒$F'(z)=f(z)$  

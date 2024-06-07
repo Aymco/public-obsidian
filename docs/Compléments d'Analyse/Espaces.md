@@ -4,7 +4,7 @@ category: Compléments d'Analyse
 tags:  
   - matière  
 created: 2024-06-01  
-updated: 2024-06-05  
+updated: 2024-06-06  
 ---  
 voir [distance, norme, produit scalaire](distance,%20norme,%20produit%20scalaire.md)    
   
@@ -21,13 +21,15 @@ les espaces sont des [Ensembles](Ensembles.md)
   
 - **Séparé** : 2 points distinct → voisinage distinct ~~(!= séparable)~~  
   
+- **séparable** : $\exists A\subseteq X{}$  *dense* et *dénombrable*  
+  
+- **total** : span(ss espace vect engendré) est dense dans $X{}$  
+  
 - **Compact** : *séparé* + tout recouvrement ouvert de $T{}$ a un nombre fini de sous recouvrements.  
 	- 1. $Im A{}$ continue 2. $B\subseteq A{}$ fermé 3. $\bigcup_{finie}{}$ d'un compact ⇒ compact  
-	- *théorème de Heine-Borel* : $\mathbb{R}^{n},\mathbb{C}^n:{}$ *compact* <=> *fermé* + *borné*  
+	- *théorème de Heine-Borel* : $\mathbb{R}^{n},\mathbb{C}^n:{}$ *compact* <=> *fermé* + *borné*, n fini  
   
 - **séquentiellement compact** : toute suite → $\exists{}$ sous suite convergente  
-  
-- Espace *séparable* : $\exists A\subseteq X{}$  *dense* et *dénombrable*  
 # Espace métrique  
   
 - **Espace métrique** :$(X,d){}$ : Ensemble, distance (aussi espace topologique)  
@@ -40,14 +42,13 @@ les espaces sont des [Ensembles](Ensembles.md)
 	- *connexe* : seuls ouverts+fermé : $\emptyset,X {}$  
 	- *connexe par arcs* : $\exists\gamma_{\text{continue}}:\gamma(0)=x, \gamma(1)=y\quad\forall x,y\in X{}$  
 	- (espace *convexe* : norme *convexe*)  
-	- th. *point fixe* : *complet* + $f{}$ *contractante* ⇒$\exists{}$ unique point fixe:$f(x)=x{}$  
-	- th. *valeures extremes* (bornes atteintes): $(X,d){}$ *compact*,$f{}$continue ⇒ min, max  
+	- th. **point fixe** : *complet* + $f{}$ *contractante* ⇒$\exists{}$ unique point fixe:$f(x)=x{}$  
   
 - **Espace Normé** : $(X, | | \cdot| |){}$  espace vectoriel  
 	- $X{}$ *séparable* $\iff{}\exists$ famille de $X{}$ totale  
   
 - **Espace de Banach** $\mathfrak{B}$ : *Normé* + *Complet* (ex: $\mathbb{R}^n, l^p(\mathbb{N}),l^\infty(\mathbb{N}){}$)  
-	- critère de *Weierstrass* : $f{}$ conv ponctuellement ⇒ conv uniformément  
+	- critère de *Weierstrass* : $f{}$ conv *ponctuellement* ⇒ conv *uniformément*  
   
 - Espace **préhilbertiens** : $(X, \langle \cdot,\cdot \rangle){}$ espace vectoriel  
   

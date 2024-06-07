@@ -4,7 +4,7 @@ category: Compléments d'Analyse
 tags:  
   - matière  
 created: 2023-12-30  
-updated: 2024-06-04  
+updated: 2024-06-05  
 title: Suites  
 ---  
   
@@ -22,7 +22,7 @@ title: Suites
   
 - *monotone* + *bornée* ⇒ *converge*  
   
-- $\exists{}$ SS convergente ⇒ sd Cauchy → converge  
+- de Cauchy : $\exists{}$ SS convergente ⇒ *converge*  
   
 - th. de **l'étau** : $a_n\leq b_{n}\leq c_{n}$ et $\lim_{ n \to \infty }a_{n}=\lim_{ n \to \infty }c_{n}=a$  
 	⇒ $\lim_{ n \to \infty }b_{n}=a$  
