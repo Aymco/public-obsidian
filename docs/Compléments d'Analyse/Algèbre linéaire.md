@@ -18,14 +18,16 @@ $A:\mathfrak{D}(A)\subset X\to Y :A(x)=y{}$.      (Opérateur $X\to X{}$):
 - *linéaire* : $A\left( \sum\lambda_{i}x_{i} \right)=\sum\lambda _{i}A(x_{i}){}$   ~~. $\forall \lambda _{i}\in \mathbb{C},\forall x_{i}\in \mathfrak{D}(A){}$~~  
   
 - *borné* : $| |A| |=\sup \limits_{\lvert \lvert x \rvert \rvert=1} \lvert \lvert A(x) \rvert \rvert<\infty$  = image d'une boule de rayon 1 bornée  
+	- ⇔$\exists M>0:\forall x\in U: \lvert \lvert x \rvert \rvert\leq M{}$  
 	- ⇒ A continue en 0  
 	- ⇔ continue  
 	- $\iff \mathfrak{D}(A) <\infty{}$  
 	- ⇔ lipschitzienne  
+	- th. *bolzano weirstrass* : E *infini* *borné* ⇒ admet points limite  
 	- $A{}$ borné, $\mathfrak{D}(A){}$ dense dans X et Y complet ⇒ $A{}$ A admet prolongement continu unique à tout X entier (agrandit la domaine car continuité sur les bords)  
 	- (intégration → *borné* ; derivation → *!borné*)  
   
-- $\mathscr{L}(X,Y)$ ensemble applicatoin linéaires bornées :   
+- $\mathscr{L}(X,Y)$ ensemble applicatoin *linéaires bornées* :   
 	1. norme  
 	2. $(Y,\lvert \lvert \cdot* \rvert \rvert_{Y}){}$ complet ⇒ $\mathscr{L}{}$ complet  
 	3. $X^*:=\mathscr{L}(X,\mathbb{C}){}$ complet  
