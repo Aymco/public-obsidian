@@ -53,14 +53,13 @@ $x^*:\nabla f(x^*)=0{}$ soit $\phi(\alpha)=f(x_{k}+\alpha p_{k}){}$
 - **cdt de Wolfe** : $0<c_{1}<c_{2}<1{}$ : $\exists\alpha_{k}{}$ si $p{}$ descente et $f{}$ bornée inf  
 	- *décroissance suffisante* : $\phi(\alpha)\leq \phi(0)+c_{1}\alpha \phi'(0){}$  
 	- *courbure* : $\phi'(\alpha)\geq c_{2}\phi'(0){}$  
-	- **Forte** : *courbure forte* : $\lvert \nabla f(x_{k}+\alpha p_{k})^Tp_{k} \rvert\leq c_{2}\lvert \nabla f(x_{k}^Tp_{k}) \rvert{}$  
+	- **Forte** : *courbure forte* :  $\lvert \phi'(\alpha) \rvert\leq c_{2} \lvert \phi'(0) \rvert{}$  
   
-- m. **recherche en ligne** : choisite $x_{0}{}$ et $k=0{}$ (*itérative*)  
+- m. **recherche en ligne** : choisite $x_{0}{}$ et $k=0{}$ (*itérative*) : répéter → satifsait :  
 	1. *direction* $p_{k}{}$ : svt *descente* : $\phi'(0)<0\iff\nabla f(x)^Tp<0{}$   
 		- m. du **gradient** : $p^*_{k}=-\nabla f(x_{k}){}$ +forte pente (sauf si p stationnaire)  
 	2. *pas* $\alpha_{k}:x_{k+1}=x_{k}+\alpha_{k}p_{k}{}$   
 		- $\alpha_{k}{}$ : minimiser $\phi(\alpha){}$ (approx)  
-	3. → continuer 1. → critere satifsait  
 	- $f\in \mathcal{C}^1{}$ bornée infer. +$\nabla{}$ *Lipschitz* + $p_{k}{}$ descente + $\alpha_{k}{}$ *Wolfe* ⇒ *ZoutenDijk*   
 		- ⇒ m. grad et m. : $p_{k}{}$ ! asymptotiquement orthogonal ⇒ *conv globalement*  
 	- **vitesse** : m. *gradient exacte*:   
@@ -75,15 +74,14 @@ $x^*:\nabla f(x^*)=0{}$ soit $\phi(\alpha)=f(x_{k}+\alpha p_{k}){}$
 avec $\nabla^{2}f{}$  
   
 - **m. de Newton** : $x_{k+1}=x_k -\alpha_k\nabla^2f(x_k)^{-1}\nabla f(x_k){}$(*itérative*)  
-	- (min du p. de taylor de degré 2 de f autour de $x_{k}{}$)  
-	- (eq : newton-raphson → $\nabla f=0{}$)  
+	- (min taylor d=2 de f($x_{k}{}$)) (eq : newton-raphson → $\nabla f=0{}$)  
 	- $a_{k}=1{}$, $\nabla^{2}{}$ lipschitz + $\nabla^{2}f\succ 0{}$ : conv *quadratique* selon $c=L\lvert \lvert \nabla^{2}f(x^*)^{-1} \rvert \rvert{}$  
   
 - **m. de Quasi-Newton** : rapide mais couteuse en stockage et calcul et !conv garantie  
 	1. $x_{k+1}=x_{k}-B_{k}^{-1}\nabla f(x_{k}){}$  
 	2. *mis a jour de rang faible* : $B_{k}\to B_{k+1}{}$ ( $B_{k}\approx\nabla^{2}f(x_{k}){}$)  
 	- $f\in \mathcal{C}^{2}{}$ bornée inf, $\nabla{}$ *lipschitz* et $\forall k:B_{k}\succ 0{}$ et $\exists M:\lvert \lvert B_{k} \rvert \rvert \lvert \lvert B_{k}^{-1} \rvert \rvert\leq M{}$ et $\alpha_{k}{}$ *Wolfe* ⇒ *conv globale*  
-	-  $x_{k+1}=x_{k}-H_{k}\nabla f(x_{k}){}$  plus efficace  
+	- $x_{k+1}=x_{k}-H_{k}\nabla f(x_{k}){}$  plus efficace  
   
 - **mis a jour de rang faible** : (rang 1) avec $B_{k} \leftrightarrow H_{k }\iff y_{k}\leftrightarrow s_{k}{}$  
 	- *cdt de la sécante* : $B_{k+1}s_{k}=y_{k}{}$  
@@ -92,7 +90,8 @@ avec $\nabla^{2}f{}$
 		- $\not\exists{:}$dénom$=0{}$ ,   $B_{k},H_{k}?\succ 0{}$, ?conv globale,superlinéaire  
   
 - **Mise a jour BFGS** : (rang 2)   
-	- CONV *globalement* ; $H_{0}\succ 0\implies{}$  
+	- $H_k\succ 0\implies H_{k+1}\succ 0{}$   
+	- $H_{0}\succ 0{}$ ⇒ CONV *globalement* ;   
 	- $f\in \mathcal{C}^2{}$ +$\nabla{}$Lipschits + $\lambda{}$ bornés sur $\{x :f (x) \leq f (x_0)\}{}$ *convexe* ⇒ CONV *superlinéaire*  
 	- pas connaitre : (on pose $p_{k}=(y_{k}^Ts_{k})^{-1}{}$)  
 		- $B_{k+1}=B_k+\frac{y_ky_k^T}{y_k^Ts_k}- \frac{B_ks_ks_k^Tb_k}{s_k^TB_ks_k}$   
