@@ -8,7 +8,10 @@ created: 2024-02-09
 updated: 2024-06-08  
 ---  
 $>;<{}$vrai si vrai pour chaque valeurs des vecteurs  
+$A \succ{}$ matrice ($\succeq{}$semi-)*définie positive*  
 $A{}$ → $A_{i}{}$ colonne et $a_{i}{}$ ligne  
+&nbsp;  
+&nbsp;  
 &nbsp;  
 [Fonctions](Fonctions.md)  
   
