@@ -88,21 +88,21 @@ pb de recherche de la *meilleure borne* inférieure valables
 - $\min c^Tx:Ax\geq b,x\geq 0\implies$dual: $\max b^Ty:A^Ty\leq c,y\geq 0{}$  
 proprietes  
   
-- **Dualité faible** : $x{}$, $y{}$ admissiblew : $c^Tx\geq b^Ty{}$  
+- **Dualité faible** : $x{}$, $y{}$ admissible : $c^Tx\geq b^Ty{}$  
   
-- **Certificat** : solutions : $c^Tx=b^Ty{}$ *optimale*. primal : coût optimal fini ⇔ dual aussi    
+- **Certificat** : $c^Tx=b^Ty{}$ ⇒*optimale*. primal : coût optimal fini ⇔ dual aussi    
 	- **Corollaire** : pb non borné ⇒ dual impossible.  
   
 - **Dualité forte** : $\exists{}$ sol optimal ⇒ $\exists{}$sol optimale du dual  
   
-- *exlusion* : $a_{i}^T{}x\leq b_{i}$ ⇒ $y_{i}∗(a^T_{i} x^*-b_{i} ) = 0{}$  et $x_{i}(A_{i}^Ty_i-c_{i})=0{}$  
+- *exlusion* : sol optimale :  $a_{i}^T{}x\leq b_{i}$ ⇒ $y_{i}∗(a^T_{i} x^*-b_{i} ) = 0{}$  ( $x_{i}(A_{i}^Ty_i-c_{i})=0{}$)  
 **Prediction** :  
   
-| var                    | $x^*{}$                        | $y^*{}$                             | base                               | cout optimal $z{}$    |  
-| ---------------------- | ------------------------------ | ----------------------------------- | ---------------------------------- | --------------------- |  
-| $b+\Delta b{}$         | $x_{B}=B^{-1}(b+\Delta b){}{}$ | =                                   | opti: primal admissible            | $z+y^{*T} \Delta b{}$ |  
-| $c+\Delta c{}$         | =                              | $=B^{−1} (c_{B} + \Delta c_{B} ){}$ | opti: dual admissible              | $z+x^{*T} \Delta c{}$ |  
-| $c_{k}{}$ et $a_{k}{}$ | =                              | =                                   | opti : $c_{k}-y^{*T}a_{k}\geq 0{}$ | =                     |    
+| var                    | $x^*{}$                        | $y^*{}$                            | base                               | cout optimal $z{}$    |  
+| ---------------------- | ------------------------------ | ---------------------------------- | ---------------------------------- | --------------------- |  
+| $b+\Delta b{}$         | $x_{B}=B^{-1}(b+\Delta b){}{}$ | =                                  | opti: primal admissible            | $z+y^{*T} \Delta b{}$ |  
+| $c+\Delta c{}$         | =                              | $B^{−1} (c_{B} + \Delta c_{B} ){}$ | opti: dual admissible              | $z+x^{*T} \Delta c{}$ |  
+| $c_{k}{}$ et $a_{k}{}$ | =                              | =                                  | opti : $c_{k}-y^{*T}a_{k}\geq 0{}$ | =                     |    
     
 ## Nombres entiers  
   
@@ -122,7 +122,6 @@ proprietes
 		- sol entiere : $z=z'{}$ : continue  
 		- sinon *BRANCH* : choisit $x_{i}{}$ → +2 noeuds : $x_{i}\leq ceil(x_{i}){}$ et $x_{i}\geq floor(x_{i}){}$  
 	- sol optimal est $z{}$  
-&nbsp;  
 # Ex  
   
 - pb de *flots* : entrees, sorties et capacités entiers ⇒ solution entière  
