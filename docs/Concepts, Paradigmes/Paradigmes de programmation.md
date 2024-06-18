@@ -4,7 +4,7 @@ category: Concepts, Paradigmes
 tags:  
   - matière  
 created: 2024-05-28  
-updated: 2024-05-28  
+updated: 2024-06-14  
 ---  
 # Paradigmes en général  
 =manière de programmer  
@@ -67,7 +67,7 @@ JAVA
   
 - ajout de la concurrence  
   
-- dataflow execution :   
+- **dataflow** execution :   
 	- attend → X libre ⇒ executer  
   
 - producteur consommateur  
