@@ -4,26 +4,29 @@ category: Concepts, Paradigmes
 tags:  
   - matière  
 created: 2024-05-27  
-updated: 2024-05-28  
+updated: 2024-06-13  
 ---  
 # Programmation symbolique  
+&nbsp;  
   
-- **Liste** `<List T> ::= nil | T ’|’ <List T>**test**  
-	- oz : `[1 2 3] = 1 | 2 | 3 | nil`  
 - **Clause**  liste avec head, tail : `[] H|T`  
+  
 - **Arbres** :  `<tree T> : := leaf | t(T <tree T> ... <tree T>)`  
-	- *Binary* : 2 sous arbres; *ordered* : triée  
+	- *Binary* : 2 sous arbres; *ordered* : triée, *balanced* $O(\log n)$  
 	- **Lookup** K T : trouve un valeur  
 	- **Insert** K W T : peut remplacer une feuille, un noeuds, sous noeuds  
 	- **Delete** K T : delete feuille, sous noeuds  
+  
+- **Liste** `<List T> ::= nil | T ’|’ <List T>`  
+	- `List2 = [1 2] = 1 | 2 | nil = (1:1 2:(1:2 2:nil))`  
+  
 - **Tupple** : `X = state(1 b 2)`, {Label X}, {Width X}  
-	- `List2 = (1:1 2:(1:2 2:(1:3 2:nil))) == 1 | 2 | 3  
   
 - **procédures** :   
 	- def : cree l'env, stocke son code et ses variables  
 	- appel : cree nouvel environnement : contextuel (exterieur) + var formelles  
   
-- environnement contextuel : $E_{c}=\{Z\to z\}{}$  
+- **environnement contextuel**: $E_{c}=\{Z\to z\}{}$  
 ## Language Kernel  
   
 - 1 opération par ligne  

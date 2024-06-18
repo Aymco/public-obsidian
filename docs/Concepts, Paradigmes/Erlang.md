@@ -4,7 +4,7 @@ category: Concepts, Paradigmes
 tags:  
   - matière  
 created: 2024-05-27  
-updated: 2024-05-28  
+updated: 2024-06-14  
 ---  
 +rapide : thread et message ⇒ programmation concurentielle  
   
