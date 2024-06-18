@@ -1,0 +1,2634 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Synthèses facile d'accès.">
+      
+      
+        <meta name="author" content="Aymco">
+      
+      
+        <link rel="canonical" href="https://aymco.github.io/public-obsidian/Calculabilit%C3%A9/">
+      
+      
+        <link rel="prev" href="../Analyse%203/m%C3%A9thode%20des%20caract%C3%A9ristiques/">
+      
+      
+        <link rel="next" href="Complexit%C3%A9%20d%27un%20programme/">
+      
+      
+      <link rel="icon" href="../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
+    
+    
+      
+        <title>calculabilité - Synthèses ingénieur civil</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Lato";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-EWC8Z1Z0D2"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-EWC8Z1Z0D2",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-EWC8Z1Z0D2",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="calculabilité - Synthèses ingénieur civil" >
+      
+        <meta  property="og:description"  content="Synthèses facile d'accès." >
+      
+        <meta  property="og:image"  content="https://aymco.github.io/public-obsidian/assets/images/social/Calculabilité/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://aymco.github.io/public-obsidian/Calculabilit%C3%A9/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="calculabilité - Synthèses ingénieur civil" >
+      
+        <meta  name="twitter:description"  content="Synthèses facile d'accès." >
+      
+        <meta  name="twitter:image"  content="https://aymco.github.io/public-obsidian/assets/images/social/Calculabilité/index.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#logique-propositionnelle" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href=".." title="Synthèses ingénieur civil" class="md-header__button md-logo" aria-label="Synthèses ingénieur civil" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 6a6 6 0 0 1 6 6c0 2.22-1.21 4.16-3 5.2V19a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-1.8c-1.79-1.04-3-2.98-3-5.2a6 6 0 0 1 6-6m2 15v1a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-1h4m6-10h3v2h-3v-2M1 11h3v2H1v-2M13 1v3h-2V1h2M4.92 3.5l2.13 2.14-1.42 1.41L3.5 4.93 4.92 3.5m12.03 2.13 2.12-2.13 1.43 1.43-2.13 2.12-1.42-1.42Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Synthèses ingénieur civil
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              calculabilité
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="light-blue"  aria-label="light theme"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="light theme" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="amber" data-md-color-accent="deep-orange"  aria-label="ayu theme"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="ayu theme" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Aymco/public-obsidian/" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    aymco/public-obsidian
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Analyse%203/" class="md-tabs__link">
+          
+  
+    
+  
+  Analyse 3
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+    
+  
+  Calculabilité
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Chimie%202/" class="md-tabs__link">
+          
+  
+    
+  
+  Chimie 2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Compl%C3%A9ments%20d%27Analyse/" class="md-tabs__link">
+          
+  
+    
+  
+  Compléments d'Analyse
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Concepts%2C%20Paradigmes/Concepts%20de%20Programmation/" class="md-tabs__link">
+          
+  
+    
+  
+  Concepts, Paradigmes
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../MDP/" class="md-tabs__link">
+          
+  
+    
+  
+  MDP
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Optimisation/" class="md-tabs__link">
+          
+  
+    
+  
+  Optimisation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Physique%203/" class="md-tabs__link">
+          
+  
+    
+  
+  Physique 3
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Signaux%20et%20Syst%C3%A8mes/" class="md-tabs__link">
+          
+  
+    
+  
+  Signaux et Systèmes
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Synthèses ingénieur civil" class="md-nav__button md-logo" aria-label="Synthèses ingénieur civil" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 6a6 6 0 0 1 6 6c0 2.22-1.21 4.16-3 5.2V19a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-1.8c-1.79-1.04-3-2.98-3-5.2a6 6 0 0 1 6-6m2 15v1a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-1h4m6-10h3v2h-3v-2M1 11h3v2H1v-2M13 1v3h-2V1h2M4.92 3.5l2.13 2.14-1.42 1.41L3.5 4.93 4.92 3.5m12.03 2.13 2.12-2.13 1.43 1.43-2.13 2.12-1.42-1.42Z"/></svg>
+
+    </a>
+    Synthèses ingénieur civil
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Aymco/public-obsidian/" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    aymco/public-obsidian
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Analyse%203/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Analyse 3
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Analyse 3
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Analyse%203/Analyse%20Complexe/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Analyse Complexe
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Analyse%203/EDP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EDP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Analyse%203/Fonctions%20complexes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fonctions complexes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Analyse%203/Int%C3%A9grales%20complexes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intégrales complexes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Analyse%203/Nombres%20complexes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nombres complexes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Analyse%203/Op%C3%A9rateur%20diff%C3%A9rentiels/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Opérateur différentiels
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Analyse%203/S%C3%A9ries%20complexes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Séries complexes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Analyse%203/m%C3%A9thode%20de%20la%20s%C3%A9paration%20des%20variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    méthode de la séparation des variables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Analyse%203/m%C3%A9thode%20des%20caract%C3%A9ristiques/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    méthode des caractéristiques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
+  
+  <span class="md-ellipsis">
+    Calculabilité
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link md-nav__link--active" for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Calculabilité
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Complexit%C3%A9%20d%27un%20programme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Complexité d'un programme
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Chimie%202/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Chimie 2
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chimie 2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chimie%202/Cin%C3%A9tique%20chimique/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cinétique chimique
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chimie%202/Entropie/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entropie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chimie%202/Equilibres%20Chimiques/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Equilibres Chimiques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chimie%202/Gaz%20Parfait/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gaz Parfait
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chimie%202/Thermodynamique/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Thermodynamique
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chimie%202/Variable%2C%20fonction%20d%27%C3%A9tat/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variable, fonction d'état
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chimie%202/cylcles%20thermodynamiques/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    cylcles thermodynamiques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chimie%202/notations%20chimie/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    notations chimie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chimie%202/th%C3%A9orie%20cin%C3%A9tique%20des%20gaz/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    théorie cinétique des gaz
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chimie%202/%C3%A9quilibres%20entre%20phases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    équilibres entre phases
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chimie%202/%C3%A9quilibres%20%C3%A9lectro-chimiques/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    équilibres électro-chimiques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Compl%C3%A9ments%20d%27Analyse/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Compléments d'Analyse
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Compléments d'Analyse
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compl%C3%A9ments%20d%27Analyse/Alg%C3%A8bre%20lin%C3%A9aire/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Espace vectoriel \(X{}\subseteq \mathbb{R}^n\)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compl%C3%A9ments%20d%27Analyse/Ensembles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ensembles et topologies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compl%C3%A9ments%20d%27Analyse/Espaces/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Espaces
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compl%C3%A9ments%20d%27Analyse/Suites%20et%20S%C3%A9ries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Suites
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Compl%C3%A9ments%20d%27Analyse/distance%2C%20norme%2C%20produit%20scalaire/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Distances
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Concepts, Paradigmes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Concepts, Paradigmes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Concepts%2C%20Paradigmes/Concepts%20de%20Programmation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programmation symbolique
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Concepts%2C%20Paradigmes/Concepts%2C%20paradigmes%20et%20s%C3%A9mantique%20des%20langages%20de%20programmation%20-%20Oz/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concepts, Paradigmes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Concepts%2C%20Paradigmes/Erlang/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Erlang
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Concepts%2C%20Paradigmes/OZ/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OZ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Concepts%2C%20Paradigmes/Paradigmes%20de%20programmation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Paradigmes en général
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../MDP/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    MDP
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            MDP
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MDP/Algo%20Dijkstra/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algo Dijkstra
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MDP/Combinatoires%20-%20d%C3%A9nombrements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Combinatoires - dénombrements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MDP/Probabilit%C3%A9s/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Probabilités
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MDP/Structure%20Alg%C3%A9briques/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Structure Algébriques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MDP/Theorie%20des%20graphes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Theorie des graphes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Optimisation/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Optimisation
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Optimisation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Optimisation/Optimisation%20Lin%C3%A9aire/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Optimisation Linéaire
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Optimisation/Optimisation%20non-lin%C3%A9aire/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Optimisation non linéaire
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Physique%203/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Physique 3
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Physique 3
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Physique%203/Antennes%20-%20rayonnements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Antennes - rayonnements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Physique%203/Fonction%20d%27onde%20de%20Schr%C3%B6dinger/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fonction d'onde de Schrödinger
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Physique%203/Ondes%20Stationnaires/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ondes Stationnaires
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Physique%203/Ondes%20m%C3%A9caniques/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ondes mécaniques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Physique%203/Physique%20Quantique/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Physique Quantique
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Physique%203/champs%20%C3%A9lectro-magn%C3%A9tiques/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    champs électro-magnétiques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Physique%203/ondes%20%C3%A9lectro-magn%C3%A9tiques/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ondes électro-magnétiques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Physique%203/ondes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ondes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Physique%203/puits%20et%20barri%C3%A8res%20de%20potentiel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    puits et barrières de potentiel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Signaux%20et%20Syst%C3%A8mes/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Signaux et Systèmes
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Signaux et Systèmes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/Aymco/public-obsidian/edit/main/docs/Calculabilité/index.md" title="Editer cette page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+
+
+<p>- complémentaire : <span class="arithmatex">\(\bar{A}=X\setminus A{}\)</span>  </p>
+<ul>
+<li>
+<p><strong>language</strong> : ensemble de mots constitués par <span class="arithmatex">\(\Sigma\)</span> (tous mots : <span class="arithmatex">\(\Sigma^*{}\)</span>)  </p>
+<ul>
+<li><em>non-trivial</em> : opérations de base peuvent etre effectuées  </li>
+<li><strong>mot</strong> : "abc", "01010", <span class="arithmatex">\(\epsilon{}\)</span> (vide)  </li>
+<li><strong>alphabet</strong> <span class="arithmatex">\(\Sigma{}\)</span> : ensemble de symboles  </li>
+</ul>
+</li>
+<li>
+<p><strong>algorithme</strong> : ensemble fini d'instruction + calculateur  </p>
+</li>
+<li>
+<p><em>codage</em> : <span class="arithmatex">\(c:T\to \mathbb{N}{}\)</span> bijection d'un nouveau type et les naturels  </p>
+</li>
+<li>
+<p><strong>relation</strong> <span class="arithmatex">\(R{}\)</span> : <span class="arithmatex">\(aRb,\langle a,b \rangle\in R,R(a,b){}\)</span> ensemble de paires <span class="arithmatex">\(\langle a,b \rangle{}\)</span>  </p>
+</li>
+</ul>
+<h1 id="logique-propositionnelle">Logique propositionnelle<a class="headerlink" href="#logique-propositionnelle" title="Permanent link">&para;</a></h1>
+<ul>
+<li>
+<p><strong>proposition</strong> <span class="arithmatex">\(A{}\)</span>  </p>
+<ul>
+<li><em>négation</em> <span class="arithmatex">\(!A,\neg A{}\)</span>  </li>
+<li><em>conjonction</em>(et) <span class="arithmatex">\(A \wedge B{}\)</span>  </li>
+<li><em>disjonction</em>(ou) <span class="arithmatex">\(A\vee B{}\)</span>  </li>
+<li><em>implication</em> <span class="arithmatex">\(A\implies B{}\)</span>  </li>
+<li><em>équivalence</em> <span class="arithmatex">\(A\iff B{}\)</span>  </li>
+</ul>
+</li>
+<li>
+<p><strong>FNC</strong> : clause et clause et ..  </p>
+</li>
+<li>
+<p><strong>intérprétation</strong> : valeurs → propositions  </p>
+</li>
+<li>
+<p><strong>modèle</strong>: <em>interpretation</em> →VRAI : (<span class="arithmatex">\(\exists{}\)</span> <em>modèle</em> ⇔ form <em>satisfaisable</em> ⇔form<span class="arithmatex">\(\in {}\)</span><strong>SAT</strong>)  </p>
+</li>
+<li>
+<p><strong>tautologie</strong> : formule tjrs → VRAI   </p>
+<ul>
+<li><em>conséquence logique</em> : <span class="arithmatex">\(p\implies q{}\)</span> <em>tautologie</em> ⇔ <span class="arithmatex">\(p\models q{}\)</span> (affirmation)  </li>
+</ul>
+</li>
+<li>
+<p>résolution : <span class="arithmatex">\(A\vee B\text{ et }B!\vee C\implies A\vee C{}\)</span>  </p>
+</li>
+<li>
+<p>(model checking)  </p>
+</li>
+</ul>
+<h1 id="calculabilite">Calculabilité<a class="headerlink" href="#calculabilite" title="Permanent link">&para;</a></h1>
+<ul>
+<li>
+<p><strong>programme</strong> <span class="arithmatex">\(P{}\)</span> avec sa fonction <span class="arithmatex">\(\varphi(x){}\)</span>  </p>
+</li>
+<li>
+<p><strong>problemes</strong> : fonctions : <span class="arithmatex">\(\{ \varphi:\mathbb{N}\to \mathbb{N} \}{}\)</span> (<em>non-dénombrable</em>)  </p>
+<ul>
+<li>solutions : <em>programme</em> : <em>dénombrable</em> (⇒ <span class="arithmatex">\(\exists \varphi{}\)</span> !calculable)  </li>
+</ul>
+</li>
+<li>
+<p><strong>interpréteur</strong> : <span class="arithmatex">\(I(n,x)=P_{n}(x){}\)</span>  </p>
+</li>
+<li>
+<p><em>fonction</em> : <span class="arithmatex">\(\varphi:\mathbb{N}\to \mathbb{N}\)</span>       (<span class="arithmatex">\(\varphi(x)=\perp{}\)</span> <em>indéfinie</em>)  </p>
+<ul>
+<li><span class="arithmatex">\(\varphi{}\)</span> <strong>totale</strong> : <span class="arithmatex">\(\forall x:\varphi(x)\neq \perp{}\)</span> sinon <em>. artielle</em>  </li>
+<li><span class="arithmatex">\(\varphi_{m}{}\)</span> <strong>extension</strong> de <span class="arithmatex">\(\varphi_{n}{}\)</span> : <span class="arithmatex">\(\forall x:\varphi_{n}(x) \neq \perp{}, \varphi_{m}(x)=\varphi_n(x)\)</span>  </li>
+<li><span class="arithmatex">\(\varphi_{m}{}{}\)</span> <strong>calculable</strong> : <span class="arithmatex">\(\exists P_{n}=\varphi_{m}{}{}\)</span> algo fourni un résultat  </li>
+<li><em>fonction</em> <strong>universelle</strong> : <span class="arithmatex">\(\theta(n,x)=\varphi_{n}(x)\)</span>  </li>
+<li><em>fonction</em> <strong>caractéristique</strong> : <span class="arithmatex">\(\chi_{A}{}\)</span> determine si <span class="arithmatex">\(x \in A {}\)</span>  </li>
+<li><span class="arithmatex">\(\exists f{}\)</span> partielle calculable : <span class="arithmatex">\(\not \exists g{}\)</span> : extension de f totale calculable  </li>
+</ul>
+</li>
+<li>
+<p><a href="../Compl%C3%A9ments%20d%27Analyse/Ensembles/">Ensembles</a> :  </p>
+</li>
+<li>
+<p>ensemble (<strong>ND-</strong>)<strong>récusif</strong> : <span class="arithmatex">\(\exists{}\varphi\)</span> caractéristique totale calculable (⇔Non deterministe)  </p>
+<ul>
+<li><span class="arithmatex">\(\iff \bar{A}{}\)</span> recur ⇒ recur et corecu enumérabl  </li>
+<li><span class="arithmatex">\(A{}\)</span> fini <span class="arithmatex">\(\implies A{}\)</span> recursif ⇒ <span class="arithmatex">\(A{}\)</span> énumérable  </li>
+</ul>
+</li>
+<li>
+<p>ensemble (<strong>ND-</strong>)<strong>récursivement énumérable</strong> : <span class="arithmatex">\(\varphi(x)=\perp\implies x \in A{}\)</span>  </p>
+<ul>
+<li><span class="arithmatex">\(\iff A=domf{} : f\)</span> totale ou partielle calculable  </li>
+<li><span class="arithmatex">\(\iff A=\mathrm{Im}f:f{}\)</span> total calculable  </li>
+<li><span class="arithmatex">\(\iff \bar{A}{}\)</span>  <strong>corérucsivement énumérable</strong>  </li>
+</ul>
+</li>
+</ul>
+<h2 id="reduction">Réduction<a class="headerlink" href="#reduction" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>réduction <strong>algorithmique</strong> : <span class="arithmatex">\(X\leq_{a}Y{}\)</span> : <span class="arithmatex">\(\exists \chi_{Y}\implies \exists\chi_{X}{}\)</span>  (calculabilité)  </p>
+<ul>
+<li>⇒ <span class="arithmatex">\(Y{}\)</span> recursif ⇒ <span class="arithmatex">\(X{}\)</span> recursif  </li>
+<li>⇒<span class="arithmatex">\(X\)</span> non -recursif ⇒ <span class="arithmatex">\(Y{}\)</span> non-recursif  </li>
+<li><span class="arithmatex">\(X\leq_{a}\bar{X}{}\)</span>   </li>
+</ul>
+</li>
+<li>
+<p>réduction <strong>fonctionnelle</strong>: <span class="arithmatex">\(X\leq_{f}Y{}\iff\exists{}f\)</span> <em>totale calculable</em> :  <span class="arithmatex">\(x\in X \iff f(x)\in Y{}\)</span>   </p>
+<ul>
+<li>complexité : <span class="arithmatex">\(\mathcal{O}_{A}=\mathcal{O}_{f}+\mathcal{O}_{B}{}\)</span>   </li>
+</ul>
+</li>
+<li>
+<p>réduction <strong>polynomiale</strong> : <span class="arithmatex">\(X\leq_{p}Y{}\)</span> : <em>fonctionnelle</em> <span class="arithmatex">\(\mathcal{O}(p){}\)</span>  </p>
+</li>
+<li>
+<p><span class="arithmatex">\(X\leq_{p}Y\implies X\leq_{f}Y\implies X\leq_{a}Y{}\)</span>  </p>
+</li>
+<li>
+<p><span class="arithmatex">\(A_{\text{récursif}}\leq_{a,f} B{}\)</span>  </p>
+</li>
+<li>
+<p>, <span class="arithmatex">\(A\leq_{a,f}B{}\iff \bar{A}\leq_{a,f}\bar{B}\)</span>  </p>
+</li>
+</ul>
+<h1 id="modeles-de-calculabilite">Modèles de Calculabilité<a class="headerlink" href="#modeles-de-calculabilite" title="Permanent link">&para;</a></h1>
+<ul>
+<li><strong>Machine de Turing</strong> : complet  <ul>
+<li><em>Ruban</em> suite de case; <em>tete</em> écrit / lit la case  </li>
+<li><span class="arithmatex">\(B{}\)</span> : case vide, <span class="arithmatex">\(D,G{}\)</span> droite, gauche  </li>
+<li><strong>puissance</strong> : nb de f : peut calculer; <strong>efficacité</strong> : vitesse de résolution  </li>
+<li><em>these de Church-Turing</em> :   <ol>
+<li>?? : il n'existe pas de modèle plus puissant  </li>
+<li>?? : f calculable ⇒ T-calculable (CD)  </li>
+<li>VRAI : tt def de calculabilité équivalentes  </li>
+</ol>
+</li>
+<li><em>Oracle</em> : 3 états : <span class="arithmatex">\(oracle_{ask,ues,no}{}\)</span> : demande si <span class="arithmatex">\(x\in  A{}\)</span> : oui, non  </li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>machine</th>
+<th style="text-align: center;">puissance</th>
+<th style="text-align: center;">efficacité</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ruban semi-infini</td>
+<td style="text-align: center;">=</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>ruban multiple</td>
+<td style="text-align: center;">=</td>
+<td style="text-align: center;">+(^2)</td>
+</tr>
+<tr>
+<td>plusieures têtes</td>
+<td style="text-align: center;">=</td>
+<td style="text-align: center;">=</td>
+</tr>
+<tr>
+<td>mouvements élargis</td>
+<td style="text-align: center;">=</td>
+<td style="text-align: center;">+linéaire</td>
+</tr>
+<tr>
+<td>non-déterministe ND(NDT)</td>
+<td style="text-align: center;">=</td>
+<td style="text-align: center;">++expo</td>
+</tr>
+<tr>
+<td>à oracle</td>
+<td style="text-align: center;">=(+ si oracle sur non-récursif)</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong>automate fini</strong> FA : (sous-catégorie des MT → plus simple)  </p>
+<ul>
+<li><span class="arithmatex">\(\Sigma{}\)</span> E fini <em>symboles</em>, <span class="arithmatex">\(s_{0}\in S{}\)</span> E fini d'<em>états</em> et état initial, <span class="arithmatex">\(A\subset S{}\)</span> état acceptants, <span class="arithmatex">\(\delta:S\times \Sigma\to S{}\)</span> f de <em>transition</em>  </li>
+<li>!mémoire, ensembles pas reconnus ex : <span class="arithmatex">\(a^nb^n{}\)</span>  </li>
+<li>sortie : son état  </li>
+<li>automates non déterministe ND (NDFA):  <ul>
+<li>→ rendre déterministe  </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>automate a Pile - PDA</strong> :  </p>
+<ul>
+<li>+<em>memoire</em> : <span class="arithmatex">\(\Gamma{}\)</span> E fini symboles de pile, <span class="arithmatex">\(\Delta:S\times\Sigma \times\Gamma\to S\times\Gamma^*{}\)</span>  </li>
+<li><span class="arithmatex">\(Z{}\)</span> :pile vide; <span class="arithmatex">\(A,B / C{}\)</span> :symb ly , somment de la pile / remplacer le somet   </li>
+<li><span class="arithmatex">\(\exists{}\)</span> E recursif  !reconus PDA  </li>
+</ul>
+</li>
+<li>
+<p><em>language de programmation</em> (svt complets)  </p>
+<ul>
+<li>ND : =puissance, ++rapide  </li>
+</ul>
+</li>
+<li>
+<p><em>modèle quantique</em>  </p>
+</li>
+<li>
+<p><em>modèle humain</em>  </p>
+</li>
+<li>
+<p><em>Fonction récursives</em>  </p>
+</li>
+<li>
+<p><em>lambda calcul</em>  </p>
+</li>
+<li>
+<p>propriétés <strong>modèle complet</strong> :  </p>
+<ol>
+<li><strong>SA</strong> (Solvabilité Algorithmique) : interpréteur de D : calculable  </li>
+<li>⇒ <strong>SD</strong> (Solvabilité des Définitions) : f D-calculable ⇒ calculable  </li>
+<li><strong>CA</strong> (Complétude Algorithmique) : <span class="arithmatex">\(\forall p \in {}\)</span>mod(SA)⇒ <span class="arithmatex">\(\exists P \in D:\varphi_{P}=\varphi_{p}{}\)</span>  </li>
+<li>⇒ <strong>CD</strong> (Complétude des Définitions) : f calculable ⇒ D-caclulable  </li>
+<li><strong>U</strong> (Description Universelle)  : interpréteur de D : D-calculable  </li>
+<li><strong>S</strong> (S-m-n affaiblie) : <span class="arithmatex">\(\exists{}\)</span>P : capable de fixer un argument de P'<br />
+<img alt="Pasted image 20240601182520.png" src="../no_category/Pasted%20image%2020240601182520.png" />  </li>
+</ol>
+</li>
+</ul>
+<h1 id="theoreme-de-calculabilite">Théorème de calculabilité<a class="headerlink" href="#theoreme-de-calculabilite" title="Permanent link">&para;</a></h1>
+<ul>
+<li>
+<p><strong>Diagonalisation de Cantor</strong> : tableau infini (<span class="arithmatex">\(s_{i},s_{i,j}{}\)</span>)  </p>
+<ol>
+<li><span class="arithmatex">\(diag'_{i,i}=diag_{i,j}?0:1{}\)</span> ⇒ <span class="arithmatex">\(diag'_{i}\neq A_{i} :\forall i{}\)</span>  CQFD  </li>
+<li>collection de <span class="arithmatex">\(E_{\infty,\text{énumérable}}{}\)</span> ⇒ !enumérable <span class="arithmatex">\(\mathbb{R}, \mathcal{P}(\mathbb{N}), f:\mathbb{N}\to \{ 0,1 \}{}\)</span>  </li>
+</ol>
+</li>
+<li>
+<p>th. de <strong>Hoare-Allison</strong> : language <span class="arithmatex">\(D{}\)</span> (<em>non-trivial</em>): <span class="arithmatex">\(f{}\)</span> totale(⇒ calculable) (ex: <strong>BLOOP</strong> : Java, !boucles)(CA,SA)   </p>
+<ul>
+<li><span class="arithmatex">\(diag(n)=inter(n,n){}\)</span>→<span class="arithmatex">\(d'(n)=diag(n)+1{}\)</span>calculable⇒paradoxe(car<span class="arithmatex">\(\in \mathbb{N}{}\)</span>)⇒ interpreteur ! calculable <span class="arithmatex">\(\not \in D{}\)</span>   <ul>
+<li>⇒ <em>restrictif</em>   </li>
+<li>⇒ <span class="arithmatex">\(\exists f\)</span> totale <span class="arithmatex">\(\not\in D{}\)</span>  </li>
+</ul>
+</li>
+<li>interpreteur + halt <span class="arithmatex">\(\not\in D{}\)</span> (non-trivial)  </li>
+<li><span class="arithmatex">\(\forall f{}\)</span> total est calculable dans D ⇒ <span class="arithmatex">\(\exists f{}\)</span> !totale calculable dans D  </li>
+</ul>
+</li>
+<li>
+<p><span class="arithmatex">\(S_{mn}{}\)</span>(<strong>paramétrisation</strong>) : <span class="arithmatex">\(\exists{}S_{n}^m\)</span><em>calculable</em>: <span class="arithmatex">\(\varphi_{k}(.x_{m+n})=\varphi_{S_{n}^m(... x_{m})}(x_{m+1} ... x_{m+n}){}\)</span>  </p>
+<ul>
+<li><em>transformateur de programme</em> : rentre les arguments→prog (<em>totale calculable</em>)  </li>
+</ul>
+</li>
+<li>
+<p>th. du <strong>point fixe</strong> :<span class="arithmatex">\(\exists k:\varphi_{k}=\varphi_{f(k)}{}\)</span> avec <span class="arithmatex">\(P_{k}{}:f\)</span> transformateur <em>total calculable</em>  </p>
+<ol>
+<li><span class="arithmatex">\(h(u,v)=\left\{\begin{aligned} \varphi_{\varphi_{u}(u)}(v) \\ \perp:\varphi_{u}(u)=\perp \end{aligned}\right.{}=\varphi_{S(u)}(v)\)</span> <em>calculable</em> (<span class="arithmatex">\(S_{mn}{}\)</span>: totale calculable)  </li>
+<li><span class="arithmatex">\(g(u)=f(S(u)){}\)</span> <em>total calculable</em> ⇒ <span class="arithmatex">\(\exists r:\varphi _{r} (u) = g(u) = f(S(u)){}\)</span>   </li>
+<li>⇒ <span class="arithmatex">\(h(r, v) = \varphi _{S(r)}(v){}\)</span> et 6. <span class="arithmatex">\(h(r,v) = \varphi_{\varphi_{r}(r)}(v){} = \varphi _{f(S(r))}(v){}\)</span>  </li>
+<li>⇒<span class="arithmatex">\(\varphi_{S(r)}(v) = \varphi_{f(S(r))}(v){}\)</span> CQFD  </li>
+</ol>
+</li>
+<li>
+<p>th. de <strong>RICE</strong> : <span class="arithmatex">\(A\subset \mathbb{N} ,A\neq \emptyset {}\)</span> <em>recursif</em> ⇒<span class="arithmatex">\(\exists i\in A, \exists j \not\in A: \varphi_{i}=\varphi_{j}{}\)</span>  </p>
+<ul>
+<li>corollaire : <span class="arithmatex">\(\forall i\in A, \forall j\not\in {A}:\varphi_{i}\neq\varphi_{j}{}\implies A\in \{ \emptyset , \mathbb{N} \}{}\)</span> ou <span class="arithmatex">\(A{}\)</span> <em>non recursif</em>  <ol>
+<li>Démo : <span class="arithmatex">\(\chi_{A}{}\)</span> : (<span class="arithmatex">\(\varphi_{k}=\perp{}\)</span>, <span class="arithmatex">\(k\in \bar{A}{}\)</span> ) : <span class="arithmatex">\(\varphi_{int}\neq \varphi_{ext}{}\)</span>  </li>
+<li><span class="arithmatex">\(halt(n,x):P_{j}(z)=P_{n}(x), P_{m}(z){}\)</span> : <span class="arithmatex">\(j\in A?\;1,0{}\)</span>   </li>
+<li>⇒ <span class="arithmatex">\(\in A{}\)</span> !calculable ⇒ <em>non récursif</em>  </li>
+</ol>
+</li>
+<li>propriété <em>décidable</em> + <em>vérifiée</em> ⇒ <span class="arithmatex">\(\exists{}\)</span> 2 prog avec et sans propriété : mm f  </li>
+<li><span class="arithmatex">\(\exists P:{}\)</span>propriété <em>vérifiée</em> ⇒ prop <em>non-décidable</em>  </li>
+<li><span class="arithmatex">\(E{}=\{  f: proprité \}\)</span> <em>récursif</em> ⇒ <span class="arithmatex">\(E\subset \{ X,\emptyset  \}{}\)</span>   </li>
+<li>(propriétés liée → fonctions calculées)<br />
+<img alt="Complexité d'un programme &gt; Complexité d'un programme" src="Complexit%C3%A9%20d%27un%20programme/#Complexité%20d'un%20programme" />  </li>
+</ul>
+</li>
+</ul>
+<h1 id="complexite-dun-probleme">Complexité d'un problème<a class="headerlink" href="#complexite-dun-probleme" title="Permanent link">&para;</a></h1>
+<ul>
+<li>
+<p>..<strong>TIME</strong><span class="arithmatex">\((f(n)){}\)</span> : pb : classe <em>temporelle</em> <span class="arithmatex">\(\mathcal{O}(f(n)){}\)</span>  </p>
+</li>
+<li>
+<p>..<strong>SPACE</strong><span class="arithmatex">\((f(n)){}\)</span> : pb: classe <em>spatiale</em> <span class="arithmatex">\(\mathcal{O}(f(n)){}\)</span>   </p>
+</li>
+<li>
+<p><strong>N</strong>.. (<strong>N</strong>TIME)  <em>non déterministe</em> (<strong>D</strong>… déterministe)  </p>
+</li>
+<li>
+<p><strong>P</strong>.. <span class="arithmatex">\(=\bigcup_{k\in \mathbb{N}}D..(n^k){}\)</span> classe polynomiale (calculable en pratique)  </p>
+</li>
+<li>
+<p><strong>EXP</strong>.. <span class="arithmatex">\(=\bigcup_{k\in \mathbb{N} }D..(2^{n^k}){}\)</span> classe exponentielle  </p>
+</li>
+<li>
+<p>(<strong>PQB</strong>: classe polynomiale quantique bornée : <span class="arithmatex">\(\exists{}\)</span> algo Q : raison de ⅔)<br />
+ ⇒ <span class="arithmatex">\(DTIME\subseteq NTIME\subseteq DSPACE\subseteq NSPACE\subseteq DTIME(2^{f(n)}){}\)</span><br />
+&nbsp;  </p>
+</li>
+<li>
+<p><span class="arithmatex">\(p{}\)</span> pb <strong>difficile</strong> : <span class="arithmatex">\(\forall P \in C{}\)</span> <em>réductible</em> a <span class="arithmatex">\(p{}\)</span>   </p>
+</li>
+<li>
+<p><span class="arithmatex">\(p{}\)</span> (T-)<strong>complet</strong> : difficile + <span class="arithmatex">\(p\in C{}\)</span>  </p>
+</li>
+<li>
+<p>th. de <strong>Cook</strong> : <span class="arithmatex">\(SAT\in {}\)</span><em>NP-COMPLET</em>  ⇒(<span class="arithmatex">\(SAT\in P\implies P=NP{}\)</span> (these??))  </p>
+<ol>
+<li><span class="arithmatex">\(SAT\in {}\)</span><em>NP</em> : algo fixe les variables logiques : <span class="arithmatex">\(\mathcal{O}(n\log n){}\)</span>  </li>
+<li><em>NP-difficile</em> <span class="arithmatex">\(\forall B\in NP : B\leq_{p}SAT{}\)</span> : <span class="arithmatex">\(B{}\)</span> → transforme en porposition<br />
+<img alt="Pasted image 20240604164941.png" src="../no_category/Pasted%20image%2020240604164941.png" />  </li>
+</ol>
+</li>
+</ul>
+<h2 id="exemple-de-problemes">Exemple de problemes<a class="headerlink" href="#exemple-de-problemes" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>pb du voyageur(plus court chemin a travers certains points) : NP-complet  </p>
+</li>
+<li>
+<p>pb correspondance de <em>Post</em> : U,V listes de mots : trouver liste mots identiques   </p>
+<ul>
+<li>⇒ non calculable  </li>
+</ul>
+</li>
+</ul>
+<h3 id="ensembles">Ensembles<a class="headerlink" href="#ensembles" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><span class="arithmatex">\(halt(n,x)=\left\{\begin{aligned} 1 &amp;:P_{n}(x)\text{ se termine}\\0 \end{aligned}\right.{}\)</span> → <em>totale</em>, <em>non-calculable</em> :  </p>
+<ol>
+<li><span class="arithmatex">\(diag(n)=\{ halt(n,n)=0\;?\;\;1,\perp \}{}=P_{d}\)</span>   </li>
+<li><span class="arithmatex">\(diag(d){}\)</span> termine ⇒ =0 ⇒ !termine ⇒ =1 ⇒ paradoxe ⇒ halt !calculable  </li>
+</ol>
+</li>
+<li>
+<p><span class="arithmatex">\(HALT=\{ (n,x):P_{n}(x) \text{ se termine} \}{}\)</span>  </p>
+</li>
+<li>
+<p><span class="arithmatex">\(K=\{ n:p_{n}(n)\text{ se termine} \}{}\)</span>   </p>
+</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Cela était utile ?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="c'était utile, merci !" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m7 0c0 .8-.7 1.5-1.5 1.5S14 10.3 14 9.5 14.7 8 15.5 8s1.5.7 1.5 1.5m-5 7.73c-1.75 0-3.29-.73-4.19-1.81L9.23 14c.45.72 1.52 1.23 2.77 1.23s2.32-.51 2.77-1.23l1.42 1.42c-.9 1.08-2.44 1.81-4.19 1.81Z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="Cette page pourrait etre améliorée" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10m-6.5-4c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m2 4.5c1.75 0 3.29.72 4.19 1.81l-1.42 1.42C14.32 16.5 13.25 16 12 16s-2.32.5-2.77 1.23l-1.42-1.42C8.71 14.72 10.25 14 12 14Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Merci pour le feedback !
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Merci pour le feedback ! Aide à améliorer cette page en laissant un commentaire sur le github.
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://discordapp.com/channels/@me/404293091571531776/" target="_blank" rel="noopener" title="contact me on discord(aymco)" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.action.edit", "navigation.tabs", "navigation.indexes", "search.suggest", "search.highlight", "toc.integrate"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>
